@@ -1,0 +1,24 @@
+{
+ "rows": 878875,
+ "copies": {
+  "train": 286875,
+  "g0": 118400,
+  "g90": 118400,
+  "g180": 118400,
+  "g270": 118400,
+  "g365": 118400
+ },
+ "fixtures_train": 9253,
+ "delta_train": {
+  "count": 9253.0,
+  "mean": 202.0,
+  "std": 141.2,
+  "min": 0.0,
+  "25%": 75.0,
+  "50%": 199.0,
+  "75%": 325.0,
+  "max": 450.0
+ },
+ "source_date_strictly_before_cutoff": true,
+ "pass": true
+}

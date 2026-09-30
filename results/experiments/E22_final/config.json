@@ -1,0 +1,75 @@
+{
+ "commit": "no-git",
+ "data_hash": "954a5c4152b77e7a",
+ "splits": {
+  "F24": [
+   "2019-01-01",
+   "2023-10-01",
+   "2024-01-01",
+   "2024-12-31"
+  ],
+  "F25": [
+   "2019-01-01",
+   "2024-10-01",
+   "2025-01-01",
+   "2025-12-31"
+  ],
+  "FINAL": [
+   "2019-01-01",
+   "2025-10-01",
+   "2026-01-01",
+   null
+  ]
+ },
+ "deltas": [
+  0,
+  90,
+  180,
+  270,
+  365
+ ],
+ "cb_hp": {
+  "d": 64,
+  "heads": 4,
+  "layers": 2,
+  "drop": 0.1,
+  "edrop": 0.05,
+  "lr": 0.001,
+  "betas": [
+   0.9,
+   0.98
+  ],
+  "wd": 0.05,
+  "warmup": 0.05,
+  "floor": 0.02,
+  "clip": 1.0,
+  "ema": 0.999,
+  "batch": 32,
+  "epochs": 20,
+  "patience": 4,
+  "min_freq": 20,
+  "pad_to": 20,
+  "absence_days": 365
+ },
+ "cb_arms": {
+  "CB64": 64,
+  "CB128": 128
+ },
+ "seeds": [
+  0,
+  1
+ ],
+ "b0s_params": {
+  "learning_rate": 0.05,
+  "num_leaves": 31,
+  "min_data_in_leaf": 200,
+  "feature_fraction": 0.8,
+  "lambda_l2": 1.0,
+  "seed": 0,
+  "deterministic": true,
+  "force_row_wise": true,
+  "num_threads": 4,
+  "verbose": -1
+ },
+ "bootstrap": 2000
+}

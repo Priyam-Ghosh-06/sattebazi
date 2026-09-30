@@ -1,0 +1,9 @@
+fold 2023: train rows 236054 (played 94377), test matches 700 rows 21951
+fold 2024: train rows 319925 (played 125210), test matches 700 rows 21575
+fold 2025: train rows 434463 (played 164499), test matches 700 rows 21611
+[B0] B0_L2_logit_sum11_confirm: captured_over_oracle=0.6780 captured=474.2133 spearman_squad=0.4952 mae_squad=22.8325 mae_played=25.8873 spearman_played=0.3385 rmse_played=33.9595 hindsight_over_oracle=0.7278 logloss_p=0.3989 -> reference
+[E14] E14_plus_opp_own_squad_confirm: captured_over_oracle=0.6811 captured=475.7200 spearman_squad=0.4987 mae_squad=22.7291 mae_played=25.7553 spearman_played=0.3472 rmse_played=33.7531 hindsight_over_oracle=0.7349 logloss_p=0.3974 dCaptured=+1.51 [-0.46,+3.58] -> no significant difference vs B0
+[E14] E14_plus_opp_venue_confirm: captured_over_oracle=0.6825 captured=476.8410 spearman_squad=0.4990 mae_squad=22.7178 mae_played=25.7302 spearman_played=0.3480 rmse_played=33.7318 hindsight_over_oracle=0.7339 logloss_p=0.3976 dCaptured=+2.63 [+0.54,+4.68] -> better than B0
+[E15] E15_stage1_crossfit_control_confirm: captured_over_oracle=0.6773 captured=473.6362 spearman_squad=0.4934 mae_squad=22.8748 mae_played=25.9181 spearman_played=0.3372 rmse_played=34.0075 hindsight_over_oracle=0.7294 logloss_p=0.4005 dCaptured=-0.58 [-2.38,+1.39] -> no significant difference vs B0
+[E15] E15_spo_plus_finetune_confirm: captured_over_oracle=0.6778 captured=474.0029 spearman_squad=0.4935 mae_squad=22.9809 dCaptured=-0.21 [-2.06,+1.70] -> no significant difference vs B0
+[E5] E5_mu_huber25_confirm: captured_over_oracle=0.6792 captured=474.6105 spearman_squad=0.4949 mae_squad=22.0786 mae_played=25.1373 spearman_played=0.3407 rmse_played=34.5949 hindsight_over_oracle=0.7303 logloss_p=0.3989 dCaptured=+0.40 [-1.44,+2.28] -> no significant difference vs B0

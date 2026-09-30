@@ -1,0 +1,36 @@
+{
+ "matches": 13085,
+ "matches_no_unk": 8604,
+ "feasible_rate_no_unk_matches": 0.993258949325895,
+ "feasible_rate_unk_wildcard_all": 0.9952617500955292,
+ "matches_zero_wk_no_unk": 0.0,
+ "per_team_role_mean": {
+  "AR": 2.23,
+  "BAT": 3.4,
+  "BOWL": 3.73,
+  "WK": 1.3
+ },
+ "per_team_wk_count_dist": {
+  "0": 0.006,
+  "1": 0.725,
+  "2": 0.238,
+  "3": 0.029,
+  "4": 0.002,
+  "5": 0.0
+ },
+ "role_share": {
+  "BOWL": 0.336,
+  "BAT": 0.305,
+  "AR": 0.2,
+  "WK": 0.117,
+  "UNK": 0.042
+ },
+ "config": {
+  "window": 30,
+  "wk_catch_rate": 1.2,
+  "wk_top_min": 0.3,
+  "bowl_share": 0.25,
+  "bowl_pos": 8.0
+ },
+ "pass": true
+}

@@ -1,0 +1,54 @@
+{
+ "per_fold": [
+  {
+   "mae_squad": 23.028419826736428,
+   "rmse_squad": 31.63700598099787,
+   "spearman_squad": 0.48490336029876374,
+   "captured": 466.8275,
+   "oracle": 695.8475,
+   "captured_over_oracle": 0.6733964245364078,
+   "captured_minus_random": 155.05189288191445,
+   "selection_fallbacks": 9,
+   "fold": 2024,
+   "secs": 2.8
+  },
+  {
+   "mae_squad": 23.018006042478362,
+   "rmse_squad": 31.74581453992843,
+   "spearman_squad": 0.5099317951861984,
+   "captured": 484.9375,
+   "oracle": 700.775,
+   "captured_over_oracle": 0.6932053696786963,
+   "captured_minus_random": 166.86792519755764,
+   "selection_fallbacks": 9,
+   "fold": 2025,
+   "secs": 4.1
+  }
+ ],
+ "mean": {
+  "mae_squad": 23.023212934607393,
+  "rmse_squad": 31.69141026046315,
+  "spearman_squad": 0.4974175777424811,
+  "captured": 475.8825,
+  "oracle": 698.31125,
+  "captured_over_oracle": 0.683300897107552,
+  "captured_minus_random": 160.95990903973603,
+  "selection_fallbacks": 9.0,
+  "secs": 3.4499999999999997
+ },
+ "extra": {
+  "2024": {
+   "spo_best_iter": 22
+  },
+  "2025": {
+   "spo_best_iter": 51
+  }
+ },
+ "secs_total": 6.8,
+ "vs_B0_paired_captured_diff_mean_ci95": [
+  -0.19375,
+  -3.7355,
+  3.0625937499999996
+ ],
+ "verdict": "no significant difference vs B0"
+}

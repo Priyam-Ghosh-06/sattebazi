@@ -1,0 +1,246 @@
+{
+ "per_fold": [
+  {
+   "mae_squad": 22.911487947184916,
+   "rmse_squad": 31.6151795579152,
+   "spearman_squad": 0.48511793807855225,
+   "mae_played": 26.084554020709508,
+   "rmse_played": 34.00842274522401,
+   "spearman_played": 0.3291687392064815,
+   "logloss_p": 0.39918966998409067,
+   "brier_p": 0.12608850169436664,
+   "captured": 465.8425,
+   "oracle": 695.8475,
+   "captured_over_oracle": 0.6717633624053476,
+   "captured_minus_random": 154.06689288191447,
+   "selection_fallbacks": 9,
+   "hindsight_over_oracle": 0.7306256984736592,
+   "fold": 2024,
+   "secs": 12.8
+  },
+  {
+   "mae_squad": 22.84892804569022,
+   "rmse_squad": 31.654726521611884,
+   "spearman_squad": 0.5128252259071936,
+   "mae_played": 25.859882767798805,
+   "rmse_played": 33.98164501214617,
+   "spearman_played": 0.3561225673674685,
+   "logloss_p": 0.3900453130318895,
+   "brier_p": 0.12308567619330842,
+   "captured": 484.47,
+   "oracle": 700.775,
+   "captured_over_oracle": 0.6944122009116919,
+   "captured_minus_random": 166.40042519755764,
+   "selection_fallbacks": 9,
+   "hindsight_over_oracle": 0.7386404183783205,
+   "fold": 2025,
+   "secs": 12.4
+  }
+ ],
+ "mean": {
+  "mae_squad": 22.88020799643757,
+  "rmse_squad": 31.634953039763545,
+  "spearman_squad": 0.49897158199287295,
+  "mae_played": 25.972218394254156,
+  "rmse_played": 33.99503387868509,
+  "spearman_played": 0.342645653286975,
+  "logloss_p": 0.3946174915079901,
+  "brier_p": 0.12458708894383752,
+  "captured": 475.15625,
+  "oracle": 698.31125,
+  "captured_over_oracle": 0.6830877816585197,
+  "captured_minus_random": 160.23365903973604,
+  "selection_fallbacks": 9.0,
+  "hindsight_over_oracle": 0.7346330584259899,
+  "secs": 12.600000000000001
+ },
+ "extra": {
+  "2024": {
+   "group_contrib_corr_constrained": {
+    "form": {
+     "form": 1.0,
+     "opportunity": 0.675,
+     "appearance": 0.009,
+     "squad": 0.576,
+     "context": 0.187
+    },
+    "opportunity": {
+     "form": 0.675,
+     "opportunity": 1.0,
+     "appearance": 0.022,
+     "squad": 0.433,
+     "context": 0.125
+    },
+    "appearance": {
+     "form": 0.009,
+     "opportunity": 0.022,
+     "appearance": 1.0,
+     "squad": 0.031,
+     "context": -0.006
+    },
+    "squad": {
+     "form": 0.576,
+     "opportunity": 0.433,
+     "appearance": 0.031,
+     "squad": 1.0,
+     "context": 0.23
+    },
+    "context": {
+     "form": 0.187,
+     "opportunity": 0.125,
+     "appearance": -0.006,
+     "squad": 0.23,
+     "context": 1.0
+    }
+   },
+   "group_contrib_var_constrained": {
+    "form": 81.23,
+    "opportunity": 6.98,
+    "appearance": 2.02,
+    "squad": 0.74,
+    "context": 1.53
+   },
+   "group_contrib_corr_unconstrained_B0": {
+    "form": {
+     "form": 1.0,
+     "opportunity": 0.578,
+     "appearance": -0.01,
+     "squad": 0.344,
+     "context": 0.128
+    },
+    "opportunity": {
+     "form": 0.578,
+     "opportunity": 1.0,
+     "appearance": 0.035,
+     "squad": 0.327,
+     "context": 0.084
+    },
+    "appearance": {
+     "form": -0.01,
+     "opportunity": 0.035,
+     "appearance": 1.0,
+     "squad": 0.157,
+     "context": 0.003
+    },
+    "squad": {
+     "form": 0.344,
+     "opportunity": 0.327,
+     "appearance": 0.157,
+     "squad": 1.0,
+     "context": 0.231
+    },
+    "context": {
+     "form": 0.128,
+     "opportunity": 0.084,
+     "appearance": 0.003,
+     "squad": 0.231,
+     "context": 1.0
+    }
+   },
+   "group_contrib_var_unconstrained_B0": {
+    "form": 84.02,
+    "opportunity": 8.58,
+    "appearance": 2.01,
+    "squad": 0.8,
+    "context": 1.15
+   }
+  },
+  "2025": {
+   "group_contrib_corr_constrained": {
+    "form": {
+     "form": 1.0,
+     "opportunity": 0.746,
+     "appearance": 0.045,
+     "squad": 0.578,
+     "context": 0.167
+    },
+    "opportunity": {
+     "form": 0.746,
+     "opportunity": 1.0,
+     "appearance": 0.062,
+     "squad": 0.483,
+     "context": 0.116
+    },
+    "appearance": {
+     "form": 0.045,
+     "opportunity": 0.062,
+     "appearance": 1.0,
+     "squad": 0.1,
+     "context": -0.019
+    },
+    "squad": {
+     "form": 0.578,
+     "opportunity": 0.483,
+     "appearance": 0.1,
+     "squad": 1.0,
+     "context": 0.226
+    },
+    "context": {
+     "form": 0.167,
+     "opportunity": 0.116,
+     "appearance": -0.019,
+     "squad": 0.226,
+     "context": 1.0
+    }
+   },
+   "group_contrib_var_constrained": {
+    "form": 84.25,
+    "opportunity": 7.52,
+    "appearance": 1.11,
+    "squad": 0.61,
+    "context": 1.9
+   },
+   "group_contrib_corr_unconstrained_B0": {
+    "form": {
+     "form": 1.0,
+     "opportunity": 0.619,
+     "appearance": 0.125,
+     "squad": 0.448,
+     "context": 0.16
+    },
+    "opportunity": {
+     "form": 0.619,
+     "opportunity": 1.0,
+     "appearance": 0.138,
+     "squad": 0.359,
+     "context": 0.089
+    },
+    "appearance": {
+     "form": 0.125,
+     "opportunity": 0.138,
+     "appearance": 1.0,
+     "squad": 0.237,
+     "context": -0.027
+    },
+    "squad": {
+     "form": 0.448,
+     "opportunity": 0.359,
+     "appearance": 0.237,
+     "squad": 1.0,
+     "context": 0.194
+    },
+    "context": {
+     "form": 0.16,
+     "opportunity": 0.089,
+     "appearance": -0.027,
+     "squad": 0.194,
+     "context": 1.0
+    }
+   },
+   "group_contrib_var_unconstrained_B0": {
+    "form": 90.91,
+    "opportunity": 8.33,
+    "appearance": 1.32,
+    "squad": 0.58,
+    "context": 1.3
+   }
+  }
+ },
+ "secs_total": 25.2,
+ "vs_B0_paired_captured_diff_mean_ci95": [
+  -0.92,
+  -3.6488750000000003,
+  1.7342187499999973
+ ],
+ "verdict": "no significant difference vs B0"
+}

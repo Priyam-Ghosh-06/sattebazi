@@ -1,0 +1,15 @@
+[CB64_F25_s0] setup 13s: 7028 train / 424 valid fixtures, L=64, device=cuda:0
+[CB64_F25_s0] epoch 0: train 0.9677 valid 1.2661 headline 0.5595 * (112s)
+[CB64_F25_s0] epoch 1: train 0.8944 valid 1.2096 headline 0.6049 * (114s)
+[CB64_F25_s0] epoch 2: train 0.8776 valid 1.1476 headline 0.6238 * (114s)
+[CB64_F25_s0] epoch 3: train 0.8682 valid 1.1179 headline 0.6322 * (115s)
+[CB64_F25_s0] epoch 4: train 0.8610 valid 1.1070 headline 0.6356 * (115s)
+[CB64_F25_s0] epoch 5: train 0.8564 valid 1.1016 headline 0.6397 * (112s)
+[CB64_F25_s0] epoch 6: train 0.8520 valid 1.0979 headline 0.6414 * (115s)
+[CB64_F25_s0] epoch 7: train 0.8476 valid 1.0946 headline 0.6416 * (112s)
+[CB64_F25_s0] epoch 8: train 0.8433 valid 1.0923 headline 0.6427 * (110s)
+[CB64_F25_s0] epoch 9: train 0.8411 valid 1.0909 headline 0.6418 (112s)
+[CB64_F25_s0] epoch 10: train 0.8376 valid 1.0895 headline 0.6423 (118s)
+[CB64_F25_s0] epoch 11: train 0.8341 valid 1.0882 headline 0.6417 (120s)
+[CB64_F25_s0] epoch 12: train 0.8319 valid 1.0876 headline 0.6409 (118s)
+[CB64_F25_s0] done: best epoch 8 headline 0.6427

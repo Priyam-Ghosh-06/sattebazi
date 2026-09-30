@@ -1,0 +1,7 @@
+{
+ "snapshots_with_future_source": [],
+ "rows_snapshot_le_cutoff": true,
+ "time_travel_snapshot": "2021-12-01",
+ "time_travel_identical": true,
+ "pass": true
+}

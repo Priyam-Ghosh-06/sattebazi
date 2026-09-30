@@ -1,0 +1,9 @@
+{
+ "submit": "B0s",
+ "cb_choice": "CB128",
+ "arms_ok": {
+  "B0s": true,
+  "CB64": true,
+  "CB128": true
+ }
+}

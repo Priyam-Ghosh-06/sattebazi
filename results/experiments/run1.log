@@ -1,0 +1,54 @@
+fold 2024: train rows 319925 (played 125210), test matches 400 rows 12412
+fold 2025: train rows 434463 (played 164499), test matches 400 rows 12198
+[E5] E5_mu_L1: captured_over_oracle=0.6825 captured=475.2938 spearman_squad=0.4884 mae_squad=21.8141 mae_played=24.9308 spearman_played=0.3416 rmse_played=35.1267 hindsight_over_oracle=0.7300 logloss_p=0.3946 dCaptured=-0.78 [-4.39,+2.80] -> no significant difference vs B0
+[E5] E5_mu_huber10: captured_over_oracle=0.6863 captured=477.6838 spearman_squad=0.4929 mae_squad=21.8591 mae_played=24.9407 spearman_played=0.3437 rmse_played=34.9641 hindsight_over_oracle=0.7308 logloss_p=0.3946 dCaptured=+1.61 [-1.54,+4.89] -> no significant difference vs B0
+[E5] E5_mu_huber25: captured_over_oracle=0.6865 captured=477.6100 spearman_squad=0.4993 mae_squad=22.0994 mae_played=25.1548 spearman_played=0.3436 rmse_played=34.6230 hindsight_over_oracle=0.7333 logloss_p=0.3946 dCaptured=+1.53 [-1.29,+4.41] -> no significant difference vs B0
+[E5] E5_direct_squad_L2: captured_over_oracle=0.6815 captured=474.3000 spearman_squad=0.4894 mae_squad=23.1991 dCaptured=-1.78 [-5.80,+2.16] -> no significant difference vs B0
+[E5] E5_direct_squad_L1: captured_over_oracle=0.6747 captured=469.1762 spearman_squad=0.4862 mae_squad=21.2647 dCaptured=-6.90 [-11.20,-2.72] -> worse than B0
+[E6] E6_p_proxy_share10: captured_over_oracle=0.6287 captured=436.2713 spearman_squad=0.4010 mae_squad=23.4912 mae_played=25.8901 spearman_played=0.3466 rmse_played=33.9583 hindsight_over_oracle=0.7337 logloss_p=1.7992 dCaptured=-39.80 [-46.62,-32.64] -> worse than B0
+[E6] E6_p_logit_uncalibrated: captured_over_oracle=0.6830 captured=475.2962 spearman_squad=0.4934 mae_squad=23.1450 mae_played=25.8901 spearman_played=0.3466 rmse_played=33.9583 hindsight_over_oracle=0.7337 logloss_p=0.4144 dCaptured=-0.78 [-3.73,+2.07] -> no significant difference vs B0
+[E6] E6_p_ext_squad_train: captured_over_oracle=0.6755 captured=470.3525 spearman_squad=0.4770 mae_squad=23.0393 mae_played=25.8901 spearman_played=0.3466 rmse_played=33.9583 hindsight_over_oracle=0.7337 logloss_p=0.4344 dCaptured=-5.72 [-9.82,-2.09] -> worse than B0
+[E6] E6_p_no_appearance_feats: captured_over_oracle=0.6672 captured=463.7237 spearman_squad=0.4573 mae_squad=23.6259 mae_played=25.8901 spearman_played=0.3466 rmse_played=33.9583 hindsight_over_oracle=0.7337 logloss_p=0.4425 dCaptured=-12.35 [-16.51,-8.02] -> worse than B0
+[E7] E7_components_sum: captured_over_oracle=0.6827 captured=475.5013 spearman_squad=0.4999 mae_squad=22.7903 mae_played=25.8316 spearman_played=0.3446 rmse_played=33.9417 hindsight_over_oracle=0.7314 logloss_p=0.3946 dCaptured=-0.57 [-3.57,+2.27] -> no significant difference vs B0
+[E12] E12_interaction_constrained_groups: captured_over_oracle=0.6831 captured=475.1562 spearman_squad=0.4990 mae_squad=22.8802 mae_played=25.9722 spearman_played=0.3426 rmse_played=33.9950 hindsight_over_oracle=0.7346 logloss_p=0.3946 dCaptured=-0.92 [-3.65,+1.73] -> no significant difference vs B0
+[E12] E12_backfit_orthogonal_experts: captured_over_oracle=0.6819 captured=474.6187 spearman_squad=0.4969 mae_squad=22.8691 mae_played=25.9550 spearman_played=0.3368 rmse_played=34.0164 hindsight_over_oracle=0.7319 logloss_p=0.3946 dCaptured=-1.46 [-4.52,+1.69] -> no significant difference vs B0
+[E12] E12_role_gated_experts: captured_over_oracle=0.6799 captured=473.3900 spearman_squad=0.4980 mae_squad=22.8732 mae_played=25.9320 spearman_played=0.3417 rmse_played=33.9776 hindsight_over_oracle=0.7323 logloss_p=0.3946 dCaptured=-2.69 [-5.80,+0.58] -> no significant difference vs B0
+[E13] E13_recency_hl1y: captured_over_oracle=0.6825 captured=475.1475 spearman_squad=0.4978 mae_squad=22.8985 mae_played=25.9328 spearman_played=0.3449 rmse_played=33.9592 hindsight_over_oracle=0.7320 logloss_p=0.3962 dCaptured=-0.93 [-4.11,+2.30] -> no significant difference vs B0
+[E13] E13_recency_hl2y: captured_over_oracle=0.6834 captured=475.8713 spearman_squad=0.5004 mae_squad=22.8632 mae_played=25.9074 spearman_played=0.3444 rmse_played=33.9519 hindsight_over_oracle=0.7293 logloss_p=0.3952 dCaptured=-0.20 [-3.35,+2.87] -> no significant difference vs B0
+[E13] E13_recency_hl4y: captured_over_oracle=0.6827 captured=474.9375 spearman_squad=0.5007 mae_squad=22.8602 mae_played=25.9041 spearman_played=0.3462 rmse_played=33.9609 hindsight_over_oracle=0.7324 logloss_p=0.3948 dCaptured=-1.14 [-3.79,+1.59] -> no significant difference vs B0
+[E13] E13_monotone_form_share: captured_over_oracle=0.6809 captured=473.8350 spearman_squad=0.5002 mae_squad=22.8451 mae_played=25.8943 spearman_played=0.3464 rmse_played=33.9691 hindsight_over_oracle=0.7339 logloss_p=0.3946 dCaptured=-2.24 [-4.71,+0.15] -> no significant difference vs B0
+[E13] E13_selection_boundary_weights: captured_over_oracle=0.6820 captured=474.7100 spearman_squad=0.5000 mae_squad=22.8727 mae_played=25.9114 spearman_played=0.3456 rmse_played=33.9464 hindsight_over_oracle=0.7306 logloss_p=0.3950 dCaptured=-1.37 [-4.04,+1.21] -> no significant difference vs B0
+[LightGBM] [Fatal] Label 46 is not less than the number of label mappings (31)
+Traceback (most recent call last):
+  File "D:\traditional ML PS\src\backtest.py", line 460, in <module>
+    s = m.predict(te[C], num_iteration=m.best_iteration)
+    ^^^^^^
+  File "D:\traditional ML PS\src\backtest.py", line 452, in main
+    E["E14"] = {"E14_plus_opp_own_squad": lambda tr, te, y: b0(tr, te, cols=C + opp_c),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traditional ML PS\src\backtest.py", line 216, in run_variant
+    corr = np.corrcoef(np.vstack([f_tr[g] for g in groups]))
+               ^^^^^^^^^^^^^
+  File "D:\traditional ML PS\src\backtest.py", line 324, in listnet
+        return f
+            ^^^^
+    E["E8"] = {"E8_split_by_gender": pooled_split("gender"), "E8_split_by_team_type": pooled_split("team_type")}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traditional ML PS\src\backtest.py", line 145, in lgb_rank
+    return lgb.train(p, da, 2000, valid_sets=[dv], callbacks=[lgb.early_stopping(50, verbose=False)])
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PRIYAM\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\lightgbm\engine.py", line 296, in train
+    booster = Booster(params=params, train_set=train_set)
+  File "C:\Users\PRIYAM\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\lightgbm\basic.py", line 3762, in __init__
+    _safe_call(
+    ~~~~~~~~~~^
+        _LIB.LGBM_BoosterCreate(
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\PRIYAM\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\lightgbm\basic.py", line 297, in _safe_call
+    raise LightGBMError(_LIB.LGBM_GetLastError().decode("utf-8"))
+lightgbm.basic.LightGBMError: Label 46 is not less than the number of label mappings (31)
