@@ -10,7 +10,7 @@ import argparse, filecmp, json, os, queue, shutil, subprocess, sys, threading, t
 
 PY = sys.executable
 STAGES = ["pipeline", "stale", "b0s", "cb_checks", "cb_runs", "report", "adv_checks", "adv_runs", "adv_report", "adv_final",
-          "advm_runs", "advm_report", "advm_final", "submit", "bundle"]
+          "advm_runs", "advm_report", "advm_final", "predict", "bundle"]
 MARK = "results/stages"
 LOGS = "results/logs"
 TRAIN_START, TRAIN_END = "2019-01-01", "2025-12-31"
@@ -146,7 +146,7 @@ def adv_report():
 def adv_final():
     """Only if ADV won (pre-registered two-year rule): the FINAL two-seed ADV runs, in parallel on the two GPUs."""
     dec = json.load(open("results/experiments/E23_adv/decision.json"))
-    if dec["submit"] != "ADV":
+    if dec["rule_choice"] != "ADV":
         print("ADV did not beat B0s: no FINAL ADV runs", flush=True)
         return {}
     return gpu_queue([(f"ADV_FINAL_s{seed}", ["src/refined/pipeline.py", "train", "--split", "FINAL", "--seed", str(seed)]) for seed in (0, 1)],
@@ -165,10 +165,7 @@ def advm_report():
 
 
 def advm_final():
-    dec = json.load(open("results/experiments/E25_advm/decision.json"))
-    if dec["submit"] != "ADVM":
-        print("refined + graph did not beat B0s: no FINAL runs", flush=True)
-        return {}
+    """The final model, 3c: the FINAL two-seed runs (warm-started from the refined F25 runs), in parallel on the two GPUs."""
     return gpu_queue([(f"ADVM_FINAL_s{seed}", ["src/refined/pipeline.py", "train", "--graph-features", "--split", "FINAL", "--seed", str(seed)])
                       for seed in (0, 1)], status_file="advm_status.json")
 
@@ -187,31 +184,24 @@ def find_test_file(explicit):
     return None
 
 
-def submit(test_file):
-    dec = json.load(open("results/experiments/E22_final/decision.json"))
-    for d in ("results/experiments/E23_adv/decision.json", "results/experiments/E25_advm/decision.json"):  # later decisions override
-        if os.path.exists(d) and json.load(open(d))["submit"] != "B0s":
-            dec = {"submit": json.load(open(d))["submit"]}
+def predict(test_file):
+    """The final model, 3c (refined + graph): package the FINAL runs (trained in advm_final; resumed if unfinished), then the
+    mock set twice (determinism check) and the hidden set if it is attached."""
     final = f"model_artifacts/model_{TRAIN_END}.pkl"
-    if dec["submit"] in ("ADV", "ADVM"):
-        sh("src/train.py", "--approach", "refined", *(["--graph-features"] if dec["submit"] == "ADVM" else []), "--train-start", TRAIN_START, "--train-end", TRAIN_END, "--out", final)
-    elif dec["submit"] == "B0s":
-        shutil.copyfile(f"model_artifacts/model_b0s_{TRAIN_END}.pkl", final)
-    else:  # packages the FINAL two-seed runs (already trained in cb_runs; resumes them if unfinished)
-        sh("src/train.py", "--approach", "baseline", "--cb-arm", dec["submit"], "--train-start", TRAIN_START, "--train-end", TRAIN_END, "--out", final)
-    print("submitted model:", dec["submit"], flush=True)
+    sh("src/train.py", "--train-start", TRAIN_START, "--train-end", TRAIN_END, "--out", final)
+    print("final model: 3c (refined + graph)", flush=True)
     a, b = "results/mock_predictions.csv", "results/mock_predictions_rerun.csv"
     for o in (a, b):  # T5: two runs, byte-identical CSVs
         sh("src/evaluate.py", "--model-path", final, "--test-file", "data/mock/test_fixtures.json", "--output", o, "--registry-dir", os.path.join(RAW, "registry"))
     same = filecmp.cmp(a, b, shallow=False)
-    json.dump({"pass": same, "model": dec["submit"]}, open("data/audit/t5_determinism_audit.json", "w"), indent=1)
+    json.dump({"pass": same, "model": "3c"}, open("data/audit/t5_determinism_audit.json", "w"), indent=1)
     assert same, "T5: evaluate.py is not deterministic"
     tf = find_test_file(test_file)
     if tf:
         sh("src/evaluate.py", "--model-path", final, "--test-file", tf, "--output", "results/hidden_predictions.csv", "--registry-dir", os.path.join(RAW, "registry"))
     else:
-        print("no hidden test file found: attach it and rerun --stage submit (or pass --test-file)", flush=True)
-    return {"model": dec["submit"], "hidden_test_file": tf}
+        print("no hidden test file found: attach it and rerun --stage predict (or pass --test-file)", flush=True)
+    return {"model": "3c", "hidden_test_file": tf}
 
 
 def bundle():
@@ -244,7 +234,7 @@ def main():
     a = ap.parse_args()
     todo = STAGES if a.stage == "all" else [a.stage]
     for s in todo:
-        if done(s) and not a.force and s not in ("submit", "bundle"):
+        if done(s) and not a.force and s not in ("predict", "bundle"):
             print(f"== {s}: done earlier, skipped", flush=True); continue
         print(f"\n== {s}", flush=True)
         t0 = time.time()
@@ -258,7 +248,7 @@ def main():
         elif s in ("cb_checks", "adv_checks"):
             try:
                 globals()[s](); mark(s, t0)
-            except (RuntimeError, AssertionError) as e:  # the arm fails R1; B0s stays the submission
+            except (RuntimeError, AssertionError) as e:  # the arm fails R1 and is excluded
                 print(f"{s} FAILED ({e}): the arm is excluded, continuing", flush=True)
         elif s == "adv_runs":
             if not done("adv_checks"):
@@ -276,8 +266,8 @@ def main():
             print(f"{s}: ADVM runs missing, skipped", flush=True); continue
         elif s == "advm_final":
             mark(s, t0, runs=advm_final())
-        elif s == "submit":
-            mark(s, t0, **submit(a.test_file))
+        elif s == "predict":
+            mark(s, t0, **predict(a.test_file))
         else:
             globals()[s](); mark(s, t0)
 

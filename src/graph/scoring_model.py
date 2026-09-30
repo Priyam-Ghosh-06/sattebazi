@@ -1,4 +1,4 @@
-"""Graph approach, scoring model (3a = B0s, the submitted model): LightGBM p = P(plays | squad) (logistic,
+"""Graph approach, scoring model (3a = B0s, the trees): LightGBM p = P(plays | squad) (logistic,
 then the sum-to-XI shift τ) and μ = E[points | plays] (L2), on staleness-aware features; score = p·μ."""
 
 import lightgbm as lgb

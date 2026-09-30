@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-# End to end: data download -> shared preprocessing + gates -> graph-approach features + gates -> train -> hidden-set CSV
+# End to end: data download -> shared preprocessing + gates -> features + the batter x bowler graph + gates -> train -> hidden-set CSV
 # (-> optional LLM overviews). Every stage exits non-zero when its gate fails, and set -e stops the run there.
-#   bash run.sh                         CPU only; trains and submits the graph approach's base model (3a, the submitted model)
-#   GRAPH_FEATURES=1 bash run.sh        also builds the batter x bowler graph and trains 3b
-#   NEURAL=1 bash run.sh                also trains the baseline (CB) and refined (ADV) models (GPU; src/run_kaggle.py runs them on Kaggle)
-#   LLM=1 bash run.sh                   also writes open-weight LLM overviews of the predicted XIs
+#   bash run.sh                  CPU: rebuilds the data, trains the trees (3a) and predicts with the final model (3c), whose
+#                                weights are committed in model_artifacts/model_2025-12-31.pkl
+#   NEURAL=1 bash run.sh         GPU: also retrains the neural models, including the final model 3c, on everything up to the cutoff
+#   GRAPH_FEATURES=1 bash run.sh also trains 3b (the trees + the graph features)
+#   LLM=1 bash run.sh            also writes open-weight LLM overviews of the predicted XIs
 set -euo pipefail
 cd "$(dirname "$0")"
 PY=${PY:-python}
@@ -41,24 +42,25 @@ $PY src/shared/preprocessing/features.py --train-end "$TRAIN_END"
 $PY tests/test_causality.py
 $PY tests/test_select.py
 
-# 2. graph approach: staleness-aware features + gate G7 (and, optionally, the batter x bowler graph + gate G8)
+# 2. features for the trees + gate G7, and the batter x bowler graph + gate G8 (the final model 3c uses the graph)
 $PY src/graph/preprocessing.py --train-start "$TRAIN_START" --train-end "$TRAIN_END"
 $PY src/graph/preprocessing.py --g7
+for step in ingest snapshots features g8; do $PY src/graph/experiments.py $step; done
+
+# 3. the trees: 3a (LightGBM p·μ, a minute on a CPU) and, optionally, 3b (+ the graph features)
+$PY src/train.py --approach graph --train-start "$TRAIN_START" --train-end "$TRAIN_END"
 if [ "${GRAPH_FEATURES:-0}" = "1" ]; then
-  for step in ingest snapshots features g8; do $PY src/graph/experiments.py $step; done
-  $PY src/train.py --approach graph --graph-features --train-start "$TRAIN_START" --train-end "$TRAIN_END" \
-      --out "model_artifacts/graph_features_${TRAIN_END}.pkl"
+  $PY src/train.py --approach graph --graph-features --train-start "$TRAIN_START" --train-end "$TRAIN_END"
 fi
 
-# 3. the submitted model: graph approach 3a (LightGBM p·μ), trained on everything up to the cutoff
-$PY src/train.py --train-start "$TRAIN_START" --train-end "$TRAIN_END" --out "$MODEL"
-
-# 4. optional neural approaches (GPU recommended; each seed checkpoints every epoch and resumes)
+# 4. the neural models, GPU (each seed checkpoints every epoch and resumes); the last one is the final model, 3c
 if [ "${NEURAL:-0}" = "1" ]; then
   $PY tests/test_baseline.py && $PY tests/test_refined.py
-  $PY src/train.py --approach baseline --train-start "$TRAIN_START" --train-end "$TRAIN_END" --out "model_artifacts/baseline_cb128_${TRAIN_END}.pkl"
-  $PY src/train.py --approach refined --train-start "$TRAIN_START" --train-end "$TRAIN_END" --out "model_artifacts/refined_adv_${TRAIN_END}.pkl"
+  $PY src/train.py --approach baseline --train-start "$TRAIN_START" --train-end "$TRAIN_END"
+  $PY src/train.py --approach refined --train-start "$TRAIN_START" --train-end "$TRAIN_END"
+  $PY src/train.py --train-start "$TRAIN_START" --train-end "$TRAIN_END" --out "$MODEL"
 fi
+[ -f "$MODEL" ] || { echo "final model $MODEL missing: run with NEURAL=1 on a GPU"; exit 1; }
 
 # 5. hidden-set predictions (PS CSV), then the optional LLM overviews
 if [ -f "$TEST_FILE" ]; then

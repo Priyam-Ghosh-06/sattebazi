@@ -30,9 +30,9 @@ EXP = "results/experiments"
 ARMS = ("baseline", "refined", "graph", "graph+", "advm")
 C = {"baseline": "#d1495b", "refined": "#2e86ab", "graph": "#3b8b5a", "graph+": "#8fbf6f", "advm": "#7b5ea7", "random": "#b0b0b0"}
 LAB = {"baseline": "1 Baseline: neural net learns everything itself", "refined": "2 Refined: neural net + cricket structure",
-       "graph": "3a Trees (submitted)", "graph+": "3b Trees + batter-vs-bowler graph", "advm": "3c Refined net + batter-vs-bowler graph"}
-SHORT = {"baseline": "1 Baseline\n(net learns alone)", "refined": "2 Refined\n(net + structure)", "graph": "3a Trees\n(submitted)",
-         "graph+": "3b Trees\n+ graph", "advm": "3c Refined net\n+ graph", "random": "a random\nvalid team"}
+       "graph": "3a Trees", "graph+": "3b Trees + batter-vs-bowler graph", "advm": "3c Refined net + batter-vs-bowler graph (final model)"}
+SHORT = {"baseline": "1 Baseline\n(net learns alone)", "refined": "2 Refined\n(net + structure)", "graph": "3a Trees\n(hand-made features)",
+         "graph+": "3b Trees\n+ graph", "advm": "3c Refined net\n+ graph (FINAL)", "random": "a random\nvalid team"}
 YEARS = ("F24", "F25")
 YEAR = {"F24": "2024", "F25": "2025"}
 plt.rcParams.update({"figure.dpi": 130, "axes.spines.top": False, "axes.spines.right": False, "font.size": 9})
@@ -244,7 +244,7 @@ def fig_points():
     k = np.digitize(b.p, bins[1:-1])
     pr, ac = b.groupby(k).p.mean(), b.groupby(k).played.mean()
     ax[2].plot([0, 1], [0, 1], ":", color="#999", label="perfect")
-    ax[2].plot(pr, ac, "o-", color="#3b8b5a", label="3a (submitted)")
+    ax[2].plot(pr, ac, "o-", color="#3b8b5a", label="3a, the trees")
     ax[2].set_xlabel("predicted chance of playing"); ax[2].set_ylabel("how often they actually played")
     ax[2].set_title("3. The chance-of-playing model is honest"); ax[2].legend(fontsize=7)
     fig.suptitle("Why I predict  expected points = chance of playing × points if he plays  (2024–25 test matches)", fontsize=10)
@@ -288,7 +288,8 @@ def fig_example():
         ax.text(max(r.mu, r.score) + 2, i, f"p = {r.p:.2f}" + ("   ★ in the best possible XI" if r.best else ""), va="center", fontsize=7)
     ax.set_yticks(yy, [f"{n} ({r})" + ("  ✔" if o else "") for n, r, o in zip(X.name, X.role, X.ours)], fontsize=7.5)
     ours_pts, best_pts = X[X.ours].actual.sum(), X[X.best].actual.sum()
-    ax.set_title(f"A typical match (the median of the 40 mock matches): {fx[0]['team1']} vs {fx[0]['team2']}, {fx[0]['date']}\n"
+    ax.set_title(f"A typical match (the median of the 40 mock matches): {fx[0]['team1']} vs {fx[0]['team2']}, {fx[0]['date']}. "
+                 f"Model: 3a, the trees, trained to 30 Sep 2025\n"
                  f"✔ = our 11 (coloured by team).  Our XI scored "
                  f"{ours_pts:.0f} points, the best possible XI {best_pts:.0f} → {100 * ours_pts / best_pts:.0f}%.  "
                  f"{len(ours & best)} of our 11 were in it.", fontsize=8.5, loc="left")
@@ -324,7 +325,7 @@ def fig_staleness(t):
         f = t[t.split == split]
         for a in ARMS:
             v = f[f.arm == a].groupby("delta").pct.mean()
-            ax[j].plot(v.index, v.values, "o-", color=C[a], label=LAB[a], lw=2.2 if a == "graph" else 1.4)
+            ax[j].plot(v.index, v.values, "o-", color=C[a], label=LAB[a], lw=2.4 if a == "advm" else 1.4)
         ax[j].set_xticks(DELTAS); ax[j].set_xlabel("Δ = days between the last match in our data and the match to predict")
         ax[j].set_title(f"{YEAR[split]} test season")
     ax[0].set_ylabel("% of the best possible XI"); ax[1].legend(fontsize=7)

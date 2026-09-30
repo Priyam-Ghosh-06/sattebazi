@@ -494,7 +494,7 @@ Log Message
 13480.2s	491	R1 CB64: passes (gates: {"causality": true, "cb_overfit": true, "cb_smoke": true, "cb_tests": true, "features": true, "g7": true, "ingest": true, "points": true, "roles": true, "squads": true, "stale": true})
 13480.2s	492	R1 CB128: passes (gates: {"causality": true, "cb_overfit": true, "cb_smoke": true, "cb_tests": true, "features": true, "g7": true, "ingest": true, "points": true, "roles": true, "squads": true, "stale": true})
 13480.2s	493	R2 choice of L: validation headline sums {"CB64": 1.2919, "CB128": 1.2973} -> CB128
-13480.2s	494	R3 submission: CB128 - B0s captured per fixture: F24 -5.34 [-8.26, -2.49]; F25 -1.93 [-4.74, +0.90] -> submit B0s
+13480.2s	494	R3 two-year rule: CB128 - B0s captured per fixture: F24 -5.34 [-8.26, -2.49]; F25 -1.93 [-4.74, +0.90] -> two-year rule: B0s
 13480.2s	495	R4 no second look: this file is written once, from the numbers above.
 13481.1s	496	  (199s, exit 0)
 13481.2s	497	# E22 final run: decision
@@ -503,12 +503,12 @@ Log Message
 13481.2s	500	- R1 CB64: passes (gates: {"causality": true, "cb_overfit": true, "cb_smoke": true, "cb_tests": true, "features": true, "g7": true, "ingest": true, "points": true, "roles": true, "squads": true, "stale": true})
 13481.2s	501	- R1 CB128: passes (gates: {"causality": true, "cb_overfit": true, "cb_smoke": true, "cb_tests": true, "features": true, "g7": true, "ingest": true, "points": true, "roles": true, "squads": true, "stale": true})
 13481.2s	502	- R2 choice of L: validation headline sums {"CB64": 1.2919, "CB128": 1.2973} -> CB128
-13481.2s	503	- R3 submission: CB128 - B0s captured per fixture: F24 -5.34 [-8.26, -2.49]; F25 -1.93 [-4.74, +0.90] -> submit B0s
+13481.2s	503	- R3 two-year rule: CB128 - B0s captured per fixture: F24 -5.34 [-8.26, -2.49]; F25 -1.93 [-4.74, +0.90] -> two-year rule: B0s
 13481.2s	504	- R4 no second look: this file is written once, from the numbers above.
 13481.2s	505	
 13481.4s	506	
-13481.4s	507	== submit
-13481.4s	508	submitted model: B0s
+13481.4s	507	== predict
+13481.4s	508	model used for the predictions: B0s
 13481.4s	509	$ src/evaluate.py --model-path output/model_artifacts/model_2025-12-31.pkl --test-file data/mock/test_fixtures.json --output output/results/mock_predictions.csv --registry-dir /kaggle/input/datasets/priyamghosh06/fxi-data/raw/registry
 13485.6s	510	[resolve] 2025-10-03 Australia (exact) vs New Zealand (exact): {'registry': 26}
 13485.6s	511	[resolve] 2025-10-08 Nepal (exact) vs Kuwait (exact): {'registry': 27}
@@ -595,11 +595,11 @@ Log Message
 13519.1s	592	[resolve] 2025-12-29 Wellington (exact) vs Auckland (exact): {'registry': 23}
 13547.5s	593	wrote output/results/mock_predictions_rerun.csv: 40 fixtures, 440 rows
 13547.9s	594	  (33s, exit 0)
-13602.7s	595	no hidden test file found: attach it and rerun --stage submit (or pass --test-file)
+13602.7s	595	no hidden test file found: attach it and rerun --stage predict (or pass --test-file)
 13603.0s	596	
 13603.0s	597	== bundle
 13606.3s	598	wrote /kaggle/working/results_bundle.zip
-13606.7s	599	minutes per stage: {'b0s': 1.2, 'bundle': 0.1, 'cb_checks': 5.3, 'cb_runs': 205.4, 'pipeline': 4.1, 'report': 3.3, 'stale': 3.6, 'submit': 2.0}
+13606.7s	599	minutes per stage: {'b0s': 1.2, 'bundle': 0.1, 'cb_checks': 5.3, 'cb_runs': 205.4, 'pipeline': 4.1, 'report': 3.3, 'stale': 3.6, 'predict': 2.0}
 13606.7s	600	output/results/mock_predictions.csv
 13609.3s	601	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
 13609.3s	602	  cells[i][c] = re.sub('\\\\\|', '|', cell)

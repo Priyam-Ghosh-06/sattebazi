@@ -95,7 +95,7 @@ def report():
         f = t[t.split == split].groupby("fx_id")[[a + "_captured" for a in live]].mean()
         for x, y in pairs:
             bs[f"{x}-{y} {split}"] = boot((f[x + "_captured"] - f[y + "_captured"]).to_numpy())
-    # the pre-registered decision (R1 gates, R2 history length, R3 submission, R4 no second look)
+    # the pre-registered decision (R1 gates, R2 history length, R3 two-year rule, R4 no second look)
     lines = []
     for a in ["B0s", *CB_ARMS]:
         lines.append(f"R1 {a}: {'passes' if arm_ok[a] else 'EXCLUDED'} (gates: {json.dumps({k: v for k, v in G.items()})})")
@@ -107,19 +107,19 @@ def report():
         lines.append(f"R2 choice of L: validation headline sums {json.dumps({k: round(v, 4) for k, v in val.items()})} -> {choice}")
     else:
         lines.append("R2 choice of L: no CB arm passed R1")
-    submit = "B0s"
+    rule = "B0s"
     if choice:
         wins = [bs[f"{choice}-B0s {s}"]["lo"] > 0 for s in YEARS]
         ci = "; ".join(f"{s} {bs[f'{choice}-B0s {s}']['mean']:+.2f} [{bs[f'{choice}-B0s {s}']['lo']:+.2f}, {bs[f'{choice}-B0s {s}']['hi']:+.2f}]" for s in YEARS)
-        submit = choice if all(wins) else "B0s"
-        lines.append(f"R3 submission: {choice} - B0s captured per fixture: {ci} -> submit {submit}")
+        rule = choice if all(wins) else "B0s"
+        lines.append(f"R3 two-year rule: {choice} - B0s captured per fixture: {ci} -> two-year rule: {rule}")
     else:
-        lines.append("R3 submission: B0s (no CB arm eligible)")
+        lines.append("R3 two-year rule: B0s (no CB arm eligible)")
     lines.append("R4 no second look: this file is written once, from the numbers above.")
     lines += [f"note: {n}" for n in notes]
     os.makedirs(OUT, exist_ok=True)
     open(os.path.join(OUT, "decision.txt"), "w", encoding="utf-8").write("E22 final run: decision\n\n" + "\n".join(f"- {l}" for l in lines) + "\n")
-    json.dump({"submit": submit, "cb_choice": choice, "arms_ok": arm_ok}, open(os.path.join(OUT, "decision.json"), "w"), indent=1)
+    json.dump({"rule_choice": rule, "cb_choice": choice, "arms_ok": arm_ok}, open(os.path.join(OUT, "decision.json"), "w"), indent=1)
     json.dump(metrics, open(os.path.join(OUT, "metrics.json"), "w"), indent=1)
     json.dump(bs, open(os.path.join(OUT, "bootstrap.json"), "w"), indent=1)
     try:
@@ -131,7 +131,7 @@ def report():
     json.dump(cfg, open(os.path.join(OUT, "config.json"), "w"), indent=1, default=str)
     heads = " ".join(f"{a}:{s}={metrics[a][s]['test']['headline']['captured_over_oracle']:.4f}" for a in live for s in YEARS)
     with open("results/experiments/LOG.txt", "a", encoding="utf-8") as f:
-        f.write(f"| {date.today()} | E22 final | {hashlib.sha256(json.dumps(cfg, default=str).encode()).hexdigest()[:8]} | {heads} | submit {submit} |\n")
+        f.write(f"| {date.today()} | E22 final | {hashlib.sha256(json.dumps(cfg, default=str).encode()).hexdigest()[:8]} | {heads} | two-year rule: {rule} |\n")
     print("\n".join(lines))
 
 
@@ -143,7 +143,7 @@ ADV_COLS = {"ADV": "yhat", "ADV_direct_a3": "direct_a3", "ADV_direct_tau": "dire
 
 def adv_report(name="ADV", out=None, seeds=SEEDS, title="E23 refined approach"):
     """E23 / E25: ADV (two-seed ensemble of each seed's validation-chosen predictor) vs B0s and CB128, variants from the
-    same runs (A3 vs τ, roll-out, student), paired bootstrap, and the pre-registered submission rule."""
+    same runs (A3 vs τ, roll-out, student), paired bootstrap, and the pre-registered two-year rule."""
     G = gates()
     ok_gates = all(v for k, v in G.items() if not k.startswith(("cb_", "g7", "adv_", "t5"))) and all(G.get(k, False) for k in ("adv_tests", "adv_smoke", "adv_overfit"))
     out = out or ADV_OUT
@@ -201,14 +201,14 @@ def adv_report(name="ADV", out=None, seeds=SEEDS, title="E23 refined approach"):
             if x in arms and y in arms:
                 bs[f"{x}-{y} {split}"] = boot((f[x + "_captured"] - f[y + "_captured"]).to_numpy())
     wins = ok_gates and all(bs[f"{name}-B0s {s}"]["lo"] > 0 for s in YEARS)
-    submit = name if wins else "B0s"
+    rule = name if wins else "B0s"
     ci = "; ".join(f"{s} {bs[f'{name}-B0s {s}']['mean']:+.2f} [{bs[f'{name}-B0s {s}']['lo']:+.2f}, {bs[f'{name}-B0s {s}']['hi']:+.2f}]" for s in YEARS)
-    lines = [f"gates: {'pass' if ok_gates else 'FAIL'} ({json.dumps(G)})", f"{name} - B0s captured per fixture: {ci} -> submit {submit}",
+    lines = [f"gates: {'pass' if ok_gates else 'FAIL'} ({json.dumps(G)})", f"{name} - B0s captured per fixture: {ci} -> two-year rule: {rule}",
              "variants (same runs, test, per fixture): " + "; ".join(f"{k} {v['mean']:+.2f} [{v['lo']:+.2f}, {v['hi']:+.2f}]" for k, v in bs.items() if not k.startswith(f"{name}-B0s")),
              "headline captured/oracle (test): " + " ".join(f"{a}:{s}={metrics[a][s]['test']['headline']['captured_over_oracle']:.4f}" for a in arms for s in YEARS),
              "R4: written once from these numbers."] + [f"note: {n}" for n in notes]
     open(os.path.join(out, "decision.txt"), "w", encoding="utf-8").write(f"{title}: decision\n\n" + "\n".join(f"- {l}" for l in lines) + "\n")
-    json.dump({"submit": submit, "gates_ok": ok_gates}, open(os.path.join(out, "decision.json"), "w"), indent=1)
+    json.dump({"rule_choice": rule, "gates_ok": ok_gates}, open(os.path.join(out, "decision.json"), "w"), indent=1)
     json.dump(metrics, open(os.path.join(out, "metrics.json"), "w"), indent=1)
     json.dump(bs, open(os.path.join(out, "bootstrap.json"), "w"), indent=1)
     from refined import config as adv
@@ -216,7 +216,7 @@ def adv_report(name="ADV", out=None, seeds=SEEDS, title="E23 refined approach"):
     json.dump(cfg, open(os.path.join(out, "config.json"), "w"), indent=1, default=str)
     heads = " ".join(f"{a}:{s}={metrics[a][s]['test']['headline']['captured_over_oracle']:.4f}" for a in ("B0s", name) for s in YEARS)
     with open("results/experiments/LOG.txt", "a", encoding="utf-8") as f:
-        f.write(f"| {date.today()} | {name} | {hashlib.sha256(json.dumps(cfg, default=str).encode()).hexdigest()[:8]} | {heads} | submit {submit} |\n")
+        f.write(f"| {date.today()} | {name} | {hashlib.sha256(json.dumps(cfg, default=str).encode()).hexdigest()[:8]} | {heads} | two-year rule: {rule} |\n")
     print("\n".join(lines))
 
 

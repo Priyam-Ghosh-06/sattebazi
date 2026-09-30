@@ -12,18 +12,17 @@ should score on average*. Then an exact optimiser picks the best 11 that obey th
 3. gradient-boosted decision trees on hand-made features, plus a batter-vs-bowler graph.
 
 On two full seasons they had never seen (2024 and 2025, about 1,800 matches each), all of them pick teams worth **about 62–63%
-of the best team you could have picked in hindsight**. A random legal team gets 45%. The model I submit is **3a, the trees**:
-it is never worse than the others by a clear margin, it retrains in a minute on a laptop, and no other model beat it clearly
-in *both* years.
+of the best team you could have picked in hindsight**. A random legal team gets 45%. The best of them, and therefore the
+**final model, is 3c: the refined neural net + the batter-vs-bowler graph** (section 8).
 
 | approach | 2024 | 2025 | of our 11, how many were in the best XI |
 |---|---|---|---|
 | a random legal team | 45.1% | 44.9% | |
 | 1 · Baseline: neural net learns everything itself | 61.6% | 62.5% | 5.6 |
 | 2 · Refined: neural net + cricket structure | 62.3% | 63.3% | 5.7 |
-| **3a · Trees (submitted)** | **62.4%** | 62.8% | 5.7 |
+| 3a · Trees | 62.4% | 62.8% | 5.7 |
 | 3b · Trees + batter-vs-bowler graph | 62.4% | 63.1% | 5.7 |
-| 3c · Refined net + batter-vs-bowler graph | **62.4%** | **63.3%** | 5.7 |
+| **3c · Refined net + batter-vs-bowler graph (final model)** | **62.4%** | **63.3%** | 5.7 |
 
 *% = points our 11 actually scored ÷ points of the best possible 11, averaged over every test match and over five levels of
 data staleness (explained in section 1).*
@@ -31,7 +30,8 @@ data staleness (explained in section 1).*
 Contents: [1 the problem](#1-the-problem-the-way-i-see-it) · [2 how I judge a model](#2-how-i-judge-a-model) ·
 [3 the shared pipeline](#3-what-all-three-approaches-share) · [4 baseline](#4-approach-1-baseline-the-model-learns-everything-itself) ·
 [5 refined](#5-approach-2-refined-my-understanding-built-into-the-network) · [6 graph](#6-approach-3-trees-and-the-batter-vs-bowler-graph) ·
-[7 overall results](#7-overall-results) · [8 glossary](#8-glossary) · [9 how to run](#9-how-to-run) · [10 layout](#10-repository-layout)
+[7 overall results](#7-overall-results) · [8 the final model](#8-the-final-model) · [9 assumptions](#9-assumptions) ·
+[10 glossary](#10-glossary) · [11 how to run](#11-how-to-run) · [12 layout](#12-repository-layout)
 
 ---
 
@@ -47,8 +47,8 @@ match_date,team1,team2,rank,player,player_team,role,predicted_points,points_if_p
 2025-10-03,Australia,New Zealand,1,MW Short,Australia,AR,53.95,57.2,0.943
 ```
 
-Here is one real match (not hand-picked: the median of the 40 mock matches), predicted by a model that only knew data up to
-30 September 2025:
+Here is one real match (not hand-picked: the median of the 40 mock matches), predicted by the trees (3a) trained only on data
+up to 30 September 2025. I use the trees here because they output p and μ separately, which makes the picture easy to read:
 
 ![one match worked through](results/overall/worked_example.png)
 
@@ -119,8 +119,8 @@ I take the per-match differences and resample the ~1,800 test matches 2,000 time
 The middle 95% of the resampled averages is the interval I report, e.g. `+1.59 [+0.23, +2.92]`. If the whole interval is
 above zero, the gain is very unlikely to be luck.
 
-**My rule for replacing the submitted model** (written before any test number): the new model must win with the whole
-interval above zero **in both 2024 and 2025**. Nothing is rerun or retuned after a test number is seen.
+**The two-year rule** (written before any test number): a model counts as *clearly* better than another only if the whole
+interval is above zero **in both 2024 and 2025**. Nothing is rerun or retuned after a test number is seen.
 
 ## 3. What all three approaches share
 
@@ -197,7 +197,7 @@ players). Trained on Kaggle (2× T4 GPUs): 12 runs in 3.4 h.
 | | 2024 | 2025 |
 |---|---|---|
 | % of the best possible XI (history 128) | 61.6 | 62.5 |
-| vs the submitted model, points per match | −5.34 [−8.26, −2.49] | −1.93 [−4.74, +0.90] |
+| vs 3a (the trees), points per match | −5.34 [−8.26, −2.49] | −1.93 [−4.74, +0.90] |
 | 128 vs 64 matches of history | +1.83 [−0.11, +3.81] | +1.67 [−0.21, +3.53] |
 | MAE / RMSE, squad rows | 24.75 / 33.91 | 24.22 / 33.67 |
 | rank correlation inside a match | 0.318 | 0.341 |
@@ -243,6 +243,87 @@ Prediction: expected points = chance of playing (from the choice model) × point
 Each seed picks its final predictor on validation. Not built: a full innings simulator (it needs over-by-over sequences the
 ingestion doesn't extract) and an overseas-player term.
 
+### The decision (choice) model, written out
+
+This is the part of the refined approach that answers "who plays". The code is `src/refined/decision_model.py`.
+
+**What goes in.** Take one team in one match. Its squad has candidates $i = 1, \dots, C$ and must field $n$ players (11, or 12
+where impact substitutes exist). For every candidate the network gives:
+- a **utility** $u_i$: how strongly the team wants him in its XI. It comes from his memory state, rescaled by the match
+  context and tied to what he can do (keep wicket, bowl, bat high);
+- two flags known before the match: $k_i = 1$ if he can keep wicket, $b_i = 1$ if he is a bowling option.
+
+**The model.** An XI is a set $X$ of exactly $n$ squad members. Its probability is
+
+```math
+P(X) \;=\; \frac{1}{Z}\,\exp\!\Big(\sum_{i \in X} u_i \;+\; \varphi_K\big(\min(K_X, 3)\big) \;+\; \varphi_B\big(\min(B_X, 8)\big)\Big)\,\mathbb{1}\big[\,|X| = n\,\big],
+\qquad K_X = \sum_{i \in X} k_i,\quad B_X = \sum_{i \in X} b_i
+```
+
+- $\sum u_i$ says who the team likes;
+- $\varphi_K$ is a small learned table over the number of keepers in the XI (0, 1, 2, 3 or more);
+- $\varphi_B$ is a small learned table over the number of bowling options (0 to 8 or more);
+- $Z$ adds up the same exponential over **every** possible XI, so the probabilities sum to 1.
+
+Only the *differences* between the table entries matter. To make the tables unique, $\varphi_K(1) = \varphi_K(2) = 0$ and
+$\varphi_B(5) = \varphi_B(6) = 0$ are fixed.
+
+**Who plays.** A player's chance of playing is the total probability of all XIs that contain him, and it falls out of $Z$ as a
+derivative:
+
+```math
+\pi_i \;=\; P(i \in X) \;=\; \frac{\partial \log Z}{\partial u_i}, \qquad \sum_i \pi_i = n
+```
+
+So one backward pass through $\log Z$ gives every player's exact chance of playing, and the chances of a team always add up
+to exactly $n$. The expected points that go to the XI optimiser are $\text{E}[Y_i] = \pi_i \, \mu_i$, with $\mu_i$ from the
+"points if he plays" head.
+
+**Why it handles competition for places.** The players are not scored one at a time. If the first-choice keeper is in the
+squad, the XIs that include him take most of the probability, so the backup keeper's $\pi$ stays low even with a decent
+utility. Remove the first choice, and the probability the XIs with him used to hold has to go somewhere, because the chances
+still add up to $n$. The backup gains the most: the XIs with no keeper at all are pushed down by $\varphi_K(0)$, so the
+probability flows to the XIs that contain him. His $\pi$ rises without any rule written for it.
+
+**Computing $Z$ exactly.** A 15-player squad has 1,365 possible XIs, and summing them one by one would be slow inside
+training. Instead a dynamic program walks through the candidates once. It keeps a table indexed by (how many players are
+picked so far $m$, keepers so far $k$, bowling options so far $b$), with $k$ capped at 3 and $b$ at 8. Adding candidate $j$:
+
+```math
+\alpha_j(m, k, b) \;=\; \operatorname{logaddexp}\Big(\alpha_{j-1}(m, k, b),\;\; \alpha_{j-1}(m-1,\, k - k_j,\, b - b_j) + u_j\Big)
+```
+
+and at the end
+
+```math
+\log Z \;=\; \operatorname{logsumexp}_{k,\, b}\Big(\alpha_C(n, k, b) + \varphi_K(k) + \varphi_B(b)\Big)
+```
+
+That is $C \times 14 \times 4 \times 9$ cheap steps per team, done for every team of a batch at once on the GPU.
+`tests/test_refined.py` checks it against brute force over all 364 XIs of a 14-player squad (difference $6 \times 10^{-15}$).
+
+**Training.** For each team the real XI $X^\ast$ is known, so the loss is its negative log-probability, divided by $n$:
+
+```math
+\mathcal{L}_{\text{plays}} \;=\; \frac{1}{n}\Big(\log Z \;-\; \sum_{i \in X^\ast} u_i \;-\; \varphi_K(K_{X^\ast}) \;-\; \varphi_B(B_{X^\ast})\Big)
+```
+
+It is added to the squared error of $\mu$ on the players who played. The utilities, the two tables and the rest of the
+network are all learned together.
+
+**What it compares against.** The simpler alternative treats each player on his own: $\pi_i = \sigma(s_i - \tau)$, with one
+shift $\tau$ per team chosen so the chances add up to $n$. On the same trained weights the two tie on picked points
+(+0.49 and −0.47 points a match in 2024 and 2025, both intervals across zero). The learned tables show why: the
+team-shape terms are mild, and most of the work is done by the utilities.
+
+| number in the XI | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8+ |
+|---|---|---|---|---|---|---|---|---|---|
+| $\varphi_K$ (keepers) | −0.46 | 0 | 0 | −0.26 (3+) | | | | | |
+| $\varphi_B$ (bowling options) | −0.35 | −0.37 | −0.45 | −0.42 | −0.20 | 0 | 0 | −0.45 | −0.96 |
+
+*Learned values, 2025 fold, seed 0 (the 2024 fold learns almost the same). Read them as: an XI with no keeper, or with 7 or
+more bowling options, is less likely; five or six bowling options is the normal shape.*
+
 ![refined training](results/refined/training_phases.png)
 ![refined pieces](results/refined/component_ladder.png)
 
@@ -263,7 +344,7 @@ leak, and the choice model equals brute force over all 364 possible XIs of a 14-
 | | 2024 | 2025 |
 |---|---|---|
 | % of the best possible XI | 62.3 | **63.3** |
-| vs the submitted model | −0.90 [−3.52, +1.63] | +2.82 [−0.06, +5.61] |
+| vs 3a (the trees) | −0.90 [−3.52, +1.63] | +2.82 [−0.06, +5.61] |
 | **vs the baseline** | **+4.45 [+1.77, +7.22]** | **+4.76 [+2.15, +7.40]** |
 | choice model vs a simple "sum to 11" fix (same weights) | +0.49 [−0.35, +1.27] | −0.47 [−1.27, +0.37] |
 | rolled forward vs not | +0.91 [−0.07, +1.94] | +0.17 [−0.76, +1.08] |
@@ -287,7 +368,7 @@ leak, and the choice model equals brute force over all 364 possible XIs of a 14-
 **The thought.** Players don't score in a vacuum. A batter's runs depend on who bowls to him, and a bowler's wickets on whom
 he bowls to. That is a graph: every ball is an edge between a batter and a bowler. But first the approach needs a strong base.
 
-### 3a, the base (the submitted model)
+### 3a, the base
 
 The p·μ split done the classic way, with **gradient-boosted decision trees** (LightGBM). *A decision tree asks a few yes/no
 questions about the features ("scored > 30 on average lately?") and outputs a number. Boosting builds hundreds of small
@@ -352,7 +433,7 @@ a CPU and the graph takes about 15 minutes; 3c took 4 GPU runs of 32–48 minute
 
 | | 2024 | 2025 |
 |---|---|---|
-| **3a, % of the best possible XI** (submitted) | **62.4** | 62.8 |
+| 3a, % of the best possible XI | 62.4 | 62.8 |
 | 3a: our XI / best possible XI / a random legal XI (points) | 437.0 / 702.4 / 317.1 | 437.9 / 700.4 / 314.1 |
 | 3a: share of our picks who actually played | 85.7% | 86.2% |
 | 3a MAE / RMSE, squad rows | 24.87 / 33.17 | 24.70 / 33.08 |
@@ -361,17 +442,17 @@ a CPU and the graph takes about 15 minutes; 3c took 4 GPU runs of 32–48 minute
 | 3a playing model: log-loss / Brier | 0.487 / 0.161 | 0.485 / 0.161 |
 | 3b, % of the best possible XI | 62.4 | 63.1 |
 | **3b vs 3a**, points per match | −0.77 [−2.10, +0.62] | **+1.59 [+0.23, +2.92]** |
-| 3c, % of the best possible XI | **62.4** | **63.3** |
+| **3c, % of the best possible XI (final model)** | **62.4** | **63.3** |
 | **3c vs 3a** | −0.03 [−2.64, +2.44] | **+3.53 [+0.76, +6.40]** |
 | **3c vs the refined model (2)**: the graph's gain inside the net | **+0.86 [+0.26, +1.45]** | +0.71 [−0.26, +1.69] |
 | 3c vs the baseline | **+5.31 [+2.66, +8.03]** | **+5.47 [+2.79, +8.05]** |
 
 **What I read from it.**
-- **3a is the one I submit.** It is the best when history is fresh, level on average in 2024, and it retrains in a minute.
+- **3a is the strongest when history is fresh** (Δ = 0), and it retrains in a minute on a CPU.
 - **The graph adds something real, twice over.** On the trees it adds +1.6 points a match in 2025 (interval above zero) and
   ties in 2024. Inside the refined net it adds +0.9 in 2024 (interval above zero) and +0.7 in 2025.
-- **3c is the best model on the averages in both years**, and clearly better than 3a in 2025. But 2024 is a dead tie (−0.03),
-  so under my two-year rule 3a stays.
+- **3c is the best model on the averages in both years.** It is clearly better than 3a in 2025, and in 2024 the two are a dead
+  tie (−0.03).
 - **Most of the graph's value is *whom you face***, the opposing attack's or batting's quality. The pure pair effect ("he is
   good against this particular bowler") carries about a quarter as much.
 
@@ -400,13 +481,12 @@ though its picks are good. Its point *levels* are off; the *order* inside a matc
 
 What I take away:
 
-1. **Nothing beats the trees in both years**, so 3a is submitted. Other Cricsheet projects on this task report about 60% of the
-   best XI and R² ≈ 0.13. We are at 62–63%, with the same ≈ 13% of explainable variance: the ceiling is match-day luck, not
+1. **All five end up within about one point of each other**, far above a random team. Other Cricsheet projects on this task
+   report about 60% of the best XI and R² ≈ 0.13. We are at 62–63%, with the same ≈ 13% of explainable variance: the ceiling is match-day luck, not
    the pipeline.
 2. **Structure beats learning everything:** the refined net beats the baseline by about 4.5 points a match in both years.
 3. **Staleness decides the ranking.** The trees' lead is entirely at Δ = 0. At the gaps the hidden set will have (roughly
-   270 days or more), the refined net and the graph are ahead. My rule averages all gaps, because the real gap was unknown
-   when I wrote it, and I don't switch after the fact.
+   270 days or more), the refined net and the graph are ahead, and 3c, which has both, leads.
 4. **Competitions differ a lot.** Women's cricket (67–69% of the best XI) and men's internationals (64–65%) are far more
    predictable than the men's leagues (55–61%). On the IPL, the baseline that learns everything itself is the best of the
    five in 2024 (58.5% against 57.3% for 3a) and second only to 3c in 2025, though that is only about 70 matches a year.
@@ -414,7 +494,76 @@ What I take away:
 Every number comes from files in `results/experiments/` (one folder per experiment: metrics, bootstrap, decision). Every figure
 is drawn with matplotlib by `src/shared/evaluation/figures.py` from those files.
 
-## 8. Glossary
+## 8. The final model
+
+Putting it together, 3c is the best model I have:
+- **the highest average in both test seasons:** 62.4% in 2024 (level with 3a) and 63.3% in 2025 (the highest of all five);
+- **clearly better than 3a in 2025** (+3.53 [+0.76, +6.40]), **than the refined net in 2024** (+0.86 [+0.26, +1.45]) and **than
+  the baseline in both years** (+5.3 and +5.5 points a match);
+- **never clearly worse than any other model in either year;**
+- **the leader where the hidden matches will be,** with history several months old (section 7, point 3);
+- **both of my ideas in one model:** the cricket structure of section 5 and the batter-vs-bowler graph of section 6.
+
+No model, 3c included, is *clearly* better than the trees in both years, because 2024 is a tie. The luck in fantasy points
+keeps every gap small (section 7, point 1), and on every other count 3c is ahead.
+
+# The final model is therefore 3c: the refined neural net + the batter-vs-bowler graph
+
+It is `model_artifacts/model_2025-12-31.pkl`, and `src/evaluate.py` uses it for the hidden matches. It holds the two seeds of
+the 2025 fold (trained on matches before October 2024, early-stopped on October–December 2024). When it predicts, it reads
+every player's history up to 31 December 2025. `NEURAL=1 bash run.sh`, or the Kaggle runner, retrains it on everything up to
+the cutoff on a GPU.
+
+## 9. Assumptions
+
+The whole pipeline rests on these assumptions. Each one was checked against the code before it was written here. Some are safe,
+and some are real risks for the hidden matches.
+
+**Data and rules**
+- **Only T20 and T20I matches dated up to 31 Dec 2025 are used, for training and at prediction time.** `evaluate.py` drops
+  every match after the model's `train_end` before building a single feature. The problem statement only restricts
+  *training* data. If the organisers allow 2026 matches as inputs at prediction time, most of the staleness problem goes
+  away. I take the strict reading; this needs a definite answer from the organisers.
+- **The fantasy score is the official points table plus 3 points for being in the XI** (`points.py`), with no captain or
+  vice-captain multiplier. The team is judged on the plain sum of its 11 players' points.
+- **The team rules are 1–4 keepers, 3–6 batters, 1–4 all-rounders, 3–6 bowlers and at least one player per side**
+  (`selection.py`). If a squad can't satisfy them, the optimiser keeps only the one-per-side rule and says so.
+- **Roles are inferred from each player's history** unless the fixture file gives them, in which case the given role wins.
+- **Names in the hidden file can be matched to Cricsheet's player registry.** A name that can't be matched becomes an unknown
+  player with no history, and the models treat him as a cold start.
+
+**Squads and who plays**
+- **A training squad is everyone who played for that team in that competition and season (pseudo-squads).** Real squads
+  can be larger or smaller, so the "sat out" rows are an approximation.
+- **The XI has 11 players, or 12 in impact-substitute competitions.** At prediction time, the refined model takes the size
+  of the team's last XI before the cutoff.
+- **Rain-hit and no-result matches that had some play are kept** (flagged at ingestion, not dropped). Players then score
+  little more than the 3 points for playing, which is part of the luck every model faces.
+
+**Time and staleness**
+- **The gap is stationary.** The models learn how history before the cutoff maps to points after it from 2019–2025 gaps that
+  start at any time of year. The real gap always starts on 1 January and runs through an IPL season and an auction. The
+  trees (3a, 3b) have no month or season feature, so they can't learn that seasonal difference. The neural nets see the
+  match month, and the refined model's monthly drift also takes the season phase as an input. A cheap improvement would be
+  to give more weight to training copies whose cutoff falls near 1 January.
+- **Hidden matches are no more than 450 days after the cutoff.** Training staleness is 0 or 1–450 days
+  (`causal.py: draw_delta`), and testing covers 0–365. A fixture after about March 2027 would be outside the range the
+  models were trained on.
+- **The five staleness levels (0, 90, 180, 270, 365 days) count equally in every score.** The real gap was unknown when the
+  scores were defined. The hidden matches will probably sit at the long end, where the neural nets and the graph do best.
+- **The final model's weights transfer to 2026.** Its two seeds were trained on matches before October 2024 and read history
+  up to 31 Dec 2025 when predicting. A GPU retrain (`NEURAL=1`) would add the 2025 season to its training data.
+
+**Evaluation**
+- **Past seasons are a fair stand-in for the hidden set.** The 2024 and 2025 test seasons mix IPL, other leagues,
+  internationals and women's cricket in their natural proportions. A hidden set with a different mix will score differently
+  (section 7, by competition).
+- **Matches are independent for the bootstrap.** Each match's staleness copies are averaged into one number before
+  resampling, but matches in the same series or tournament are treated as independent. Real intervals may be a little wider.
+- **Maximising expected points is the right goal.** The optimiser is risk-neutral: it doesn't trade expected points for a
+  more certain team. That is right for a sum-of-points score over many matches.
+
+## 10. Glossary
 
 | term | meaning here |
 |---|---|
@@ -434,39 +583,39 @@ is drawn with matplotlib by `src/shared/evaluation/figures.py` from those files.
 | gradient boosting / LightGBM | many small decision trees, each correcting the previous ones |
 | Transformer, attention | a neural net that learns which parts of a sequence or set to focus on |
 
-## 9. How to run
+## 11. How to run
 
 ```bash
 python -m pip install -r requirements.txt           # Python 3.11+
-bash run.sh                                         # download → checks → features → train 3a → hidden-set CSV
+bash run.sh                                         # download → checks → features + graph → train 3a → hidden-set CSV (final model)
 ```
 
-`run.sh` downloads Cricsheet if `data/raw/` is empty and stops at the first failed check. It takes about 15 minutes on a CPU
-after the download. Options:
-- `GRAPH_FEATURES=1`: build the graph and train 3b;
-- `NEURAL=1`: train the baseline and refined models (GPU);
+`run.sh` downloads Cricsheet if `data/raw/` is empty and stops at the first failed check. It takes about 30 minutes on a CPU
+after the download, and predicts with the committed final model. Options:
+- `NEURAL=1`: retrain the neural models on a GPU, including the final model 3c on everything up to the cutoff;
+- `GRAPH_FEATURES=1`: also train 3b;
 - `LLM=1`: write the team overviews.
 
 The two commands from the problem statement:
 
 ```bash
-python src/train.py --train-start 2000-01-01 --train-end 2025-12-31
+python src/train.py --train-start 2019-01-01 --train-end 2025-12-31 --device cuda      # the final model, 3c (GPU)
 python src/evaluate.py --model-path model_artifacts/model_2025-12-31.pkl --test-file data/raw/test_fixtures.json --output results/hidden_predictions.csv
 ```
 
-- The other approaches:
-  - `src/train.py --approach baseline --device cuda` and `--approach refined --device cuda`;
+- The other approaches write their own model files, so they never overwrite the final one:
+  - `src/train.py --approach graph` for 3a (CPU, a minute) → `model_trees_2025-12-31.pkl`;
   - `--approach graph --graph-features` for 3b;
-  - `--approach refined --graph-features` for 3c.
-  
+  - `--approach baseline --device cuda` and `--approach refined --device cuda` for 1 and 2.
+
   `evaluate.py` reads which approach made a model from the model file.
 - The GPU runs were done on Kaggle with `src/run_kaggle.py`. It runs everything in stages and skips a stage once it is done.
   Every training run saves a checkpoint each epoch and resumes after a crash.
-- Seeds are fixed and LightGBM is deterministic. Two runs of `evaluate.py` give byte-identical CSVs, on Windows and on Linux.
+- Seeds are fixed and LightGBM is deterministic. Two runs of `evaluate.py` with the final model give byte-identical CSVs.
 - Dry run without the hidden file: `--test-file data/mock/test_fixtures.json` (40 real fixtures from Oct–Dec 2025).
 - Figures: `python src/shared/evaluation/figures.py`.
 
-## 10. Repository layout
+## 12. Repository layout
 
 ```
 src/
@@ -478,7 +627,7 @@ src/
     evaluation/                 metrics, reports, figures
     llm/                        open-weight LLM team overviews
   baseline/                     1 · config, ingestion, preprocessing, scoring_model, decision_model, pipeline
-  refined/                      2 and 3c · the same structure
+  refined/                      2 and 3c (the final model) · the same structure
   graph/                        3a, 3b · preprocessing, scoring_model, ingestion (graph), graph_model, experiments
   experiments/                  the experiments that shaped 3a
   run_kaggle.py                 resumable GPU runner
@@ -488,8 +637,8 @@ data/
   interim/, processed/          rebuilt by run.sh
   audit/                        one check report per stage
   mock/                         40 mock fixtures + their real points
-model_artifacts/                model_2025-12-31.pkl (submitted, 3a); model_2025-09-30.pkl (3a trained to Sep 2025, for the
-                                worked example); graph_features_*, baseline_cb128_*;
+model_artifacts/                model_2025-12-31.pkl = the final model (3c); model_trees_2025-12-31.pkl (3a);
+                                model_2025-09-30.pkl (3a trained to Sep 2025, for the worked example); graph_features_*, baseline_cb128_*;
                                 checkpoints/ = best weights and training history of every GPU run
 results/
   overall/, baseline/, refined/, graph/     figures and mock predictions

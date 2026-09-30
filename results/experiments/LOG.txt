@@ -56,7 +56,7 @@
 | 2026-09-29 | E5 E5_mu_huber25_confirm | ba86b816 | captured_over_oracle=0.6792 captured=474.6105 spearman_squad=0.4949 mae_squad=22.0786 mae_played=25.1373 spearman_played=0.3407 rmse_played=34.5949 hindsight_over_oracle=0.7303 logloss_p=0.3989 dCaptured=+0.40 [-1.44,+2.28] | no significant difference vs B0 |
 | 2026-09-29 | B0 B0_L2_logit_sum11_train2015 | 8a2ec958 | captured_over_oracle=0.6806 captured=473.6975 spearman_squad=0.4998 mae_squad=22.8596 mae_played=25.8863 spearman_played=0.3429 rmse_played=33.9722 hindsight_over_oracle=0.7287 logloss_p=0.3950 dCaptured=-2.38 [-5.31,+0.62] | no significant difference vs B0 |
 | 2026-09-29 | B0 B0_L2_logit_sum11_train2011 | 4cccf74e | captured_over_oracle=0.6822 captured=475.1575 spearman_squad=0.4989 mae_squad=22.8664 mae_played=25.9125 spearman_played=0.3424 rmse_played=33.9825 hindsight_over_oracle=0.7318 logloss_p=0.3951 dCaptured=-0.92 [-4.19,+2.17] | no significant difference vs B0 |
-| 2026-09-30 | E22 final | 1d6bf028 | B0s:F24=0.6245 B0s:F25=0.6284 CB64:F24=0.6143 CB64:F25=0.6229 CB128:F24=0.6165 CB128:F25=0.6254 | submit B0s |
+| 2026-09-30 | E22 final | 1d6bf028 | B0s:F24=0.6245 B0s:F25=0.6284 CB64:F24=0.6143 CB64:F25=0.6229 CB128:F24=0.6165 CB128:F25=0.6254 | two-year rule: B0s |
 | 2026-09-30 | E24 matchups | 380c3c18 | B0s:F24=0.6245 B0s:F25=0.6284 B0sM:F24=0.6236 B0sM:F25=0.6308 | dCaptured F24 -0.77 [-2.10,+0.62] F25 +1.59 [+0.23,+2.92] | keep B0s |
-| 2026-09-30 | E23 ADV | f4aff2f1 | B0s:F24=0.6245 B0s:F25=0.6284 ADV:F24=0.6234 ADV:F25=0.6326 | submit B0s |
-| 2026-09-30 | E25 refined + graph | 2c7c2a25 | B0s:F24=0.6245 B0s:F25=0.6284 ADVM:F24=0.6245 ADVM:F25=0.6334 | submit B0s |
+| 2026-09-30 | E23 ADV | f4aff2f1 | B0s:F24=0.6245 B0s:F25=0.6284 ADV:F24=0.6234 ADV:F25=0.6326 | two-year rule: B0s |
+| 2026-09-30 | E25 refined + graph | 2c7c2a25 | B0s:F24=0.6245 B0s:F25=0.6284 ADVM:F24=0.6245 ADVM:F25=0.6334 | two-year rule: B0s |

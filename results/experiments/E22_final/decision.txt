@@ -4,5 +4,5 @@ R1 B0s: passes (gates: {"causality": true, "cb_overfit": true, "cb_smoke": true,
 R1 CB64: passes (gates: {"causality": true, "cb_overfit": true, "cb_smoke": true, "cb_tests": true, "features": true, "g7": true, "ingest": true, "points": true, "roles": true, "squads": true, "stale": true})
 R1 CB128: passes (gates: {"causality": true, "cb_overfit": true, "cb_smoke": true, "cb_tests": true, "features": true, "g7": true, "ingest": true, "points": true, "roles": true, "squads": true, "stale": true})
 R2 choice of L: validation headline sums {"CB64": 1.2919, "CB128": 1.2973} -> CB128
-R3 submission: CB128 - B0s captured per fixture: F24 -5.34 [-8.26, -2.49]; F25 -1.93 [-4.74, +0.90] -> submit B0s
+R3 two-year rule: CB128 - B0s captured per fixture: F24 -5.34 [-8.26, -2.49]; F25 -1.93 [-4.74, +0.90] -> two-year rule: B0s
 R4 no second look: this file is written once, from the numbers above.

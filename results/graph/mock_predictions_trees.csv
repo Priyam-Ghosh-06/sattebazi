@@ -1,0 +1,441 @@
+match_date,team1,team2,rank,player,player_team,role,predicted_points,points_if_plays,p_plays
+2025-10-03,Australia,New Zealand,1,MW Short,Australia,AR,53.95,57.2,0.943
+2025-10-03,Australia,New Zealand,2,BJ Dwarshuis,Australia,BOWL,53.82,58.15,0.926
+2025-10-03,Australia,New Zealand,3,SA Abbott,Australia,BOWL,49.21,56.39,0.873
+2025-10-03,Australia,New Zealand,4,A Zampa,Australia,BOWL,46.23,53.0,0.872
+2025-10-03,Australia,New Zealand,5,TL Seifert,New Zealand,WK,44.2,45.86,0.964
+2025-10-03,Australia,New Zealand,6,XC Bartlett,Australia,BOWL,42.73,49.73,0.859
+2025-10-03,Australia,New Zealand,7,JR Hazlewood,Australia,BOWL,42.57,53.56,0.795
+2025-10-03,Australia,New Zealand,8,MJ Henry,New Zealand,BOWL,42.52,52.36,0.812
+2025-10-03,Australia,New Zealand,9,TM Head,Australia,BAT,42.26,43.85,0.964
+2025-10-03,Australia,New Zealand,10,MR Marsh,Australia,BAT,39.64,40.54,0.978
+2025-10-03,Australia,New Zealand,11,DP Conway,New Zealand,BAT,39.26,41.86,0.938
+2025-10-08,Nepal,Kuwait,1,Yasin Patel,Kuwait,BOWL,49.62,52.87,0.938
+2025-10-08,Nepal,Kuwait,2,MNM Aslam,Kuwait,AR,49.11,50.87,0.965
+2025-10-08,Nepal,Kuwait,3,S Lamichhane,Nepal,BOWL,46.8,56.85,0.823
+2025-10-08,Nepal,Kuwait,4,Meet Bhavsar,Kuwait,WK,44.54,45.34,0.982
+2025-10-08,Nepal,Kuwait,5,DS Airee,Nepal,AR,42.31,48.32,0.876
+2025-10-08,Nepal,Kuwait,6,K Bhurtel,Nepal,AR,42.08,46.62,0.903
+2025-10-08,Nepal,Kuwait,7,Shiraz Khan,Kuwait,BOWL,40.25,45.53,0.884
+2025-10-08,Nepal,Kuwait,8,Karan KC,Nepal,BOWL,37.71,44.22,0.853
+2025-10-08,Nepal,Kuwait,9,CV Anto,Kuwait,BAT,31.63,32.16,0.984
+2025-10-08,Nepal,Kuwait,10,R Sandaruwan,Kuwait,BAT,29.53,30.64,0.964
+2025-10-08,Nepal,Kuwait,11,Bilal Tahir,Kuwait,BAT,20.45,21.23,0.963
+2025-10-10,Austria,Turkey,1,Suzan Turan,Turkey,AR,52.7,57.77,0.912
+2025-10-10,Austria,Turkey,2,AM Zepeda,Austria,WK,52.37,53.22,0.984
+2025-10-10,Austria,Turkey,3,Ezgi Nur Kilic,Turkey,AR,50.96,61.58,0.828
+2025-10-10,Austria,Turkey,4,D Tekyildirim,Turkey,BOWL,50.65,56.99,0.889
+2025-10-10,Austria,Turkey,5,P Sabu,Austria,AR,47.02,47.96,0.98
+2025-10-10,Austria,Turkey,6,S Yildirim,Turkey,AR,44.0,48.12,0.914
+2025-10-10,Austria,Turkey,7,S Ozkunduz,Turkey,BOWL,36.22,45.67,0.793
+2025-10-10,Austria,Turkey,8,Ashi Chopla,Austria,BOWL,26.84,29.97,0.895
+2025-10-10,Austria,Turkey,9,M Bayram,Turkey,BAT,24.82,27.05,0.917
+2025-10-10,Austria,Turkey,10,G Keles,Turkey,BAT,18.07,20.29,0.891
+2025-10-10,Austria,Turkey,11,R Cenik,Turkey,BAT,14.77,16.82,0.878
+2025-10-10,Romania,Bulgaria,1,T Dissanayake,Bulgaria,AR,74.64,76.09,0.981
+2025-10-10,Romania,Bulgaria,2,RL Blake,Romania,WK,66.64,67.66,0.985
+2025-10-10,Romania,Bulgaria,3,D Ruynekova,Bulgaria,AR,53.57,54.35,0.986
+2025-10-10,Romania,Bulgaria,4,M Kearvell,Romania,AR,52.71,53.73,0.981
+2025-10-10,Romania,Bulgaria,5,S Sarandeva,Bulgaria,AR,49.15,50.11,0.981
+2025-10-10,Romania,Bulgaria,6,J Chirila,Romania,BOWL,35.43,37.93,0.934
+2025-10-10,Romania,Bulgaria,7,C Cirlig,Romania,BOWL,34.6,36.0,0.961
+2025-10-10,Romania,Bulgaria,8,I Muntean,Romania,BOWL,34.27,36.6,0.936
+2025-10-10,Romania,Bulgaria,9,S Galabova,Bulgaria,BAT,26.94,27.34,0.985
+2025-10-10,Romania,Bulgaria,10,N Toleva,Bulgaria,BAT,19.83,22.71,0.873
+2025-10-10,Romania,Bulgaria,11,N Kuruppu,Romania,BAT,19.16,19.78,0.968
+2025-10-12,Austria,Norway,1,P Sabu,Austria,AR,69.37,70.55,0.983
+2025-10-12,Austria,Norway,2,R Immadi,Norway,AR,62.63,66.83,0.937
+2025-10-12,Austria,Norway,3,AM Zepeda,Austria,WK,61.52,62.41,0.986
+2025-10-12,Austria,Norway,4,Mirab Razwan,Norway,BOWL,60.13,63.09,0.953
+2025-10-12,Austria,Norway,5,Alina Aslam,Norway,AR,58.11,61.84,0.94
+2025-10-12,Austria,Norway,6,MPM Pathirannehelage,Austria,AR,53.51,55.22,0.969
+2025-10-12,Austria,Norway,7,P Agrawal,Norway,BOWL,44.43,51.63,0.861
+2025-10-12,Austria,Norway,8,Prachi Kumari,Norway,BOWL,39.06,44.44,0.879
+2025-10-12,Austria,Norway,9,Ayesha Hasan,Norway,BAT,26.64,28.18,0.945
+2025-10-12,Austria,Norway,10,AS Gorad,Norway,BAT,19.82,21.91,0.905
+2025-10-12,Austria,Norway,11,Mirab Sajjad,Norway,BAT,13.01,15.35,0.847
+2025-10-17,Japan,Oman,1,S Ravichandran,Japan,AR,56.58,63.54,0.89
+2025-10-17,Japan,Oman,2,Aamir Kaleem,Oman,AR,47.62,53.01,0.898
+2025-10-17,Japan,Oman,3,B Ito-Davis,Japan,AR,47.19,51.87,0.91
+2025-10-17,Japan,Oman,4,Nadeem Khan,Oman,BOWL,43.73,48.43,0.903
+2025-10-17,Japan,Oman,5,J Ramanandi,Oman,AR,40.57,44.45,0.913
+2025-10-17,Japan,Oman,6,K Kadowaki-Fleming,Japan,BAT,40.05,42.44,0.944
+2025-10-17,Japan,Oman,7,Shakeel Ahmed,Oman,BOWL,39.99,44.81,0.893
+2025-10-17,Japan,Oman,8,C Hinze,Japan,BOWL,39.34,45.75,0.86
+2025-10-17,Japan,Oman,9,Jatinder Singh,Oman,BAT,34.69,35.96,0.965
+2025-10-17,Japan,Oman,10,V Shukla,Oman,WK,27.42,28.65,0.957
+2025-10-17,Japan,Oman,11,Abhishek Anand,Japan,BAT,26.08,29.14,0.895
+2025-10-18,England,New Zealand,1,SM Curran,England,AR,58.26,58.26,1.0
+2025-10-18,England,New Zealand,2,JC Buttler,England,WK,53.43,53.43,1.0
+2025-10-18,England,New Zealand,3,LA Dawson,England,BOWL,50.93,50.93,1.0
+2025-10-18,England,New Zealand,4,L Wood,England,BOWL,50.62,50.62,1.0
+2025-10-18,England,New Zealand,5,PD Salt,England,BAT,50.34,50.34,1.0
+2025-10-18,England,New Zealand,6,AU Rashid,England,BOWL,49.71,49.72,1.0
+2025-10-18,England,New Zealand,7,JDS Neesham,New Zealand,AR,48.02,51.05,0.941
+2025-10-18,England,New Zealand,8,TL Seifert,New Zealand,WK,47.53,48.03,0.99
+2025-10-18,England,New Zealand,9,MJ Henry,New Zealand,BOWL,45.62,49.44,0.923
+2025-10-18,England,New Zealand,10,T Banton,England,BAT,41.74,41.74,1.0
+2025-10-18,England,New Zealand,11,R Ravindra,New Zealand,BAT,40.1,41.77,0.96
+2025-10-20,Canada,Uganda,1,J Mbabazi,Uganda,AR,69.3,70.85,0.978
+2025-10-20,Canada,Uganda,2,Amarpal Kaur,Canada,AR,54.54,57.72,0.945
+2025-10-20,Canada,Uganda,3,C Aweko,Uganda,BOWL,51.03,55.43,0.921
+2025-10-20,Canada,Uganda,4,I Nakisuuyi,Uganda,AR,49.34,51.06,0.966
+2025-10-20,Canada,Uganda,5,S Akiteng,Uganda,BOWL,42.46,52.82,0.804
+2025-10-20,Canada,Uganda,6,I Goordial-John,Canada,AR,41.17,45.42,0.906
+2025-10-20,Canada,Uganda,7,S Nampiina,Uganda,BAT,39.41,41.27,0.955
+2025-10-20,Canada,Uganda,8,V Mahajan,Canada,WK,34.55,40.65,0.85
+2025-10-20,Canada,Uganda,9,K Amuge,Uganda,BOWL,32.66,45.4,0.719
+2025-10-20,Canada,Uganda,10,R Musamali,Uganda,BAT,32.34,33.35,0.97
+2025-10-20,Canada,Uganda,11,A Perera,Canada,BAT,29.43,32.1,0.917
+2025-11-05,Canada,Tanzania,1,PZ Kamunya,Tanzania,BOWL,65.46,68.15,0.961
+2025-11-05,Canada,Tanzania,2,NJ Pius,Tanzania,AR,60.09,61.09,0.984
+2025-11-05,Canada,Tanzania,3,NN Saidi,Tanzania,BOWL,56.02,57.61,0.972
+2025-11-05,Canada,Tanzania,4,Amarpal Kaur,Canada,AR,53.46,54.47,0.981
+2025-11-05,Canada,Tanzania,5,MH Ushanga,Tanzania,BOWL,46.41,48.75,0.952
+2025-11-05,Canada,Tanzania,6,I Goordial-John,Canada,AR,46.03,47.3,0.973
+2025-11-05,Canada,Tanzania,7,FO Kibasu,Tanzania,BAT,45.32,46.91,0.966
+2025-11-05,Canada,Tanzania,8,V Mahajan,Canada,AR,43.25,44.37,0.975
+2025-11-05,Canada,Tanzania,9,S Mtae,Tanzania,BAT,32.95,33.78,0.975
+2025-11-05,Canada,Tanzania,10,A Perera,Canada,BAT,21.26,21.86,0.973
+2025-11-05,Canada,Tanzania,11,SH Mohamedi,Tanzania,WK,14.21,14.77,0.962
+2025-11-06,Myanmar,Indonesia,1,DJ Hawoe,Indonesia,BOWL,55.26,72.85,0.759
+2025-11-06,Myanmar,Indonesia,2,F Banunaek,Indonesia,BOWL,52.03,68.25,0.762
+2025-11-06,Myanmar,Indonesia,3,Anjar Tadarus,Indonesia,AR,51.24,61.6,0.832
+2025-11-06,Myanmar,Indonesia,4,IK Gamantika,Indonesia,AR,39.02,45.33,0.861
+2025-11-06,Myanmar,Indonesia,5,GA Priandana,Indonesia,BAT,37.93,61.42,0.618
+2025-11-06,Myanmar,Indonesia,6,RM Koda,Indonesia,BOWL,34.22,54.31,0.63
+2025-11-06,Myanmar,Indonesia,7,Pyae Phyo Wai,Myanmar,AR,32.01,35.08,0.913
+2025-11-06,Myanmar,Indonesia,8,DK Shetty,Indonesia,BOWL,31.57,53.8,0.587
+2025-11-06,Myanmar,Indonesia,9,PR Surve,Indonesia,BAT,30.17,49.88,0.605
+2025-11-06,Myanmar,Indonesia,10,KD Kesuma,Indonesia,BAT,29.24,37.73,0.775
+2025-11-06,Myanmar,Indonesia,11,Thuya Aung,Myanmar,WK,29.18,32.21,0.906
+2025-11-08,India,Australia,1,JJ Bumrah,India,BOWL,47.37,56.2,0.843
+2025-11-08,India,Australia,2,BJ Dwarshuis,Australia,BOWL,46.08,56.72,0.812
+2025-11-08,India,Australia,3,CV Varun,India,BOWL,44.94,52.7,0.853
+2025-11-08,India,Australia,4,Abhishek Sharma,India,BAT,44.72,47.47,0.942
+2025-11-08,India,Australia,5,GJ Maxwell,Australia,AR,44.2,49.7,0.889
+2025-11-08,India,Australia,6,AR Patel,India,AR,43.66,49.15,0.888
+2025-11-08,India,Australia,7,A Zampa,Australia,BOWL,43.3,52.33,0.827
+2025-11-08,India,Australia,8,SA Yadav,India,BAT,43.06,45.55,0.945
+2025-11-08,India,Australia,9,Shubman Gill,India,BAT,42.39,45.62,0.929
+2025-11-08,India,Australia,10,MW Short,Australia,AR,40.74,47.55,0.857
+2025-11-08,India,Australia,11,JP Inglis,Australia,WK,36.03,41.5,0.868
+2025-11-14,Thailand,Namibia,1,W Mwatile,Namibia,AR,56.62,58.21,0.973
+2025-11-14,Thailand,Namibia,2,T Putthawong,Thailand,BOWL,55.8,58.14,0.96
+2025-11-14,Thailand,Namibia,3,C Sutthiruang,Thailand,AR,55.66,57.1,0.975
+2025-11-14,Thailand,Namibia,4,N Boochatham,Thailand,AR,51.79,54.6,0.948
+2025-11-14,Thailand,Namibia,5,SA Wittmann,Namibia,AR,51.79,53.25,0.972
+2025-11-14,Thailand,Namibia,6,O Kamchomphu,Thailand,BOWL,41.65,45.37,0.918
+2025-11-14,Thailand,Namibia,7,S Laomi,Thailand,BOWL,38.31,40.83,0.938
+2025-11-14,Thailand,Namibia,8,Yasmeen Khan,Namibia,BAT,37.6,38.6,0.974
+2025-11-14,Thailand,Namibia,9,N Koncharoenkai,Thailand,WK,35.82,36.28,0.987
+2025-11-14,Thailand,Namibia,10,N Chantam,Thailand,BAT,24.29,24.88,0.976
+2025-11-14,Thailand,Namibia,11,N Chaiwai,Thailand,BAT,22.76,23.41,0.972
+2025-11-18,Bahrain,Indonesia,1,Rizwan Butt,Bahrain,BOWL,63.17,66.04,0.957
+2025-11-18,Bahrain,Indonesia,2,Ali Dawood,Bahrain,BOWL,59.55,63.78,0.934
+2025-11-18,Bahrain,Indonesia,3,Asif Ali,Bahrain,AR,52.23,53.95,0.968
+2025-11-18,Bahrain,Indonesia,4,Abdul Majid Abbasi,Bahrain,BOWL,49.52,53.8,0.92
+2025-11-18,Bahrain,Indonesia,5,Imran Anwar,Bahrain,AR,45.07,52.84,0.853
+2025-11-18,Bahrain,Indonesia,6,GA Priandana,Indonesia,BAT,41.5,44.92,0.924
+2025-11-18,Bahrain,Indonesia,7,P Kurup,Bahrain,WK,40.41,41.45,0.975
+2025-11-18,Bahrain,Indonesia,8,DJ Hawoe,Indonesia,BOWL,38.58,45.68,0.845
+2025-11-18,Bahrain,Indonesia,9,Fiaz Ahmed,Bahrain,BAT,38.23,39.58,0.966
+2025-11-18,Bahrain,Indonesia,10,Imran Khan,Bahrain,BOWL,36.26,45.76,0.792
+2025-11-18,Bahrain,Indonesia,11,Naveena Shetty,Bahrain,BAT,21.54,34.84,0.618
+2025-11-20,Namibia,Tanzania,1,W Mwatile,Namibia,AR,56.23,59.49,0.945
+2025-11-20,Namibia,Tanzania,2,PZ Kamunya,Tanzania,BOWL,53.55,58.13,0.921
+2025-11-20,Namibia,Tanzania,3,SA Wittmann,Namibia,AR,51.96,54.74,0.949
+2025-11-20,Namibia,Tanzania,4,NN Saidi,Tanzania,AR,49.26,53.1,0.928
+2025-11-20,Namibia,Tanzania,5,KA Green,Namibia,AR,47.25,49.43,0.956
+2025-11-20,Namibia,Tanzania,6,EU Kejarukua,Namibia,BOWL,38.22,43.48,0.879
+2025-11-20,Namibia,Tanzania,7,FO Kibasu,Tanzania,BAT,36.4,40.01,0.91
+2025-11-20,Namibia,Tanzania,8,V Hamunyela,Namibia,BOWL,33.4,40.08,0.833
+2025-11-20,Namibia,Tanzania,9,Yasmeen Khan,Namibia,BAT,32.37,34.55,0.937
+2025-11-20,Namibia,Tanzania,10,SN Shihepo,Namibia,BAT,28.26,31.37,0.901
+2025-11-20,Namibia,Tanzania,11,M Gorases,Namibia,WK,14.24,15.01,0.949
+2025-11-21,Sydney Thunder,Brisbane Heat,1,AC Jayangani,Sydney Thunder,AR,68.67,71.25,0.964
+2025-11-21,Sydney Thunder,Brisbane Heat,2,JL Jonassen,Brisbane Heat,AR,66.08,70.08,0.943
+2025-11-21,Sydney Thunder,Brisbane Heat,3,S Ismail,Sydney Thunder,BOWL,50.18,54.36,0.923
+2025-11-21,Sydney Thunder,Brisbane Heat,4,CR Knott,Brisbane Heat,AR,45.87,49.0,0.936
+2025-11-21,Sydney Thunder,Brisbane Heat,5,SL Bates,Sydney Thunder,BOWL,43.24,46.91,0.922
+2025-11-21,Sydney Thunder,Brisbane Heat,6,GM Harris,Brisbane Heat,AR,42.06,48.53,0.867
+2025-11-21,Sydney Thunder,Brisbane Heat,7,G Voll,Sydney Thunder,BAT,41.56,43.2,0.962
+2025-11-21,Sydney Thunder,Brisbane Heat,8,NM Hancock,Brisbane Heat,BOWL,35.71,42.0,0.85
+2025-11-21,Sydney Thunder,Brisbane Heat,9,HC Knight,Sydney Thunder,BAT,35.36,36.61,0.966
+2025-11-21,Sydney Thunder,Brisbane Heat,10,P Litchfield,Sydney Thunder,BAT,35.32,36.62,0.964
+2025-11-21,Sydney Thunder,Brisbane Heat,11,G Redmayne,Brisbane Heat,WK,28.33,34.62,0.818
+2025-11-21,Papua New Guinea,Thailand,1,C Sutthiruang,Thailand,AR,58.37,60.38,0.967
+2025-11-21,Papua New Guinea,Thailand,2,T Putthawong,Thailand,BOWL,54.34,57.61,0.943
+2025-11-21,Papua New Guinea,Thailand,3,HJ Thomas,Papua New Guinea,BOWL,47.78,49.74,0.961
+2025-11-21,Papua New Guinea,Thailand,4,P Siaka,Papua New Guinea,AR,47.43,49.15,0.965
+2025-11-21,Papua New Guinea,Thailand,5,N Boochatham,Thailand,AR,45.95,48.64,0.945
+2025-11-21,Papua New Guinea,Thailand,6,O Kamchomphu,Thailand,BOWL,45.89,49.46,0.928
+2025-11-21,Papua New Guinea,Thailand,7,S Laomi,Thailand,BOWL,43.4,46.37,0.936
+2025-11-21,Papua New Guinea,Thailand,8,N Koncharoenkai,Thailand,WK,40.15,40.73,0.986
+2025-11-21,Papua New Guinea,Thailand,9,N Chantam,Thailand,BAT,31.66,32.42,0.977
+2025-11-21,Papua New Guinea,Thailand,10,K Oala,Papua New Guinea,BAT,25.85,27.82,0.929
+2025-11-21,Papua New Guinea,Thailand,11,N Vare,Papua New Guinea,BAT,22.06,23.05,0.957
+2025-11-22,Lumbini Lions,Karnali Yaks,1,JJ Smit,Lumbini Lions,AR,46.74,51.85,0.901
+2025-11-22,Lumbini Lions,Karnali Yaks,2,RK Paudel,Lumbini Lions,AR,45.86,48.04,0.955
+2025-11-22,Lumbini Lions,Karnali Yaks,3,Sompal Kami,Karnali Yaks,BOWL,43.98,48.13,0.914
+2025-11-22,Lumbini Lions,Karnali Yaks,4,Gulbadin Naib,Lumbini Lions,AR,43.62,48.85,0.893
+2025-11-22,Lumbini Lions,Karnali Yaks,5,DJM Short,Lumbini Lions,BAT,43.41,47.93,0.906
+2025-11-22,Lumbini Lions,Karnali Yaks,6,Abhishesh Gautam,Lumbini Lions,BOWL,43.21,46.57,0.928
+2025-11-22,Lumbini Lions,Karnali Yaks,7,NK Yadav,Karnali Yaks,BOWL,40.23,45.86,0.877
+2025-11-22,Lumbini Lions,Karnali Yaks,8,MRJ Watt,Karnali Yaks,BOWL,39.46,48.67,0.811
+2025-11-22,Lumbini Lions,Karnali Yaks,9,MP O'Dowd,Karnali Yaks,WK,34.0,39.53,0.86
+2025-11-22,Lumbini Lions,Karnali Yaks,10,Priyank Panchal,Karnali Yaks,BAT,33.62,39.04,0.861
+2025-11-22,Lumbini Lions,Karnali Yaks,11,S Jora,Lumbini Lions,BAT,26.31,27.97,0.941
+2025-11-23,Melbourne Stars,Brisbane Heat,1,A Sutherland,Melbourne Stars,AR,70.04,72.85,0.961
+2025-11-23,Melbourne Stars,Brisbane Heat,2,JL Jonassen,Brisbane Heat,AR,67.43,69.77,0.966
+2025-11-23,Melbourne Stars,Brisbane Heat,3,M Kapp,Melbourne Stars,AR,56.92,60.83,0.936
+2025-11-23,Melbourne Stars,Brisbane Heat,4,KJ Garth,Melbourne Stars,BOWL,48.05,52.27,0.919
+2025-11-23,Melbourne Stars,Brisbane Heat,5,CR Knott,Brisbane Heat,AR,47.24,49.44,0.956
+2025-11-23,Melbourne Stars,Brisbane Heat,6,MM Lanning,Melbourne Stars,BAT,42.67,43.69,0.977
+2025-11-23,Melbourne Stars,Brisbane Heat,7,NM Hancock,Brisbane Heat,BOWL,39.25,43.02,0.912
+2025-11-23,Melbourne Stars,Brisbane Heat,8,LK Hamilton,Brisbane Heat,BOWL,34.51,37.86,0.911
+2025-11-23,Melbourne Stars,Brisbane Heat,9,ME Bouchier,Melbourne Stars,BAT,32.67,36.06,0.906
+2025-11-23,Melbourne Stars,Brisbane Heat,10,G Redmayne,Brisbane Heat,WK,28.73,32.72,0.878
+2025-11-23,Melbourne Stars,Brisbane Heat,11,R McKenna,Melbourne Stars,BAT,24.74,26.33,0.939
+2025-11-28,Tanzania,Uganda,1,J Mbabazi,Uganda,AR,58.06,59.12,0.982
+2025-11-28,Tanzania,Uganda,2,I Nakisuuyi,Uganda,AR,57.52,59.12,0.973
+2025-11-28,Tanzania,Uganda,3,PZ Kamunya,Tanzania,BOWL,50.0,55.59,0.899
+2025-11-28,Tanzania,Uganda,4,C Aweko,Uganda,BOWL,48.0,54.03,0.888
+2025-11-28,Tanzania,Uganda,5,NN Saidi,Tanzania,AR,45.63,48.5,0.941
+2025-11-28,Tanzania,Uganda,6,K Amuge,Uganda,BOWL,39.77,45.18,0.88
+2025-11-28,Tanzania,Uganda,7,S Akiteng,Uganda,BOWL,39.59,50.24,0.788
+2025-11-28,Tanzania,Uganda,8,FO Kibasu,Tanzania,BAT,37.09,40.48,0.916
+2025-11-28,Tanzania,Uganda,9,R Musamali,Uganda,BAT,32.63,33.38,0.978
+2025-11-28,Tanzania,Uganda,10,M Ariokot,Uganda,BAT,26.18,30.23,0.866
+2025-11-28,Tanzania,Uganda,11,K Awino,Uganda,WK,19.3,19.8,0.975
+2025-11-29,Pokhara Avengers,Lumbini Lions,1,K Bhurtel,Pokhara Avengers,AR,50.55,54.04,0.936
+2025-11-29,Pokhara Avengers,Lumbini Lions,2,RK Paudel,Lumbini Lions,AR,48.39,50.59,0.957
+2025-11-29,Pokhara Avengers,Lumbini Lions,3,JDS Neesham,Pokhara Avengers,AR,46.6,52.7,0.884
+2025-11-29,Pokhara Avengers,Lumbini Lions,4,R Trumpelmann,Lumbini Lions,BOWL,46.59,51.34,0.908
+2025-11-29,Pokhara Avengers,Lumbini Lions,5,DA Douthwaite,Pokhara Avengers,AR,46.43,51.44,0.902
+2025-11-29,Pokhara Avengers,Lumbini Lions,6,Abhishesh Gautam,Lumbini Lions,BOWL,37.75,43.62,0.865
+2025-11-29,Pokhara Avengers,Lumbini Lions,7,SL Verma,Pokhara Avengers,BAT,36.77,42.7,0.861
+2025-11-29,Pokhara Avengers,Lumbini Lions,8,Bipin Khatri,Pokhara Avengers,BOWL,35.74,42.28,0.845
+2025-11-29,Pokhara Avengers,Lumbini Lions,9,AM Rossington,Pokhara Avengers,WK,34.8,38.04,0.915
+2025-11-29,Pokhara Avengers,Lumbini Lions,10,D Kharel,Pokhara Avengers,BAT,29.23,31.88,0.917
+2025-11-29,Pokhara Avengers,Lumbini Lions,11,S Jora,Lumbini Lions,BAT,24.46,26.8,0.913
+2025-11-29,Brazil,Argentina,1,Lucas Rossi,Argentina,AR,64.43,67.24,0.958
+2025-11-29,Brazil,Argentina,2,A Kirschbaum,Argentina,AR,63.76,66.22,0.963
+2025-11-29,Brazil,Argentina,3,LH Rodrigues,Brazil,AR,61.24,63.54,0.964
+2025-11-29,Brazil,Argentina,4,H Fennell,Argentina,BOWL,59.89,63.73,0.94
+2025-11-29,Brazil,Argentina,5,AAP Rivero,Argentina,BOWL,58.48,62.09,0.942
+2025-11-29,Brazil,Argentina,6,Yasar Haroon,Brazil,AR,49.58,52.87,0.938
+2025-11-29,Brazil,Argentina,7,LF Muller,Brazil,BAT,42.53,44.41,0.958
+2025-11-29,Brazil,Argentina,8,P Baron,Argentina,WK,40.44,41.95,0.964
+2025-11-29,Brazil,Argentina,9,A Husain,Argentina,BOWL,28.73,42.52,0.676
+2025-11-29,Brazil,Argentina,10,Rejaul Karim,Brazil,BAT,20.12,22.76,0.884
+2025-11-29,Brazil,Argentina,11,MFI Assuncao,Brazil,BAT,15.96,18.16,0.879
+2025-11-30,Thailand,Bahrain,1,Rizwan Butt,Bahrain,BOWL,64.17,69.22,0.927
+2025-11-30,Thailand,Bahrain,2,Asif Ali,Bahrain,AR,56.57,59.38,0.953
+2025-11-30,Thailand,Bahrain,3,Imran Anwar,Bahrain,BOWL,53.68,64.23,0.836
+2025-11-30,Thailand,Bahrain,4,Ali Dawood,Bahrain,BOWL,52.73,69.28,0.761
+2025-11-30,Thailand,Bahrain,5,Abdul Majid Abbasi,Bahrain,BOWL,48.51,54.96,0.883
+2025-11-30,Thailand,Bahrain,6,N Senamontree,Thailand,BOWL,43.83,46.38,0.945
+2025-11-30,Thailand,Bahrain,7,P Kurup,Bahrain,BAT,39.93,41.35,0.966
+2025-11-30,Thailand,Bahrain,8,S Desungnoen,Thailand,AR,31.08,32.3,0.962
+2025-11-30,Thailand,Bahrain,9,Fiaz Ahmed,Bahrain,BAT,29.82,37.8,0.789
+2025-11-30,Thailand,Bahrain,10,Ahmer Bin Nisar,Bahrain,WK,26.83,28.19,0.952
+2025-11-30,Thailand,Bahrain,11,P Thongsa,Thailand,BAT,26.47,27.96,0.947
+2025-12-06,Dubai Capitals,Gulf Giants,1,MG Erasmus,Gulf Giants,AR,43.26,46.93,0.922
+2025-12-06,Dubai Capitals,Gulf Giants,2,Gulbadin Naib,Dubai Capitals,AR,42.57,45.62,0.933
+2025-12-06,Dubai Capitals,Gulf Giants,3,DJ Willey,Dubai Capitals,AR,39.26,53.82,0.729
+2025-12-06,Dubai Capitals,Gulf Giants,4,Haider Ali,Dubai Capitals,BOWL,37.07,41.46,0.894
+2025-12-06,Dubai Capitals,Gulf Giants,5,MD Shanaka,Dubai Capitals,AR,35.56,38.8,0.917
+2025-12-06,Dubai Capitals,Gulf Giants,6,P Nissanka,Gulf Giants,BAT,34.43,42.97,0.801
+2025-12-06,Dubai Capitals,Gulf Giants,7,SW Currie,Dubai Capitals,BOWL,34.38,46.01,0.747
+2025-12-06,Dubai Capitals,Gulf Giants,8,JM Cox,Dubai Capitals,BAT,33.69,40.66,0.829
+2025-12-06,Dubai Capitals,Gulf Giants,9,Waqar Salamkheil,Dubai Capitals,BOWL,29.3,42.25,0.693
+2025-12-06,Dubai Capitals,Gulf Giants,10,R Powell,Dubai Capitals,BAT,28.7,29.94,0.958
+2025-12-06,Dubai Capitals,Gulf Giants,11,Rahmanullah Gurbaz,Gulf Giants,WK,26.51,37.92,0.699
+2025-12-06,Nigeria,Rwanda,1,SA Okpe,Nigeria,AR,60.59,62.71,0.966
+2025-12-06,Nigeria,Rwanda,2,I Danladi,Nigeria,AR,56.13,58.68,0.957
+2025-12-06,Nigeria,Rwanda,3,IO Okpe,Nigeria,AR,52.44,54.99,0.954
+2025-12-06,Nigeria,Rwanda,4,P Useni,Nigeria,AR,49.22,52.35,0.94
+2025-12-06,Nigeria,Rwanda,5,Muhammad Nadir,Rwanda,BOWL,46.74,51.17,0.913
+2025-12-06,Nigeria,Rwanda,6,Z Bimenyimana,Rwanda,BOWL,43.3,50.16,0.863
+2025-12-06,Nigeria,Rwanda,7,VD Adewoye,Nigeria,BAT,38.24,40.05,0.955
+2025-12-06,Nigeria,Rwanda,8,I Ntirenganya,Rwanda,BOWL,38.08,45.24,0.842
+2025-12-06,Nigeria,Rwanda,9,Sulaimon Runsewe,Nigeria,WK,37.68,39.59,0.952
+2025-12-06,Nigeria,Rwanda,10,D Gumyusenge,Rwanda,BAT,31.27,32.95,0.949
+2025-12-06,Nigeria,Rwanda,11,I Niyomugabo,Rwanda,BAT,28.74,31.31,0.918
+2025-12-07,South Africa,Ireland,1,O Prendergast,Ireland,AR,60.41,63.7,0.948
+2025-12-07,South Africa,Ireland,2,M Kapp,South Africa,AR,58.4,60.77,0.961
+2025-12-07,South Africa,Ireland,3,L Delany,Ireland,AR,50.08,52.86,0.947
+2025-12-07,South Africa,Ireland,4,N de Klerk,South Africa,AR,46.23,48.21,0.959
+2025-12-07,South Africa,Ireland,5,L Wolvaardt,South Africa,BAT,42.71,43.3,0.986
+2025-12-07,South Africa,Ireland,6,GH Lewis,Ireland,BAT,42.05,44.23,0.951
+2025-12-07,South Africa,Ireland,7,D van Niekerk,South Africa,BAT,40.15,41.9,0.958
+2025-12-07,South Africa,Ireland,8,A Hunter,Ireland,WK,38.5,40.38,0.953
+2025-12-07,South Africa,Ireland,9,N Mlaba,South Africa,BOWL,37.46,41.66,0.899
+2025-12-07,South Africa,Ireland,10,J Maguire,Ireland,BOWL,31.16,36.88,0.845
+2025-12-07,South Africa,Ireland,11,M Klaas,South Africa,BOWL,30.34,34.86,0.87
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,1,Karan KC,Kathmandu Gorkhas,BOWL,56.35,60.33,0.934
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,2,RK Paudel,Lumbini Lions,AR,52.04,54.18,0.96
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,3,Milind Kumar,Kathmandu Gorkhas,AR,49.75,54.63,0.911
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,4,R Trumpelmann,Lumbini Lions,BOWL,47.55,51.44,0.924
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,5,DJM Short,Lumbini Lions,AR,46.47,49.98,0.93
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,6,JJ Smit,Lumbini Lions,AR,44.78,51.87,0.863
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,7,S Malla,Lumbini Lions,BOWL,42.3,46.53,0.909
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,8,BG Charlesworth,Kathmandu Gorkhas,BAT,35.18,37.04,0.95
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,9,N Dickwella,Lumbini Lions,WK,34.15,37.77,0.904
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,10,S Jora,Lumbini Lions,BAT,25.95,28.06,0.925
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,11,B Sharki,Kathmandu Gorkhas,BAT,25.29,32.67,0.774
+2025-12-10,Oman,Qatar,1,J Gunasekar,Oman,AR,79.53,81.78,0.973
+2025-12-10,Oman,Qatar,2,PE Mendonca,Oman,AR,64.67,67.13,0.963
+2025-12-10,Oman,Qatar,3,Aysha,Qatar,AR,58.7,60.42,0.971
+2025-12-10,Oman,Qatar,4,A Dcosta,Oman,AR,57.31,60.41,0.949
+2025-12-10,Oman,Qatar,5,Sameera Khan,Oman,BOWL,39.59,43.14,0.918
+2025-12-10,Oman,Qatar,6,Roheed Akhtar,Qatar,BOWL,35.4,38.23,0.926
+2025-12-10,Oman,Qatar,7,MT Jacob,Qatar,BOWL,27.43,29.78,0.921
+2025-12-10,Oman,Qatar,8,Fiza,Oman,BAT,24.47,27.1,0.903
+2025-12-10,Oman,Qatar,9,S Krisheta,Qatar,WK,20.57,21.73,0.947
+2025-12-10,Oman,Qatar,10,N Joshi,Oman,BAT,18.24,20.66,0.883
+2025-12-10,Oman,Qatar,11,TB Pawde,Oman,BAT,16.23,24.92,0.651
+2025-12-11,South Africa,India,1,CV Varun,India,BOWL,46.52,53.39,0.871
+2025-12-11,South Africa,India,2,Shubman Gill,India,BAT,45.59,48.5,0.94
+2025-12-11,South Africa,India,3,Abhishek Sharma,India,BAT,45.04,47.78,0.943
+2025-12-11,South Africa,India,4,JJ Bumrah,India,BOWL,44.67,53.88,0.829
+2025-12-11,South Africa,India,5,AR Patel,India,AR,44.2,49.34,0.896
+2025-12-11,South Africa,India,6,AK Markram,South Africa,AR,43.46,46.88,0.927
+2025-12-11,South Africa,India,7,M Jansen,South Africa,AR,42.81,56.38,0.759
+2025-12-11,South Africa,India,8,HH Pandya,India,AR,42.79,49.7,0.861
+2025-12-11,South Africa,India,9,SA Yadav,India,BAT,41.24,44.67,0.923
+2025-12-11,South Africa,India,10,Arshdeep Singh,India,BOWL,40.98,53.21,0.77
+2025-12-11,South Africa,India,11,Q de Kock,South Africa,WK,38.33,43.15,0.888
+2025-12-12,Gulf Giants,Desert Vipers,1,SM Curran,Desert Vipers,AR,50.91,54.57,0.933
+2025-12-12,Gulf Giants,Desert Vipers,2,MR Adair,Gulf Giants,BOWL,46.13,54.5,0.846
+2025-12-12,Gulf Giants,Desert Vipers,3,MG Erasmus,Gulf Giants,AR,41.27,46.57,0.886
+2025-12-12,Gulf Giants,Desert Vipers,4,JM Vince,Gulf Giants,BAT,40.78,43.96,0.928
+2025-12-12,Gulf Giants,Desert Vipers,5,Azmatullah Omarzai,Gulf Giants,AR,40.62,48.1,0.845
+2025-12-12,Gulf Giants,Desert Vipers,6,DA Payne,Desert Vipers,BOWL,40.4,47.4,0.852
+2025-12-12,Gulf Giants,Desert Vipers,7,Khuzaima Tanveer,Desert Vipers,BOWL,38.11,44.58,0.855
+2025-12-12,Gulf Giants,Desert Vipers,8,Noor Ahmad,Desert Vipers,BOWL,38.02,47.27,0.804
+2025-12-12,Gulf Giants,Desert Vipers,9,DW Lawrence,Desert Vipers,BAT,37.43,40.08,0.934
+2025-12-12,Gulf Giants,Desert Vipers,10,AGS Gous,Desert Vipers,BAT,34.63,41.54,0.834
+2025-12-12,Gulf Giants,Desert Vipers,11,Rahmanullah Gurbaz,Gulf Giants,WK,32.27,38.82,0.831
+2025-12-13,Singapore,Malaysia,1,Virandeep Singh,Malaysia,AR,90.87,90.87,1.0
+2025-12-13,Singapore,Malaysia,2,Syed Aziz,Malaysia,AR,65.94,65.94,1.0
+2025-12-13,Singapore,Malaysia,3,Pavandeep Singh,Malaysia,BOWL,52.87,52.87,1.0
+2025-12-13,Singapore,Malaysia,4,S Vijay Unni,Malaysia,BOWL,49.68,49.68,1.0
+2025-12-13,Singapore,Malaysia,5,Muhammad Amir,Malaysia,AR,42.42,42.42,1.0
+2025-12-13,Singapore,Malaysia,6,K Sathish,Singapore,AR,41.4,43.63,0.949
+2025-12-13,Singapore,Malaysia,7,PSRK Sudarshan,Singapore,BOWL,41.33,44.21,0.935
+2025-12-13,Singapore,Malaysia,8,Muhammad Haziq Aiman,Malaysia,WK,37.34,37.34,1.0
+2025-12-13,Singapore,Malaysia,9,Ahmed Faiz,Malaysia,BAT,36.2,36.2,1.0
+2025-12-13,Singapore,Malaysia,10,Zubaidi Zulkifle,Malaysia,BAT,30.06,30.06,1.0
+2025-12-13,Singapore,Malaysia,11,R Sharma,Singapore,BAT,26.39,28.78,0.917
+2025-12-14,Nigeria,Rwanda,1,SA Okpe,Nigeria,AR,52.96,55.3,0.958
+2025-12-14,Nigeria,Rwanda,2,Muhammad Nadir,Rwanda,BOWL,48.22,52.33,0.921
+2025-12-14,Nigeria,Rwanda,3,IO Okpe,Nigeria,BOWL,47.28,51.76,0.913
+2025-12-14,Nigeria,Rwanda,4,E Rukiriza,Rwanda,AR,44.92,48.69,0.923
+2025-12-14,Nigeria,Rwanda,5,Z Bimenyimana,Rwanda,BOWL,44.63,50.83,0.878
+2025-12-14,Nigeria,Rwanda,6,I Danladi,Nigeria,AR,42.09,43.77,0.962
+2025-12-14,Nigeria,Rwanda,7,I Ntirenganya,Rwanda,BOWL,40.63,46.77,0.869
+2025-12-14,Nigeria,Rwanda,8,Sulaimon Runsewe,Nigeria,WK,36.02,37.7,0.956
+2025-12-14,Nigeria,Rwanda,9,Selim Salau,Nigeria,BAT,31.77,35.42,0.897
+2025-12-14,Nigeria,Rwanda,10,Ali Rahmon,Nigeria,BAT,30.65,34.3,0.894
+2025-12-14,Nigeria,Rwanda,11,VD Adewoye,Nigeria,BAT,29.99,34.67,0.865
+2025-12-16,Thailand,Singapore,1,S Laomi,Thailand,BOWL,58.78,62.95,0.934
+2025-12-16,Thailand,Singapore,2,T Putthawong,Thailand,BOWL,56.69,61.87,0.916
+2025-12-16,Thailand,Singapore,3,C Sutthiruang,Thailand,AR,55.0,58.56,0.939
+2025-12-16,Thailand,Singapore,4,O Kamchomphu,Thailand,BOWL,49.43,54.38,0.909
+2025-12-16,Thailand,Singapore,5,N Boochatham,Thailand,AR,49.06,51.6,0.951
+2025-12-16,Thailand,Singapore,6,Shafina Mahesh,Singapore,AR,47.84,50.09,0.955
+2025-12-16,Thailand,Singapore,7,S Chaturongrattana,Thailand,BOWL,47.51,52.12,0.911
+2025-12-16,Thailand,Singapore,8,N Koncharoenkai,Thailand,WK,37.91,38.51,0.984
+2025-12-16,Thailand,Singapore,9,RR Seth,Singapore,BAT,35.16,38.04,0.924
+2025-12-16,Thailand,Singapore,10,N Chantam,Thailand,BAT,31.72,32.37,0.98
+2025-12-16,Thailand,Singapore,11,N Chaiwai,Thailand,BAT,22.92,24.21,0.947
+2025-12-18,Hobart Hurricanes,Melbourne Stars,1,GJ Maxwell,Melbourne Stars,AR,56.39,58.05,0.971
+2025-12-18,Hobart Hurricanes,Melbourne Stars,2,MP Stoinis,Melbourne Stars,AR,49.99,52.33,0.955
+2025-12-18,Hobart Hurricanes,Melbourne Stars,3,Haris Rauf,Melbourne Stars,BOWL,48.76,52.94,0.921
+2025-12-18,Hobart Hurricanes,Melbourne Stars,4,NT Ellis,Hobart Hurricanes,BOWL,48.05,55.9,0.86
+2025-12-18,Hobart Hurricanes,Melbourne Stars,5,TK Curran,Melbourne Stars,AR,47.4,51.1,0.928
+2025-12-18,Hobart Hurricanes,Melbourne Stars,6,RP Meredith,Hobart Hurricanes,BOWL,46.61,54.31,0.858
+2025-12-18,Hobart Hurricanes,Melbourne Stars,7,CJ Jordan,Hobart Hurricanes,BOWL,41.66,51.88,0.803
+2025-12-18,Hobart Hurricanes,Melbourne Stars,8,JM Clarke,Melbourne Stars,WK,40.89,42.61,0.96
+2025-12-18,Hobart Hurricanes,Melbourne Stars,9,BR McDermott,Hobart Hurricanes,BAT,40.74,43.58,0.935
+2025-12-18,Hobart Hurricanes,Melbourne Stars,10,TH David,Hobart Hurricanes,BAT,34.02,35.81,0.95
+2025-12-18,Hobart Hurricanes,Melbourne Stars,11,HWR Cartwright,Melbourne Stars,BAT,33.9,35.11,0.966
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,1,JO Holder,Abu Dhabi Knight Riders,AR,53.2,58.36,0.912
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,2,AD Russell,Abu Dhabi Knight Riders,AR,46.49,49.88,0.932
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,3,SP Narine,Abu Dhabi Knight Riders,BOWL,43.65,50.17,0.87
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,4,LS Livingstone,Abu Dhabi Knight Riders,AR,41.31,44.34,0.932
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,5,A Sharafu,Abu Dhabi Knight Riders,BAT,40.85,42.7,0.957
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,6,Azmatullah Omarzai,Gulf Giants,AR,40.52,47.09,0.861
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,7,Ajay Kumar,Abu Dhabi Knight Riders,BOWL,39.65,44.29,0.895
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,8,JM Vince,Gulf Giants,BAT,39.23,44.54,0.881
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,9,PD Salt,Abu Dhabi Knight Riders,BAT,38.9,44.09,0.882
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,10,Rahmanullah Gurbaz,Gulf Giants,WK,34.69,39.27,0.883
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,11,Aayan Afzal Khan,Gulf Giants,BOWL,33.17,40.65,0.816
+2025-12-23,Adelaide Strikers,Melbourne Stars,1,GJ Maxwell,Melbourne Stars,AR,53.11,54.71,0.971
+2025-12-23,Adelaide Strikers,Melbourne Stars,2,Hasan Ali,Adelaide Strikers,BOWL,52.78,62.64,0.843
+2025-12-23,Adelaide Strikers,Melbourne Stars,3,MP Stoinis,Melbourne Stars,AR,49.15,51.01,0.964
+2025-12-23,Adelaide Strikers,Melbourne Stars,4,Haris Rauf,Melbourne Stars,BOWL,46.65,50.02,0.933
+2025-12-23,Adelaide Strikers,Melbourne Stars,5,TK Curran,Melbourne Stars,AR,46.51,49.16,0.946
+2025-12-23,Adelaide Strikers,Melbourne Stars,6,MW Short,Adelaide Strikers,AR,45.67,49.89,0.915
+2025-12-23,Adelaide Strikers,Melbourne Stars,7,PM Siddle,Melbourne Stars,BOWL,40.61,44.47,0.913
+2025-12-23,Adelaide Strikers,Melbourne Stars,8,JM Clarke,Melbourne Stars,WK,39.54,40.85,0.968
+2025-12-23,Adelaide Strikers,Melbourne Stars,9,CA Lynn,Adelaide Strikers,BAT,38.37,41.32,0.929
+2025-12-23,Adelaide Strikers,Melbourne Stars,10,JJS Sangha,Adelaide Strikers,BAT,35.12,38.77,0.906
+2025-12-23,Adelaide Strikers,Melbourne Stars,11,HWR Cartwright,Melbourne Stars,BAT,29.23,30.2,0.968
+2025-12-26,Sylhet Titans,Rajshahi Warriors,1,Mohammad Amir,Sylhet Titans,BOWL,46.13,54.5,0.846
+2025-12-26,Sylhet Titans,Rajshahi Warriors,2,Mehedi Hasan Miraz,Sylhet Titans,AR,45.99,51.59,0.892
+2025-12-26,Sylhet Titans,Rajshahi Warriors,3,S Lamichhane,Rajshahi Warriors,BOWL,45.84,57.03,0.804
+2025-12-26,Sylhet Titans,Rajshahi Warriors,4,Mohammad Nawaz (3),Rajshahi Warriors,AR,42.99,52.44,0.82
+2025-12-26,Sylhet Titans,Rajshahi Warriors,5,Saim Ayub,Sylhet Titans,AR,40.83,46.2,0.884
+2025-12-26,Sylhet Titans,Rajshahi Warriors,6,EA Brookes,Sylhet Titans,AR,39.83,43.93,0.907
+2025-12-26,Sylhet Titans,Rajshahi Warriors,7,Khaled Ahmed,Sylhet Titans,BOWL,38.4,45.89,0.837
+2025-12-26,Sylhet Titans,Rajshahi Warriors,8,Tanzid Hasan,Rajshahi Warriors,BAT,35.29,42.04,0.839
+2025-12-26,Sylhet Titans,Rajshahi Warriors,9,Sahibzada Farhan,Rajshahi Warriors,WK,33.96,39.72,0.855
+2025-12-26,Sylhet Titans,Rajshahi Warriors,10,Afif Hossain,Sylhet Titans,BAT,28.52,34.03,0.838
+2025-12-26,Sylhet Titans,Rajshahi Warriors,11,Yasir Ali Chowdhury,Rajshahi Warriors,BAT,28.1,32.2,0.872
+2025-12-27,Brisbane Heat,Adelaide Strikers,1,Hasan Ali,Adelaide Strikers,BOWL,54.24,60.35,0.899
+2025-12-27,Brisbane Heat,Adelaide Strikers,2,Shaheen Shah Afridi,Brisbane Heat,BOWL,50.61,56.98,0.888
+2025-12-27,Brisbane Heat,Adelaide Strikers,3,MW Short,Adelaide Strikers,AR,50.53,53.45,0.945
+2025-12-27,Brisbane Heat,Adelaide Strikers,4,JD Wildermuth,Brisbane Heat,BOWL,49.0,53.21,0.921
+2025-12-27,Brisbane Heat,Adelaide Strikers,5,XC Bartlett,Brisbane Heat,BOWL,47.37,53.65,0.883
+2025-12-27,Brisbane Heat,Adelaide Strikers,6,J Overton,Adelaide Strikers,AR,47.26,51.63,0.915
+2025-12-27,Brisbane Heat,Adelaide Strikers,7,HTRY Thornton,Adelaide Strikers,BOWL,41.54,47.51,0.874
+2025-12-27,Brisbane Heat,Adelaide Strikers,8,C Munro,Brisbane Heat,BAT,40.37,43.05,0.938
+2025-12-27,Brisbane Heat,Adelaide Strikers,9,CA Lynn,Adelaide Strikers,BAT,40.14,42.49,0.945
+2025-12-27,Brisbane Heat,Adelaide Strikers,10,MT Renshaw,Brisbane Heat,BAT,37.79,40.62,0.93
+2025-12-27,Brisbane Heat,Adelaide Strikers,11,JJ Peirson,Brisbane Heat,WK,30.85,34.66,0.89
+2025-12-27,Cambodia,Indonesia,1,Luqman Butt,Cambodia,AR,56.22,57.1,0.985
+2025-12-27,Cambodia,Indonesia,2,GA Priandana,Indonesia,AR,55.98,64.47,0.868
+2025-12-27,Cambodia,Indonesia,3,Shah Abrar Hussain,Cambodia,AR,50.29,51.05,0.985
+2025-12-27,Cambodia,Indonesia,4,IK Gamantika,Indonesia,AR,49.29,56.32,0.875
+2025-12-27,Cambodia,Indonesia,5,GC Murtaza,Cambodia,BOWL,49.14,50.64,0.97
+2025-12-27,Cambodia,Indonesia,6,F Banunaek,Indonesia,BOWL,44.59,54.15,0.823
+2025-12-27,Cambodia,Indonesia,7,DJ Hawoe,Indonesia,BOWL,43.0,50.99,0.843
+2025-12-27,Cambodia,Indonesia,8,KD Kesuma,Indonesia,WK,31.47,35.17,0.895
+2025-12-27,Cambodia,Indonesia,9,Vineet Shah,Indonesia,BAT,18.04,25.32,0.712
+2025-12-27,Cambodia,Indonesia,10,Nirmaljit Singh,Cambodia,BAT,15.15,16.67,0.909
+2025-12-27,Cambodia,Indonesia,11,A Alexander,Indonesia,BAT,14.68,26.23,0.56
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,1,Imad Wasim,Dhaka Capitals,BOWL,54.42,54.42,1.0
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,2,S Lamichhane,Rajshahi Warriors,BOWL,51.82,57.07,0.908
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,3,Mohammad Saifuddin,Dhaka Capitals,BOWL,50.09,50.09,1.0
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,4,Nasir Hossain,Dhaka Capitals,AR,48.48,48.48,1.0
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,5,Salman Mirza,Dhaka Capitals,BOWL,48.44,48.44,1.0
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,6,Mohammad Nawaz (3),Rajshahi Warriors,AR,45.52,50.25,0.906
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,7,Tanzim Hasan Sakib,Rajshahi Warriors,BOWL,43.46,50.2,0.866
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,8,Sahibzada Farhan,Rajshahi Warriors,WK,41.87,44.01,0.951
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,9,Tanzid Hasan,Rajshahi Warriors,BAT,40.17,42.68,0.941
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,10,Saif Hassan,Dhaka Capitals,BAT,39.13,39.13,1.0
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,11,Ziaur Rahman,Dhaka Capitals,BAT,33.15,33.15,1.0
+2025-12-29,Wellington,Auckland,1,AC Kerr,Wellington,AR,84.38,86.25,0.978
+2025-12-29,Wellington,Auckland,2,JM Kerr,Wellington,AR,70.16,72.33,0.97
+2025-12-29,Wellington,Auckland,3,M Brown,Wellington,AR,59.01,60.96,0.968
+2025-12-29,Wellington,Auckland,4,EA Perry,Wellington,AR,58.56,67.32,0.87
+2025-12-29,Wellington,Auckland,5,XA Jetly,Wellington,BOWL,48.11,51.72,0.93
+2025-12-29,Wellington,Auckland,6,MM Penfold,Auckland,BOWL,39.69,39.69,1.0
+2025-12-29,Wellington,Auckland,7,ML Green,Auckland,WK,38.45,38.45,1.0
+2025-12-29,Wellington,Auckland,8,BG Illing,Auckland,BOWL,38.12,38.12,1.0
+2025-12-29,Wellington,Auckland,9,GE Plimmer,Wellington,BAT,32.06,33.21,0.965
+2025-12-29,Wellington,Auckland,10,BM Halliday,Auckland,BAT,31.87,31.87,1.0
+2025-12-29,Wellington,Auckland,11,P Catton,Auckland,BAT,31.75,31.75,1.0
