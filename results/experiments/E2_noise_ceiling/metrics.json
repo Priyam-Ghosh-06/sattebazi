@@ -1,0 +1,34 @@
+{
+ "AR": {
+  "icc": 0.1276471519943762,
+  "cv_within": 0.7775173930951872,
+  "rows": 37660,
+  "sd_total": 41.07525317635874
+ },
+ "BAT": {
+  "icc": 0.1308117748554494,
+  "cv_within": 0.9380750941426872,
+  "rows": 52763,
+  "sd_total": 32.10822901654196
+ },
+ "BOWL": {
+  "icc": 0.09934502480340042,
+  "cv_within": 0.7581545728932909,
+  "rows": 60542,
+  "sd_total": 35.001930265667866
+ },
+ "UNK": {
+  "icc": NaN,
+  "cv_within": NaN,
+  "rows": 0,
+  "sd_total": NaN
+ },
+ "WK": {
+  "icc": 0.1615456789763084,
+  "cv_within": 0.8852432030118103,
+  "rows": 20440,
+  "sd_total": 31.781820068803665
+ },
+ "ceiling_spearman_played_same_year_mean": 0.4828692681354198,
+ "irreducible_mae_if_true_mean_known": 23.210343360487165
+}

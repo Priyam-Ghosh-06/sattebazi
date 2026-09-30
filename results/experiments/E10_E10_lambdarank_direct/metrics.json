@@ -1,0 +1,47 @@
+{
+ "per_fold": [
+  {
+   "mae_squad": 28.357513649796275,
+   "rmse_squad": 44.84158086502306,
+   "spearman_squad": 0.47646234466066645,
+   "captured": 466.0125,
+   "oracle": 695.8475,
+   "captured_over_oracle": 0.6727756606962241,
+   "captured_minus_random": 154.23689288191446,
+   "selection_fallbacks": 9,
+   "fold": 2024,
+   "secs": 8.1
+  },
+  {
+   "mae_squad": 29.114151561118703,
+   "rmse_squad": 45.61024383554331,
+   "spearman_squad": 0.5006068229155433,
+   "captured": 480.6325,
+   "oracle": 700.775,
+   "captured_over_oracle": 0.6882701702854374,
+   "captured_minus_random": 162.56292519755766,
+   "selection_fallbacks": 9,
+   "fold": 2025,
+   "secs": 8.8
+  }
+ ],
+ "mean": {
+  "mae_squad": 28.73583260545749,
+  "rmse_squad": 45.22591235028318,
+  "spearman_squad": 0.4885345837881049,
+  "captured": 473.3225,
+  "oracle": 698.31125,
+  "captured_over_oracle": 0.6805229154908308,
+  "captured_minus_random": 158.39990903973606,
+  "selection_fallbacks": 9.0,
+  "secs": 8.45
+ },
+ "extra": {},
+ "secs_total": 17.0,
+ "vs_B0_paired_captured_diff_mean_ci95": [
+  -2.75375,
+  -6.78640625,
+  1.1277812499999984
+ ],
+ "verdict": "no significant difference vs B0"
+}

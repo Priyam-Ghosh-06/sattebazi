@@ -1,0 +1,22 @@
+{
+ "exp": "E13",
+ "variant": "E13_recency_hl4y",
+ "test_years": [
+  2024,
+  2025
+ ],
+ "n_matches": 400,
+ "train_start": "2019-01-01",
+ "lgb": {
+  "learning_rate": 0.05,
+  "num_leaves": 31,
+  "min_data_in_leaf": 200,
+  "feature_fraction": 0.8,
+  "lambda_l2": 1.0,
+  "seed": 0,
+  "deterministic": true,
+  "force_row_wise": true,
+  "num_threads": 4,
+  "verbose": -1
+ }
+}

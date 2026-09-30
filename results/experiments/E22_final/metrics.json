@@ -1,0 +1,1358 @@
+{
+ "B0s": {
+  "F24": {
+   "test": {
+    "headline": {
+     "captured": 436.96722972972975,
+     "oracle": 702.3579954954955,
+     "captured_over_oracle": 0.6244518222300747,
+     "captured_minus_random": 119.8730816817651,
+     "picked_played": 0.8565724815724813,
+     "mae_squad": 24.86516773665701,
+     "rmse_squad": 33.166422728062194,
+     "spearman_squad": 0.34596249899540965,
+     "mae_played": 26.441345811471013,
+     "rmse_played": 34.43851717322642,
+     "logloss_p": 0.487109419429705,
+     "brier_p": 0.16070119438151562
+    },
+    "by_delta": {
+     "0": {
+      "captured": 473.36655405405406,
+      "oracle": 698.7635135135135,
+      "captured_over_oracle": 0.6789660070965924,
+      "captured_minus_random": 156.27240600608945,
+      "picked_played": 0.9111384111384111,
+      "mae_squad": 23.248083925912745,
+      "rmse_squad": 31.820037569874348,
+      "spearman_squad": 0.477052795204329,
+      "mae_played": 25.93416757643506,
+      "rmse_played": 33.880915088066956,
+      "logloss_p": 0.40502326033942915,
+      "brier_p": 0.12765463542177033
+     },
+     "90": {
+      "captured": 430.2240990990991,
+      "oracle": 702.5709459459459,
+      "captured_over_oracle": 0.6149200764291003,
+      "captured_minus_random": 113.12995105113446,
+      "picked_played": 0.845567158067158,
+      "mae_squad": 25.16417998780653,
+      "rmse_squad": 33.362307020224016,
+      "spearman_squad": 0.32543425108822016,
+      "mae_played": 26.476154532502694,
+      "rmse_played": 34.43714610062599,
+      "logloss_p": 0.5046671008565581,
+      "brier_p": 0.1679412951331026
+     },
+     "180": {
+      "captured": 428.63344594594594,
+      "oracle": 703.1289414414415,
+      "captured_over_oracle": 0.6118522778013569,
+      "captured_minus_random": 111.53929789798133,
+      "picked_played": 0.8447993447993447,
+      "mae_squad": 25.24984889222287,
+      "rmse_squad": 33.47793306435829,
+      "spearman_squad": 0.31728664973041654,
+      "mae_played": 26.556195977541034,
+      "rmse_played": 34.558577444452766,
+      "logloss_p": 0.5062717787664109,
+      "brier_p": 0.1683768532050442
+     },
+     "270": {
+      "captured": 428.2128378378378,
+      "oracle": 703.7691441441441,
+      "captured_over_oracle": 0.6109385805792983,
+      "captured_minus_random": 111.1186897898732,
+      "picked_played": 0.8419328419328418,
+      "mae_squad": 25.286559703967495,
+      "rmse_squad": 33.529765602794605,
+      "spearman_squad": 0.3115939817556818,
+      "mae_played": 26.594595941138753,
+      "rmse_played": 34.608796568861834,
+      "logloss_p": 0.5083238304490585,
+      "brier_p": 0.1691137339016834
+     },
+     "365": {
+      "captured": 424.3992117117117,
+      "oracle": 703.5574324324324,
+      "captured_over_oracle": 0.6055821692440255,
+      "captured_minus_random": 107.30506366374708,
+      "picked_played": 0.8394246519246518,
+      "mae_squad": 25.37716617337541,
+      "rmse_squad": 33.64207038305972,
+      "spearman_squad": 0.29844481719840044,
+      "mae_played": 26.645615029737538,
+      "rmse_played": 34.70715066412457,
+      "logloss_p": 0.5112611267370682,
+      "brier_p": 0.17041945424597765
+     }
+    },
+    "segments": {
+     "male": {
+      "fixtures": 1256,
+      "captured_over_oracle": 0.6023434584401393
+     },
+     "female": {
+      "fixtures": 520,
+      "captured_over_oracle": 0.6778520239996106
+     },
+     "club": {
+      "fixtures": 816,
+      "captured_over_oracle": 0.5891492811395164
+     },
+     "international": {
+      "fixtures": 960,
+      "captured_over_oracle": 0.6544589821570492
+     },
+     "ipl": {
+      "fixtures": 71,
+      "captured_over_oracle": 0.5725877512881328
+     },
+     "squad_change": {
+      "fixtures": 1686,
+      "captured_over_oracle": 0.6221619353191709
+     },
+     "no_squad_change": {
+      "fixtures": 90,
+      "captured_over_oracle": 0.6673490370276733
+     }
+    }
+   },
+   "valid": {
+    "headline": {
+     "captured": 451.50600000000003,
+     "oracle": 689.7706666666667,
+     "captured_over_oracle": 0.6530917824947668,
+     "captured_minus_random": 118.24949510054971,
+     "picked_played": 0.8901818181818182,
+     "mae_squad": 25.355268998995832,
+     "rmse_squad": 33.26913515172337,
+     "spearman_squad": 0.3492269673075282,
+     "mae_played": 26.47410736253512,
+     "rmse_played": 34.17224197571336,
+     "logloss_p": 0.4357442053033541,
+     "brier_p": 0.14067328439963672
+    },
+    "by_delta": {
+     "0": {
+      "captured": 475.7033333333333,
+      "oracle": 686.73,
+      "captured_over_oracle": 0.6916753159643559,
+      "captured_minus_random": 142.44682843388307,
+      "picked_played": 0.9245454545454546,
+      "mae_squad": 24.408389277189837,
+      "rmse_squad": 32.352759136718724,
+      "spearman_squad": 0.44497299948034696,
+      "mae_played": 26.105692600220912,
+      "rmse_played": 33.76325972558207,
+      "logloss_p": 0.3768750545464322,
+      "brier_p": 0.11851997842477156
+     },
+     "90": {
+      "captured": 446.2266666666667,
+      "oracle": 691.07,
+      "captured_over_oracle": 0.6433887071526878,
+      "captured_minus_random": 112.9701617672164,
+      "picked_played": 0.8833333333333333,
+      "mae_squad": 25.589943127829848,
+      "rmse_squad": 33.49385175035548,
+      "spearman_squad": 0.3331512824480332,
+      "mae_played": 26.570053512858458,
+      "rmse_played": 34.27052039860373,
+      "logloss_p": 0.44853501350861963,
+      "brier_p": 0.14550174185724746
+     },
+     "180": {
+      "captured": 444.12333333333333,
+      "oracle": 690.7233333333334,
+      "captured_over_oracle": 0.6416558264800578,
+      "captured_minus_random": 110.86682843388306,
+      "picked_played": 0.8821212121212121,
+      "mae_squad": 25.559972813676602,
+      "rmse_squad": 33.4927508082818,
+      "spearman_squad": 0.32826907360891694,
+      "mae_played": 26.576957055893534,
+      "rmse_played": 34.29569743262518,
+      "logloss_p": 0.4503189243148202,
+      "brier_p": 0.14603671512755761
+     },
+     "270": {
+      "captured": 448.44,
+      "oracle": 689.9633333333334,
+      "captured_over_oracle": 0.6481139373695702,
+      "captured_minus_random": 115.18349510054972,
+      "picked_played": 0.8818181818181817,
+      "mae_squad": 25.565574485549153,
+      "rmse_squad": 33.479822493425345,
+      "spearman_squad": 0.3259953335177919,
+      "mae_played": 26.560620089168545,
+      "rmse_played": 34.265573668043096,
+      "logloss_p": 0.4512464239629063,
+      "brier_p": 0.14639917806624805
+     },
+     "365": {
+      "captured": 443.0366666666667,
+      "oracle": 690.3666666666667,
+      "captured_over_oracle": 0.6406251255071619,
+      "captured_minus_random": 109.78016176721637,
+      "picked_played": 0.8790909090909089,
+      "mae_squad": 25.652465290733716,
+      "rmse_squad": 33.52649156983548,
+      "spearman_squad": 0.31374614748255225,
+      "mae_played": 26.557213554534147,
+      "rmse_played": 34.26615865371272,
+      "logloss_p": 0.4517456101839919,
+      "brier_p": 0.14690880852235885
+     }
+    },
+    "segments": {}
+   }
+  },
+  "F25": {
+   "test": {
+    "headline": {
+     "captured": 437.9335924486397,
+     "oracle": 700.3506940588563,
+     "captured_over_oracle": 0.6283724526777029,
+     "captured_minus_random": 123.78054387063635,
+     "picked_played": 0.8615516632174044,
+     "mae_squad": 24.70018174974778,
+     "rmse_squad": 33.08347901258187,
+     "spearman_squad": 0.3609654952501682,
+     "mae_played": 26.442106824544858,
+     "rmse_played": 34.46792974618824,
+     "logloss_p": 0.4848848934470823,
+     "brier_p": 0.1606623144076292
+    },
+    "by_delta": {
+     "0": {
+      "captured": 470.0266518600777,
+      "oracle": 696.4891726818435,
+      "captured_over_oracle": 0.6780386335028944,
+      "captured_minus_random": 155.87360328207444,
+      "picked_played": 0.9159557821412346,
+      "mae_squad": 23.046450003491486,
+      "rmse_squad": 31.71975977245345,
+      "spearman_squad": 0.491310262934245,
+      "mae_played": 25.986001462141278,
+      "rmse_played": 33.96859789068161,
+      "logloss_p": 0.3995797292400782,
+      "brier_p": 0.1261257633736643
+     },
+     "90": {
+      "captured": 433.2215435868962,
+      "oracle": 700.7545807884509,
+      "captured_over_oracle": 0.6218735688720827,
+      "captured_minus_random": 119.06849500889288,
+      "picked_played": 0.8514966432789864,
+      "mae_squad": 24.978706249831344,
+      "rmse_squad": 33.27822609714244,
+      "spearman_squad": 0.34403834039628567,
+      "mae_played": 26.44642633504744,
+      "rmse_played": 34.45755366554209,
+      "logloss_p": 0.5029865291895911,
+      "brier_p": 0.16815155342736124
+     },
+     "180": {
+      "captured": 430.88672959466965,
+      "oracle": 701.0166574125486,
+      "captured_over_oracle": 0.618346422996989,
+      "captured_minus_random": 116.73368101666634,
+      "picked_played": 0.8485184998233304,
+      "mae_squad": 25.073711279155365,
+      "rmse_squad": 33.37665545088839,
+      "spearman_squad": 0.3344368255781951,
+      "mae_played": 26.532014135555734,
+      "rmse_played": 34.54629032289491,
+      "logloss_p": 0.5042797425507883,
+      "brier_p": 0.16865265880482944
+     },
+     "270": {
+      "captured": 430.7545807884509,
+      "oracle": 701.4664075513604,
+      "captured_over_oracle": 0.6167523031579795,
+      "captured_minus_random": 116.60153221044757,
+      "picked_played": 0.8496794710009591,
+      "mae_squad": 25.125644038959745,
+      "rmse_squad": 33.44071268558403,
+      "spearman_squad": 0.3284462214472445,
+      "mae_played": 26.57752827106781,
+      "rmse_played": 34.618625434141364,
+      "logloss_p": 0.505983971991793,
+      "brier_p": 0.1691408444199642
+     },
+     "365": {
+      "captured": 424.7784564131038,
+      "oracle": 702.0266518600778,
+      "captured_over_oracle": 0.606851334858569,
+      "captured_minus_random": 110.62540783510055,
+      "picked_played": 0.8421079198425117,
+      "mae_squad": 25.276397177300964,
+      "rmse_squad": 33.602041056841024,
+      "spearman_squad": 0.30659582589487067,
+      "mae_played": 26.668563918912024,
+      "rmse_played": 34.74858141768123,
+      "logloss_p": 0.511594494263161,
+      "brier_p": 0.1712407520123269
+     }
+    },
+    "segments": {
+     "male": {
+      "fixtures": 1192,
+      "captured_over_oracle": 0.6010803324176083
+     },
+     "female": {
+      "fixtures": 609,
+      "captured_over_oracle": 0.6817915123657698
+     },
+     "club": {
+      "fixtures": 855,
+      "captured_over_oracle": 0.5885091004679535
+     },
+     "international": {
+      "fixtures": 946,
+      "captured_over_oracle": 0.6644011695268951
+     },
+     "ipl": {
+      "fixtures": 74,
+      "captured_over_oracle": 0.5903119924882242
+     },
+     "squad_change": {
+      "fixtures": 1726,
+      "captured_over_oracle": 0.6261402230699332
+     },
+     "no_squad_change": {
+      "fixtures": 75,
+      "captured_over_oracle": 0.679743496717845
+     }
+    }
+   },
+   "valid": {
+    "headline": {
+     "captured": 463.60330188679245,
+     "oracle": 703.9165094339622,
+     "captured_over_oracle": 0.6587913325480936,
+     "captured_minus_random": 126.63029389274917,
+     "picked_played": 0.8757289879931388,
+     "mae_squad": 25.059807775401076,
+     "rmse_squad": 33.4322018708083,
+     "spearman_squad": 0.3643099014708489,
+     "mae_played": 26.07744572507819,
+     "rmse_played": 34.262492002200034,
+     "logloss_p": 0.44917448898583545,
+     "brier_p": 0.1455909189508053
+    },
+    "by_delta": {
+     "0": {
+      "captured": 487.5707547169811,
+      "oracle": 699.4221698113207,
+      "captured_over_oracle": 0.6981705924171198,
+      "captured_minus_random": 150.59774672293784,
+      "picked_played": 0.9135934819897082,
+      "mae_squad": 23.75285672156155,
+      "rmse_squad": 32.28406605513581,
+      "spearman_squad": 0.4699787702856141,
+      "mae_played": 25.42343174649403,
+      "rmse_played": 33.57306191700786,
+      "logloss_p": 0.3868265561490336,
+      "brier_p": 0.1218247988628368
+     },
+     "90": {
+      "captured": 462.11556603773585,
+      "oracle": 705.5825471698113,
+      "captured_over_oracle": 0.6559565808878622,
+      "captured_minus_random": 125.14255804369253,
+      "picked_played": 0.869639794168096,
+      "mae_squad": 25.270518778161236,
+      "rmse_squad": 33.60893777969216,
+      "spearman_squad": 0.34733570043832535,
+      "mae_played": 26.110773671726314,
+      "rmse_played": 34.302775101887164,
+      "logloss_p": 0.462119018743168,
+      "brier_p": 0.15070653495280764
+     },
+     "180": {
+      "captured": 459.8089622641509,
+      "oracle": 705.122641509434,
+      "captured_over_oracle": 0.6514610215762277,
+      "captured_minus_random": 122.83595427010764,
+      "picked_played": 0.8653516295025728,
+      "mae_squad": 25.365882166176263,
+      "rmse_squad": 33.704233082691445,
+      "spearman_squad": 0.34010671452026914,
+      "mae_played": 26.20654049408862,
+      "rmse_played": 34.38431517345711,
+      "logloss_p": 0.46380948878901784,
+      "brier_p": 0.15112762520560993
+     },
+     "270": {
+      "captured": 456.49056603773585,
+      "oracle": 704.4457547169811,
+      "captured_over_oracle": 0.6480281853852675,
+      "captured_minus_random": 119.51755804369253,
+      "picked_played": 0.8662092624356775,
+      "mae_squad": 25.386622273643532,
+      "rmse_squad": 33.714262771087625,
+      "spearman_squad": 0.3388801824346171,
+      "mae_played": 26.28641530013862,
+      "rmse_played": 34.45532549689232,
+      "logloss_p": 0.4655695088548711,
+      "brier_p": 0.15164879883688828
+     },
+     "365": {
+      "captured": 452.0306603773585,
+      "oracle": 705.0094339622641,
+      "captured_over_oracle": 0.6403402824739907,
+      "captured_minus_random": 115.05765238331517,
+      "picked_played": 0.8638507718696398,
+      "mae_squad": 25.523158937462785,
+      "rmse_squad": 33.84950966543449,
+      "spearman_squad": 0.3252481396754187,
+      "mae_played": 26.360067412943362,
+      "rmse_played": 34.596982321755696,
+      "logloss_p": 0.46754787239308665,
+      "brier_p": 0.15264683689588388
+     }
+    },
+    "segments": {}
+   }
+  }
+ },
+ "CB64": {
+  "F24": {
+   "test": {
+    "headline": {
+     "captured": 429.79425675675674,
+     "oracle": 702.3579954954955,
+     "captured_over_oracle": 0.6143298121572804,
+     "captured_minus_random": 112.70010870879214,
+     "picked_played": 0.8442465192465193,
+     "mae_squad": 24.61191350054404,
+     "rmse_squad": 33.894567041869934,
+     "spearman_squad": 0.3177454383757069,
+     "mae_played": 26.2960932994557,
+     "rmse_played": 37.38525968153986,
+     "team_total_bias_mean": -58.133305287575936,
+     "team_total_bias_sd": 131.21280551577067,
+     "team_total_bias_rel": -0.1345702039249575,
+     "seed_sd_mean": 2.8886382579803467
+    },
+    "by_delta": {
+     "0": {
+      "captured": 457.2094594594595,
+      "oracle": 698.7635135135135,
+      "captured_over_oracle": 0.6561944122645309,
+      "captured_minus_random": 140.11531141149484,
+      "picked_played": 0.8837530712530712,
+      "mae_squad": 23.710657227234726,
+      "rmse_squad": 32.91724980069676,
+      "spearman_squad": 0.42266455866101743,
+      "mae_played": 25.750368835380574,
+      "rmse_played": 36.539463639323,
+      "team_total_bias_mean": -53.55408372964945,
+      "team_total_bias_sd": 130.3853700709825,
+      "team_total_bias_rel": -0.12396998052054271,
+      "seed_sd_mean": 3.2434723377227783
+     },
+     "90": {
+      "captured": 423.42623873873873,
+      "oracle": 702.5709459459459,
+      "captured_over_oracle": 0.6051556696290673,
+      "captured_minus_random": 106.33209069077412,
+      "picked_played": 0.8336916461916462,
+      "mae_squad": 24.775969511060147,
+      "rmse_squad": 34.038750294284625,
+      "spearman_squad": 0.30145833149603024,
+      "mae_played": 26.335170262228058,
+      "rmse_played": 37.46761484770258,
+      "team_total_bias_mean": -58.08152521837939,
+      "team_total_bias_sd": 131.26837706870532,
+      "team_total_bias_rel": -0.13445037169984822,
+      "seed_sd_mean": 2.9117839336395264
+     },
+     "180": {
+      "captured": 422.14527027027026,
+      "oracle": 703.1289414414415,
+      "captured_over_oracle": 0.6030124556331289,
+      "captured_minus_random": 105.05112222230564,
+      "picked_played": 0.8320024570024569,
+      "mae_squad": 24.843271529965754,
+      "rmse_squad": 34.1424101567828,
+      "spearman_squad": 0.29161110315010397,
+      "mae_played": 26.423186237084025,
+      "rmse_played": 37.58751139033698,
+      "team_total_bias_mean": -59.14041117934493,
+      "team_total_bias_sd": 131.62459806053033,
+      "team_total_bias_rel": -0.13690151501821188,
+      "seed_sd_mean": 2.840670108795166
+     },
+     "270": {
+      "captured": 424.9876126126126,
+      "oracle": 703.7691441441441,
+      "captured_over_oracle": 0.6066246609737489,
+      "captured_minus_random": 107.89346456464799,
+      "picked_played": 0.8362510237510238,
+      "mae_squad": 24.83496078977439,
+      "rmse_squad": 34.14040412634911,
+      "spearman_squad": 0.2909994695279601,
+      "mae_played": 26.43326448029459,
+      "rmse_played": 37.6010367428641,
+      "team_total_bias_mean": -59.478900875057185,
+      "team_total_bias_sd": 131.33420800060807,
+      "team_total_bias_rel": -0.1376850271467646,
+      "seed_sd_mean": 2.794506311416626
+     },
+     "365": {
+      "captured": 421.2027027027027,
+      "oracle": 703.5574324324324,
+      "captured_over_oracle": 0.6006618622859264,
+      "captured_minus_random": 104.10855465473809,
+      "picked_played": 0.8355343980343981,
+      "mae_squad": 24.894708444685204,
+      "rmse_squad": 34.23402083123637,
+      "spearman_squad": 0.2819937290434228,
+      "mae_played": 26.538476682291243,
+      "rmse_played": 37.73067178747262,
+      "team_total_bias_mean": -60.41160543544872,
+      "team_total_bias_sd": 131.4514743780271,
+      "team_total_bias_rel": -0.13984412523942005,
+      "seed_sd_mean": 2.6527585983276367
+     }
+    },
+    "segments": {
+     "male": {
+      "fixtures": 1256,
+      "captured_over_oracle": 0.5908705548835884
+     },
+     "female": {
+      "fixtures": 520,
+      "captured_over_oracle": 0.670992941264506
+     },
+     "club": {
+      "fixtures": 816,
+      "captured_over_oracle": 0.5782025751596873
+     },
+     "international": {
+      "fixtures": 960,
+      "captured_over_oracle": 0.6450379636052347
+     },
+     "ipl": {
+      "fixtures": 71,
+      "captured_over_oracle": 0.5619489468941941
+     },
+     "squad_change": {
+      "fixtures": 1686,
+      "captured_over_oracle": 0.6116226240834435
+     },
+     "no_squad_change": {
+      "fixtures": 90,
+      "captured_over_oracle": 0.6650444687404928
+     }
+    }
+   },
+   "valid": {
+    "headline": {
+     "captured": 446.90600000000006,
+     "oracle": 689.7706666666667,
+     "captured_over_oracle": 0.6460657971185405,
+     "captured_minus_random": 113.64949510054971,
+     "picked_played": 0.8803636363636365,
+     "mae_squad": 24.43514188257477,
+     "rmse_squad": 34.02248759920289,
+     "spearman_squad": 0.3309517729007566,
+     "mae_played": 25.784345735164106,
+     "rmse_played": 36.620379173645276,
+     "team_total_bias_mean": -80.44283071390788,
+     "team_total_bias_sd": 130.25559090590107,
+     "team_total_bias_rel": -0.1901691979834833,
+     "seed_sd_mean": 2.718489980697632
+    },
+    "by_delta": {
+     "0": {
+      "captured": 460.5966666666667,
+      "oracle": 686.73,
+      "captured_over_oracle": 0.6693828287398664,
+      "captured_minus_random": 127.34016176721637,
+      "picked_played": 0.903030303030303,
+      "mae_squad": 23.9253157549638,
+      "rmse_squad": 33.37038172665262,
+      "spearman_squad": 0.4004678156424429,
+      "mae_played": 25.456979709799263,
+      "rmse_played": 36.02473653467414,
+      "team_total_bias_mean": -76.30090812683106,
+      "team_total_bias_sd": 128.97600157886058,
+      "team_total_bias_rel": -0.1803775625088651,
+      "seed_sd_mean": 2.972639322280884
+     },
+     "90": {
+      "captured": 446.74666666666667,
+      "oracle": 691.07,
+      "captured_over_oracle": 0.6443076561550607,
+      "captured_minus_random": 113.49016176721636,
+      "picked_played": 0.8778787878787879,
+      "mae_squad": 24.5357145878267,
+      "rmse_squad": 34.14172295414477,
+      "spearman_squad": 0.320454083418775,
+      "mae_played": 25.842734238251346,
+      "rmse_played": 36.7223632404145,
+      "team_total_bias_mean": -80.42421882629395,
+      "team_total_bias_sd": 130.18282437139405,
+      "team_total_bias_rel": -0.19012518025720634,
+      "seed_sd_mean": 2.7511699199676514
+     },
+     "180": {
+      "captured": 445.76,
+      "oracle": 690.7233333333334,
+      "captured_over_oracle": 0.6433434760019907,
+      "captured_minus_random": 112.50349510054973,
+      "picked_played": 0.8787878787878788,
+      "mae_squad": 24.507371609874024,
+      "rmse_squad": 34.13759196175234,
+      "spearman_squad": 0.31887234818059385,
+      "mae_played": 25.82676885895082,
+      "rmse_played": 36.73154761484914,
+      "team_total_bias_mean": -81.28476524353027,
+      "team_total_bias_sd": 130.32657004130573,
+      "team_total_bias_rel": -0.19215953797024476,
+      "seed_sd_mean": 2.66491961479187
+     },
+     "270": {
+      "captured": 441.96,
+      "oracle": 689.9633333333334,
+      "captured_over_oracle": 0.6381542261582503,
+      "captured_minus_random": 108.70349510054972,
+      "picked_played": 0.8730303030303029,
+      "mae_squad": 24.5273083867406,
+      "rmse_squad": 34.198245656366446,
+      "spearman_squad": 0.31389307318945264,
+      "mae_played": 25.871075581030254,
+      "rmse_played": 36.80081255073916,
+      "team_total_bias_mean": -82.94321215311686,
+      "team_total_bias_sd": 130.9836096854125,
+      "team_total_bias_rel": -0.19608019377157176,
+      "seed_sd_mean": 2.6204936504364014
+     },
+     "365": {
+      "captured": 439.46666666666664,
+      "oracle": 690.3666666666667,
+      "captured_over_oracle": 0.6351407985375344,
+      "captured_minus_random": 106.21016176721636,
+      "picked_played": 0.8690909090909091,
+      "mae_squad": 24.67999907346872,
+      "rmse_squad": 34.26449569709825,
+      "spearman_squad": 0.3010715440725188,
+      "mae_played": 25.924170287788844,
+      "rmse_played": 36.82243592754948,
+      "team_total_bias_mean": -81.26104921976726,
+      "team_total_bias_sd": 130.80894885253255,
+      "team_total_bias_rel": -0.1921035154095286,
+      "seed_sd_mean": 2.5832273960113525
+     }
+    },
+    "segments": {}
+   }
+  },
+  "F25": {
+   "test": {
+    "headline": {
+     "captured": 434.33348139922265,
+     "oracle": 700.3506940588563,
+     "captured_over_oracle": 0.6229081925964195,
+     "captured_minus_random": 120.18043282121934,
+     "picked_played": 0.8482661147847154,
+     "mae_squad": 24.547178186751246,
+     "rmse_squad": 33.73066622596313,
+     "spearman_squad": 0.3387055100512287,
+     "mae_played": 26.122505375828222,
+     "rmse_played": 37.27354302749289,
+     "team_total_bias_mean": -58.80134744342335,
+     "team_total_bias_sd": 133.48192303297438,
+     "team_total_bias_rel": -0.1364385630956637,
+     "seed_sd_mean": 1.8617401123046875
+    },
+    "by_delta": {
+     "0": {
+      "captured": 455.9916712937257,
+      "oracle": 696.4891726818435,
+      "captured_over_oracle": 0.6578012457153237,
+      "captured_minus_random": 141.8386227157224,
+      "picked_played": 0.8831457271212962,
+      "mae_squad": 23.866409772216166,
+      "rmse_squad": 33.01499697738236,
+      "spearman_squad": 0.431105085297854,
+      "mae_played": 25.723015098372887,
+      "rmse_played": 36.69082396463834,
+      "team_total_bias_mean": -58.12510784939221,
+      "team_total_bias_sd": 132.58009159821654,
+      "team_total_bias_rel": -0.1348694572474901,
+      "seed_sd_mean": 2.1118783950805664
+     },
+     "90": {
+      "captured": 433.04719600222097,
+      "oracle": 700.7545807884509,
+      "captured_over_oracle": 0.6216385059239464,
+      "captured_minus_random": 118.8941474242177,
+      "picked_played": 0.8431679370046942,
+      "mae_squad": 24.637629316928876,
+      "rmse_squad": 33.80096699531664,
+      "spearman_squad": 0.33085327844529644,
+      "mae_played": 26.122720253535093,
+      "rmse_played": 37.2975669210352,
+      "team_total_bias_mean": -58.33502205314403,
+      "team_total_bias_sd": 133.66174949648277,
+      "team_total_bias_rel": -0.13535653663925687,
+      "seed_sd_mean": 1.841893196105957
+     },
+     "180": {
+      "captured": 430.16990560799553,
+      "oracle": 701.0166574125486,
+      "captured_over_oracle": 0.6166861721737891,
+      "captured_minus_random": 116.01685702999227,
+      "picked_played": 0.840997425672606,
+      "mae_squad": 24.673994938760327,
+      "rmse_squad": 33.85743921953095,
+      "spearman_squad": 0.3217021402799511,
+      "mae_played": 26.176912060666993,
+      "rmse_played": 37.36550772967064,
+      "team_total_bias_mean": -58.666128621374085,
+      "team_total_bias_sd": 133.7447298236116,
+      "team_total_bias_rel": -0.13612471937978504,
+      "seed_sd_mean": 1.7943205833435059
+     },
+     "270": {
+      "captured": 427.98056635202664,
+      "oracle": 701.4664075513604,
+      "captured_over_oracle": 0.6121888462935193,
+      "captured_minus_random": 113.82751777402336,
+      "picked_played": 0.8396850234718084,
+      "mae_squad": 24.72014754233779,
+      "rmse_squad": 33.91608814016374,
+      "spearman_squad": 0.31364627785530513,
+      "mae_played": 26.237775986586776,
+      "rmse_played": 37.43098882138672,
+      "team_total_bias_mean": -58.94603539889948,
+      "team_total_bias_sd": 133.85474938822412,
+      "team_total_bias_rel": -0.1367743732949403,
+      "seed_sd_mean": 1.7829173803329468
+     },
+     "365": {
+      "captured": 424.47806774014435,
+      "oracle": 702.0266518600778,
+      "captured_over_oracle": 0.6062261928755188,
+      "captured_minus_random": 110.32501916214107,
+      "picked_played": 0.8343344606531724,
+      "mae_squad": 24.837709363513074,
+      "rmse_squad": 34.06383979742193,
+      "spearman_squad": 0.2962207683777367,
+      "mae_played": 26.352103479979373,
+      "rmse_played": 37.58282770073357,
+      "team_total_bias_mean": -59.93444329430698,
+      "team_total_bias_sd": 133.5682948583368,
+      "team_total_bias_rel": -0.13906772891684624,
+      "seed_sd_mean": 1.7776910066604614
+     }
+    },
+    "segments": {
+     "male": {
+      "fixtures": 1192,
+      "captured_over_oracle": 0.5935949320338072
+     },
+     "female": {
+      "fixtures": 609,
+      "captured_over_oracle": 0.6802832444693812
+     },
+     "club": {
+      "fixtures": 855,
+      "captured_over_oracle": 0.583225741153736
+     },
+     "international": {
+      "fixtures": 946,
+      "captured_over_oracle": 0.6587734103379568
+     },
+     "ipl": {
+      "fixtures": 74,
+      "captured_over_oracle": 0.605488070043406
+     },
+     "squad_change": {
+      "fixtures": 1726,
+      "captured_over_oracle": 0.6209656783718797
+     },
+     "no_squad_change": {
+      "fixtures": 75,
+      "captured_over_oracle": 0.6676119199504961
+     }
+    }
+   },
+   "valid": {
+    "headline": {
+     "captured": 454.5632075471698,
+     "oracle": 703.9165094339622,
+     "captured_over_oracle": 0.6457957137559858,
+     "captured_minus_random": 117.59019955312651,
+     "picked_played": 0.8674099485420239,
+     "mae_squad": 24.657501899532978,
+     "rmse_squad": 34.43446524247582,
+     "spearman_squad": 0.3418622681076402,
+     "mae_played": 25.879700996817235,
+     "rmse_played": 37.25821314430554,
+     "team_total_bias_mean": -84.31482604404667,
+     "team_total_bias_sd": 123.24640630997787,
+     "team_total_bias_rel": -0.1958312334807795,
+     "seed_sd_mean": 1.7643855094909668
+    },
+    "by_delta": {
+     "0": {
+      "captured": 476.00471698113205,
+      "oracle": 699.4221698113207,
+      "captured_over_oracle": 0.680967045898022,
+      "captured_minus_random": 139.0317089870888,
+      "picked_played": 0.8979416809605489,
+      "mae_squad": 24.03513239090749,
+      "rmse_squad": 33.74355596831278,
+      "spearman_squad": 0.4330687662072256,
+      "mae_played": 25.41713846973162,
+      "rmse_played": 36.63203172112235,
+      "team_total_bias_mean": -80.8879820625737,
+      "team_total_bias_sd": 123.54624565022218,
+      "team_total_bias_rel": -0.18787198203256597,
+      "seed_sd_mean": 2.0108213424682617
+     },
+     "90": {
+      "captured": 447.813679245283,
+      "oracle": 705.5825471698113,
+      "captured_over_oracle": 0.6346549332701987,
+      "captured_minus_random": 110.84067125123971,
+      "picked_played": 0.8576329331046312,
+      "mae_squad": 24.76652557431075,
+      "rmse_squad": 34.57739240284253,
+      "spearman_squad": 0.3258626812395022,
+      "mae_played": 25.94939943877482,
+      "rmse_played": 37.38783367374239,
+      "team_total_bias_mean": -85.68900518597297,
+      "team_total_bias_sd": 124.33703509711108,
+      "team_total_bias_rel": -0.19902296941975597,
+      "seed_sd_mean": 1.7295318841934204
+     },
+     "180": {
+      "captured": 451.7429245283019,
+      "oracle": 705.122641509434,
+      "captured_over_oracle": 0.6396147513774639,
+      "captured_minus_random": 114.76991653425857,
+      "picked_played": 0.8629931389365351,
+      "mae_squad": 24.794198179130362,
+      "rmse_squad": 34.61603433560095,
+      "spearman_squad": 0.3229865613365147,
+      "mae_played": 25.989745389458093,
+      "rmse_played": 37.42783933637917,
+      "team_total_bias_mean": -85.69828395123751,
+      "team_total_bias_sd": 123.90003130078681,
+      "team_total_bias_rel": -0.19904445296558523,
+      "seed_sd_mean": 1.6968482732772827
+     },
+     "270": {
+      "captured": 449.17216981132077,
+      "oracle": 704.4457547169811,
+      "captured_over_oracle": 0.6376747941436122,
+      "captured_minus_random": 112.19916181727744,
+      "picked_played": 0.8599914236706689,
+      "mae_squad": 24.811952706445837,
+      "rmse_squad": 34.57788105524304,
+      "spearman_squad": 0.3211408142890852,
+      "mae_played": 25.990744883536987,
+      "rmse_played": 37.37947638654476,
+      "team_total_bias_mean": -84.51270364365487,
+      "team_total_bias_sd": 122.9474987121877,
+      "team_total_bias_rel": -0.19629079305953082,
+      "seed_sd_mean": 1.6823426485061646
+     },
+     "365": {
+      "captured": 448.08254716981133,
+      "oracle": 705.0094339622641,
+      "captured_over_oracle": 0.6360670440906316,
+      "captured_minus_random": 111.109539175768,
+      "picked_played": 0.8584905660377359,
+      "mae_squad": 24.87970064687045,
+      "rmse_squad": 34.657462450379796,
+      "spearman_squad": 0.3062525174658733,
+      "mae_played": 26.051476802584673,
+      "rmse_played": 37.46388460373903,
+      "team_total_bias_mean": -84.7861553767942,
+      "team_total_bias_sd": 121.50122078958161,
+      "team_total_bias_rel": -0.1969259699264595,
+      "seed_sd_mean": 1.7023833990097046
+     }
+    },
+    "segments": {}
+   }
+  }
+ },
+ "CB128": {
+  "F24": {
+   "test": {
+    "headline": {
+     "captured": 431.62545045045044,
+     "oracle": 702.3579954954955,
+     "captured_over_oracle": 0.6164803665316075,
+     "captured_minus_random": 114.53130240248584,
+     "picked_played": 0.844266994266994,
+     "mae_squad": 24.751755703376684,
+     "rmse_squad": 33.90992027348043,
+     "spearman_squad": 0.3180054545724012,
+     "mae_played": 26.267950889589635,
+     "rmse_played": 37.370776089560934,
+     "team_total_bias_mean": -56.78104346163637,
+     "team_total_bias_sd": 133.31815213257772,
+     "team_total_bias_rel": -0.13143991900612406,
+     "seed_sd_mean": 2.2494152545928956
+    },
+    "by_delta": {
+     "0": {
+      "captured": 452.1030405405405,
+      "oracle": 698.7635135135135,
+      "captured_over_oracle": 0.6485592841806184,
+      "captured_minus_random": 135.0088924925759,
+      "picked_played": 0.8744881244881244,
+      "mae_squad": 24.153629421769896,
+      "rmse_squad": 33.20454205931325,
+      "spearman_squad": 0.40770847933470533,
+      "mae_played": 25.843352033363203,
+      "rmse_played": 36.72791508592321,
+      "team_total_bias_mean": -53.15745453361993,
+      "team_total_bias_sd": 132.79368541479397,
+      "team_total_bias_rel": -0.12305180988206098,
+      "seed_sd_mean": 2.4590067863464355
+     },
+     "90": {
+      "captured": 428.57207207207205,
+      "oracle": 702.5709459459459,
+      "captured_over_oracle": 0.6115741663805049,
+      "captured_minus_random": 111.47792402410745,
+      "picked_played": 0.8371723996723996,
+      "mae_squad": 24.84988281683646,
+      "rmse_squad": 33.98827748217677,
+      "spearman_squad": 0.3089889776374219,
+      "mae_played": 26.279909620530436,
+      "rmse_played": 37.3993793824965,
+      "team_total_bias_mean": -56.245396347733234,
+      "team_total_bias_sd": 133.59804470958065,
+      "team_total_bias_rel": -0.13020003427967392,
+      "seed_sd_mean": 2.2389345169067383
+     },
+     "180": {
+      "captured": 425.92173423423424,
+      "oracle": 703.1289414414415,
+      "captured_over_oracle": 0.6078781964588306,
+      "captured_minus_random": 108.82758618626961,
+      "picked_played": 0.8367628992628993,
+      "mae_squad": 24.902609729378256,
+      "rmse_squad": 34.081334641684975,
+      "spearman_squad": 0.2965803808450142,
+      "mae_played": 26.365994277667095,
+      "rmse_played": 37.51935977986372,
+      "team_total_bias_mean": -57.43547806868682,
+      "team_total_bias_sd": 133.92308816250684,
+      "team_total_bias_rel": -0.13295479058442933,
+      "seed_sd_mean": 2.206444501876831
+     },
+     "270": {
+      "captured": 427.77477477477476,
+      "oracle": 703.7691441441441,
+      "captured_over_oracle": 0.6100580974224945,
+      "captured_minus_random": 110.68062672681013,
+      "picked_played": 0.8377354627354627,
+      "mae_squad": 24.901358889756267,
+      "rmse_squad": 34.096164318713775,
+      "spearman_squad": 0.2940134815215885,
+      "mae_played": 26.388003922020957,
+      "rmse_played": 37.553699757707356,
+      "team_total_bias_mean": -58.076934737128184,
+      "team_total_bias_sd": 133.27503678796992,
+      "team_total_bias_rel": -0.1344397000333021,
+      "seed_sd_mean": 2.202970504760742
+     },
+     "365": {
+      "captured": 423.7556306306306,
+      "oracle": 703.5574324324324,
+      "captured_over_oracle": 0.6043320882155893,
+      "captured_minus_random": 106.661482582666,
+      "picked_played": 0.835176085176085,
+      "mae_squad": 24.951297659142554,
+      "rmse_squad": 34.17928286551337,
+      "spearman_squad": 0.2827359535232761,
+      "mae_played": 26.462494594366486,
+      "rmse_played": 37.65352644181388,
+      "team_total_bias_mean": -58.98995362101375,
+      "team_total_bias_sd": 133.0009055880373,
+      "team_total_bias_rel": -0.136553260251154,
+      "seed_sd_mean": 2.1397199630737305
+     }
+    },
+    "segments": {
+     "male": {
+      "fixtures": 1256,
+      "captured_over_oracle": 0.595014938608837
+     },
+     "female": {
+      "fixtures": 520,
+      "captured_over_oracle": 0.6683276308989148
+     },
+     "club": {
+      "fixtures": 816,
+      "captured_over_oracle": 0.5802162738425052
+     },
+     "international": {
+      "fixtures": 960,
+      "captured_over_oracle": 0.6473048453173446
+     },
+     "ipl": {
+      "fixtures": 71,
+      "captured_over_oracle": 0.5847593188576945
+     },
+     "squad_change": {
+      "fixtures": 1686,
+      "captured_over_oracle": 0.6139379015880808
+     },
+     "no_squad_change": {
+      "fixtures": 90,
+      "captured_over_oracle": 0.664109209807007
+     }
+    }
+   },
+   "valid": {
+    "headline": {
+     "captured": 447.31800000000004,
+     "oracle": 689.7706666666667,
+     "captured_over_oracle": 0.6462293526405146,
+     "captured_minus_random": 114.0614951005497,
+     "picked_played": 0.8806666666666667,
+     "mae_squad": 24.64356189296655,
+     "rmse_squad": 34.06534005126182,
+     "spearman_squad": 0.3358649139360147,
+     "mae_played": 25.81706500021922,
+     "rmse_played": 36.578291160636375,
+     "team_total_bias_mean": -76.2541430053711,
+     "team_total_bias_sd": 133.35452801785237,
+     "team_total_bias_rel": -0.18026700721816832,
+     "seed_sd_mean": 2.1544424057006837
+    },
+    "by_delta": {
+     "0": {
+      "captured": 461.09,
+      "oracle": 686.73,
+      "captured_over_oracle": 0.6698508473279446,
+      "captured_minus_random": 127.83349510054973,
+      "picked_played": 0.8957575757575759,
+      "mae_squad": 24.270900950403608,
+      "rmse_squad": 33.59620781035646,
+      "spearman_squad": 0.39448488268019216,
+      "mae_played": 25.544229776490063,
+      "rmse_played": 36.15016891992593,
+      "team_total_bias_mean": -74.59111015319824,
+      "team_total_bias_sd": 131.29347693860916,
+      "team_total_bias_rel": -0.17633556553482216,
+      "seed_sd_mean": 2.387563943862915
+     },
+     "90": {
+      "captured": 443.61,
+      "oracle": 691.07,
+      "captured_over_oracle": 0.6391590944979133,
+      "captured_minus_random": 110.3534951005497,
+      "picked_played": 0.8769696969696971,
+      "mae_squad": 24.71712583519298,
+      "rmse_squad": 34.135453211515525,
+      "spearman_squad": 0.32712319896379816,
+      "mae_played": 25.84741808250457,
+      "rmse_played": 36.62115953401201,
+      "team_total_bias_mean": -75.60209251403809,
+      "team_total_bias_sd": 133.30318479277003,
+      "team_total_bias_rel": -0.17872551260027422,
+      "seed_sd_mean": 2.234086513519287
+     },
+     "180": {
+      "captured": 446.2133333333333,
+      "oracle": 690.7233333333334,
+      "captured_over_oracle": 0.6437824768413477,
+      "captured_minus_random": 112.95682843388303,
+      "picked_played": 0.8796969696969696,
+      "mae_squad": 24.663427852145315,
+      "rmse_squad": 34.115583227171484,
+      "spearman_squad": 0.3277823150575536,
+      "mae_played": 25.829322732510974,
+      "rmse_played": 36.62198649395459,
+      "team_total_bias_mean": -76.59085065205892,
+      "team_total_bias_sd": 133.6519335587009,
+      "team_total_bias_rel": -0.18106300777371515,
+      "seed_sd_mean": 2.131404161453247
+     },
+     "270": {
+      "captured": 446.26666666666665,
+      "oracle": 689.9633333333334,
+      "captured_over_oracle": 0.64424210272911,
+      "captured_minus_random": 113.01016176721636,
+      "picked_played": 0.8778787878787879,
+      "mae_squad": 24.702620462270882,
+      "rmse_squad": 34.17070586436424,
+      "spearman_squad": 0.3252592143964565,
+      "mae_played": 25.870225112692935,
+      "rmse_played": 36.685825948168315,
+      "team_total_bias_mean": -77.4554401397705,
+      "team_total_bias_sd": 134.12762005978385,
+      "team_total_bias_rel": -0.18310690779105135,
+      "seed_sd_mean": 2.0525100231170654
+     },
+     "365": {
+      "captured": 439.41,
+      "oracle": 690.3666666666667,
+      "captured_over_oracle": 0.6341122418062576,
+      "captured_minus_random": 106.1534951005497,
+      "picked_played": 0.8730303030303029,
+      "mae_squad": 24.86373436481995,
+      "rmse_squad": 34.30875014290139,
+      "spearman_squad": 0.30467495858207305,
+      "mae_played": 25.994129296897555,
+      "rmse_played": 36.81231490712104,
+      "team_total_bias_mean": -77.03122156778971,
+      "team_total_bias_sd": 134.3964247393978,
+      "team_total_bias_rel": -0.18210404239097885,
+      "seed_sd_mean": 1.9666473865509033
+     }
+    },
+    "segments": {}
+   }
+  },
+  "F25": {
+   "test": {
+    "headline": {
+     "captured": 435.999555802332,
+     "oracle": 700.3506940588563,
+     "captured_over_oracle": 0.6253969924592833,
+     "captured_minus_random": 121.84650722432875,
+     "picked_played": 0.8505678663368835,
+     "mae_squad": 24.221389343167427,
+     "rmse_squad": 33.66613961679965,
+     "spearman_squad": 0.341112570857861,
+     "mae_played": 26.096956861625728,
+     "rmse_played": 37.365533357747566,
+     "team_total_bias_mean": -67.64204536027077,
+     "team_total_bias_sd": 129.79035246949783,
+     "team_total_bias_rel": -0.15695190886164015,
+     "seed_sd_mean": 2.424173355102539
+    },
+    "by_delta": {
+     "0": {
+      "captured": 458.78400888395333,
+      "oracle": 696.4891726818435,
+      "captured_over_oracle": 0.6624190258251165,
+      "captured_minus_random": 144.63096030595008,
+      "picked_played": 0.8885972439553783,
+      "mae_squad": 23.369996377018662,
+      "rmse_squad": 32.786199109738824,
+      "spearman_squad": 0.44147762921887146,
+      "mae_played": 25.65487965202609,
+      "rmse_played": 36.637579204170116,
+      "team_total_bias_mean": -64.50317123133497,
+      "team_total_bias_sd": 129.2182694144987,
+      "team_total_bias_rel": -0.14966873125843472,
+      "seed_sd_mean": 2.789010524749756
+     },
+     "90": {
+      "captured": 432.0877290394225,
+      "oracle": 700.7545807884509,
+      "captured_over_oracle": 0.6201297220410982,
+      "captured_minus_random": 117.93468046141926,
+      "picked_played": 0.8433193680278632,
+      "mae_squad": 24.353732295843294,
+      "rmse_squad": 33.77283638475461,
+      "spearman_squad": 0.32941422726606256,
+      "mae_played": 26.10779566454542,
+      "rmse_played": 37.41522615774244,
+      "team_total_bias_mean": -67.4741457971449,
+      "team_total_bias_sd": 130.1250130967654,
+      "team_total_bias_rel": -0.1565623258705266,
+      "seed_sd_mean": 2.436757802963257
+     },
+     "180": {
+      "captured": 431.88784008883954,
+      "oracle": 701.0166574125486,
+      "captured_over_oracle": 0.6189593174349258,
+      "captured_minus_random": 117.73479151083625,
+      "picked_played": 0.8442279541668769,
+      "mae_squad": 24.389271309985833,
+      "rmse_squad": 33.82817185538854,
+      "spearman_squad": 0.32394198024714516,
+      "mae_played": 26.15643349329487,
+      "rmse_played": 37.483452060584305,
+      "team_total_bias_mean": -67.91851161255696,
+      "team_total_bias_sd": 129.96335944396984,
+      "team_total_bias_rel": -0.15759341392005102,
+      "seed_sd_mean": 2.366988182067871
+     },
+     "270": {
+      "captured": 429.24042198778454,
+      "oracle": 701.4664075513604,
+      "captured_over_oracle": 0.614391817973599,
+      "captured_minus_random": 115.08737340978128,
+      "picked_played": 0.8402907475644844,
+      "mae_squad": 24.432629338925608,
+      "rmse_squad": 33.8999657655226,
+      "spearman_squad": 0.31509118938424724,
+      "mae_played": 26.227564904924897,
+      "rmse_played": 37.57459346279291,
+      "team_total_bias_mean": -68.81348572539859,
+      "team_total_bias_sd": 129.91636511579125,
+      "team_total_bias_rel": -0.15967000351077226,
+      "seed_sd_mean": 2.3162050247192383
+     },
+     "365": {
+      "captured": 427.9977790116602,
+      "oracle": 702.0266518600778,
+      "captured_over_oracle": 0.6110850790216772,
+      "captured_minus_random": 113.8447304336569,
+      "picked_played": 0.8364040179698147,
+      "mae_squad": 24.56131739406375,
+      "rmse_squad": 34.04352496859365,
+      "spearman_squad": 0.2956378281729789,
+      "mae_played": 26.33811059333737,
+      "rmse_played": 37.716815903448065,
+      "team_total_bias_mean": -69.50091243491843,
+      "team_total_bias_sd": 129.72875527646406,
+      "team_total_bias_rel": -0.16126506974841612,
+      "seed_sd_mean": 2.2119052410125732
+     }
+    },
+    "segments": {
+     "male": {
+      "fixtures": 1192,
+      "captured_over_oracle": 0.5965612915026338
+     },
+     "female": {
+      "fixtures": 609,
+      "captured_over_oracle": 0.6818373135435626
+     },
+     "club": {
+      "fixtures": 855,
+      "captured_over_oracle": 0.5840781130815497
+     },
+     "international": {
+      "fixtures": 946,
+      "captured_over_oracle": 0.6627412227636832
+     },
+     "ipl": {
+      "fixtures": 74,
+      "captured_over_oracle": 0.6102837959227573
+     },
+     "squad_change": {
+      "fixtures": 1726,
+      "captured_over_oracle": 0.6233528660194959
+     },
+     "no_squad_change": {
+      "fixtures": 75,
+      "captured_over_oracle": 0.6724391555935908
+     }
+    }
+   },
+   "valid": {
+    "headline": {
+     "captured": 457.86415094339617,
+     "oracle": 703.9165094339622,
+     "captured_over_oracle": 0.6510537260450211,
+     "captured_minus_random": 120.89114294935291,
+     "picked_played": 0.8695969125214406,
+     "mae_squad": 24.42723788114603,
+     "rmse_squad": 34.34864132881586,
+     "spearman_squad": 0.3446959839820963,
+     "mae_played": 25.794323412420567,
+     "rmse_played": 37.2132970390341,
+     "team_total_bias_mean": -88.69342559598527,
+     "team_total_bias_sd": 121.03053202932968,
+     "team_total_bias_rel": -0.20600108188055494,
+     "seed_sd_mean": 2.309334325790405
+    },
+    "by_delta": {
+     "0": {
+      "captured": 480.24764150943395,
+      "oracle": 699.4221698113207,
+      "captured_over_oracle": 0.6879112097202902,
+      "captured_minus_random": 143.27463351539066,
+      "picked_played": 0.9022298456260719,
+      "mae_squad": 23.65188269696998,
+      "rmse_squad": 33.501056879254584,
+      "spearman_squad": 0.4362846042660492,
+      "mae_played": 25.258603283287897,
+      "rmse_played": 36.42861881375296,
+      "team_total_bias_mean": -82.90295964366985,
+      "team_total_bias_sd": 121.55931398142542,
+      "team_total_bias_rel": -0.19255197135070734,
+      "seed_sd_mean": 2.7428066730499268
+     },
+     "90": {
+      "captured": 454.83962264150944,
+      "oracle": 705.5825471698113,
+      "captured_over_oracle": 0.6449408479923057,
+      "captured_minus_random": 117.86661464746612,
+      "picked_played": 0.8621355060034305,
+      "mae_squad": 24.596154997718973,
+      "rmse_squad": 34.52434527218493,
+      "spearman_squad": 0.3287152270729163,
+      "mae_played": 25.888272591784194,
+      "rmse_played": 37.352516549865605,
+      "team_total_bias_mean": -89.37419833777086,
+      "team_total_bias_sd": 121.3943779611707,
+      "team_total_bias_rel": -0.20758223661686365,
+      "seed_sd_mean": 2.301872968673706
+     },
+     "180": {
+      "captured": 453.0660377358491,
+      "oracle": 705.122641509434,
+      "captured_over_oracle": 0.6427642701288481,
+      "captured_minus_random": 116.09302974180575,
+      "picked_played": 0.8619210977701542,
+      "mae_squad": 24.603319166430605,
+      "rmse_squad": 34.56443556772823,
+      "spearman_squad": 0.32711139984159626,
+      "mae_played": 25.91319905161564,
+      "rmse_played": 37.40603295639019,
+      "team_total_bias_mean": -90.20884144980953,
+      "team_total_bias_sd": 121.68768633736896,
+      "team_total_bias_rel": -0.20952080565864614,
+      "seed_sd_mean": 2.219219207763672
+     },
+     "270": {
+      "captured": 450.58490566037733,
+      "oracle": 704.4457547169811,
+      "captured_over_oracle": 0.639962348978382,
+      "captured_minus_random": 113.61189766633404,
+      "picked_played": 0.8610634648370497,
+      "mae_squad": 24.614143246591638,
+      "rmse_squad": 34.53253605973673,
+      "spearman_squad": 0.32184666416113983,
+      "mae_played": 25.911879938327814,
+      "rmse_played": 37.37825501485844,
+      "team_total_bias_mean": -89.76062942001055,
+      "team_total_bias_sd": 120.68432705422315,
+      "team_total_bias_rel": -0.20847983799181058,
+      "seed_sd_mean": 2.1693203449249268
+     },
+     "365": {
+      "captured": 450.58254716981133,
+      "oracle": 705.0094339622641,
+      "captured_over_oracle": 0.6396899534052793,
+      "captured_minus_random": 113.609539175768,
+      "picked_played": 0.8606346483704973,
+      "mae_squad": 24.67068929801896,
+      "rmse_squad": 34.62083286517479,
+      "spearman_squad": 0.30952202456877975,
+      "mae_played": 25.999662197087275,
+      "rmse_played": 37.501061860303324,
+      "team_total_bias_mean": -91.22049912866557,
+      "team_total_bias_sd": 119.82695481246013,
+      "team_total_bias_rel": -0.21187055778474687,
+      "seed_sd_mean": 2.113452434539795
+     }
+    },
+    "segments": {}
+   }
+  }
+ }
+}

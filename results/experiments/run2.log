@@ -1,0 +1,3 @@
+fold 2024: train rows 319925 (played 125210), test matches 400 rows 12412
+fold 2025: train rows 434463 (played 164499), test matches 400 rows 12198
+[E13] E13_listnet_custom_objective: captured_over_oracle=0.6767 captured=470.7962 spearman_squad=0.4595 mae_squad=28.2880 dCaptured=-5.28 [-9.39,-1.13] -> worse than B0

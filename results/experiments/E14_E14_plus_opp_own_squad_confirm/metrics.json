@@ -1,0 +1,83 @@
+{
+ "per_fold": [
+  {
+   "mae_squad": 22.810595227538354,
+   "rmse_squad": 31.53178793167737,
+   "spearman_squad": 0.4905357916693161,
+   "mae_played": 26.02910746148978,
+   "rmse_played": 33.99755754307021,
+   "spearman_played": 0.3364344222156707,
+   "logloss_p": 0.4050132781636604,
+   "brier_p": 0.1277354659785913,
+   "captured": 477.2857142857143,
+   "oracle": 702.2771428571428,
+   "captured_over_oracle": 0.6771083537637623,
+   "captured_minus_random": 166.14034751893436,
+   "selection_fallbacks": 19,
+   "hindsight_over_oracle": 0.7296599048946598,
+   "fold": 2023,
+   "secs": 15.9
+  },
+  {
+   "mae_squad": 22.879801773746955,
+   "rmse_squad": 31.48959846413807,
+   "spearman_squad": 0.4960216581335871,
+   "mae_played": 25.787727327733826,
+   "rmse_played": 33.60407120791412,
+   "spearman_played": 0.34546606987483097,
+   "logloss_p": 0.3988495471048896,
+   "brier_p": 0.12597870548404752,
+   "captured": 474.1142857142857,
+   "oracle": 700.7542857142857,
+   "captured_over_oracle": 0.6785610426719071,
+   "captured_minus_random": 158.02220676522535,
+   "selection_fallbacks": 13,
+   "hindsight_over_oracle": 0.7320951999924653,
+   "fold": 2024,
+   "secs": 25.3
+  },
+  {
+   "mae_squad": 22.4969989738041,
+   "rmse_squad": 31.386081218462866,
+   "spearman_squad": 0.5093991624044075,
+   "mae_played": 25.448981964400225,
+   "rmse_played": 33.65761356668132,
+   "spearman_played": 0.3597690828660907,
+   "logloss_p": 0.3882108298016083,
+   "brier_p": 0.12231695435752038,
+   "captured": 475.76,
+   "oracle": 694.7714285714286,
+   "captured_over_oracle": 0.687618742742668,
+   "captured_minus_random": 162.28855851754835,
+   "selection_fallbacks": 14,
+   "hindsight_over_oracle": 0.7430085929975943,
+   "fold": 2025,
+   "secs": 30.8
+  }
+ ],
+ "mean": {
+  "mae_squad": 22.729131991696466,
+  "rmse_squad": 31.4691558714261,
+  "spearman_squad": 0.49865220406910354,
+  "mae_played": 25.75527225120794,
+  "rmse_played": 33.753080772555215,
+  "spearman_played": 0.34722319165219745,
+  "logloss_p": 0.3973578850233861,
+  "brier_p": 0.12534370860671976,
+  "captured": 475.71999999999997,
+  "oracle": 699.2676190476191,
+  "captured_over_oracle": 0.6810960463927791,
+  "captured_minus_random": 162.15037093390268,
+  "selection_fallbacks": 15.333333333333334,
+  "hindsight_over_oracle": 0.7349212326282398,
+  "secs": 24.0
+ },
+ "extra": {},
+ "secs_total": 72.0,
+ "vs_B0_paired_captured_diff_mean_ci95": [
+  1.5066666666666666,
+  -0.4644285714285714,
+  3.5829047619047616
+ ],
+ "verdict": "no significant difference vs B0"
+}

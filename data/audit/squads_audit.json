@@ -1,0 +1,20 @@
+{
+ "rows_base": 411570,
+ "rows_ext": 743708,
+ "base_size": {
+  "median": 15.0,
+  "p10": 12.0,
+  "p90": 20.0
+ },
+ "ext_size": {
+  "median": 27.0,
+  "p10": 15.0,
+  "p90": 42.0
+ },
+ "played_share_base": 0.7014724105255485,
+ "played_share_ext": 0.38819671161262215,
+ "frac_base_lt_11": 0.00015284677111196025,
+ "played_rows_missing_from_base": 0,
+ "played_rows_in_ext_only_frac": 0.0,
+ "pass": true
+}

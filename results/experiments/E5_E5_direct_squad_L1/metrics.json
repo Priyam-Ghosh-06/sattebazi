@@ -1,0 +1,47 @@
+{
+ "per_fold": [
+  {
+   "mae_squad": 21.185778168749266,
+   "rmse_squad": 33.35725497885238,
+   "spearman_squad": 0.4719253780171184,
+   "captured": 464.315,
+   "oracle": 695.8475,
+   "captured_over_oracle": 0.67076686587442,
+   "captured_minus_random": 152.53939288191447,
+   "selection_fallbacks": 9,
+   "fold": 2024,
+   "secs": 9.8
+  },
+  {
+   "mae_squad": 21.343649508174273,
+   "rmse_squad": 33.603144814348255,
+   "spearman_squad": 0.5005284707228033,
+   "captured": 474.0375,
+   "oracle": 700.775,
+   "captured_over_oracle": 0.6786879510554182,
+   "captured_minus_random": 155.96792519755766,
+   "selection_fallbacks": 9,
+   "fold": 2025,
+   "secs": 27.3
+  }
+ ],
+ "mean": {
+  "mae_squad": 21.26471383846177,
+  "rmse_squad": 33.48019989660032,
+  "spearman_squad": 0.48622692436996084,
+  "captured": 469.17625,
+  "oracle": 698.31125,
+  "captured_over_oracle": 0.6747274084649191,
+  "captured_minus_random": 154.25365903973608,
+  "selection_fallbacks": 9.0,
+  "secs": 18.55
+ },
+ "extra": {},
+ "secs_total": 37.1,
+ "vs_B0_paired_captured_diff_mean_ci95": [
+  -6.9,
+  -11.1985625,
+  -2.7229062500000043
+ ],
+ "verdict": "worse than B0"
+}

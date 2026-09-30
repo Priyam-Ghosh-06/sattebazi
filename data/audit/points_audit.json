@@ -1,0 +1,20 @@
+{
+ "rows": 288705,
+ "total_stats_played": {
+  "count": 288705.0,
+  "mean": 38.96265392009144,
+  "std": 35.281583421969195,
+  "min": -6.0,
+  "50%": 30.0,
+  "90%": 88.0,
+  "99%": 152.0,
+  "max": 338.0
+ },
+ "frac_only_participation": 0.04751563014149391,
+ "sum_components_eq_total": true,
+ "config": {
+  "six_also_boundary": false,
+  "duck_scope": "all"
+ },
+ "pass": true
+}

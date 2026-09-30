@@ -1,0 +1,242 @@
+{
+ "method": "pre-move per-dir count failed (unquoted path with space); verified post-move file sets against each year README manifest, and totals against pre-move ls totals (male 16908, female 4039)",
+ "per_dir": {
+  "female/2003": {
+   "readme": 1,
+   "files": 1,
+   "match": true
+  },
+  "female/2005": {
+   "readme": 1,
+   "files": 1,
+   "match": true
+  },
+  "female/2006": {
+   "readme": 1,
+   "files": 1,
+   "match": true
+  },
+  "female/2007": {
+   "readme": 3,
+   "files": 3,
+   "match": true
+  },
+  "female/2008": {
+   "readme": 6,
+   "files": 6,
+   "match": true
+  },
+  "female/2009": {
+   "readme": 8,
+   "files": 8,
+   "match": true
+  },
+  "female/2010": {
+   "readme": 4,
+   "files": 4,
+   "match": true
+  },
+  "female/2011": {
+   "readme": 6,
+   "files": 6,
+   "match": true
+  },
+  "female/2012": {
+   "readme": 39,
+   "files": 39,
+   "match": true
+  },
+  "female/2013": {
+   "readme": 52,
+   "files": 52,
+   "match": true
+  },
+  "female/2014": {
+   "readme": 67,
+   "files": 67,
+   "match": true
+  },
+  "female/2015": {
+   "readme": 53,
+   "files": 53,
+   "match": true
+  },
+  "female/2016": {
+   "readme": 102,
+   "files": 102,
+   "match": true
+  },
+  "female/2017": {
+   "readme": 196,
+   "files": 196,
+   "match": true
+  },
+  "female/2018": {
+   "readme": 242,
+   "files": 242,
+   "match": true
+  },
+  "female/2019": {
+   "readme": 294,
+   "files": 294,
+   "match": true
+  },
+  "female/2020": {
+   "readme": 154,
+   "files": 154,
+   "match": true
+  },
+  "female/2021": {
+   "readme": 344,
+   "files": 344,
+   "match": true
+  },
+  "female/2022": {
+   "readme": 496,
+   "files": 496,
+   "match": true
+  },
+  "female/2023": {
+   "readme": 559,
+   "files": 559,
+   "match": true
+  },
+  "female/2024": {
+   "readme": 651,
+   "files": 651,
+   "match": true
+  },
+  "female/2025": {
+   "readme": 760,
+   "files": 760,
+   "match": true
+  },
+  "male/2001": {
+   "readme": 1,
+   "files": 1,
+   "match": true
+  },
+  "male/2002": {
+   "readme": 5,
+   "files": 5,
+   "match": true
+  },
+  "male/2003": {
+   "readme": 139,
+   "files": 139,
+   "match": true
+  },
+  "male/2004": {
+   "readme": 96,
+   "files": 96,
+   "match": true
+  },
+  "male/2005": {
+   "readme": 94,
+   "files": 94,
+   "match": true
+  },
+  "male/2006": {
+   "readme": 167,
+   "files": 167,
+   "match": true
+  },
+  "male/2007": {
+   "readme": 219,
+   "files": 219,
+   "match": true
+  },
+  "male/2008": {
+   "readme": 215,
+   "files": 215,
+   "match": true
+  },
+  "male/2009": {
+   "readme": 263,
+   "files": 263,
+   "match": true
+  },
+  "male/2010": {
+   "readme": 284,
+   "files": 284,
+   "match": true
+  },
+  "male/2011": {
+   "readme": 286,
+   "files": 286,
+   "match": true
+  },
+  "male/2012": {
+   "readme": 392,
+   "files": 392,
+   "match": true
+  },
+  "male/2013": {
+   "readme": 474,
+   "files": 474,
+   "match": true
+  },
+  "male/2014": {
+   "readme": 796,
+   "files": 796,
+   "match": true
+  },
+  "male/2015": {
+   "readme": 830,
+   "files": 830,
+   "match": true
+  },
+  "male/2016": {
+   "readme": 930,
+   "files": 930,
+   "match": true
+  },
+  "male/2017": {
+   "readme": 879,
+   "files": 879,
+   "match": true
+  },
+  "male/2018": {
+   "readme": 1068,
+   "files": 1068,
+   "match": true
+  },
+  "male/2019": {
+   "readme": 1358,
+   "files": 1358,
+   "match": true
+  },
+  "male/2020": {
+   "readme": 574,
+   "files": 574,
+   "match": true
+  },
+  "male/2021": {
+   "readme": 1296,
+   "files": 1296,
+   "match": true
+  },
+  "male/2022": {
+   "readme": 1516,
+   "files": 1516,
+   "match": true
+  },
+  "male/2023": {
+   "readme": 1450,
+   "files": 1450,
+   "match": true
+  },
+  "male/2024": {
+   "readme": 1790,
+   "files": 1790,
+   "match": true
+  },
+  "male/2025": {
+   "readme": 1786,
+   "files": 1786,
+   "match": true
+  }
+ },
+ "total_files": 20947,
+ "pass": true
+}

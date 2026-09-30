@@ -1,0 +1,887 @@
+match_date,team1,team2,player,actual_points
+2025-10-03,Australia,New Zealand,JR Hazlewood,3
+2025-10-03,Australia,New Zealand,TM Head,9
+2025-10-03,Australia,New Zealand,A Zampa,3
+2025-10-03,Australia,New Zealand,SA Abbott,3
+2025-10-03,Australia,New Zealand,XC Bartlett,3
+2025-10-03,Australia,New Zealand,MR Marsh,14
+2025-10-03,Australia,New Zealand,AT Carey,3
+2025-10-03,Australia,New Zealand,MW Short,5
+2025-10-03,Australia,New Zealand,MP Stoinis,3
+2025-10-03,Australia,New Zealand,TH David,3
+2025-10-03,Australia,New Zealand,MJ Owen,3
+2025-10-03,Australia,New Zealand,TL Seifert,3
+2025-10-03,Australia,New Zealand,TB Robinson,3
+2025-10-03,Australia,New Zealand,IS Sodhi,3
+2025-10-03,Australia,New Zealand,MS Chapman,3
+2025-10-03,Australia,New Zealand,JDS Neesham,3
+2025-10-03,Australia,New Zealand,JA Duffy,30
+2025-10-03,Australia,New Zealand,DP Conway,9
+2025-10-03,Australia,New Zealand,BV Sears,3
+2025-10-03,Australia,New Zealand,MG Bracewell,3
+2025-10-03,Australia,New Zealand,MJ Henry,7
+2025-10-03,Australia,New Zealand,DJ Mitchell,3
+2025-10-08,Nepal,Kuwait,Aqif Farooq,47
+2025-10-08,Nepal,Kuwait,MNM Aslam,41
+2025-10-08,Nepal,Kuwait,Bilal Tahir,5
+2025-10-08,Nepal,Kuwait,Usman Patel,21
+2025-10-08,Nepal,Kuwait,Meet Bhavsar,17
+2025-10-08,Nepal,Kuwait,CV Anto,38
+2025-10-08,Nepal,Kuwait,R Sandaruwan,1
+2025-10-08,Nepal,Kuwait,NT Rajendran,72
+2025-10-08,Nepal,Kuwait,A Chenthamara,73
+2025-10-08,Nepal,Kuwait,Yasin Patel,34
+2025-10-08,Nepal,Kuwait,Shiraz Khan,10
+2025-10-08,Nepal,Kuwait,S Jora,20
+2025-10-08,Nepal,Kuwait,DS Airee,54
+2025-10-08,Nepal,Kuwait,RK Paudel,82
+2025-10-08,Nepal,Kuwait,Sompal Kami,48
+2025-10-08,Nepal,Kuwait,LN Rajbanshi,75
+2025-10-08,Nepal,Kuwait,NK Yadav,45
+2025-10-08,Nepal,Kuwait,Kushal Malla,13
+2025-10-08,Nepal,Kuwait,Gulsan Jha,29
+2025-10-08,Nepal,Kuwait,S Lamichhane,80
+2025-10-08,Nepal,Kuwait,Aasif Sheikh,11
+2025-10-08,Nepal,Kuwait,K Bhurtel,120
+2025-10-10,Austria,Turkey,MPM Pathirannehelage,54
+2025-10-10,Austria,Turkey,Hadia Siddiqui,10
+2025-10-10,Austria,Turkey,P Ganeshan,13
+2025-10-10,Austria,Turkey,A Nookala,24
+2025-10-10,Austria,Turkey,SM Ariyasinghage,4
+2025-10-10,Austria,Turkey,A Saifee,3
+2025-10-10,Austria,Turkey,S Bhardwaj,7
+2025-10-10,Austria,Turkey,Ashi Chopla,19
+2025-10-10,Austria,Turkey,P Sabu,102
+2025-10-10,Austria,Turkey,AM Zepeda,86
+2025-10-10,Austria,Turkey,H Bhullar,14
+2025-10-10,Austria,Turkey,R Cenik,3
+2025-10-10,Austria,Turkey,S Ozkunduz,13
+2025-10-10,Austria,Turkey,H Celik,189
+2025-10-10,Austria,Turkey,G Keles,4
+2025-10-10,Austria,Turkey,M Bayram,12
+2025-10-10,Austria,Turkey,K Canavarci,74
+2025-10-10,Austria,Turkey,G Ayan,28
+2025-10-10,Austria,Turkey,S Yildirim,4
+2025-10-10,Austria,Turkey,D Tekyildirim,6
+2025-10-10,Austria,Turkey,G Cengiz,5
+2025-10-10,Austria,Turkey,Ezgi Nur Kilic,79
+2025-10-10,Romania,Bulgaria,V Nikolova,9
+2025-10-10,Romania,Bulgaria,N Gocheva,1
+2025-10-10,Romania,Bulgaria,S Galabova,9
+2025-10-10,Romania,Bulgaria,K Srandeva,48
+2025-10-10,Romania,Bulgaria,T Dissanayake,21
+2025-10-10,Romania,Bulgaria,V Kostova,3
+2025-10-10,Romania,Bulgaria,V Atanasova,3
+2025-10-10,Romania,Bulgaria,D Ruynekova,5
+2025-10-10,Romania,Bulgaria,N Toleva,4
+2025-10-10,Romania,Bulgaria,S Sarandeva,10
+2025-10-10,Romania,Bulgaria,M Abadjieva,1
+2025-10-10,Romania,Bulgaria,M Marin,19
+2025-10-10,Romania,Bulgaria,D Tanase,150
+2025-10-10,Romania,Bulgaria,A Lupascu,122
+2025-10-10,Romania,Bulgaria,I Muntean,47
+2025-10-10,Romania,Bulgaria,C Cirlig,3
+2025-10-10,Romania,Bulgaria,I Palliya,3
+2025-10-10,Romania,Bulgaria,J Chirila,33
+2025-10-10,Romania,Bulgaria,G Ionita,3
+2025-10-10,Romania,Bulgaria,M Kearvell,46
+2025-10-10,Romania,Bulgaria,RL Blake,160
+2025-10-10,Romania,Bulgaria,S Slavaston,3
+2025-10-12,Austria,Norway,MPM Pathirannehelage,94
+2025-10-12,Austria,Norway,Hadia Siddiqui,65
+2025-10-12,Austria,Norway,P Ganeshan,7
+2025-10-12,Austria,Norway,A Nookala,27
+2025-10-12,Austria,Norway,SM Ariyasinghage,1
+2025-10-12,Austria,Norway,A Saifee,3
+2025-10-12,Austria,Norway,S Bhardwaj,70
+2025-10-12,Austria,Norway,Ashi Chopla,28
+2025-10-12,Austria,Norway,P Sabu,66
+2025-10-12,Austria,Norway,AM Zepeda,41
+2025-10-12,Austria,Norway,H Bhullar,4
+2025-10-12,Austria,Norway,VB Viyala,76
+2025-10-12,Austria,Norway,AS Gorad,19
+2025-10-12,Austria,Norway,Mirab Sajjad,10
+2025-10-12,Austria,Norway,Mirab Razwan,31
+2025-10-12,Austria,Norway,Ayesha Hasan,24
+2025-10-12,Austria,Norway,Bijeyata Kumari,11
+2025-10-12,Austria,Norway,R Immadi,56
+2025-10-12,Austria,Norway,P Agrawal,17
+2025-10-12,Austria,Norway,Prachi Kumari,42
+2025-10-12,Austria,Norway,Nayab Razwan,85
+2025-10-12,Austria,Norway,Alina Aslam,56
+2025-10-17,Japan,Oman,Abdul Samad,26
+2025-10-17,Japan,Oman,K Kadowaki-Fleming,16
+2025-10-17,Japan,Oman,Esam Rahman,27
+2025-10-17,Japan,Oman,C Hinze,53
+2025-10-17,Japan,Oman,D Suzuki,6
+2025-10-17,Japan,Oman,A Patmore,4
+2025-10-17,Japan,Oman,I Takahashi,53
+2025-10-17,Japan,Oman,M Taniyama,21
+2025-10-17,Japan,Oman,R Sakurano-Thomas,17
+2025-10-17,Japan,Oman,L Yamamoto-Lake,10
+2025-10-17,Japan,Oman,W Miyauchi,4
+2025-10-17,Japan,Oman,Hammad Mirza,69
+2025-10-17,Japan,Oman,V Shukla,3
+2025-10-17,Japan,Oman,Shah Faisal,82
+2025-10-17,Japan,Oman,Aamir Kaleem,39
+2025-10-17,Japan,Oman,AR Bisht,3
+2025-10-17,Japan,Oman,Nadeem Khan,76
+2025-10-17,Japan,Oman,Zikria Islam,3
+2025-10-17,Japan,Oman,Sufyan Mehmood,111
+2025-10-17,Japan,Oman,Shakeel Ahmed,40
+2025-10-17,Japan,Oman,Wasim Ali,57
+2025-10-17,Japan,Oman,J Ramanandi,64
+2025-10-18,England,New Zealand,AU Rashid,3
+2025-10-18,England,New Zealand,T Banton,13
+2025-10-18,England,New Zealand,JG Bethell,21
+2025-10-18,England,New Zealand,PD Salt,6
+2025-10-18,England,New Zealand,LA Dawson,3
+2025-10-18,England,New Zealand,HC Brook,29
+2025-10-18,England,New Zealand,L Wood,3
+2025-10-18,England,New Zealand,JC Buttler,41
+2025-10-18,England,New Zealand,BA Carse,6
+2025-10-18,England,New Zealand,SM Curran,65
+2025-10-18,England,New Zealand,JM Cox,21
+2025-10-18,England,New Zealand,TL Seifert,3
+2025-10-18,England,New Zealand,TB Robinson,3
+2025-10-18,England,New Zealand,KA Jamieson,38
+2025-10-18,England,New Zealand,MS Chapman,9
+2025-10-18,England,New Zealand,JDS Neesham,43
+2025-10-18,England,New Zealand,R Ravindra,3
+2025-10-18,England,New Zealand,JA Duffy,32
+2025-10-18,England,New Zealand,MG Bracewell,34
+2025-10-18,England,New Zealand,MJ Santner,42
+2025-10-18,England,New Zealand,MJ Henry,53
+2025-10-18,England,New Zealand,DJ Mitchell,9
+2025-10-20,Canada,Uganda,J Oldham,15
+2025-10-20,Canada,Uganda,Habeeba Bader,6
+2025-10-20,Canada,Uganda,Amarpal Kaur,54
+2025-10-20,Canada,Uganda,TA Lavia,7
+2025-10-20,Canada,Uganda,K Kapadia,2
+2025-10-20,Canada,Uganda,I Goordial-John,23
+2025-10-20,Canada,Uganda,A Perera,46
+2025-10-20,Canada,Uganda,Rabbjyot Rajput,3
+2025-10-20,Canada,Uganda,V Mahajan,54
+2025-10-20,Canada,Uganda,T Thorpe,10
+2025-10-20,Canada,Uganda,Zeel Patel,1
+2025-10-20,Canada,Uganda,R Musamali,17
+2025-10-20,Canada,Uganda,C Aweko,26
+2025-10-20,Canada,Uganda,I Nakisuuyi,115
+2025-10-20,Canada,Uganda,S Nampiina,10
+2025-10-20,Canada,Uganda,NJ Amongin,48
+2025-10-20,Canada,Uganda,J Mbabazi,49
+2025-10-20,Canada,Uganda,K Awino,8
+2025-10-20,Canada,Uganda,S Akiteng,51
+2025-10-20,Canada,Uganda,K Amuge,159
+2025-10-20,Canada,Uganda,E Iloku,5
+2025-10-20,Canada,Uganda,P Alako,3
+2025-11-05,Canada,Tanzania,Habeeba Bader,9
+2025-11-05,Canada,Tanzania,Amarpal Kaur,158
+2025-11-05,Canada,Tanzania,Vritti Dahiya,3
+2025-11-05,Canada,Tanzania,K Kapadia,14
+2025-11-05,Canada,Tanzania,I Goordial-John,42
+2025-11-05,Canada,Tanzania,A Perera,220
+2025-11-05,Canada,Tanzania,Rabbjyot Rajput,18
+2025-11-05,Canada,Tanzania,V Mahajan,41
+2025-11-05,Canada,Tanzania,T Thorpe,12
+2025-11-05,Canada,Tanzania,Srishti Raha,9
+2025-11-05,Canada,Tanzania,Zeel Patel,3
+2025-11-05,Canada,Tanzania,SH Mohamedi,1
+2025-11-05,Canada,Tanzania,NN Saidi,38
+2025-11-05,Canada,Tanzania,FO Kibasu,24
+2025-11-05,Canada,Tanzania,JG Kimaro,16
+2025-11-05,Canada,Tanzania,SD Hussein,6
+2025-11-05,Canada,Tanzania,PZ Kamunya,23
+2025-11-05,Canada,Tanzania,Nasra Mohamedi,9
+2025-11-05,Canada,Tanzania,S Mtae,16
+2025-11-05,Canada,Tanzania,S Kizito,34
+2025-11-05,Canada,Tanzania,SF Jerome,10
+2025-11-05,Canada,Tanzania,NJ Pius,69
+2025-11-06,Myanmar,Indonesia,IKEG Artawan,3
+2025-11-06,Myanmar,Indonesia,GA Priandana,129
+2025-11-06,Myanmar,Indonesia,F Banunaek,10
+2025-11-06,Myanmar,Indonesia,S Kharvi,3
+2025-11-06,Myanmar,Indonesia,KD Kesuma,43
+2025-11-06,Myanmar,Indonesia,S Jegannathan,12
+2025-11-06,Myanmar,Indonesia,DJ Hawoe,22
+2025-11-06,Myanmar,Indonesia,Ahmad Ramdoni,9
+2025-11-06,Myanmar,Indonesia,GD Arta,3
+2025-11-06,Myanmar,Indonesia,A Alexander,75
+2025-11-06,Myanmar,Indonesia,RM Koda,55
+2025-11-06,Myanmar,Indonesia,Pyae Phyo Wai,22
+2025-11-06,Myanmar,Indonesia,H Lin Oo,11
+2025-11-06,Myanmar,Indonesia,Thuya Aung,13
+2025-11-06,Myanmar,Indonesia,Nyeing Cham Soe,3
+2025-11-06,Myanmar,Indonesia,Nay Lin Htun,4
+2025-11-06,Myanmar,Indonesia,KK Lin Thu,41
+2025-11-06,Myanmar,Indonesia,Sai Hla Htwe,10
+2025-11-06,Myanmar,Indonesia,Swann Htet Ko Ko,1
+2025-11-06,Myanmar,Indonesia,Khin Aye,24
+2025-11-06,Myanmar,Indonesia,H Lin Aung,4
+2025-11-06,Myanmar,Indonesia,Myat Thu Aung,3
+2025-11-08,India,Australia,A Zampa,3
+2025-11-08,India,Australia,JR Philippe,3
+2025-11-08,India,Australia,XC Bartlett,6
+2025-11-08,India,Australia,MR Marsh,3
+2025-11-08,India,Australia,JP Inglis,3
+2025-11-08,India,Australia,NT Ellis,4
+2025-11-08,India,Australia,MW Short,3
+2025-11-08,India,Australia,GJ Maxwell,3
+2025-11-08,India,Australia,MP Stoinis,3
+2025-11-08,India,Australia,BJ Dwarshuis,1
+2025-11-08,India,Australia,TH David,3
+2025-11-08,India,Australia,RK Singh,3
+2025-11-08,India,Australia,Arshdeep Singh,3
+2025-11-08,India,Australia,SA Yadav,3
+2025-11-08,India,Australia,AR Patel,3
+2025-11-08,India,Australia,JJ Bumrah,3
+2025-11-08,India,Australia,CV Varun,3
+2025-11-08,India,Australia,JM Sharma,3
+2025-11-08,India,Australia,S Dube,3
+2025-11-08,India,Australia,Shubman Gill,48
+2025-11-08,India,Australia,Washington Sundar,3
+2025-11-08,India,Australia,Abhishek Sharma,34
+2025-11-14,Thailand,Namibia,SN Shihepo,105
+2025-11-14,Thailand,Namibia,SA Wittmann,52
+2025-11-14,Thailand,Namibia,W Mwatile,51
+2025-11-14,Thailand,Namibia,E Van Zyl,6
+2025-11-14,Thailand,Namibia,M Mwatile,5
+2025-11-14,Thailand,Namibia,Yasmeen Khan,18
+2025-11-14,Thailand,Namibia,JA Diergaardt,17
+2025-11-14,Thailand,Namibia,M Gorases,24
+2025-11-14,Thailand,Namibia,V Hamunyela,48
+2025-11-14,Thailand,Namibia,EU Kejarukua,31
+2025-11-14,Thailand,Namibia,KA Green,1
+2025-11-14,Thailand,Namibia,N Chaiwai,13
+2025-11-14,Thailand,Namibia,T Putthawong,51
+2025-11-14,Thailand,Namibia,S Laomi,51
+2025-11-14,Thailand,Namibia,O Kamchomphu,173
+2025-11-14,Thailand,Namibia,N Boochatham,37
+2025-11-14,Thailand,Namibia,R Kanoh,8
+2025-11-14,Thailand,Namibia,P Maya,48
+2025-11-14,Thailand,Namibia,N Koncharoenkai,71
+2025-11-14,Thailand,Namibia,N Chantam,23
+2025-11-14,Thailand,Namibia,S Chaturongrattana,53
+2025-11-14,Thailand,Namibia,C Sutthiruang,44
+2025-11-18,Bahrain,Indonesia,Asif Ali,102
+2025-11-18,Bahrain,Indonesia,Abdul Majid Abbasi,17
+2025-11-18,Bahrain,Indonesia,P Kurup,64
+2025-11-18,Bahrain,Indonesia,Ali Dawood,47
+2025-11-18,Bahrain,Indonesia,Imran Anwar,22
+2025-11-18,Bahrain,Indonesia,Ahmer Bin Nisar,22
+2025-11-18,Bahrain,Indonesia,Junaid Aziz,16
+2025-11-18,Bahrain,Indonesia,Imran Khan,65
+2025-11-18,Bahrain,Indonesia,Naveena Shetty,16
+2025-11-18,Bahrain,Indonesia,Fiaz Ahmed,22
+2025-11-18,Bahrain,Indonesia,Rizwan Butt,61
+2025-11-18,Bahrain,Indonesia,IKEG Artawan,66
+2025-11-18,Bahrain,Indonesia,GA Priandana,24
+2025-11-18,Bahrain,Indonesia,F Banunaek,73
+2025-11-18,Bahrain,Indonesia,S Kharvi,14
+2025-11-18,Bahrain,Indonesia,KD Kesuma,1
+2025-11-18,Bahrain,Indonesia,DK Shetty,8
+2025-11-18,Bahrain,Indonesia,S Jegannathan,73
+2025-11-18,Bahrain,Indonesia,DJ Hawoe,33
+2025-11-18,Bahrain,Indonesia,Ahmad Ramdoni,7
+2025-11-18,Bahrain,Indonesia,GD Arta,22
+2025-11-18,Bahrain,Indonesia,RM Koda,9
+2025-11-20,Namibia,Tanzania,SN Shihepo,11
+2025-11-20,Namibia,Tanzania,SA Wittmann,83
+2025-11-20,Namibia,Tanzania,W Mwatile,17
+2025-11-20,Namibia,Tanzania,E Van Zyl,16
+2025-11-20,Namibia,Tanzania,M Mwatile,14
+2025-11-20,Namibia,Tanzania,Yasmeen Khan,25
+2025-11-20,Namibia,Tanzania,JA Diergaardt,48
+2025-11-20,Namibia,Tanzania,M Gorases,3
+2025-11-20,Namibia,Tanzania,V Hamunyela,32
+2025-11-20,Namibia,Tanzania,EU Kejarukua,11
+2025-11-20,Namibia,Tanzania,KA Green,25
+2025-11-20,Namibia,Tanzania,MH Ushanga,67
+2025-11-20,Namibia,Tanzania,SH Mohamedi,13
+2025-11-20,Namibia,Tanzania,NN Saidi,48
+2025-11-20,Namibia,Tanzania,FO Kibasu,38
+2025-11-20,Namibia,Tanzania,HM Omary,40
+2025-11-20,Namibia,Tanzania,JG Kimaro,40
+2025-11-20,Namibia,Tanzania,PZ Kamunya,49
+2025-11-20,Namibia,Tanzania,Nasra Mohamedi,3
+2025-11-20,Namibia,Tanzania,S Mtae,76
+2025-11-20,Namibia,Tanzania,S Kizito,27
+2025-11-20,Namibia,Tanzania,NJ Pius,14
+2025-11-21,Sydney Thunder,Brisbane Heat,JL Jonassen,60
+2025-11-21,Sydney Thunder,Brisbane Heat,ML Wrigley,18
+2025-11-21,Sydney Thunder,Brisbane Heat,G Redmayne,13
+2025-11-21,Sydney Thunder,Brisbane Heat,A O'Neil,33
+2025-11-21,Sydney Thunder,Brisbane Heat,L Winfield-Hill,7
+2025-11-21,Sydney Thunder,Brisbane Heat,CA Henry,18
+2025-11-21,Sydney Thunder,Brisbane Heat,SU Ginger,6
+2025-11-21,Sydney Thunder,Brisbane Heat,NM Hancock,82
+2025-11-21,Sydney Thunder,Brisbane Heat,LK Hamilton,50
+2025-11-21,Sydney Thunder,Brisbane Heat,CR Knott,25
+2025-11-21,Sydney Thunder,Brisbane Heat,N de Klerk,122
+2025-11-21,Sydney Thunder,Brisbane Heat,SL Bates,76
+2025-11-21,Sydney Thunder,Brisbane Heat,S Ismail,52
+2025-11-21,Sydney Thunder,Brisbane Heat,A Learoyd,24
+2025-11-21,Sydney Thunder,Brisbane Heat,T Wilson,112
+2025-11-21,Sydney Thunder,Brisbane Heat,L Harris,7
+2025-11-21,Sydney Thunder,Brisbane Heat,HC Knight,61
+2025-11-21,Sydney Thunder,Brisbane Heat,P Litchfield,54
+2025-11-21,Sydney Thunder,Brisbane Heat,L Finn,34
+2025-11-21,Sydney Thunder,Brisbane Heat,G Voll,96
+2025-11-21,Sydney Thunder,Brisbane Heat,EL Arlott,102
+2025-11-21,Sydney Thunder,Brisbane Heat,T Peschel,30
+2025-11-21,Papua New Guinea,Thailand,D Lohia,5
+2025-11-21,Papua New Guinea,Thailand,Miria Raio,4
+2025-11-21,Papua New Guinea,Thailand,N Vare,10
+2025-11-21,Papua New Guinea,Thailand,B Tau,15
+2025-11-21,Papua New Guinea,Thailand,P Siaka,158
+2025-11-21,Papua New Guinea,Thailand,H Doriga,1
+2025-11-21,Papua New Guinea,Thailand,I Toua,55
+2025-11-21,Papua New Guinea,Thailand,GP Tom,94
+2025-11-21,Papua New Guinea,Thailand,E Pokana,25
+2025-11-21,Papua New Guinea,Thailand,HJ Thomas,52
+2025-11-21,Papua New Guinea,Thailand,HL Tau,48
+2025-11-21,Papua New Guinea,Thailand,N Chaiwai,69
+2025-11-21,Papua New Guinea,Thailand,T Putthawong,20
+2025-11-21,Papua New Guinea,Thailand,S Laomi,113
+2025-11-21,Papua New Guinea,Thailand,O Kamchomphu,23
+2025-11-21,Papua New Guinea,Thailand,N Boochatham,7
+2025-11-21,Papua New Guinea,Thailand,R Kanoh,6
+2025-11-21,Papua New Guinea,Thailand,P Maya,65
+2025-11-21,Papua New Guinea,Thailand,N Koncharoenkai,11
+2025-11-21,Papua New Guinea,Thailand,N Chantam,16
+2025-11-21,Papua New Guinea,Thailand,S Chaturongrattana,85
+2025-11-21,Papua New Guinea,Thailand,C Sutthiruang,8
+2025-11-22,Lumbini Lions,Karnali Yaks,WG Bosisto,59
+2025-11-22,Lumbini Lions,Karnali Yaks,A Gharti,3
+2025-11-22,Lumbini Lions,Karnali Yaks,Y Khatri,40
+2025-11-22,Lumbini Lions,Karnali Yaks,Najibullah Zadran,9
+2025-11-22,Lumbini Lions,Karnali Yaks,MRJ Watt,224
+2025-11-22,Lumbini Lions,Karnali Yaks,Sompal Kami,40
+2025-11-22,Lumbini Lions,Karnali Yaks,NK Yadav,64
+2025-11-22,Lumbini Lions,Karnali Yaks,P Sarraf,3
+2025-11-22,Lumbini Lions,Karnali Yaks,BP Sharma,41
+2025-11-22,Lumbini Lions,Karnali Yaks,Gulsan Jha,31
+2025-11-22,Lumbini Lions,Karnali Yaks,Priyank Panchal,24
+2025-11-22,Lumbini Lions,Karnali Yaks,Abhishesh Gautam,4
+2025-11-22,Lumbini Lions,Karnali Yaks,S Jora,4
+2025-11-22,Lumbini Lions,Karnali Yaks,DJM Short,28
+2025-11-22,Lumbini Lions,Karnali Yaks,RK Paudel,61
+2025-11-22,Lumbini Lions,Karnali Yaks,S Malla,46
+2025-11-22,Lumbini Lions,Karnali Yaks,Sameer Ali,4
+2025-11-22,Lumbini Lions,Karnali Yaks,Gulbadin Naib,8
+2025-11-22,Lumbini Lions,Karnali Yaks,JJ Smit,40
+2025-11-22,Lumbini Lions,Karnali Yaks,D Nath,10
+2025-11-22,Lumbini Lions,Karnali Yaks,S Maharjan,2
+2025-11-22,Lumbini Lions,Karnali Yaks,R Trumpelmann,56
+2025-11-23,Melbourne Stars,Brisbane Heat,JL Jonassen,52
+2025-11-23,Melbourne Stars,Brisbane Heat,ML Wrigley,6
+2025-11-23,Melbourne Stars,Brisbane Heat,G Redmayne,38
+2025-11-23,Melbourne Stars,Brisbane Heat,A O'Neil,20
+2025-11-23,Melbourne Stars,Brisbane Heat,L Winfield-Hill,31
+2025-11-23,Melbourne Stars,Brisbane Heat,GM Harris,27
+2025-11-23,Melbourne Stars,Brisbane Heat,CA Henry,58
+2025-11-23,Melbourne Stars,Brisbane Heat,NM Hancock,64
+2025-11-23,Melbourne Stars,Brisbane Heat,LK Hamilton,43
+2025-11-23,Melbourne Stars,Brisbane Heat,CR Knott,52
+2025-11-23,Melbourne Stars,Brisbane Heat,N de Klerk,115
+2025-11-23,Melbourne Stars,Brisbane Heat,KJ Garth,37
+2025-11-23,Melbourne Stars,Brisbane Heat,MM Lanning,20
+2025-11-23,Melbourne Stars,Brisbane Heat,ML Gibson,9
+2025-11-23,Melbourne Stars,Brisbane Heat,M Kapp,202
+2025-11-23,Melbourne Stars,Brisbane Heat,A Sutherland,63
+2025-11-23,Melbourne Stars,Brisbane Heat,SK Moloney,6
+2025-11-23,Melbourne Stars,Brisbane Heat,AE Jones,21
+2025-11-23,Melbourne Stars,Brisbane Heat,G Prestwidge,28
+2025-11-23,Melbourne Stars,Brisbane Heat,S Day,98
+2025-11-23,Melbourne Stars,Brisbane Heat,DR Gibson,55
+2025-11-23,Melbourne Stars,Brisbane Heat,R McKenna,60
+2025-11-28,Tanzania,Uganda,MH Ushanga,47
+2025-11-28,Tanzania,Uganda,NN Saidi,34
+2025-11-28,Tanzania,Uganda,FO Kibasu,13
+2025-11-28,Tanzania,Uganda,HM Omary,11
+2025-11-28,Tanzania,Uganda,JG Kimaro,42
+2025-11-28,Tanzania,Uganda,SD Hussein,4
+2025-11-28,Tanzania,Uganda,PZ Kamunya,49
+2025-11-28,Tanzania,Uganda,S Mtae,11
+2025-11-28,Tanzania,Uganda,S Kizito,-2
+2025-11-28,Tanzania,Uganda,SF Jerome,1
+2025-11-28,Tanzania,Uganda,NJ Pius,3
+2025-11-28,Tanzania,Uganda,R Musamali,8
+2025-11-28,Tanzania,Uganda,C Aweko,73
+2025-11-28,Tanzania,Uganda,I Nakisuuyi,85
+2025-11-28,Tanzania,Uganda,S Nampiina,8
+2025-11-28,Tanzania,Uganda,J Mbabazi,64
+2025-11-28,Tanzania,Uganda,M Ariokot,22
+2025-11-28,Tanzania,Uganda,K Awino,13
+2025-11-28,Tanzania,Uganda,S Akiteng,64
+2025-11-28,Tanzania,Uganda,K Amuge,51
+2025-11-28,Tanzania,Uganda,E Iloku,44
+2025-11-28,Tanzania,Uganda,P Alako,8
+2025-11-29,Pokhara Avengers,Lumbini Lions,Abhishesh Gautam,10
+2025-11-29,Pokhara Avengers,Lumbini Lions,S Jora,37
+2025-11-29,Pokhara Avengers,Lumbini Lions,DJM Short,11
+2025-11-29,Pokhara Avengers,Lumbini Lions,RK Paudel,61
+2025-11-29,Pokhara Avengers,Lumbini Lions,S Malla,80
+2025-11-29,Pokhara Avengers,Lumbini Lions,TR Bhandari,70
+2025-11-29,Pokhara Avengers,Lumbini Lions,N Dickwella,54
+2025-11-29,Pokhara Avengers,Lumbini Lions,Gulbadin Naib,74
+2025-11-29,Pokhara Avengers,Lumbini Lions,D Nath,15
+2025-11-29,Pokhara Avengers,Lumbini Lions,S Maharjan,1
+2025-11-29,Pokhara Avengers,Lumbini Lions,R Trumpelmann,25
+2025-11-29,Pokhara Avengers,Lumbini Lions,MD Taylor,60
+2025-11-29,Pokhara Avengers,Lumbini Lions,D Kharel,10
+2025-11-29,Pokhara Avengers,Lumbini Lions,Abhisekh Tiwari,3
+2025-11-29,Pokhara Avengers,Lumbini Lions,SL Verma,18
+2025-11-29,Pokhara Avengers,Lumbini Lions,TR Das,4
+2025-11-29,Pokhara Avengers,Lumbini Lions,Bipin Khatri,82
+2025-11-29,Pokhara Avengers,Lumbini Lions,AM Rossington,122
+2025-11-29,Pokhara Avengers,Lumbini Lions,S Dhakal,67
+2025-11-29,Pokhara Avengers,Lumbini Lions,JDS Neesham,101
+2025-11-29,Pokhara Avengers,Lumbini Lions,K Thagunna,16
+2025-11-29,Pokhara Avengers,Lumbini Lions,K Bhurtel,6
+2025-11-29,Brazil,Argentina,A Husain,21
+2025-11-29,Brazil,Argentina,H Fennell,10
+2025-11-29,Brazil,Argentina,AAP Rivero,125
+2025-11-29,Brazil,Argentina,Lucas Rossi,42
+2025-11-29,Brazil,Argentina,A Ferguson,9
+2025-11-29,Brazil,Argentina,T Rossi,73
+2025-11-29,Brazil,Argentina,R Escobar,9
+2025-11-29,Brazil,Argentina,JP Cabrera,3
+2025-11-29,Brazil,Argentina,Manuel Iturbe,3
+2025-11-29,Brazil,Argentina,P Baron,14
+2025-11-29,Brazil,Argentina,A Kirschbaum,115
+2025-11-29,Brazil,Argentina,LH Rodrigues,15
+2025-11-29,Brazil,Argentina,L Maximo,1
+2025-11-29,Brazil,Argentina,CC Machado,1
+2025-11-29,Brazil,Argentina,Yasar Haroon,24
+2025-11-29,Brazil,Argentina,SAR Hashimi,1
+2025-11-29,Brazil,Argentina,G Oliveira,7
+2025-11-29,Brazil,Argentina,Rejaul Karim,55
+2025-11-29,Brazil,Argentina,FC Muniz,4
+2025-11-29,Brazil,Argentina,LG Moras,5
+2025-11-29,Brazil,Argentina,MFI Assuncao,7
+2025-11-29,Brazil,Argentina,LF Muller,19
+2025-11-30,Thailand,Bahrain,Asif Ali,74
+2025-11-30,Thailand,Bahrain,Abdul Majid Abbasi,84
+2025-11-30,Thailand,Bahrain,Muhammad Salman,55
+2025-11-30,Thailand,Bahrain,P Kurup,2
+2025-11-30,Thailand,Bahrain,Asif Javed,123
+2025-11-30,Thailand,Bahrain,Imran Anwar,21
+2025-11-30,Thailand,Bahrain,Ahmer Bin Nisar,14
+2025-11-30,Thailand,Bahrain,Junaid Aziz,9
+2025-11-30,Thailand,Bahrain,Imran Khan,49
+2025-11-30,Thailand,Bahrain,Naveena Shetty,1
+2025-11-30,Thailand,Bahrain,Fiaz Ahmed,17
+2025-11-30,Thailand,Bahrain,T Yotharat,43
+2025-11-30,Thailand,Bahrain,S Desungnoen,16
+2025-11-30,Thailand,Bahrain,N Senamontree,58
+2025-11-30,Thailand,Bahrain,P Thongsa,32
+2025-11-30,Thailand,Bahrain,C Chatphaisan,4
+2025-11-30,Thailand,Bahrain,Y Saranonnakkun,2
+2025-11-30,Thailand,Bahrain,N Nuntarach,2
+2025-11-30,Thailand,Bahrain,C Pengkumta,7
+2025-11-30,Thailand,Bahrain,W Ngowhuad,3
+2025-11-30,Thailand,Bahrain,K Senamontree,52
+2025-11-30,Thailand,Bahrain,P Suanchuai,2
+2025-12-06,Dubai Capitals,Gulf Giants,Muhammad Jawadullah,30
+2025-12-06,Dubai Capitals,Gulf Giants,Mustafizur Rahman,79
+2025-12-06,Dubai Capitals,Gulf Giants,Sediqullah Atal,50
+2025-12-06,Dubai Capitals,Gulf Giants,Waqar Salamkheil,31
+2025-12-06,Dubai Capitals,Gulf Giants,MD Shanaka,86
+2025-12-06,Dubai Capitals,Gulf Giants,Shayan Jahangir,23
+2025-12-06,Dubai Capitals,Gulf Giants,R Powell,1
+2025-12-06,Dubai Capitals,Gulf Giants,DJ Willey,53
+2025-12-06,Dubai Capitals,Gulf Giants,JDS Neesham,22
+2025-12-06,Dubai Capitals,Gulf Giants,Gulbadin Naib,14
+2025-12-06,Dubai Capitals,Gulf Giants,Haider Ali,16
+2025-12-06,Dubai Capitals,Gulf Giants,JM Cox,62
+2025-12-06,Dubai Capitals,Gulf Giants,Rahmanullah Gurbaz,20
+2025-12-06,Dubai Capitals,Gulf Giants,LA Dawson,36
+2025-12-06,Dubai Capitals,Gulf Giants,Haider Razzaq,10
+2025-12-06,Dubai Capitals,Gulf Giants,TJ Moores,19
+2025-12-06,Dubai Capitals,Gulf Giants,P Nissanka,101
+2025-12-06,Dubai Capitals,Gulf Giants,Azmatullah Omarzai,125
+2025-12-06,Dubai Capitals,Gulf Giants,MG Erasmus,6
+2025-12-06,Dubai Capitals,Gulf Giants,JM Vince,70
+2025-12-06,Dubai Capitals,Gulf Giants,MM Ali,44
+2025-12-06,Dubai Capitals,Gulf Giants,Aayan Afzal Khan,36
+2025-12-06,Dubai Capitals,Gulf Giants,N Thushara,8
+2025-12-06,Dubai Capitals,Gulf Giants,MR Adair,12
+2025-12-06,Nigeria,Rwanda,IO Okpe,73
+2025-12-06,Nigeria,Rwanda,D Ajekun,11
+2025-12-06,Nigeria,Rwanda,VD Adewoye,63
+2025-12-06,Nigeria,Rwanda,O Isiyaku,17
+2025-12-06,Nigeria,Rwanda,SA Okpe,39
+2025-12-06,Nigeria,Rwanda,P Useni,64
+2025-12-06,Nigeria,Rwanda,K Boniface,23
+2025-12-06,Nigeria,Rwanda,I Danladi,62
+2025-12-06,Nigeria,Rwanda,Sulaimon Runsewe,27
+2025-12-06,Nigeria,Rwanda,Joshua Asia,21
+2025-12-06,Nigeria,Rwanda,Selim Salau,13
+2025-12-06,Nigeria,Rwanda,Muhammad Nadir,50
+2025-12-06,Nigeria,Rwanda,E Rukiriza,37
+2025-12-06,Nigeria,Rwanda,Hamza Khan,57
+2025-12-06,Nigeria,Rwanda,I Niyomugabo,40
+2025-12-06,Nigeria,Rwanda,C Rububagumya,71
+2025-12-06,Nigeria,Rwanda,Z Bimenyimana,55
+2025-12-06,Nigeria,Rwanda,I Mugisha,46
+2025-12-06,Nigeria,Rwanda,O Tuyisenge,7
+2025-12-06,Nigeria,Rwanda,I Ntirenganya,85
+2025-12-06,Nigeria,Rwanda,D Gumyusenge,1
+2025-12-06,Nigeria,Rwanda,O Manishimwe,12
+2025-12-07,South Africa,Ireland,L Paul,55
+2025-12-07,South Africa,Ireland,GH Lewis,25
+2025-12-07,South Africa,Ireland,AN Kelly,43
+2025-12-07,South Africa,Ireland,C Murray,6
+2025-12-07,South Africa,Ireland,A Dalzell,10
+2025-12-07,South Africa,Ireland,L Delany,3
+2025-12-07,South Africa,Ireland,O Prendergast,110
+2025-12-07,South Africa,Ireland,R Stokell,14
+2025-12-07,South Africa,Ireland,A Hunter,24
+2025-12-07,South Africa,Ireland,AK Maguire,93
+2025-12-07,South Africa,Ireland,A Canning,3
+2025-12-07,South Africa,Ireland,A Khaka,10
+2025-12-07,South Africa,Ireland,S Jafta,3
+2025-12-07,South Africa,Ireland,F Tunnicliffe,71
+2025-12-07,South Africa,Ireland,CL Tryon,94
+2025-12-07,South Africa,Ireland,M Kapp,36
+2025-12-07,South Africa,Ireland,N Mlaba,39
+2025-12-07,South Africa,Ireland,S Luus,58
+2025-12-07,South Africa,Ireland,D van Niekerk,63
+2025-12-07,South Africa,Ireland,N Shangase,8
+2025-12-07,South Africa,Ireland,L Wolvaardt,30
+2025-12-07,South Africa,Ireland,N de Klerk,22
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,Rashid Khan,31
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,Mohammad Aadil Alam,29
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,Milind Kumar,18
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,A Tripathi,4
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,Shahab Alam,50
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,Sunny Patel,58
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,Santosh Yadav,95
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,JA Simpson,30
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,Karan KC,53
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,B Sharki,21
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,BG Charlesworth,7
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,Abhishesh Gautam,36
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,S Jora,29
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,DJM Short,45
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,RK Paudel,128
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,S Malla,111
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,TR Bhandari,19
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,N Dickwella,30
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,JJ Smit,23
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,D Adhikari,8
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,D Nath,18
+2025-12-10,Kathmandu Gorkhas,Lumbini Lions,R Trumpelmann,89
+2025-12-10,Oman,Qatar,Sameera Khan,23
+2025-12-10,Oman,Qatar,A Dcosta,74
+2025-12-10,Oman,Qatar,PE Mendonca,26
+2025-12-10,Oman,Qatar,Lujaina,6
+2025-12-10,Oman,Qatar,Alifiya Sayed,26
+2025-12-10,Oman,Qatar,Afida Afthab,8
+2025-12-10,Oman,Qatar,Javed Hina,13
+2025-12-10,Oman,Qatar,CM Saldanha,3
+2025-12-10,Oman,Qatar,Fiza,13
+2025-12-10,Oman,Qatar,N Joshi,19
+2025-12-10,Oman,Qatar,J Gunasekar,111
+2025-12-10,Oman,Qatar,Khadija Imtiaz,45
+2025-12-10,Oman,Qatar,Aysha,59
+2025-12-10,Oman,Qatar,S Krisheta,9
+2025-12-10,Oman,Qatar,SK Rana,83
+2025-12-10,Oman,Qatar,CE Jacob,3
+2025-12-10,Oman,Qatar,Lihara Ayeysekara,71
+2025-12-10,Oman,Qatar,Roheed Akhtar,6
+2025-12-10,Oman,Qatar,Sargam Patel,3
+2025-12-10,Oman,Qatar,Amina Kashif,8
+2025-12-10,Oman,Qatar,MT Jacob,49
+2025-12-10,Oman,Qatar,G Candiru,45
+2025-12-11,South Africa,India,Arshdeep Singh,12
+2025-12-11,South Africa,India,SA Yadav,9
+2025-12-11,South Africa,India,AR Patel,64
+2025-12-11,South Africa,India,JJ Bumrah,10
+2025-12-11,South Africa,India,CV Varun,68
+2025-12-11,South Africa,India,JM Sharma,54
+2025-12-11,South Africa,India,S Dube,7
+2025-12-11,South Africa,India,Tilak Varma,98
+2025-12-11,South Africa,India,Shubman Gill,1
+2025-12-11,South Africa,India,HH Pandya,27
+2025-12-11,South Africa,India,Abhishek Sharma,24
+2025-12-11,South Africa,India,Q de Kock,144
+2025-12-11,South Africa,India,AK Markram,54
+2025-12-11,South Africa,India,OEG Baartman,137
+2025-12-11,South Africa,India,M Jansen,65
+2025-12-11,South Africa,India,D Brevis,27
+2025-12-11,South Africa,India,RR Hendricks,25
+2025-12-11,South Africa,India,DA Miller,36
+2025-12-11,South Africa,India,GF Linde,9
+2025-12-11,South Africa,India,D Ferreira,51
+2025-12-11,South Africa,India,L Ngidi,62
+2025-12-11,South Africa,India,L Sipamla,57
+2025-12-12,Gulf Giants,Desert Vipers,Fakhar Zaman,18
+2025-12-12,Gulf Giants,Desert Vipers,Hassan Nawaz,11
+2025-12-12,Gulf Giants,Desert Vipers,LH Ferguson,14
+2025-12-12,Gulf Giants,Desert Vipers,SO Hetmyer,3
+2025-12-12,Gulf Giants,Desert Vipers,DW Lawrence,9
+2025-12-12,Gulf Giants,Desert Vipers,DA Payne,3
+2025-12-12,Gulf Giants,Desert Vipers,Khuzaima Tanveer,140
+2025-12-12,Gulf Giants,Desert Vipers,V Aravind,9
+2025-12-12,Gulf Giants,Desert Vipers,MDE Holden,88
+2025-12-12,Gulf Giants,Desert Vipers,SM Curran,144
+2025-12-12,Gulf Giants,Desert Vipers,Noor Ahmad,72
+2025-12-12,Gulf Giants,Desert Vipers,TC Bruce,3
+2025-12-12,Gulf Giants,Desert Vipers,Asif Khan,48
+2025-12-12,Gulf Giants,Desert Vipers,Rahmanullah Gurbaz,5
+2025-12-12,Gulf Giants,Desert Vipers,CP Wood,49
+2025-12-12,Gulf Giants,Desert Vipers,LA Dawson,62
+2025-12-12,Gulf Giants,Desert Vipers,KR Mayers,48
+2025-12-12,Gulf Giants,Desert Vipers,P Nissanka,30
+2025-12-12,Gulf Giants,Desert Vipers,Azmatullah Omarzai,25
+2025-12-12,Gulf Giants,Desert Vipers,MG Erasmus,8
+2025-12-12,Gulf Giants,Desert Vipers,JM Vince,1
+2025-12-12,Gulf Giants,Desert Vipers,Aayan Afzal Khan,3
+2025-12-12,Gulf Giants,Desert Vipers,N Thushara,5
+2025-12-12,Gulf Giants,Desert Vipers,MR Adair,15
+2025-12-13,Singapore,Malaysia,Muhammad Haziq Aiman,28
+2025-12-13,Singapore,Malaysia,Virandeep Singh,108
+2025-12-13,Singapore,Malaysia,S Muniandy,10
+2025-12-13,Singapore,Malaysia,M Syahadat Ramli,57
+2025-12-13,Singapore,Malaysia,Muhammad Amir,66
+2025-12-13,Singapore,Malaysia,Syed Aziz,110
+2025-12-13,Singapore,Malaysia,Pavandeep Singh,107
+2025-12-13,Singapore,Malaysia,Amir Khan,3
+2025-12-13,Singapore,Malaysia,Zubaidi Zulkifle,32
+2025-12-13,Singapore,Malaysia,Ahmed Faiz,3
+2025-12-13,Singapore,Malaysia,S Vijay Unni,47
+2025-12-13,Singapore,Malaysia,K Sathish,13
+2025-12-13,Singapore,Malaysia,R Sharma,30
+2025-12-13,Singapore,Malaysia,PSRK Sudarshan,34
+2025-12-13,Singapore,Malaysia,IP Swaney,13
+2025-12-13,Singapore,Malaysia,G Gune,17
+2025-12-13,Singapore,Malaysia,V Nagpaul,5
+2025-12-13,Singapore,Malaysia,NA Karnik,48
+2025-12-13,Singapore,Malaysia,SH Venugopal,20
+2025-12-13,Singapore,Malaysia,Aslan Jafri,3
+2025-12-13,Singapore,Malaysia,Aman Desai,20
+2025-12-13,Singapore,Malaysia,DPS Tyagi,83
+2025-12-14,Nigeria,Rwanda,IO Okpe,77
+2025-12-14,Nigeria,Rwanda,VD Adewoye,46
+2025-12-14,Nigeria,Rwanda,SA Okpe,59
+2025-12-14,Nigeria,Rwanda,P Useni,19
+2025-12-14,Nigeria,Rwanda,I Danladi,21
+2025-12-14,Nigeria,Rwanda,Sulaimon Runsewe,59
+2025-12-14,Nigeria,Rwanda,Joshua Asia,71
+2025-12-14,Nigeria,Rwanda,Ali Rahmon,27
+2025-12-14,Nigeria,Rwanda,Selim Salau,36
+2025-12-14,Nigeria,Rwanda,Abdullahi Ismail,14
+2025-12-14,Nigeria,Rwanda,E Ndubudem,76
+2025-12-14,Nigeria,Rwanda,Muhammad Nadir,117
+2025-12-14,Nigeria,Rwanda,E Rukiriza,19
+2025-12-14,Nigeria,Rwanda,D Ndikubwimana,45
+2025-12-14,Nigeria,Rwanda,Hamza Khan,42
+2025-12-14,Nigeria,Rwanda,I Niyomugabo,6
+2025-12-14,Nigeria,Rwanda,C Rububagumya,12
+2025-12-14,Nigeria,Rwanda,Z Bimenyimana,31
+2025-12-14,Nigeria,Rwanda,I Ntirenganya,54
+2025-12-14,Nigeria,Rwanda,D Gumyusenge,1
+2025-12-14,Nigeria,Rwanda,JM Iradukunda,39
+2025-12-14,Nigeria,Rwanda,O Manishimwe,13
+2025-12-16,Thailand,Singapore,Ananya Sarma,4
+2025-12-16,Thailand,Singapore,Shafina Mahesh,5
+2025-12-16,Thailand,Singapore,JT Pooranakaran,33
+2025-12-16,Thailand,Singapore,Pushpa Murali,1
+2025-12-16,Thailand,Singapore,NL Jacinta Si Ping,1
+2025-12-16,Thailand,Singapore,RR Seth,73
+2025-12-16,Thailand,Singapore,Kamal Raja,1
+2025-12-16,Thailand,Singapore,GK Diviya,42
+2025-12-16,Thailand,Singapore,H Dhavina,7
+2025-12-16,Thailand,Singapore,Jenissa Jain,1
+2025-12-16,Thailand,Singapore,S Merican,1
+2025-12-16,Thailand,Singapore,N Chaiwai,37
+2025-12-16,Thailand,Singapore,T Putthawong,52
+2025-12-16,Thailand,Singapore,A Suwanchonrathi,7
+2025-12-16,Thailand,Singapore,S Laomi,58
+2025-12-16,Thailand,Singapore,O Kamchomphu,16
+2025-12-16,Thailand,Singapore,N Boochatham,45
+2025-12-16,Thailand,Singapore,P Maya,172
+2025-12-16,Thailand,Singapore,N Koncharoenkai,84
+2025-12-16,Thailand,Singapore,N Chantam,207
+2025-12-16,Thailand,Singapore,S Chaturongrattana,147
+2025-12-16,Thailand,Singapore,C Sutthiruang,11
+2025-12-18,Hobart Hurricanes,Melbourne Stars,Rehan Ahmed,6
+2025-12-18,Hobart Hurricanes,Melbourne Stars,Nikhil Chaudhary,15
+2025-12-18,Hobart Hurricanes,Melbourne Stars,Rishad Hossain,62
+2025-12-18,Hobart Hurricanes,Melbourne Stars,RP Meredith,16
+2025-12-18,Hobart Hurricanes,Melbourne Stars,B Stanlake,14
+2025-12-18,Hobart Hurricanes,Melbourne Stars,NT Ellis,5
+2025-12-18,Hobart Hurricanes,Melbourne Stars,MS Wade,15
+2025-12-18,Hobart Hurricanes,Melbourne Stars,BR McDermott,92
+2025-12-18,Hobart Hurricanes,Melbourne Stars,TH David,41
+2025-12-18,Hobart Hurricanes,Melbourne Stars,MJ Owen,13
+2025-12-18,Hobart Hurricanes,Melbourne Stars,CJ Jordan,8
+2025-12-18,Hobart Hurricanes,Melbourne Stars,Haris Rauf,64
+2025-12-18,Hobart Hurricanes,Melbourne Stars,JM Clarke,25
+2025-12-18,Hobart Hurricanes,Melbourne Stars,C Kellaway,79
+2025-12-18,Hobart Hurricanes,Melbourne Stars,TF Rogers,53
+2025-12-18,Hobart Hurricanes,Melbourne Stars,MJ Swepson,13
+2025-12-18,Hobart Hurricanes,Melbourne Stars,SB Harper,15
+2025-12-18,Hobart Hurricanes,Melbourne Stars,HWR Cartwright,9
+2025-12-18,Hobart Hurricanes,Melbourne Stars,GJ Maxwell,38
+2025-12-18,Hobart Hurricanes,Melbourne Stars,PM Siddle,91
+2025-12-18,Hobart Hurricanes,Melbourne Stars,MP Stoinis,148
+2025-12-18,Hobart Hurricanes,Melbourne Stars,TK Curran,34
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,A Sharafu,16
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,JO Holder,51
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,PD Salt,56
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,OP Stone,34
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,BJ McMullen,4
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,LS Livingstone,17
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,AD Hales,61
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,PP Chawla,131
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,SP Narine,17
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,AD Russell,38
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,Ajay Kumar,36
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,SE Rutherford,44
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,Asif Khan,18
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,Rahmanullah Gurbaz,118
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,CP Wood,37
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,SR Dickson,13
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,MW Forde,9
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,P Nissanka,24
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,Azmatullah Omarzai,9
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,T Shamsi,99
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,JM Vince,29
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,MM Ali,30
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,FJ Klaassen,65
+2025-12-18,Gulf Giants,Abu Dhabi Knight Riders,Aayan Afzal Khan,17
+2025-12-23,Adelaide Strikers,Melbourne Stars,HTRY Thornton,24
+2025-12-23,Adelaide Strikers,Melbourne Stars,HJ Nielsen,1
+2025-12-23,Adelaide Strikers,Melbourne Stars,L Scott,38
+2025-12-23,Adelaide Strikers,Melbourne Stars,Hasan Ali,67
+2025-12-23,Adelaide Strikers,Melbourne Stars,CA Lynn,7
+2025-12-23,Adelaide Strikers,Melbourne Stars,J Overton,46
+2025-12-23,Adelaide Strikers,Melbourne Stars,L Pope,45
+2025-12-23,Adelaide Strikers,Melbourne Stars,J Wadia,13
+2025-12-23,Adelaide Strikers,Melbourne Stars,JJS Sangha,7
+2025-12-23,Adelaide Strikers,Melbourne Stars,MW Short,82
+2025-12-23,Adelaide Strikers,Melbourne Stars,AI Ross,26
+2025-12-23,Adelaide Strikers,Melbourne Stars,Haris Rauf,93
+2025-12-23,Adelaide Strikers,Melbourne Stars,JM Clarke,28
+2025-12-23,Adelaide Strikers,Melbourne Stars,C Kellaway,46
+2025-12-23,Adelaide Strikers,Melbourne Stars,TF Rogers,3
+2025-12-23,Adelaide Strikers,Melbourne Stars,MJ Swepson,10
+2025-12-23,Adelaide Strikers,Melbourne Stars,SB Harper,92
+2025-12-23,Adelaide Strikers,Melbourne Stars,HWR Cartwright,21
+2025-12-23,Adelaide Strikers,Melbourne Stars,GJ Maxwell,9
+2025-12-23,Adelaide Strikers,Melbourne Stars,PM Siddle,41
+2025-12-23,Adelaide Strikers,Melbourne Stars,MP Stoinis,81
+2025-12-23,Adelaide Strikers,Melbourne Stars,TK Curran,101
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Tanzim Hasan Sakib,40
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Nazmul Hossain Shanto,147
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Sahibzada Farhan,36
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Mohammad Nawaz,5
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Yasir Ali Chowdhury,3
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Abdul Gaffar Saqlain,4
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Tanzid Hasan,21
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Mushfiqur Rahim,85
+2025-12-26,Sylhet Titans,Rajshahi Warriors,S Lamichhane,65
+2025-12-26,Sylhet Titans,Rajshahi Warriors,B Fernando,37
+2025-12-26,Sylhet Titans,Rajshahi Warriors,SM Meherob,11
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Saim Ayub,51
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Afif Hossain,52
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Nasum Ahmed,12
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Parvez Hossain Emon,97
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Khaled Ahmed,40
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Hazratullah,33
+2025-12-26,Sylhet Titans,Rajshahi Warriors,EA Brookes,2
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Rony Talukdar,53
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Mehedi Hasan Miraz,27
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Mohammad Amir,11
+2025-12-26,Sylhet Titans,Rajshahi Warriors,Ruyel Miah,9
+2025-12-27,Brisbane Heat,Adelaide Strikers,HJ Manenti,37
+2025-12-27,Brisbane Heat,Adelaide Strikers,HJ Nielsen,22
+2025-12-27,Brisbane Heat,Adelaide Strikers,L Scott,36
+2025-12-27,Brisbane Heat,Adelaide Strikers,Hasan Ali,69
+2025-12-27,Brisbane Heat,Adelaide Strikers,CA Lynn,27
+2025-12-27,Brisbane Heat,Adelaide Strikers,MW Harvey,12
+2025-12-27,Brisbane Heat,Adelaide Strikers,J Overton,23
+2025-12-27,Brisbane Heat,Adelaide Strikers,L Pope,38
+2025-12-27,Brisbane Heat,Adelaide Strikers,L Wood,64
+2025-12-27,Brisbane Heat,Adelaide Strikers,J Wadia,61
+2025-12-27,Brisbane Heat,Adelaide Strikers,MW Short,156
+2025-12-27,Brisbane Heat,Adelaide Strikers,MT Renshaw,77
+2025-12-27,Brisbane Heat,Adelaide Strikers,HD Weibgen,20
+2025-12-27,Brisbane Heat,Adelaide Strikers,JJ Peirson,36
+2025-12-27,Brisbane Heat,Adelaide Strikers,XC Bartlett,123
+2025-12-27,Brisbane Heat,Adelaide Strikers,Shaheen Shah Afridi,14
+2025-12-27,Brisbane Heat,Adelaide Strikers,Thomas Balkin,69
+2025-12-27,Brisbane Heat,Adelaide Strikers,MP Kuhnemann,42
+2025-12-27,Brisbane Heat,Adelaide Strikers,TP Alsop,13
+2025-12-27,Brisbane Heat,Adelaide Strikers,C Munro,19
+2025-12-27,Brisbane Heat,Adelaide Strikers,JD Wildermuth,59
+2025-12-27,Brisbane Heat,Adelaide Strikers,M Bryant,93
+2025-12-27,Cambodia,Indonesia,NT Gireesh,9
+2025-12-27,Cambodia,Indonesia,Pel Vannak,1
+2025-12-27,Cambodia,Indonesia,Md Shuayeb,1
+2025-12-27,Cambodia,Indonesia,GC Murtaza,44
+2025-12-27,Cambodia,Indonesia,Shah Abrar Hussain,31
+2025-12-27,Cambodia,Indonesia,Luqman Butt,36
+2025-12-27,Cambodia,Indonesia,Muhammad Naeem,1
+2025-12-27,Cambodia,Indonesia,Mongdara Sok,1
+2025-12-27,Cambodia,Indonesia,Nirmaljit Singh,4
+2025-12-27,Cambodia,Indonesia,Marcelle Hanekom,4
+2025-12-27,Cambodia,Indonesia,E Beukes,35
+2025-12-27,Cambodia,Indonesia,Komang Putra,3
+2025-12-27,Cambodia,Indonesia,AA Rahayu,160
+2025-12-27,Cambodia,Indonesia,GA Priandana,66
+2025-12-27,Cambodia,Indonesia,F Banunaek,28
+2025-12-27,Cambodia,Indonesia,KD Kesuma,52
+2025-12-27,Cambodia,Indonesia,IK Gamantika,9
+2025-12-27,Cambodia,Indonesia,Anjar Tadarus,132
+2025-12-27,Cambodia,Indonesia,KB Tember,9
+2025-12-27,Cambodia,Indonesia,DJ Hawoe,15
+2025-12-27,Cambodia,Indonesia,R Ramadhasyena,3
+2025-12-27,Cambodia,Indonesia,GD Arta,14
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Ziaur Rahman,38
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Nasir Hossain,84
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Shamim Hossain,29
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Sabbir Rahman,40
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Mohammad Mithun,32
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Salman Mirza,49
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Imad Wasim,99
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Mohammad Saifuddin,40
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Usman Khan,35
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Saif Hassan,4
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Abdullah Al Mamun,59
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Tanzim Hasan Sakib,42
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Nazmul Hossain Shanto,52
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Sahibzada Farhan,13
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Mohammad Nawaz,131
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Yasir Ali Chowdhury,17
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Abdul Gaffar Saqlain,13
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Tanzid Hasan,28
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,Mushfiqur Rahim,29
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,S Lamichhane,37
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,B Fernando,14
+2025-12-27,Rajshahi Warriors,Dhaka Capitals,SM Meherob,7
+2025-12-29,Wellington,Auckland,LR Down,19
+2025-12-29,Wellington,Auckland,P Catton,16
+2025-12-29,Wellington,Auckland,JO Penfold,8
+2025-12-29,Wellington,Auckland,A Lambat,16
+2025-12-29,Wellington,Auckland,MM Penfold,15
+2025-12-29,Wellington,Auckland,BG Illing,39
+2025-12-29,Wellington,Auckland,ML Green,55
+2025-12-29,Wellington,Auckland,AT Hucker,47
+2025-12-29,Wellington,Auckland,E Buchanan,1
+2025-12-29,Wellington,Auckland,BG Armstrong,30
+2025-12-29,Wellington,Auckland,BM Halliday,38
+2025-12-29,Wellington,Auckland,JA Simmons,43
+2025-12-29,Wellington,Auckland,GE Plimmer,85
+2025-12-29,Wellington,Auckland,XA Jetly,116
+2025-12-29,Wellington,Auckland,JT McFadyen,8
+2025-12-29,Wellington,Auckland,AC Kerr,168
+2025-12-29,Wellington,Auckland,M Brown,48
+2025-12-29,Wellington,Auckland,RM Burns,4
+2025-12-29,Wellington,Auckland,JM Kerr,74
+2025-12-29,Wellington,Auckland,INC McKenzie,3
+2025-12-29,Wellington,Auckland,N Baird,61
+2025-12-29,Wellington,Auckland,HC Francis,3
