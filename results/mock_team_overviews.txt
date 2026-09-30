@@ -1,28 +1,321 @@
 Predicted XI overviews, written by Qwen/Qwen2.5-0.5B-Instruct (open weights, local, greedy decoding) from results/mock_predictions.csv
 
 === Australia vs New Zealand on 2025-10-03 ===
-  composition: 1 wicket-keeper, 3 batters, 1 all-rounder, 6 bowlers
-  team split: 8 from Australia, 3 from New Zealand
-  top picks: MW Short (Australia, all-rounder, 54.0 expected points); BJ Dwarshuis (Australia, bowler, 53.8 expected points); SA Abbott (Australia, bowler, 49.2 expected points)
-  total predicted: 496.4
-  selection risks: none below 0.75
+  composition: 1 wicket-keeper, 3 batters, 3 all-rounders, 4 bowlers
+  team split: 7 from Australia, 4 from New Zealand
+  top picks: A Zampa (Australia, bowler, 42.9 expected points); JR Hazlewood (Australia, bowler, 42.8 expected points); MW Short (Australia, all-rounder, 42.4 expected points)
+  total predicted: 436.2
 
-The Australian cricket XI for the upcoming match against the New Zealanders is composed of 8 players from Australia and 3 from New Zealand. The team's top pick is MW Short, who is projected to score an impressive 54.0 expected points. Other notable players include BJ Dwarshuis, who is also a top pick, with a projected 53.8 expected points, and SA Abbott, another top pick, with a projected 49.2 expected points. Despite having no significant selection risks below 0.75, the team's overall expected points remain high at 496.4.
+The Australian cricket XI for the upcoming match against the New Zealanders is composed of 7 players from Australia and 4 from New Zealand. The team's top picks include Azeem Zafar (bowler) with an expected point rating of 42.9, Jacob Hazlewood (bowler) with an expected point rating of 42.8, and Mark Short (all-rounder) with an expected point rating of 42.4. With a total predicted score of 436.2, this XI represents a strong offensive and defensive lineup that should provide significant competition for both teams.
 
 === Nepal vs Kuwait on 2025-10-08 ===
-  composition: 1 wicket-keeper, 3 batters, 3 all-rounders, 4 bowlers
+  composition: 1 wicket-keeper, 3 batters, 2 all-rounders, 5 bowlers
   team split: 7 from Kuwait, 4 from Nepal
-  top picks: Yasin Patel (Kuwait, bowler, 49.6 expected points); MNM Aslam (Kuwait, all-rounder, 49.1 expected points); S Lamichhane (Nepal, bowler, 46.8 expected points)
-  total predicted: 434.0
-  selection risks: none below 0.75
+  top picks: S Lamichhane (Nepal, bowler, 43.8 expected points); DS Airee (Nepal, all-rounder, 43.4 expected points); Yasin Patel (Kuwait, bowler, 41.0 expected points)
+  total predicted: 381.2
 
-The forecasted Fantasy XI for the upcoming match between Nepal and Kuwait features a squad that includes a key player from each country. The composition is balanced with 7 players from Kuwait and 4 from Nepal, ensuring a diverse and competitive lineup. Key players like Yasin Patel, MNM Aslam, and S Lamichhane have been selected based on their expected performance ratings, aiming to maximize potential outcomes. Despite no significant selection risks being below 0.75, the team's overall strength suggests it has the potential to perform well in the match.
+The forecasted Fantasy XI for the upcoming match between Nepal and Kuwait features a squad that includes a key player from each country. The composition is balanced with 7 Nepalese players and 4 Kuwaiti players, reflecting the current balance in the national teams. Key players like S. Lamichhane, who plays as a bowler, and DS Airee, who is an all-rounder, have been selected to contribute significantly to the team's performance. Additionally, Yasin Patel, who plays as a bowler, has also been included due to his strong bowling skills. Overall, the Fantasy XI is expected to produce a high-scoring team with a combined expected point total of 381.2.
 
 === Austria vs Turkey on 2025-10-10 ===
-  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
-  team split: 8 from Turkey, 3 from Austria
-  top picks: Suzan Turan (Turkey, all-rounder, 52.7 expected points); AM Zepeda (Austria, wicket-keeper, 52.4 expected points); Ezgi Nur Kilic (Turkey, all-rounder, 51.0 expected points)
-  total predicted: 418.4
-  selection risks: none below 0.75
+  composition: 2 wicket-keepers, 3 batters, 3 all-rounders, 3 bowlers
+  team split: 7 from Turkey, 4 from Austria
+  top picks: AM Zepeda (Austria, wicket-keeper, 53.6 expected points); P Sabu (Austria, all-rounder, 48.1 expected points); D Tekyildirim (Turkey, bowler, 44.8 expected points)
+  total predicted: 391.6
 
-The forecasted Fantasy XI for the upcoming match between Austria and Turkey features a strong lineup with 8 players selected from Turkey and 3 from Austria. The team is split evenly, with 8 players from Turkey and 3 from Austria. Key players include Suzan Turan as an all-rounder with 52.7 expected points, AM Zepeda as a wicket-keeper with 52.4 expected points, and Ezgi Nur Kilic as an all-rounder with 51.0 expected points. Despite having no significant selection risks below 0.75, the team's overall expected points remain high at 418.4. This suggests that while there may be some room for improvement in certain areas, the team has the potential to perform well against both teams.
+The forecasted Fantasy XI for the upcoming match between Austria and Turkey features a strong lineup with 7 players selected from Turkey and 4 from Austria. Key players include AM Zepeda, who is a wicket-keeper with an expected point rating of 53.6, and P Sabu, a versatile all-rounder with an estimated point rating of 48.1. The team's overall goal is to secure a win against one of the most formidable opponents in the tournament.
+
+=== Romania vs Bulgaria on 2025-10-10 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 6 from Romania, 5 from Bulgaria
+  top picks: T Dissanayake (Bulgaria, all-rounder, 55.9 expected points); RL Blake (Romania, wicket-keeper, 51.1 expected points); S Sarandeva (Bulgaria, all-rounder, 50.5 expected points)
+  total predicted: 411.5
+
+The Romanian XI for the upcoming match against Bulgarian XI is composed of 6 players from Romania and 5 from Bulgaria. The team's top picks are T. Dissanayake from Bulgaria as an all-rounder with 55.9 expected points, while RL Blake from Romania plays as a wicket-keeper with 51.1 expected points. With a total predicted score of 411.5, this XI has the potential to perform well in the competition.
+
+=== Austria vs Norway on 2025-10-12 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 8 from Norway, 3 from Austria
+  top picks: AM Zepeda (Austria, wicket-keeper, 61.5 expected points); P Sabu (Austria, all-rounder, 57.5 expected points); Mirab Razwan (Norway, bowler, 56.0 expected points)
+  total predicted: 456.0
+
+The forecasted Fantasy XI for the upcoming match between Austria and Norway features an impressive lineup with 8 players selected from Norway and 3 from Austria. The team is split evenly, with 8 players from Norway and 3 from Austria. Key players include AM Zepeda, who is expected to score 61.5 points, P Sabu, who leads with 57.5 points, and Mirab Razwan, who brings in 56.0 points. This combination of talent and skill positions Austria well against Norway, aiming for a total of 456.0 points.
+
+=== Japan vs Oman on 2025-10-17 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 8 from Oman, 3 from Japan
+  top picks: Nadeem Khan (Oman, bowler, 53.4 expected points); Shakeel Ahmed (Oman, bowler, 51.0 expected points); Shah Faisal (Oman, bowler, 48.0 expected points)
+  total predicted: 421.9
+
+The forecasted Fantasy XI for the upcoming match between Japan and Oman features an impressive lineup with 8 players selected from Oman and 3 from Japan. The squad is composed of a wicket-keeper, three batters, four all-rounders, and three bowlers. Key players like Nadeem Khan, Shakeel Ahmed, and Shah Faisal have been identified as potential top picks. With a total predicted score of 421.9, this XI represents a strong contender in the tournament.
+
+=== England vs New Zealand on 2025-10-18 ===
+  composition: 2 wicket-keepers, 3 batters, 2 all-rounders, 4 bowlers
+  team split: 6 from England, 5 from New Zealand
+  top picks: SM Curran (England, all-rounder, 50.3 expected points); JC Buttler (England, wicket-keeper, 43.5 expected points); L Wood (England, bowler, 43.5 expected points)
+  total predicted: 454.1
+
+The forecasted Fantasy XI for the upcoming match between England and New Zealand features a strong lineup with 6 players selected from England and 5 from New Zealand. The team is split evenly, with 6 players coming from England and 5 from New Zealand. Key players such as SM Curran, JC Buttler, and L Wood have been identified as potential leaders in their respective positions. With a total predicted score of 454.1, this XI represents a significant challenge for both teams, highlighting the competitive nature of the match.
+
+=== Canada vs Uganda on 2025-10-20 ===
+  composition: 1 wicket-keeper, 3 batters, 2 all-rounders, 5 bowlers
+  team split: 9 from Uganda, 2 from Canada
+  top picks: J Mbabazi (Uganda, all-rounder, 52.9 expected points); C Aweko (Uganda, bowler, 51.7 expected points); S Akiteng (Uganda, bowler, 49.5 expected points)
+  total predicted: 435.8
+
+The forecasted Fantasy XI for the upcoming match between Canada and Uganda features a lineup that includes a wicket-keeper, three batters, two all-rounders, and five bowlers. The team is split evenly between the two countries, with 9 players selected from Uganda and 2 from Canada. Key players such as J Mbabazi, who is projected to be an all-rounder with 52.9 expected points, and C Aweko, who is also a bowler with 51.7 expected points, stand out among the top selections. Overall, the Fantasy XI has been designed to provide a balanced attack against both teams, aiming to maximize potential scoring opportunities while minimizing risk through strategic player combinations.
+
+=== Canada vs Tanzania on 2025-11-05 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 6 from Canada, 5 from Tanzania
+  top picks: Amarpal Kaur (Canada, all-rounder, 56.7 expected points); I Goordial-John (Canada, all-rounder, 49.1 expected points); V Mahajan (Canada, all-rounder, 48.2 expected points)
+  total predicted: 432.4
+
+The Canadian cricket team is expected to face Tanzanian cricket in their upcoming fixture on November 5, 2025. The lineup consists of 1 wicket-keeper, 3 batters, 4 all-rounders, and 3 bowlers. With a team split of 6 from Canada and 5 from Tanzania, the forecasted total for the match is 432.4 points. Key players such as Amarpal Kaur, I Goordial-John, and V Mahajan are among the top contenders for the match.
+
+=== Myanmar vs Indonesia on 2025-11-06 ===
+  composition: 1 wicket-keeper, 6 batters, 1 all-rounder, 3 bowlers
+  team split: 6 from Myanmar, 5 from Indonesia
+  top picks: D Nanda (Indonesia, batter, 36.6 expected points); S Jegannathan (Indonesia, batter, 36.6 expected points); PPS Win (Myanmar, batter, 32.4 expected points)
+  total predicted: 324.6
+
+The forecasted Fantasy XI for the upcoming match between Myanmar and Indonesia features a lineup that includes a key player from each side. The composition is balanced with 6 wicket-keepers, 6 batter players, and 1 all-rounder, while the team splits evenly between the two countries. Key players include D Nanda from Indonesia who has been selected as the batter, with an expected point rating of 36.6. Similarly, S Jegannathan from Indonesia has also been selected to play batter, bringing his expected point rating up to 36.6. Additionally, PPS Win from Myanmar has been selected to play batter, contributing to his expected point rating of 32.4. Overall, the Fantasy XI is expected to produce a strong performance with a total predicted score of 324.6.
+
+=== India vs Australia on 2025-11-08 ===
+  composition: 1 wicket-keeper, 5 batters, 2 all-rounders, 3 bowlers
+  team split: 7 from India, 4 from Australia
+  top picks: AR Patel (India, all-rounder, 42.0 expected points); Abhishek Sharma (India, batter, 40.6 expected points); MP Stoinis (Australia, all-rounder, 40.1 expected points)
+  total predicted: 384.6
+
+The Indian Premier League (IPL) is set to feature a strong lineup for the upcoming match between India and Australia on November 8, 2025. The squad includes 7 players from India and 4 from Australia, with a mix of experienced and promising young talents. Key players like Arvind Poluri, who has shown promise in his debut, and Abhishek Sharma, an all-rounder, are among the standout performers. Despite the high expectations, there's a slight risk that some of the top picks might struggle due to their lack of experience or form. Overall, the forecast suggests a competitive battle between these two teams, with both sides aiming to secure victories.
+
+=== Thailand vs Namibia on 2025-11-14 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 8 from Thailand, 3 from Namibia
+  top picks: C Sutthiruang (Thailand, all-rounder, 48.8 expected points); T Putthawong (Thailand, bowler, 48.7 expected points); W Mwatile (Namibia, all-rounder, 47.0 expected points)
+  total predicted: 412.9
+
+The forecasted Fantasy XI for the upcoming match between Thailand and Namibia features a strong lineup with 8 players selected from Thailand and 3 from Namibia. The team is split evenly, with 8 players coming from Thailand and 3 from Namibia. Key players include C Sutthiruang, who is projected to score an impressive 48.8 expected points, while T Putthawong and W Mwatile also have significant potential to contribute significantly to the team's performance. Overall, the Fantasy XI has been designed to maximize the chances of success in this match, with a focus on maximizing individual player contributions and minimizing overall risk.
+
+=== Bahrain vs Indonesia on 2025-11-18 ===
+  composition: 1 wicket-keeper, 3 batters, 2 all-rounders, 5 bowlers
+  team split: 8 from Bahrain, 3 from Indonesia
+  top picks: Rizwan Butt (Bahrain, bowler, 53.0 expected points); Ali Dawood (Bahrain, bowler, 52.0 expected points); Asif Ali (Bahrain, all-rounder, 48.2 expected points)
+  total predicted: 444.7
+
+The forecasted Fantasy XI for the upcoming match between Bahrain and Indonesia features a strong lineup with 8 players selected from Bahrain and 3 from Indonesia. The team is split evenly, with 8 players coming from Bahrain and 3 from Indonesia. Key players include Rizwan Butt, who is a skilled bowler with an expected point rating of 53.0, and Ali Dawood, a versatile all-rounder with an expected point rating of 52.0. This combination of experienced players from both countries should provide a balanced attack against the opposition. Overall, the Fantasy XI has the potential to produce a competitive performance in the upcoming game.
+
+=== Namibia vs Tanzania on 2025-11-20 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 9 from Namibia, 2 from Tanzania
+  top picks: W Mwatile (Namibia, all-rounder, 62.5 expected points); SA Wittmann (Namibia, all-rounder, 51.5 expected points); M Mwatile (Namibia, all-rounder, 47.6 expected points)
+  total predicted: 421.2
+
+The forecasted Fantasy XI for the upcoming match between Namibia and Tanzania features a lineup that includes a wicket-keeper, three batters, four all-rounders, and three bowlers. The team is split evenly between Namibia and Tanzania, with 9 players selected from Namibia and 2 from Tanzania. Key players like W Mwatile, SA Wittmann, and M Mwatile have been identified as potential top picks, each contributing to the overall expectation of 62.5 expected points. This lineup aims to balance skill sets across different positions, aiming to provide a balanced attack against both teams. Overall, the forecast suggests a high-quality squad capable of delivering significant performance in the upcoming match.
+
+=== Sydney Thunder vs Brisbane Heat on 2025-11-21 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 6 from Sydney Thunder, 5 from Brisbane Heat
+  top picks: AC Jayangani (Sydney Thunder, all-rounder, 60.3 expected points); JL Jonassen (Brisbane Heat, all-rounder, 54.0 expected points); CR Knott (Brisbane Heat, all-rounder, 43.2 expected points)
+  total predicted: 452.6
+
+The Sydney Thunder XI is composed of 6 players from the team, including AC Jayangani, who is projected to score an impressive 60.3 expected points with his all-rounder abilities. Meanwhile, Brisbane Heat's lineup features 5 players, led by JL Jonassen, who is also expected to contribute significantly to the team's performance. The overall forecast for the XI includes a total of 452.6 points, showcasing a balanced approach that balances skill and experience across the squad. This forecast suggests a strong foundation for the upcoming season, with potential for significant success in both matches against Sydney Thunder and Brisbane Heat.
+
+=== Papua New Guinea vs Thailand on 2025-11-21 ===
+  composition: 1 wicket-keeper, 3 batters, 2 all-rounders, 5 bowlers
+  team split: 8 from Thailand, 3 from Papua New Guinea
+  top picks: C Sutthiruang (Thailand, all-rounder, 57.1 expected points); T Putthawong (Thailand, bowler, 51.2 expected points); O Kamchomphu (Thailand, bowler, 46.8 expected points)
+  total predicted: 436.9
+
+The forecasted Fantasy XI for the upcoming match between Papua New Guinea and Thailand features a lineup that includes a key player from each country's home team. The squad is composed of an experienced all-rounder from Thailand, a skilled bowler from Thailand, and five other talented players from both countries. The overall expected points for the team are estimated at 436.9, reflecting the high level of skill and experience available in the squad. This lineup presents a strong challenge for opponents, with potential targets including the top picks from each side.
+
+=== Lumbini Lions vs Karnali Yaks on 2025-11-22 ===
+  composition: 1 wicket-keeper, 3 batters, 3 all-rounders, 4 bowlers
+  team split: 6 from Lumbini Lions, 5 from Karnali Yaks
+  top picks: Gulbadin Naib (Lumbini Lions, all-rounder, 46.0 expected points); DJM Short (Lumbini Lions, batter, 45.9 expected points); R Trumpelmann (Lumbini Lions, bowler, 42.0 expected points)
+  total predicted: 413.2
+
+The forecasted Fantasy XI for the upcoming cricket match between Lumbini Lions and Karnali Yaks features a lineup that includes a key player from each team, with Gulbadin Naib being the standout performer from Lumbini Lions. The team splits evenly between the two teams, with 6 players selected from Lumbini Lions and 5 from Karnali Yaks. The overall prediction is for a total score of 413.2 runs, with Gulbadin Naib expected to contribute significantly to the team's performance.
+
+=== Melbourne Stars vs Brisbane Heat on 2025-11-23 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 6 from Melbourne Stars, 5 from Brisbane Heat
+  top picks: A Sutherland (Melbourne Stars, all-rounder, 61.2 expected points); JL Jonassen (Brisbane Heat, all-rounder, 54.7 expected points); M Kapp (Melbourne Stars, all-rounder, 54.3 expected points)
+  total predicted: 453.9
+
+The forecasted Fantasy XI for the upcoming match between Melbourne Stars and Brisbane Heat features a strong lineup with 6 players selected from Melbourne Stars and 5 from Brisbane Heat. The composition includes a wicket-keeper, three batters, four all-rounders, and three bowlers. Key players like A Sutherland, JL Jonassen, and M Kapp have been identified as potential leaders in their respective positions. Despite the high expectations, the team's overall performance is projected to be around 453.9 points, highlighting the importance of selecting reliable talent and maintaining consistency across different positions.
+
+=== Tanzania vs Uganda on 2025-11-28 ===
+  composition: 1 wicket-keeper, 3 batters, 3 all-rounders, 4 bowlers
+  team split: 9 from Uganda, 2 from Tanzania
+  top picks: I Nakisuuyi (Uganda, all-rounder, 57.0 expected points); J Mbabazi (Uganda, all-rounder, 52.4 expected points); C Aweko (Uganda, bowler, 50.0 expected points)
+  total predicted: 416.7
+
+The Tanzanian cricket team is expected to face Uganda in their upcoming match on November 28, 2025. The squad consists of 1 wicket-keeper, 3 batters, 3 all-rounders, and 4 bowlers. With a total of 9 players from Uganda and 2 from Tanzania, the team's overall strength is balanced but with some potential for improvement due to the lack of experienced players. Key players like I Nakisuuyi and J Mbabazi have been selected as top picks, while C Aweko has also been included despite being a bowler. The forecasted total of 416.7 points suggests that the team will perform well, with a high expectation level for the players involved.
+
+=== Pokhara Avengers vs Lumbini Lions on 2025-11-29 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 6 from Pokhara Avengers, 5 from Lumbini Lions
+  top picks: DJM Short (Lumbini Lions, all-rounder, 47.2 expected points); Gulbadin Naib (Lumbini Lions, all-rounder, 44.1 expected points); R Trumpelmann (Lumbini Lions, bowler, 43.0 expected points)
+  total predicted: 402.3
+
+The forecasted Fantasy XI for the upcoming match between Pokhara Avengers and Lumbini Lions features a strong lineup with 6 players selected from Pokhara Avengers and 5 from Lumbini Lions. The team is split evenly, with 6 players from Pokhara Avengers and 5 from Lumbini Lions. Key players include DJM Short, Gulbadin Naib, and R Trumpelmann, each contributing to the team's overall performance. The forecast predicts a total score of 402.3, showcasing the potential strengths and weaknesses of both teams in the upcoming contest.
+
+=== Brazil vs Argentina on 2025-11-29 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 6 from Argentina, 5 from Brazil
+  top picks: LH Rodrigues (Brazil, all-rounder, 64.3 expected points); A Kirschbaum (Argentina, all-rounder, 58.6 expected points); Lucas Rossi (Argentina, all-rounder, 52.3 expected points)
+  total predicted: 466.1
+
+The Brazilian XI for the upcoming match against the Argentine side is composed of 1 wicket-keeper, 3 batters, 4 all-rounders, and 3 bowlers. The team's overall split is 6 from Argentina and 5 from Brazil. Key players include LH Rodrigues, who is projected to score 64.3 expected points, A Kirschbaum, who is expected to score 58.6 points, and Lucas Rossi, who is anticipated to score 52.3 points. The total predicted score for the game is 466.1. This XI has the potential to be a strong contender in the match, with high expectations based on their strengths and projections.
+
+=== Thailand vs Bahrain on 2025-11-30 ===
+  composition: 1 wicket-keeper, 3 batters, 1 all-rounder, 6 bowlers
+  team split: 8 from Bahrain, 3 from Thailand
+  top picks: Ali Dawood (Bahrain, bowler, 38.3 expected points); Asif Ali (Bahrain, all-rounder, 37.8 expected points); Imran Anwar (Bahrain, bowler, 37.6 expected points)
+  total predicted: 330.7
+
+The forecasted Fantasy XI for the upcoming match between Thailand and Bahrain features a squad that includes a wicket-keeper, three batters, an all-rounder, and six bowlers. The team is split evenly between Bahrain and Thailand, with 8 players selected from Bahrain and 3 from Thailand. Key players include Ali Dawood, who is a bowler with a projected expected points of 38.3; Asif Ali, a bowler with a projected expected points of 37.8; and Imran Anwar, a bowler with a projected expected points of 37.6. This lineup aims to balance skill sets across different positions while aiming for a balanced performance against both teams. Overall, the Fantasy XI has potential to produce a strong result in the tournament.
+
+=== Dubai Capitals vs Gulf Giants on 2025-12-06 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 9 from Dubai Capitals, 2 from Gulf Giants
+  top picks: DJ Willey (Dubai Capitals, all-rounder, 40.4 expected points); Mustafizur Rahman (Dubai Capitals, bowler, 35.8 expected points); JDS Neesham (Dubai Capitals, all-rounder, 35.6 expected points)
+  total predicted: 362.9
+
+The Dubai Capitals XI is composed of 9 players from the team's home ground, Dubai Capitals, while the Gulf Giants XI consists of 2 players from their home ground, Gulf Giants. The team has been split into three groups based on the fixtures scheduled for December 6, 2025. The top picks in each group are DJ Willey from Dubai Capitals as an all-rounder with an expected point rating of 40.4, Mustafizur Rahman from Dubai Capitals as a bowler with an expected point rating of 35.8, and JDS Neesham from Dubai Capitals as an all-rounder with an expected point rating of 35.6. The total predicted score for the Dubai Capitals XI is 362.9.
+
+=== Nigeria vs Rwanda on 2025-12-06 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 6 from Nigeria, 5 from Rwanda
+  top picks: Muhammad Nadir (Rwanda, bowler, 56.8 expected points); SA Okpe (Nigeria, all-rounder, 52.5 expected points); IO Okpe (Nigeria, all-rounder, 49.4 expected points)
+  total predicted: 459.1
+
+The Nigerian cricket XI for the upcoming match against the Rwandan side is composed of 6 players from Nigeria and 5 from Rwanda. The team's top pick is Muhammad Nadir, who has been selected as a bowler with an expected point rating of 56.8. Other notable selections include SA Okpe, who is a left-handed all-rounder with an expected point rating of 52.5, and IO Okpe, also a right-handed all-rounder with an expected point rating of 49.4. This XI is expected to perform well given their combined strengths in both bowling and batting.
+
+=== South Africa vs Ireland on 2025-12-07 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 8 from South Africa, 3 from Ireland
+  top picks: M Kapp (South Africa, all-rounder, 63.6 expected points); N de Klerk (South Africa, all-rounder, 56.5 expected points); O Prendergast (Ireland, all-rounder, 49.9 expected points)
+  total predicted: 438.8
+
+The South African XI for the upcoming match against Ireland is composed of a wicket-keeper, three batters, four all-rounders, and three bowlers. The team's top picks include M Kapp, who is projected to score 63.6 expected points, and N de Klerk, who is expected to score 56.5 points. With a total predicted score of 438.8, the South Africans have a strong chance of securing a win over their arch-rivals in Ireland.
+
+=== Kathmandu Gorkhas vs Lumbini Lions on 2025-12-10 ===
+  composition: 1 wicket-keeper, 3 batters, 3 all-rounders, 4 bowlers
+  team split: 6 from Kathmandu Gorkhas, 5 from Lumbini Lions
+  top picks: Karan KC (Kathmandu Gorkhas, bowler, 45.5 expected points); R Trumpelmann (Lumbini Lions, bowler, 45.3 expected points); DJM Short (Lumbini Lions, all-rounder, 45.1 expected points)
+  total predicted: 425.6
+
+The forecasted fantasy XI for the upcoming match between Kathmandu Gorkhas and Lumbini Lions features a strong lineup with 1 wicket-keeper, 3 batters, 3 all-rounders, and 4 bowlers. The team is split evenly between Kathmandu Gorkhas and Lumbini Lions, with 6 players selected from Kathmandu Gorkhas and 5 from Lumbini Lions. Key players include Karan KC, who is a skilled bowler with an expected point rating of 45.5; R Trumpelmann, a versatile all-rounder with an expected point rating of 45.3; and DJM Short, another all-rounder with an expected point rating of 45.1. This XI is expected to perform well in the match, aiming to secure a respectable scoreline.
+
+=== Oman vs Qatar on 2025-12-10 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 9 from Oman, 2 from Qatar
+  top picks: J Gunasekar (Oman, all-rounder, 81.4 expected points); PE Mendonca (Oman, all-rounder, 57.8 expected points); A Dcosta (Oman, all-rounder, 52.9 expected points)
+  total predicted: 413.1
+
+The forecasted Fantasy XI for the upcoming match between Oman and Qatar features an impressive lineup with 9 players from Oman and 2 from Qatar. The team is split evenly, with 9 players from Oman contributing to the attack while 2 players from Qatar provide defensive support. Key players include J Gunasekar, who stands out as an all-rounder with an impressive 81.4 expected points, followed by PE Mendonca, who brings in 57.8 points, and A Dcosta, another standout player with 52.9 points. This combination of experienced players and young talent positions Oman well against Qatar's formidable squad. Overall, the Fantasy XI has the potential to be a strong contender in the tournament.
+
+=== South Africa vs India on 2025-12-11 ===
+  composition: 1 wicket-keeper, 4 batters, 3 all-rounders, 3 bowlers
+  team split: 9 from India, 2 from South Africa
+  top picks: Abhishek Sharma (India, batter, 40.8 expected points); HH Pandya (India, all-rounder, 40.0 expected points); AR Patel (India, all-rounder, 39.5 expected points)
+  total predicted: 396.7
+
+The forecasted Fantasy XI for the upcoming match between South Africa and India features a strong lineup with 9 players selected from India and 2 from South Africa. Key players include Abhishek Sharma, who is projected to score 40.8 expected points, HH Pandya, who leads in all-rounder positions with 40.0 expected points, and AR Patel, another all-rounder with 39.5 expected points. The overall prediction suggests a total of 396.7 points, which aligns well with the current standings and expectations for both teams. This XI represents a balanced approach that should provide a competitive edge against an experienced Indian side.
+
+=== Gulf Giants vs Desert Vipers on 2025-12-12 ===
+  composition: 1 wicket-keeper, 4 batters, 3 all-rounders, 3 bowlers
+  team split: 7 from Desert Vipers, 4 from Gulf Giants
+  top picks: SM Curran (Desert Vipers, all-rounder, 44.3 expected points); Khuzaima Tanveer (Desert Vipers, bowler, 41.6 expected points); Noor Ahmad (Desert Vipers, bowler, 37.5 expected points)
+  total predicted: 387.0
+
+The forecasted Fantasy XI for the upcoming match between the Gulf Giants and Desert Vipers features a lineup that includes a wicket-keeper, four batters, three all-rounders, and three bowlers. The team is split evenly between the two teams, with 7 players selected from Desert Vipers and 4 from Gulf Giants. Key players like SM Curran, Khuzaima Tanveer, and Noor Ahmad have been identified as potential top picks. With a total predicted score of 387.0, this XI represents a strong contender in the competition.
+
+=== Singapore vs Malaysia on 2025-12-13 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 9 from Malaysia, 2 from Singapore
+  top picks: Virandeep Singh (Malaysia, all-rounder, 64.9 expected points); Syed Aziz (Malaysia, all-rounder, 60.5 expected points); Pavandeep Singh (Malaysia, bowler, 52.7 expected points)
+  total predicted: 503.7
+
+The forecasted Fantasy XI for the upcoming cricket match between Singapore and Malaysia features a lineup that includes a wicket-keeper, three batters, four all-rounders, and three bowlers. The team is split evenly between the two countries, with 9 players selected from Malaysia and 2 from Singapore. Key players like Virandeep Singh, Syed Aziz, and Pavandeep Singh are among the top performers in their respective categories, each contributing an average of 64.9, 60.5, and 52.7 expected points respectively. This lineup is expected to provide a strong foundation for both teams, with potential for significant contributions from the top-performing players.
+
+=== Nigeria vs Rwanda on 2025-12-14 ===
+  composition: 1 wicket-keeper, 3 batters, 3 all-rounders, 4 bowlers
+  team split: 6 from Rwanda, 5 from Nigeria
+  top picks: Muhammad Nadir (Rwanda, bowler, 53.1 expected points); SA Okpe (Nigeria, all-rounder, 52.6 expected points); IO Okpe (Nigeria, bowler, 51.4 expected points)
+  total predicted: 448.8
+
+The Nigerian cricket XI for the upcoming match against the Rwandan side is composed of 6 players from Rwanda and 5 from Nigeria. The team's top pick is Muhammad Nadir, who has been selected as a bowler with an expected point rating of 53.1. Other notable selections include SA Okpe, who is a left-arm medium pace bowler with an expected point rating of 52.6, and IO Okpe, who is a right-arm fast bowler with an expected point rating of 51.4. The overall prediction for the team is that they will score around 448.8 runs in the match.
+
+=== Thailand vs Singapore on 2025-12-16 ===
+  composition: 1 wicket-keeper, 3 batters, 2 all-rounders, 5 bowlers
+  team split: 10 from Thailand, 1 from Singapore
+  top picks: T Putthawong (Thailand, bowler, 66.8 expected points); C Sutthiruang (Thailand, all-rounder, 66.2 expected points); O Kamchomphu (Thailand, bowler, 61.8 expected points)
+  total predicted: 549.2
+
+The forecasted Fantasy XI for the upcoming match between Thailand and Singapore features a squad composed of 1 wicket-keeper, 3 batters, 2 all-rounders, and 5 bowlers. The team is split evenly between Thailand and Singapore, with 10 players selected from each country. Key players include T Putthawong, who is a skilled bowler with an expected point rating of 66.8; C Sutthiruang, a versatile all-rounder with an impressive 66.2 expected point rating; and O Kamchomphu, another talented bowler with a projected 61.8 expected point rating. This lineup aims to balance skill sets across both teams while positioning for a competitive encounter. Overall, the Fantasy XI has the potential to produce a strong performance in the upcoming match.
+
+=== Hobart Hurricanes vs Melbourne Stars on 2025-12-18 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 6 from Melbourne Stars, 5 from Hobart Hurricanes
+  top picks: MP Stoinis (Melbourne Stars, all-rounder, 50.6 expected points); GJ Maxwell (Melbourne Stars, all-rounder, 50.4 expected points); TK Curran (Melbourne Stars, all-rounder, 44.4 expected points)
+  total predicted: 444.7
+
+The Hobart Hurricanes XI is composed of 6 players from Melbourne Stars and 5 from Hobart Hurricanes, with a total predicted score of 444.7. The key players include MP Stoinis as an all-rounder who has been selected for both teams, followed by GJ Maxwell and TK Curran. These selections suggest a balanced approach to the match, aiming to balance the strengths of each team while minimizing potential risks in terms of player selection.
+
+=== Gulf Giants vs Abu Dhabi Knight Riders on 2025-12-18 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 8 from Abu Dhabi Knight Riders, 3 from Gulf Giants
+  top picks: SP Narine (Abu Dhabi Knight Riders, bowler, 46.5 expected points); AD Russell (Abu Dhabi Knight Riders, all-rounder, 45.5 expected points); LS Livingstone (Abu Dhabi Knight Riders, all-rounder, 40.4 expected points)
+  total predicted: 422.8
+
+The forecasted Fantasy XI for the upcoming match between the Gulf Giants and Abu Dhabi Knight Riders features a lineup that includes a wicket-keeper, three batters, four all-rounders, and three bowlers. The team is split evenly between the two teams, with 8 players selected from Abu Dhabi Knight Riders and 3 from Gulf Giants. Key players like SP Narine, AD Russell, and LS Livingstone have been identified as potential top picks, each contributing to the team's overall performance. The total predicted score for this game stands at 422.8, reflecting the high expectations placed upon the team.
+
+=== Adelaide Strikers vs Melbourne Stars on 2025-12-23 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 8 from Melbourne Stars, 3 from Adelaide Strikers
+  top picks: MP Stoinis (Melbourne Stars, all-rounder, 49.2 expected points); GJ Maxwell (Melbourne Stars, all-rounder, 48.4 expected points); Haris Rauf (Melbourne Stars, bowler, 44.1 expected points)
+  total predicted: 445.0
+
+The Adelaide Strikers XI for the 2025-12-23 fixture against Melbourne Stars is composed of a wicket-keeper, three batters, four all-rounders, and three bowlers. The team's top picks include MP Stoinis, who is projected to score 49.2 expected points, GJ Maxwell, who is expected to score 48.4 points, and Haris Rauf, who is forecasted to score 44.1 points. With a total predicted score of 445.0, this XI represents a strong offensive presence in the match. However, it's important to note that the exact performance of each player remains uncertain due to the unpredictable nature of cricket matches.
+
+=== Sylhet Titans vs Rajshahi Warriors on 2025-12-26 ===
+  composition: 1 wicket-keeper, 3 batters, 3 all-rounders, 4 bowlers
+  team split: 6 from Sylhet Titans, 5 from Rajshahi Warriors
+  top picks: Saim Ayub (Sylhet Titans, all-rounder, 45.0 expected points); Mohammad Nawaz (3) (Rajshahi Warriors, all-rounder, 44.1 expected points); Mehedi Hasan Miraz (Sylhet Titans, all-rounder, 43.9 expected points)
+  total predicted: 432.4
+
+The Sylhet Titans XI is composed of 6 players from Sylhet Titans and 5 players from Rajshahi Warriors for the upcoming match against Rajshahi Warriors on December 26, 2025. The team's top picks include Saim Ayub as an all-rounder with 45.0 expected points, followed by Mohammad Nawaz with 44.1 points, and Mehedi Hasan Miraz as an all-rounder with 43.9 points. With a total predicted score of 432.4, the XI has the potential to perform well in the game.
+
+=== Brisbane Heat vs Adelaide Strikers on 2025-12-27 ===
+  composition: 1 wicket-keeper, 3 batters, 2 all-rounders, 5 bowlers
+  team split: 6 from Adelaide Strikers, 5 from Brisbane Heat
+  top picks: MW Short (Adelaide Strikers, all-rounder, 50.1 expected points); J Overton (Adelaide Strikers, all-rounder, 46.7 expected points); Hasan Ali (Adelaide Strikers, bowler, 42.3 expected points)
+  total predicted: 440.4
+
+The Brisbane Heat XI is composed of a wicket-keeper, three batters, two all-rounders, and five bowlers for a total of six players. The lineup includes notable figures such as MW Short, who is an all-rounder with a projected expected point value of 50.1, and J Overton, who is also an all-rounder with a projected expected point value of 46.7. Hasan Ali, another all-rounder, has a projected expected point value of 42.3. This XI is expected to perform well against Adelaide Strikers in their upcoming match on December 27th.
+
+=== Cambodia vs Indonesia on 2025-12-27 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 7 from Indonesia, 4 from Cambodia
+  top picks: Luqman Butt (Cambodia, all-rounder, 59.8 expected points); F Banunaek (Indonesia, bowler, 53.1 expected points); DJ Hawoe (Indonesia, bowler, 52.9 expected points)
+  total predicted: 446.3
+
+The forecasted Fantasy XI for the upcoming match between Cambodia and Indonesia features a squad composed of 1 wicket-keeper, 3 batters, 4 all-rounders, and 3 bowlers. The team is split evenly between the two countries, with 7 players selected from Indonesia and 4 from Cambodia. Key players include Luqman Butt, who is projected to be an all-rounder with a strong batting ability; F Banunaek, who is known for his bowling prowess; and DJ Hawoe, who has shown promise in both batting and bowling. The overall expected points for the team are estimated at 446.3, reflecting the high level of skill and experience available across the squad.
+
+=== Rajshahi Warriors vs Dhaka Capitals on 2025-12-27 ===
+  composition: 1 wicket-keeper, 3 batters, 2 all-rounders, 5 bowlers
+  team split: 7 from Dhaka Capitals, 4 from Rajshahi Warriors
+  top picks: Imad Wasim (Dhaka Capitals, bowler, 48.2 expected points); Tanzim Hasan Sakib (Rajshahi Warriors, bowler, 47.0 expected points); Salman Mirza (Dhaka Capitals, bowler, 46.7 expected points)
+  total predicted: 468.6
+
+The forecasted fantasy XI for the upcoming match between the Dhaka Capitals and Rajshahi Warriors features a strong lineup with 7 players selected from Dhaka Capitals and 4 from Rajshahi Warriors. The key players include Imad Wasim as the bowler with an expected point rating of 48.2, followed by Tanzim Hasan Sakib and Salman Mirza. This combination provides a balanced attack that should be challenging to predict but could potentially yield significant results if executed well. Overall, the forecast suggests a high likelihood of a competitive contest between these two teams in the upcoming match.
+
+=== Wellington vs Auckland on 2025-12-29 ===
+  composition: 1 wicket-keeper, 3 batters, 4 all-rounders, 3 bowlers
+  team split: 6 from Wellington, 5 from Auckland
+  top picks: AC Kerr (Wellington, all-rounder, 80.5 expected points); JM Kerr (Wellington, all-rounder, 63.8 expected points); M Brown (Wellington, all-rounder, 61.5 expected points)
+  total predicted: 533.5
+
+The forecasted Fantasy XI for the upcoming match between Wellington and Auckland features a strong lineup with 6 players selected from Wellington and 5 from Auckland. The team is split evenly, with 6 players coming from Wellington and 5 from Auckland. Key players like AC Kerr, JM Kerr, and M Brown have been identified as potential leaders in terms of expected points. With a total predicted score of 533.5, this XI represents a significant challenge for both teams, highlighting the competitive nature of the match.
