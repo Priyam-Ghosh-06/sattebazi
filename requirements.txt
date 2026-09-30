@@ -1,0 +1,9 @@
+# Python 3.11+ (tested on 3.12 on Kaggle and 3.13 locally)
+pandas>=2.2
+numpy>=1.26
+pyarrow>=15
+lightgbm>=4.3          # graph approach scoring model (the submitted model)
+scipy>=1.11            # exact XI optimisation (scipy.optimize.milp)
+torch>=2.1             # baseline (CB) and refined (ADV) networks; CPU is enough for evaluate.py
+matplotlib>=3.8        # result figures
+transformers>=4.45     # optional: open-weight LLM team overviews (src/shared/llm)

@@ -1,0 +1,15 @@
+# data: raw is downloaded by run.sh; interim/processed are rebuilt from raw
+data/raw/
+data/interim/
+data/processed/
+# training state and bulky intermediates (the best weights of the final models are packaged in model_artifacts/*.pkl)
+model_artifacts/checkpoints/*/last.pt
+model_artifacts/checkpoints/*/last.pt.tmp
+model_artifacts/checkpoints/*_s99/
+results/experiments/*/pred/
+results/stages/
+results/*_check.csv
+__pycache__/
+*.pyc
+.claude/
+.claude-flow/
