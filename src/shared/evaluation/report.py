@@ -141,11 +141,13 @@ ADV_OUT = "results/experiments/E23_adv"
 ADV_COLS = {"ADV": "yhat", "ADV_direct_a3": "direct_a3", "ADV_direct_tau": "direct_tau", "ADV_rollout": "rollout_a3", "ADV_student": "student_a3"}
 
 
-def adv_report():
-    """E23: ADV (two-seed ensemble of each seed's validation-chosen predictor) vs B0s and CB128, variants from the
+def adv_report(name="ADV", out=None, seeds=SEEDS, title="E23 refined approach"):
+    """E23 / E25: ADV (two-seed ensemble of each seed's validation-chosen predictor) vs B0s and CB128, variants from the
     same runs (A3 vs τ, roll-out, student), paired bootstrap, and the pre-registered submission rule."""
     G = gates()
     ok_gates = all(v for k, v in G.items() if not k.startswith(("cb_", "g7", "adv_", "t5"))) and all(G.get(k, False) for k in ("adv_tests", "adv_smoke", "adv_overfit"))
+    out = out or ADV_OUT
+    cols = {k.replace("ADV", name, 1): v for k, v in ADV_COLS.items()}
     notes, frames = [], []
     for split in YEARS:
         b = pd.read_parquet(os.path.join(PRED, f"B0s_{split}.parquet")).rename(columns={"score": "B0s"})
@@ -153,19 +155,25 @@ def adv_report():
         if all(os.path.exists(f) for f in fs):
             e = pd.concat([pd.read_parquet(f)[KEY + ["yhat"]] for f in fs]).groupby(KEY, sort=False).yhat.mean().rename("CB128").reset_index()
             b = b.merge(e, on=KEY, how="left")
-        fa = [os.path.join(ADV_OUT, "pred", f"ADV_{split}_s{s}.parquet") for s in SEEDS]
+        fv = [os.path.join(ADV_OUT, "pred", f"ADV_{split}_s{s}.parquet") for s in SEEDS]
+        if name != "ADV" and all(os.path.exists(x) for x in fv):
+            e = pd.concat([pd.read_parquet(x)[KEY + ["yhat"]] for x in fv]).groupby(KEY, sort=False).yhat.mean().rename("ADV").reset_index()
+            b = b.merge(e, on=KEY, how="left")
+        fa = [os.path.join(out, "pred", f"{name}_{split}_s{s}.parquet") for s in seeds]
         if not all(os.path.exists(f) for f in fa):
-            notes.append(f"ADV {split}: missing seed predictions"); ok_gates = False; continue
-        e = pd.concat([pd.read_parquet(f)[KEY + list(ADV_COLS.values())] for f in fa]).groupby(KEY, sort=False).mean()
-        e = e.rename(columns={v: k for k, v in ADV_COLS.items()}).reset_index()
+            notes.append(f"{name} {split}: missing seed predictions"); ok_gates = False; continue
+        have = pd.read_parquet(fa[0]).columns
+        cols = {k: v for k, v in cols.items() if v in have}
+        e = pd.concat([pd.read_parquet(f)[KEY + list(cols.values())] for f in fa]).groupby(KEY, sort=False).mean()
+        e = e.rename(columns={v: k for k, v in cols.items()}).reset_index()
         n0 = len(b); b = b.merge(e, on=KEY, how="left")
-        if b.ADV.isna().any() or len(b) != n0:
-            notes.append(f"ADV {split}: candidate sets differ from B0s"); ok_gates = False
+        if b[name].isna().any() or len(b) != n0:
+            notes.append(f"{name} {split}: candidate sets differ from B0s"); ok_gates = False
         frames.append(b.assign(split=split))
     if not frames:
         raise SystemExit("no ADV predictions")
     D = pd.concat(frames, ignore_index=True)
-    arms = ["B0s"] + (["CB128"] if "CB128" in D else []) + list(ADV_COLS)
+    arms = ["B0s"] + (["CB128"] if "CB128" in D else []) + (["ADV"] if name != "ADV" and "ADV" in D else []) + list(cols)
     metrics, per_fx = {}, []
     with Pool(min(4, os.cpu_count() or 1)) as pool:
         for (split, subset), d in D.groupby(["split", "subset"]):
@@ -180,41 +188,45 @@ def adv_report():
                 head = {k: float(np.mean([v[k] for v in by_d.values()])) for k in by_d[DELTAS[0]]}
                 metrics.setdefault(a, {}).setdefault(split, {})[subset] = {"headline": head, "by_delta": by_d}
     PF = pd.concat(per_fx, ignore_index=True)
-    os.makedirs(ADV_OUT, exist_ok=True)
-    PF.to_parquet(os.path.join(ADV_OUT, "per_fixture.parquet"), index=False)
+    os.makedirs(out, exist_ok=True)
+    PF.to_parquet(os.path.join(out, "per_fixture.parquet"), index=False)
     t = PF[PF.subset == "test"]
-    pairs = [("ADV", "B0s"), ("ADV", "CB128"), ("ADV_direct_a3", "ADV_direct_tau"), ("ADV_rollout", "ADV_direct_a3"), ("ADV_student", "ADV_direct_a3")]
+    pairs = [(x.replace("ADV", name, 1), y.replace("ADV", name, 1)) for x, y in
+             [("ADV", "B0s"), ("ADV", "CB128"), ("ADV_direct_a3", "ADV_direct_tau"), ("ADV_rollout", "ADV_direct_a3"), ("ADV_student", "ADV_direct_a3")]]
+    pairs += [(name, "ADV")] if name != "ADV" and "ADV" in D else []  # refined + graph vs refined: the graph features' gain inside the refined model
     bs = {}
     for split in YEARS:
         f = t[t.split == split].groupby("fx_id")[[a + "_captured" for a in arms]].mean()
         for x, y in pairs:
             if x in arms and y in arms:
                 bs[f"{x}-{y} {split}"] = boot((f[x + "_captured"] - f[y + "_captured"]).to_numpy())
-    wins = ok_gates and all(bs[f"ADV-B0s {s}"]["lo"] > 0 for s in YEARS)
-    submit = "ADV" if wins else "B0s"
-    ci = "; ".join(f"{s} {bs[f'ADV-B0s {s}']['mean']:+.2f} [{bs[f'ADV-B0s {s}']['lo']:+.2f}, {bs[f'ADV-B0s {s}']['hi']:+.2f}]" for s in YEARS)
-    lines = [f"gates: {'pass' if ok_gates else 'FAIL'} ({json.dumps(G)})", f"ADV - B0s captured per fixture: {ci} -> submit {submit}",
-             "variants (same runs, test, per fixture): " + "; ".join(f"{k} {v['mean']:+.2f} [{v['lo']:+.2f}, {v['hi']:+.2f}]" for k, v in bs.items() if not k.startswith("ADV-B0s")),
+    wins = ok_gates and all(bs[f"{name}-B0s {s}"]["lo"] > 0 for s in YEARS)
+    submit = name if wins else "B0s"
+    ci = "; ".join(f"{s} {bs[f'{name}-B0s {s}']['mean']:+.2f} [{bs[f'{name}-B0s {s}']['lo']:+.2f}, {bs[f'{name}-B0s {s}']['hi']:+.2f}]" for s in YEARS)
+    lines = [f"gates: {'pass' if ok_gates else 'FAIL'} ({json.dumps(G)})", f"{name} - B0s captured per fixture: {ci} -> submit {submit}",
+             "variants (same runs, test, per fixture): " + "; ".join(f"{k} {v['mean']:+.2f} [{v['lo']:+.2f}, {v['hi']:+.2f}]" for k, v in bs.items() if not k.startswith(f"{name}-B0s")),
              "headline captured/oracle (test): " + " ".join(f"{a}:{s}={metrics[a][s]['test']['headline']['captured_over_oracle']:.4f}" for a in arms for s in YEARS),
              "R4: written once from these numbers."] + [f"note: {n}" for n in notes]
-    open(os.path.join(ADV_OUT, "decision.txt"), "w", encoding="utf-8").write("E23 refined approach: decision\n\n" + "\n".join(f"- {l}" for l in lines) + "\n")
-    json.dump({"submit": submit, "gates_ok": ok_gates}, open(os.path.join(ADV_OUT, "decision.json"), "w"), indent=1)
-    json.dump(metrics, open(os.path.join(ADV_OUT, "metrics.json"), "w"), indent=1)
-    json.dump(bs, open(os.path.join(ADV_OUT, "bootstrap.json"), "w"), indent=1)
+    open(os.path.join(out, "decision.txt"), "w", encoding="utf-8").write(f"{title}: decision\n\n" + "\n".join(f"- {l}" for l in lines) + "\n")
+    json.dump({"submit": submit, "gates_ok": ok_gates}, open(os.path.join(out, "decision.json"), "w"), indent=1)
+    json.dump(metrics, open(os.path.join(out, "metrics.json"), "w"), indent=1)
+    json.dump(bs, open(os.path.join(out, "bootstrap.json"), "w"), indent=1)
     from refined import config as adv
     cfg = {"data_hash": data_hash(), "splits": SPLITS, "deltas": DELTAS, "adv_hp": adv.HP, "seeds": SEEDS, "bootstrap": 2000}
-    json.dump(cfg, open(os.path.join(ADV_OUT, "config.json"), "w"), indent=1, default=str)
-    heads = " ".join(f"{a}:{s}={metrics[a][s]['test']['headline']['captured_over_oracle']:.4f}" for a in ("B0s", "ADV") for s in YEARS)
+    json.dump(cfg, open(os.path.join(out, "config.json"), "w"), indent=1, default=str)
+    heads = " ".join(f"{a}:{s}={metrics[a][s]['test']['headline']['captured_over_oracle']:.4f}" for a in ("B0s", name) for s in YEARS)
     with open("results/experiments/LOG.txt", "a", encoding="utf-8") as f:
-        f.write(f"| {date.today()} | E23 ADV | {hashlib.sha256(json.dumps(cfg, default=str).encode()).hexdigest()[:8]} | {heads} | submit {submit} |\n")
+        f.write(f"| {date.today()} | {name} | {hashlib.sha256(json.dumps(cfg, default=str).encode()).hexdigest()[:8]} | {heads} | submit {submit} |\n")
     print("\n".join(lines))
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["report", "adv"], help="report: E22 (B0s vs CB64/CB128); adv: E23 (refined vs B0s, CB128)")
+    ap.add_argument("cmd", choices=["report", "adv", "advm"],
+                    help="report: E22 (B0s vs CB64/CB128); adv: E23 (refined vs B0s, CB128); advm: E25 (refined + graph vs B0s, refined)")
     a = ap.parse_args()
-    {"report": report, "adv": adv_report}[a.cmd]()
+    {"report": report, "adv": adv_report,
+     "advm": lambda: adv_report("ADVM", "results/experiments/E25_advm", title="E25 refined + graph features")}[a.cmd]()
 
 
 if __name__ == "__main__":

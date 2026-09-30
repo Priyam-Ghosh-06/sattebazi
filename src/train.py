@@ -6,6 +6,7 @@ python src/train.py --train-start 2000-01-01 --train-end 2025-12-31
 python src/train.py --approach graph --graph-features      3b: + batter x bowler graph features (E24)
 python src/train.py --approach baseline --device cuda       CB, two seeds (a finished run with the same dates is reused)
 python src/train.py --approach refined --device cuda        ADV, two seeds (same reuse and resume behaviour)
+python src/train.py --approach refined --graph-features     refined + graph features (E25), warm-started from the refined runs
 
 The last 3 months before --train-end are the early-stopping window. Feature tables are built by run.sh;
 the training data never contains a match dated after --train-end.
@@ -27,7 +28,7 @@ def main():
     ap.add_argument("--train-start", default="2019-01-01")
     ap.add_argument("--train-end", default="2025-12-31")
     ap.add_argument("--approach", default="graph", choices=["graph", "baseline", "refined"])
-    ap.add_argument("--graph-features", action="store_true", help="graph: add the batter x bowler graph features (3b)")
+    ap.add_argument("--graph-features", action="store_true", help="graph: add the batter x bowler graph features (3b); refined: the same features inside the refined model (E25)")
     ap.add_argument("--features", default="data/processed/stale_features.parquet")
     ap.add_argument("--graph-feature-table", default="data/processed/matchup_features.parquet")
     ap.add_argument("--out", default=None)
@@ -47,7 +48,10 @@ def main():
         print(json.dumps({"out": out, "approach": "baseline", "arm": a.cb_arm, "runs": runs}))
         return
     if a.approach == "refined":
+        from refined.config import ADVM, HP
         from refined.pipeline import package, train_run
+        if a.graph_features:  # refined + graph features (E25), warm-started from the refined runs
+            HP.update(ADVM)
         runs = [train_run(dates, s, a.device) for s in a.seeds]
         pickle.dump(package(runs, a.train_start, a.train_end), open(out, "wb"))
         print(json.dumps({"out": out, "approach": "refined", "runs": runs}))

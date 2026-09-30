@@ -12,7 +12,7 @@ import torch.nn.functional as Fn
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))  # src/
 from baseline.config import CATS, N_NUM  # noqa: E402
-from refined.config import HP, NEG, N_SC, TAU  # noqa: E402
+from refined.config import HP, MU_COLS, NEG, N_SC, TAU  # noqa: E402
 from refined.decision_model import Choice, sum_to_n  # noqa: E402
 
 
@@ -112,7 +112,7 @@ class Decoder(nn.Module):
         super().__init__()
         self.fcat = nn.ModuleList([nn.Embedding(n, d) for n in vocab_sizes[:5]])
         self.month, self.fnum = nn.Embedding(13, d), nn.Linear(3, d)
-        self.inp = nn.Sequential(nn.Linear(2 * d + 3 + d, 2 * d), nn.GELU(), nn.Linear(2 * d, d))
+        self.inp = nn.Sequential(nn.Linear(2 * d + 3 + d + (len(MU_COLS) if HP["mu"] else 0), 2 * d), nn.GELU(), nn.Linear(2 * d, d))
         self.film = nn.Linear(d, 2 * d)  # A2
         self.R = nn.Parameter(torch.zeros(d, 3))  # capacity binding (keep, bowl, bat)
         self.p = nn.Sequential(nn.Linear(d, d), nn.GELU(), nn.Linear(d, 1))
@@ -134,7 +134,7 @@ class Decoder(nn.Module):
         """Utilities s and μ for every candidate."""
         g = self.fixture(b)[b["fx"]]
         unk = b["caps"][:, 3:4]
-        u = self.inp(torch.cat([z, torch.log1p(gapd)[:, None] / 8, unk, b["side"][:, None].float(), g], -1))
+        u = self.inp(torch.cat([z, torch.log1p(gapd)[:, None] / 8, unk, b["side"][:, None].float(), g, b["mu"]], -1))
         if HP["a2"]:
             ga, be = self.film(g).chunk(2, -1)
             u = u * (1 + ga) + be

@@ -9,7 +9,8 @@ python src/kaggle_run.py [--stage all|<one of STAGES>] [--test-file PATH]
 import argparse, filecmp, json, os, queue, shutil, subprocess, sys, threading, time
 
 PY = sys.executable
-STAGES = ["pipeline", "stale", "b0s", "cb_checks", "cb_runs", "report", "adv_checks", "adv_runs", "adv_report", "adv_final", "submit", "bundle"]
+STAGES = ["pipeline", "stale", "b0s", "cb_checks", "cb_runs", "report", "adv_checks", "adv_runs", "adv_report", "adv_final",
+          "advm_runs", "advm_report", "advm_final", "submit", "bundle"]
 MARK = "results/stages"
 LOGS = "results/logs"
 TRAIN_START, TRAIN_END = "2019-01-01", "2025-12-31"
@@ -152,6 +153,26 @@ def adv_final():
                      status_file="adv_status.json")
 
 
+def advm_runs():
+    """Refined + graph features (E25), warm-started from the refined runs: F25 then F24, seeds 0 and 1.
+    Needs data/processed/matchup_snapshots.pkl (python src/graph/experiments.py ingest && ... snapshots)."""
+    return gpu_queue([(f"ADVM_{split}_s{seed}", ["src/refined/pipeline.py", "train", "--graph-features", "--split", split, "--seed", str(seed)])
+                      for split in ("F25", "F24") for seed in (0, 1)], status_file="advm_status.json")
+
+
+def advm_report():
+    sh("src/shared/evaluation/report.py", "advm")
+
+
+def advm_final():
+    dec = json.load(open("results/experiments/E25_advm/decision.json"))
+    if dec["submit"] != "ADVM":
+        print("refined + graph did not beat B0s: no FINAL runs", flush=True)
+        return {}
+    return gpu_queue([(f"ADVM_FINAL_s{seed}", ["src/refined/pipeline.py", "train", "--graph-features", "--split", "FINAL", "--seed", str(seed)])
+                      for seed in (0, 1)], status_file="advm_status.json")
+
+
 def report():
     sh("src/shared/evaluation/report.py", "report")
 
@@ -168,12 +189,12 @@ def find_test_file(explicit):
 
 def submit(test_file):
     dec = json.load(open("results/experiments/E22_final/decision.json"))
-    adv_dec = "results/experiments/E23_adv/decision.json"
-    if os.path.exists(adv_dec) and json.load(open(adv_dec))["submit"] == "ADV":
-        dec = {"submit": "ADV"}
+    for d in ("results/experiments/E23_adv/decision.json", "results/experiments/E25_advm/decision.json"):  # later decisions override
+        if os.path.exists(d) and json.load(open(d))["submit"] != "B0s":
+            dec = {"submit": json.load(open(d))["submit"]}
     final = f"model_artifacts/model_{TRAIN_END}.pkl"
-    if dec["submit"] == "ADV":
-        sh("src/train.py", "--approach", "refined", "--train-start", TRAIN_START, "--train-end", TRAIN_END, "--out", final)
+    if dec["submit"] in ("ADV", "ADVM"):
+        sh("src/train.py", "--approach", "refined", *(["--graph-features"] if dec["submit"] == "ADVM" else []), "--train-start", TRAIN_START, "--train-end", TRAIN_END, "--out", final)
     elif dec["submit"] == "B0s":
         shutil.copyfile(f"model_artifacts/model_b0s_{TRAIN_END}.pkl", final)
     else:  # packages the FINAL two-seed runs (already trained in cb_runs; resumes them if unfinished)
@@ -247,6 +268,14 @@ def main():
             print(f"{s}: ADV runs missing, skipped", flush=True); continue
         elif s == "adv_final":
             mark(s, t0, runs=adv_final())
+        elif s == "advm_runs":
+            if not done("adv_runs"):
+                print("advm_runs: it warm-starts from the refined runs, which are missing: skipped", flush=True); continue
+            mark(s, t0, runs=advm_runs())
+        elif s in ("advm_report", "advm_final") and not done("advm_runs"):
+            print(f"{s}: ADVM runs missing, skipped", flush=True); continue
+        elif s == "advm_final":
+            mark(s, t0, runs=advm_final())
         elif s == "submit":
             mark(s, t0, **submit(a.test_file))
         else:

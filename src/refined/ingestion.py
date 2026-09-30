@@ -29,6 +29,17 @@ class Store(BaseStore):
         self.A_lb = A.legal_balls_bowled.to_numpy(); self.A_bp = A.bat_position.replace(0, 11).to_numpy()
         self.A_st = A.stumpings.to_numpy(); self.A_ct = A.catches.to_numpy(float)
         self.A_cst = A.groupby("pc").stumpings.cumsum().to_numpy()
+        self.A_bf = P[["player_id", "match_id", "balls_faced"]].assign(mo=lambda d: d.match_id.map(self.mord), pc=lambda d: d.player_id.map(self.pid_code)) \
+            .sort_values(["pc", "mo"], kind="stable").balls_faced.to_numpy(float)
+
+    def recent(self, pc, c):
+        """(mean legal balls bowled, mean balls faced) over the last 10 appearances before c: who is likely to bowl / bat."""
+        if pc not in self.a_off:
+            return 0.0, 0.0
+        s, e = self.a_off[pc]
+        hi = s + np.searchsorted(self.A_day[s:e], c)
+        w = slice(max(s, hi - 10), hi)
+        return (float(self.A_lb[w].mean()), float(self.A_bf[w].mean())) if hi > s else (0.0, 0.0)
 
     def tokens(self, pc, tc, c, L):
         """The L most recent of: appearances (any team) and bench tokens (team tc matches he missed while he was a

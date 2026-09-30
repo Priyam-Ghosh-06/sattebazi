@@ -3,12 +3,15 @@ and the batch layout (fixtures, teams, slots)."""
 
 import numpy as np
 import os
+import pandas as pd
+import pickle
 import sys
 import torch
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))  # src/
 from baseline.config import CATS, N_NUM  # noqa: E402
-from refined.config import N_SC  # noqa: E402
+from baseline.ingestion import days  # noqa: E402
+from refined.config import HP, MU_COLS, N_SC, SNAPS  # noqa: E402
 
 
 class Fixtures(torch.utils.data.Dataset):
@@ -16,6 +19,7 @@ class Fixtures(torch.utils.data.Dataset):
 
     def __init__(self, store, fx, L, to_date=False, true_xi=True):
         self.s, self.fx, self.L, self.to_date, self.true_xi = store, fx, L, to_date, true_xi
+        self.snaps = mu_snaps() if HP["mu"] else None
         self.plan(np.zeros(len(fx), np.int64), np.zeros(len(fx), np.int64))
 
     def plan(self, deltas, swaps):
@@ -50,14 +54,50 @@ class Fixtures(torch.utils.data.Dataset):
                 top = caps[t, 1] >= caps[t, 1].max()
                 caps[t, 0] = np.maximum(caps[t, 0], (top & (caps[t, 1] >= 0.3)).astype(np.float32))
                 nxi[t] = int(f["played"][t].sum()) if self.true_xi else s.xi_size(f["tc"][t][0], c)
-        return dict(kind=kind, num=num, cat=cat, sc=sc, day=day, caps=caps[:, [0, 2, 3, 4]], nxi=nxi, y=f["y"],
+        mu = mu_features(self.snaps, s, f, c) if self.snaps is not None else np.zeros((n, 0), np.float32)
+        return dict(kind=kind, num=num, cat=cat, sc=sc, day=day, caps=caps[:, [0, 2, 3, 4]], nxi=nxi, y=f["y"], mu=mu,
                     played=f["played"], side=side, fxcat=f["cat"], month=f["month"],
                     fxsc=np.array([f["sched"] / 20, f["bpo"] / 6, np.log1p(delta) / 6], np.float32),
                     cut=np.float32(-delta), delta=np.float32(delta))
 
 
+
+_SNAPS = {}
+
+
+def mu_snaps():
+    """Monthly graph snapshots (src/graph/graph_model.py), loaded once per process; each fitted on balls dated < its date."""
+    if "s" not in _SNAPS:
+        S = pickle.load(open(SNAPS, "rb"))
+        S["days"] = days([x["date"] for x in S["snaps"]])
+        S["bat_ix"] = {p: i for i, p in enumerate(S["bats"])}
+        S["bowl_ix"] = {p: i for i, p in enumerate(S["bowls"])}
+        _SNAPS["s"] = S
+    return _SNAPS["s"]
+
+
+def mu_features(S, store, f, c):
+    """The 10 graph features for every candidate of fixture f at cutoff c (latest snapshot <= c), each side against the
+    other side's squad; bowling / batting weights = mean legal balls bowled / balls faced over the last 10 appearances."""
+    from graph.graph_model import matchup_block
+    si = int(np.searchsorted(S["days"], c, side="right")) - 1
+    n = len(f["pc"])
+    if si < 0:
+        return np.zeros((n, len(MU_COLS)), np.float32)
+    assert S["days"][si] <= c, "snapshot after the cutoff"
+    rec = np.array([store.recent(p, c) for p in f["pc"]])
+    df = pd.DataFrame({"bi": [S["bat_ix"].get(p, -1) for p in f["player_id"]], "wi": [S["bowl_ix"].get(p, -1) for p in f["player_id"]],
+                       "share10": 1.0, "lb10": rec[:, 0], "bf10": rec[:, 1]})
+    out = np.zeros((n, len(MU_COLS)), np.float32)
+    for sd in (0, 1):
+        own, opp = f["side"] == sd, f["side"] != sd
+        if own.any() and opp.any():
+            out[own] = matchup_block(S["snaps"][si], df[own], df[opp])[MU_COLS].to_numpy(np.float32)
+    return np.nan_to_num(out)
+
+
 def collate(items):
-    b = {k: torch.from_numpy(np.concatenate([it[k] for it in items])) for k in ("kind", "num", "cat", "sc", "day", "caps", "nxi")}
+    b = {k: torch.from_numpy(np.concatenate([it[k] for it in items])) for k in ("kind", "num", "cat", "sc", "day", "caps", "nxi", "mu")}
     b["y"] = torch.from_numpy(np.concatenate([it["y"] for it in items]).astype(np.float32))
     b["played"] = torch.from_numpy(np.concatenate([it["played"] for it in items]).astype(np.float32))
     side = np.concatenate([it["side"] for it in items]).astype(np.int64)

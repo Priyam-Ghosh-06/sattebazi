@@ -1,0 +1,7 @@
+E25 refined + graph features: decision
+
+- gates: pass ({"adv_overfit": true, "adv_smoke": true, "adv_tests": true, "causality": true, "cb_overfit": true, "cb_smoke": true, "cb_tests": true, "features": true, "g7": true, "g8": true, "ingest": true, "move": true, "points": true, "roles": true, "squads": true, "stale": true, "t5_determinism": true})
+- ADVM - B0s captured per fixture: F24 -0.03 [-2.64, +2.44]; F25 +3.53 [+0.76, +6.40] -> submit B0s
+- variants (same runs, test, per fixture): ADVM-CB128 F24 +5.31 [+2.66, +8.03]; ADVM_direct_a3-ADVM_direct_tau F24 +0.92 [+0.10, +1.71]; ADVM_rollout-ADVM_direct_a3 F24 +0.22 [-0.79, +1.29]; ADVM-ADV F24 +0.86 [+0.26, +1.45]; ADVM-CB128 F25 +5.47 [+2.79, +8.05]; ADVM_direct_a3-ADVM_direct_tau F25 +0.16 [-0.64, +0.98]; ADVM_rollout-ADVM_direct_a3 F25 -0.02 [-0.95, +0.99]; ADVM-ADV F25 +0.71 [-0.26, +1.69]
+- headline captured/oracle (test): B0s:F24=0.6245 B0s:F25=0.6284 CB128:F24=0.6165 CB128:F25=0.6254 ADV:F24=0.6234 ADV:F25=0.6326 ADVM:F24=0.6245 ADVM:F25=0.6334 ADVM_direct_a3:F24=0.6238 ADVM_direct_a3:F25=0.6332 ADVM_direct_tau:F24=0.6224 ADVM_direct_tau:F25=0.6330 ADVM_rollout:F24=0.6242 ADVM_rollout:F25=0.6332
+- R4: written once from these numbers.

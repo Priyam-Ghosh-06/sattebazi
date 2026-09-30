@@ -23,7 +23,7 @@ from baseline.decision_model import capture, headline  # noqa: E402
 from baseline.pipeline import lr_at, run_id as base_run_id  # noqa: E402
 from baseline.config import CATS, resolve_device, seed_all  # noqa: E402
 from baseline.ingestion import days, load_tables  # noqa: E402
-from refined.config import CKPT, HP, PRED, TAU  # noqa: E402
+from refined.config import ADVM, CKPT, HP, TAU, pred_dir  # noqa: E402
 from refined.ingestion import Store  # noqa: E402
 from refined.preprocessing import Fixtures, collate, loader  # noqa: E402
 from refined.scoring_model import ADV, Student, build, student_x  # noqa: E402
@@ -69,7 +69,24 @@ def save(path, **kw):
 
 
 def run_id(dates, seed):
-    return base_run_id("ADV", dates, seed)
+    return base_run_id(HP["name"], dates, seed)
+
+
+def warm_source(dates, seed):
+    """Refined + graph: start from the refined run of the same fold and seed (FINAL: from the F25 run, trained on data < 2024-10)."""
+    name = next((k for k, v in SPLITS.items() if v[:3] == tuple(dates[:3])), None)
+    src = base_run_id("ADV", SPLITS["F25"] if name in (None, "FINAL") else SPLITS[name], seed)
+    return torch.load(os.path.join(CKPT, src, "best.pt"), map_location="cpu", weights_only=False), src
+
+
+def load_warm(model, state):
+    """Load the refined weights; the first decoder layer gets zero weights for the new graph inputs (appended last), so the
+    warm-started model computes exactly what the refined model computed until fine-tuning moves those weights."""
+    own = model.state_dict()
+    for k, v in state.items():
+        if k in own and own[k].shape != v.shape and k.endswith("inp.0.weight"):
+            w = torch.zeros_like(own[k]); w[:, :v.shape[1]] = v; state = {**state, k: w}
+    model.load_state_dict(state)
 
 
 def train_run(dates, seed, device="auto", workers=None, max_train=None, epochs=None, log=print, predict_test=True):
@@ -88,14 +105,18 @@ def train_run(dates, seed, device="auto", workers=None, max_train=None, epochs=N
     t0 = time.time()
     P, M, S = load_tables()
     P, M = P[P.date < te_from], M[M.date < te_from]
-    store = Store(P, M, fold_end=va_from)
+    warm = warm_source(dates, seed) if HP["mu"] else None
+    store = Store(P, M, fold_end=va_from, vocab=warm[0]["vocab"] if warm else None, norm=warm[0]["norm"] if warm else None)
     fx_tr = make_fixtures(store, fixture_rows(P, S, tr_from, va_from, pad=True), M)
     if max_train:
         fx_tr = fx_tr[:max_train]
     fx_va = make_fixtures(store, fixture_rows(P, S, va_from, te_from, pad=False), M)
     roles_va = role_table(P, fx_va, DELTAS)
     ds_tr, ds_va = Fixtures(store, fx_tr, L), Fixtures(store, fx_va, L, true_xi=False)
-    model = build(store, fx_tr).to(dev)
+    model = build(store, fx_tr)
+    if warm:
+        load_warm(model, warm[0]["state"]); log(f"[{rid}] warm start from {warm[1]}")
+    model = model.to(dev)
     ck = os.path.join(rdir, "last.pt")
     st = dict(phase="P1", epoch=-1, step=0, best=-1.0, best_loss=float("inf"), bad=0, history=[], best_state=None)
     E = epochs or HP["epochs"]
@@ -289,7 +310,7 @@ def train_run(dates, seed, device="auto", workers=None, max_train=None, epochs=N
         log(f"[{rid}] P4: validation headlines {json.dumps({k: round(v, 4) for k, v in res.items()})} -> final predictor {st['final']}")
 
     # ---- predictions of every predictor on validation (+ test), artifacts
-    os.makedirs(PRED, exist_ok=True)
+    os.makedirs(pred_dir(), exist_ok=True)
     paths = [("direct", "a3"), ("direct", "tau")] + ([("rollout", "a3")] if HP["a5"] else []) + ([("student", "a3")] if HP["a6"] else [])
     parts = [predict(model, ds_va, DELTAS, dev, workers, paths).assign(subset="valid")]
     if te_to and predict_test:
@@ -300,7 +321,7 @@ def train_run(dates, seed, device="auto", workers=None, max_train=None, epochs=N
         parts.append(predict(model, Fixtures(st2, fx_te, L, true_xi=False), DELTAS, dev, workers, paths).assign(subset="test"))
     pr = pd.concat(parts, ignore_index=True)
     pr["yhat"] = pr[f"{st['final']}_a3"]
-    pr.to_parquet(os.path.join(PRED, f"{rid}.parquet"), index=False)
+    pr.to_parquet(os.path.join(pred_dir(), f"{rid}.parquet"), index=False)
     save(os.path.join(rdir, "best.pt"), state={k: v.cpu() for k, v in model.state_dict().items()}, vocab=store.vocab, norm=store.norm,
          hp=HP, ybar=float(model.dec.ybar), ysd=float(model.dec.ysd), final=st["final"], dates=list(dates), seed=seed)
     info = dict(run=rid, p1_best=st.get("p1_best"), final=st["final"], lam=st.get("lam"), p4=st.get("p4"), history=st["history"],
@@ -354,8 +375,8 @@ def smoke(device="auto", log=print):
         HP.update(keep)
     info = json.load(open(os.path.join(CKPT, rid, "done.json")))
     h = [x for x in info["history"] if x["phase"] == "P1"][0]
-    pr = pd.read_parquet(os.path.join(PRED, f"{rid}.parquet"))
-    os.remove(os.path.join(PRED, f"{rid}.parquet"))  # no metric from the smoke run is read or recorded
+    pr = pd.read_parquet(os.path.join(pred_dir(), f"{rid}.parquet"))
+    os.remove(os.path.join(pred_dir(), f"{rid}.parquet"))  # no metric from the smoke run is read or recorded
     cols = [c for c in pr.columns if c.endswith(("_a3", "_tau"))]
     res = dict(finite=bool(np.isfinite(pr[cols].to_numpy()).all() and np.isfinite(h["train_loss"])), first=h["first_loss"], last=h["last_loss"],
                phases=sorted({x["phase"] for x in info["history"]}))
@@ -403,7 +424,10 @@ def main():
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--device", default="auto")
     ap.add_argument("--workers", type=int, default=None)
+    ap.add_argument("--graph-features", action="store_true", help="refined + graph features (ADVM, E25), warm-started")
     a = ap.parse_args()
+    if a.graph_features:
+        HP.update(ADVM)
     if a.cmd == "train":
         train_run(SPLITS[a.split], a.seed, a.device, a.workers)
         return

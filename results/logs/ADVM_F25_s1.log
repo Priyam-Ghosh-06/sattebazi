@@ -1,0 +1,12 @@
+[ADVM_F25_s1] warm start from ADV_F25_s1
+[ADVM_F25_s1] setup 14s: 7028 train / 424 valid fixtures, device=cuda:1
+[ADVM_F25_s1] P1 epoch 0: loss 1.5813 valid 0.6534 * (335s)
+[ADVM_F25_s1] P1 epoch 1: loss 1.5584 valid 0.6533 (333s)
+[ADVM_F25_s1] P1 epoch 2: loss 1.5413 valid 0.6541 * (335s)
+[ADVM_F25_s1] P1 epoch 3: loss 1.5352 valid 0.6525 (327s)
+[ADVM_F25_s1] P2 epoch 0: latent mse 0.02628 (184s)
+[ADVM_F25_s1] P2 epoch 1: latent mse 0.02618 (183s)
+[ADVM_F25_s1] P3 epoch 0: loss 1.5725 valid 0.6530 * (257s)
+[ADVM_F25_s1] P3 epoch 1: loss 1.5641 valid 0.6532 * (264s)
+[ADVM_F25_s1] P4: validation headlines {"direct_a3": 0.6541, "rollout_a3": 0.6532} -> final predictor direct
+[ADVM_F25_s1] done in 47.8 min: final predictor direct

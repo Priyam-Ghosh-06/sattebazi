@@ -1,0 +1,79 @@
+{
+ "run": "ADVM_F24_s1",
+ "p1_best": 0.6598612070083618,
+ "final": "direct",
+ "lam": null,
+ "p4": {
+  "direct_a3": 0.6602136492729187,
+  "rollout_a3": 0.6592382192611694
+ },
+ "history": [
+  {
+   "phase": "P1",
+   "epoch": 0,
+   "train_loss": 1.5992175007150287,
+   "first_loss": 1.700827717781067,
+   "last_loss": 1.466080367565155,
+   "valid_headline": 0.6598612070083618,
+   "valid_mse": 1119.21728515625,
+   "seconds": 254.5
+  },
+  {
+   "phase": "P1",
+   "epoch": 1,
+   "train_loss": 1.5731340306145805,
+   "first_loss": 1.5281020402908325,
+   "last_loss": 1.6107938885688782,
+   "valid_headline": 0.659350574016571,
+   "valid_mse": 1114.2542724609375,
+   "seconds": 250.7
+  },
+  {
+   "phase": "P1",
+   "epoch": 2,
+   "train_loss": 1.5556221150216603,
+   "first_loss": 1.5032919645309448,
+   "last_loss": 1.6100808382034302,
+   "valid_headline": 0.6582844853401184,
+   "valid_mse": 1110.45068359375,
+   "seconds": 250.5
+  },
+  {
+   "phase": "P2",
+   "epoch": 0,
+   "latent_mse": 0.01853893224948219,
+   "seconds": 142.2
+  },
+  {
+   "phase": "P2",
+   "epoch": 1,
+   "latent_mse": 0.018416672324140865,
+   "seconds": 141.7
+  },
+  {
+   "phase": "P3",
+   "epoch": 0,
+   "train_loss": 1.6042460267032896,
+   "valid_headline": 0.6592382192611694,
+   "seconds": 199.6
+  },
+  {
+   "phase": "P3",
+   "epoch": 1,
+   "train_loss": 1.5914291782038552,
+   "valid_headline": 0.6587402820587158,
+   "seconds": 185.6
+  },
+  {
+   "phase": "P4",
+   "valid": {
+    "direct_a3": 0.6602136492729187,
+    "rollout_a3": 0.6592382192611694
+   },
+   "seconds": 251.9
+  }
+ ],
+ "train_fixtures": 5376,
+ "valid_fixtures": 300,
+ "minutes": 31.5
+}
