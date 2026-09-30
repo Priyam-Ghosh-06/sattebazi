@@ -92,7 +92,7 @@ The obstacles I had to get past before any of that:
 | leakage (accidentally using the future) | every feature is looked up with one strict "dated before" join, and tests rebuild features from cut-off history and demand exactly the same numbers |
 | noise | judge on the task's own score (points of the chosen 11), measure how sure each comparison is, and write every decision rule down before seeing a test number |
 
-**Staleness** is the part people usually miss. The hidden matches are months after our last data, so a model tested on fresh
+**Staleness**... The hidden matches are months after our last data, so a model tested on fresh
 history would look better than it really is. I train and test every model with the history cut Δ days before each match:
 
 ![staleness timeline](results/overall/staleness_timeline.png)
