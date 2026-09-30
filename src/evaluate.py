@@ -53,8 +53,12 @@ def predict_fixtures(model, fixtures, P, M, registry_dir, log=print):
     X = T.prep(X)
     if model.get("arch") in ARCH:  # E[Y] from the two-seed ensemble (refined: each seed's validation-chosen predictor)
         import importlib
-        X["score"] = importlib.import_module(ARCH[model["arch"]]).predict_rows(model, Q, info, P, M)
-        X["mu"], X["p"] = np.nan, np.nan
+        mod = importlib.import_module(ARCH[model["arch"]])
+        if model["arch"] == "adv":  # the refined models also report their chance of playing π and points if he plays μ
+            X["score"], X["p"], X["mu"] = mod.predict_rows(model, Q, info, P, M, parts=True)
+        else:
+            X["score"] = mod.predict_rows(model, Q, info, P, M)
+            X["mu"], X["p"] = np.nan, np.nan
     else:
         X["delta"] = X.match_id.map({m: v["delta"] for m, v in info.items()}).astype(float)  # staleness input (B0s)
         if model.get("graph_features"):  # graph approach 3b: batter x bowler graph features from the last snapshot <= c

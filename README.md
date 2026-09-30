@@ -44,7 +44,7 @@ One CSV row per chosen player:
 
 ```
 match_date,team1,team2,rank,player,player_team,role,predicted_points,points_if_plays,p_plays
-2025-10-03,Australia,New Zealand,1,MW Short,Australia,AR,53.95,57.2,0.943
+2025-10-03,Australia,New Zealand,1,A Zampa,Australia,BOWL,42.86,45.09,0.95
 ```
 
 Here is one real match (not hand-picked: the median of the 40 mock matches), predicted by the trees (3a) trained only on data
@@ -90,7 +90,7 @@ The obstacles I had to get past before any of that:
 | no player roles in the data | inferred each player's role from his history before the match (stumpings, catches, share of overs, batting position): 99.3% of real XIs come out legal |
 | history stops on 31 Dec 2025, the matches are later | **simulated staleness**, see the figure below |
 | leakage (accidentally using the future) | every feature is looked up with one strict "dated before" join, and tests rebuild features from cut-off history and demand exactly the same numbers |
-| noise | judge on the task's own score (points of the chosen 11), measure how sure each comparison is, and write every decision rule down before seeing a test number |
+| noise | judge on the task's own score (points of the chosen 11), measure how sure each comparison is, and write the two-year rule down before seeing a test number |
 
 **Staleness**... The hidden matches are months after our last data, so a model tested on fresh
 history would look better than it really is. I train and test every model with the history cut Δ days before each match:
@@ -509,10 +509,11 @@ keeps every gap small (section 7, point 1), and on every other count 3c is ahead
 
 # The final model is therefore 3c: the refined neural net + the batter-vs-bowler graph
 
-It is `model_artifacts/model_2025-12-31.pkl`, and `src/evaluate.py` uses it for the hidden matches. It holds the two seeds of
-the 2025 fold (trained on matches before October 2024, early-stopped on October–December 2024). When it predicts, it reads
-every player's history up to 31 December 2025. `NEURAL=1 bash run.sh`, or the Kaggle runner, retrains it on everything up to
-the cutoff on a GPU.
+For the hidden matches, `src/evaluate.py` loads it from `model_artifacts/model_2025-12-31.pkl`. The version I use holds the
+two seeds of the 2025 fold (trained on matches before October 2024, early-stopped on October–December 2024). When it predicts,
+it reads every player's history up to 31 December 2025. `NEURAL=1 bash run.sh`, or the Kaggle runner, retrains it on everything
+up to the cutoff on a GPU. Model weights are binary files, so they are not in this repository: the training commands below
+rebuild them, and their training histories are in `results/training_history/`.
 
 ## 9. Assumptions
 
@@ -587,12 +588,13 @@ and some are real risks for the hidden matches.
 
 ```bash
 python -m pip install -r requirements.txt           # Python 3.11+
-bash run.sh                                         # download → checks → features + graph → train 3a → hidden-set CSV (final model)
+NEURAL=1 bash run.sh                                # download → checks → features + graph → train all → hidden-set CSV (GPU)
 ```
 
-`run.sh` downloads Cricsheet if `data/raw/` is empty and stops at the first failed check. It takes about 30 minutes on a CPU
-after the download, and predicts with the committed final model. Options:
-- `NEURAL=1`: retrain the neural models on a GPU, including the final model 3c on everything up to the cutoff;
+`run.sh` downloads Cricsheet if `data/raw/` is empty and stops at the first failed check. Without `NEURAL=1` it runs on a CPU in
+about 30 minutes after the download: every check, the features, the graph and the trees (3a). The final model is a neural net,
+so `NEURAL=1` (a GPU) is needed to train it and predict the hidden set. Options:
+- `NEURAL=1`: train the neural models on a GPU, including the final model 3c on everything up to the cutoff;
 - `GRAPH_FEATURES=1`: also train 3b;
 - `LLM=1`: write the team overviews.
 
@@ -610,7 +612,7 @@ python src/evaluate.py --model-path model_artifacts/model_2025-12-31.pkl --test-
 
   `evaluate.py` reads which approach made a model from the model file.
 - The GPU runs were done on Kaggle with `src/run_kaggle.py`. It runs everything in stages and skips a stage once it is done.
-  Every training run saves a checkpoint each epoch and resumes after a crash.
+  Every training run saves a checkpoint each epoch (in `model_artifacts/checkpoints/`) and resumes after a crash.
 - Seeds are fixed and LightGBM is deterministic. Two runs of `evaluate.py` with the final model give byte-identical CSVs.
 - Dry run without the hidden file: `--test-file data/mock/test_fixtures.json` (40 real fixtures from Oct–Dec 2025).
 - Figures: `python src/shared/evaluation/figures.py`.
@@ -637,11 +639,11 @@ data/
   interim/, processed/          rebuilt by run.sh
   audit/                        one check report per stage
   mock/                         40 mock fixtures + their real points
-model_artifacts/                model_2025-12-31.pkl = the final model (3c); model_trees_2025-12-31.pkl (3a);
-                                model_2025-09-30.pkl (3a trained to Sep 2025, for the worked example); graph_features_*, baseline_cb128_*;
-                                checkpoints/ = best weights and training history of every GPU run
+model_artifacts/                (created by training, not committed: binary weights) model_2025-12-31.pkl = the final model
+                                (3c), model_trees_2025-12-31.pkl (3a), checkpoints/ of every GPU run
 results/
   overall/, baseline/, refined/, graph/     figures and mock predictions
   experiments/                  every experiment's metrics, bootstrap and decision; LOG.txt = one line per run
+  training_history/             every GPU run's per-epoch training and validation numbers (JSON)
   logs/                         the GPU training logs
 ```

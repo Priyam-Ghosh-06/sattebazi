@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 # End to end: data download -> shared preprocessing + gates -> features + the batter x bowler graph + gates -> train -> hidden-set CSV
 # (-> optional LLM overviews). Every stage exits non-zero when its gate fails, and set -e stops the run there.
-#   bash run.sh                  CPU: rebuilds the data, trains the trees (3a) and predicts with the final model (3c), whose
-#                                weights are committed in model_artifacts/model_2025-12-31.pkl
-#   NEURAL=1 bash run.sh         GPU: also retrains the neural models, including the final model 3c, on everything up to the cutoff
+#   bash run.sh                  CPU: rebuilds the data, runs every check, trains the trees (3a)
+#   NEURAL=1 bash run.sh         GPU: also trains the neural models, including the final model 3c, and predicts the hidden set
 #   GRAPH_FEATURES=1 bash run.sh also trains 3b (the trees + the graph features)
 #   LLM=1 bash run.sh            also writes open-weight LLM overviews of the predicted XIs
 set -euo pipefail
@@ -60,10 +59,11 @@ if [ "${NEURAL:-0}" = "1" ]; then
   $PY src/train.py --approach refined --train-start "$TRAIN_START" --train-end "$TRAIN_END"
   $PY src/train.py --train-start "$TRAIN_START" --train-end "$TRAIN_END" --out "$MODEL"
 fi
-[ -f "$MODEL" ] || { echo "final model $MODEL missing: run with NEURAL=1 on a GPU"; exit 1; }
 
 # 5. hidden-set predictions (PS CSV), then the optional LLM overviews
-if [ -f "$TEST_FILE" ]; then
+if [ ! -f "$MODEL" ]; then
+  echo "the final model ($MODEL, 3c) is not trained yet: run with NEURAL=1 on a GPU to train it and predict the hidden set"
+elif [ -f "$TEST_FILE" ]; then
   $PY src/evaluate.py --model-path "$MODEL" --test-file "$TEST_FILE" --output results/hidden_predictions.csv
   if [ "${LLM:-0}" = "1" ]; then
     $PY src/shared/llm/team_overview.py --predictions results/hidden_predictions.csv --output results/hidden_team_overviews.txt

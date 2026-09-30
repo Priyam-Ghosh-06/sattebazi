@@ -1,0 +1,165 @@
+{
+ "run": "CB128_F24_s0",
+ "best_epoch": 12,
+ "best_valid_headline": 0.6393402814865112,
+ "epochs_run": 17,
+ "history": [
+  {
+   "epoch": 0,
+   "train_loss": 0.9751190677994773,
+   "first_loss": 1.0197652876377106,
+   "last_loss": 0.9284897744655609,
+   "valid_loss": 1.1868834495544434,
+   "valid_headline": 0.540244460105896,
+   "seconds": 91.1
+  },
+  {
+   "epoch": 1,
+   "train_loss": 0.9029444399334136,
+   "first_loss": 0.8787403106689453,
+   "last_loss": 0.910308450460434,
+   "valid_loss": 1.1671874523162842,
+   "valid_headline": 0.5752957463264465,
+   "seconds": 91.3
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.8799054810688609,
+   "first_loss": 0.8532702326774597,
+   "last_loss": 0.8424918055534363,
+   "valid_loss": 1.1390107870101929,
+   "valid_headline": 0.6080758571624756,
+   "seconds": 91.2
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.8699754937773659,
+   "first_loss": 0.8034530282020569,
+   "last_loss": 0.9103854894638062,
+   "valid_loss": 1.1146211624145508,
+   "valid_headline": 0.6204124689102173,
+   "seconds": 90.5
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.8651519102000055,
+   "first_loss": 0.8305122554302216,
+   "last_loss": 0.8992712497711182,
+   "valid_loss": 1.0997653007507324,
+   "valid_headline": 0.6273478269577026,
+   "seconds": 90.5
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.8597183642642838,
+   "first_loss": 0.8551774322986603,
+   "last_loss": 0.8960946500301361,
+   "valid_loss": 1.0903605222702026,
+   "valid_headline": 0.631219744682312,
+   "seconds": 90.1
+  },
+  {
+   "epoch": 6,
+   "train_loss": 0.8555661691796212,
+   "first_loss": 0.8367526829242706,
+   "last_loss": 0.8779520392417908,
+   "valid_loss": 1.0852893590927124,
+   "valid_headline": 0.6331663727760315,
+   "seconds": 90.3
+  },
+  {
+   "epoch": 7,
+   "train_loss": 0.8503755412641025,
+   "first_loss": 0.9092724323272705,
+   "last_loss": 0.8705486357212067,
+   "valid_loss": 1.081800937652588,
+   "valid_headline": 0.63519287109375,
+   "seconds": 91.7
+  },
+  {
+   "epoch": 8,
+   "train_loss": 0.8463703262664023,
+   "first_loss": 0.8500758111476898,
+   "last_loss": 0.8419823050498962,
+   "valid_loss": 1.079728126525879,
+   "valid_headline": 0.6363839507102966,
+   "seconds": 89.3
+  },
+  {
+   "epoch": 9,
+   "train_loss": 0.84321569083702,
+   "first_loss": 0.8533105254173279,
+   "last_loss": 0.8306845426559448,
+   "valid_loss": 1.0787134170532227,
+   "valid_headline": 0.6375218033790588,
+   "seconds": 89.4
+  },
+  {
+   "epoch": 10,
+   "train_loss": 0.8384678828574362,
+   "first_loss": 0.8575961291790009,
+   "last_loss": 0.8210704326629639,
+   "valid_loss": 1.077879786491394,
+   "valid_headline": 0.637703537940979,
+   "seconds": 90.8
+  },
+  {
+   "epoch": 11,
+   "train_loss": 0.8360517943898836,
+   "first_loss": 0.7864861786365509,
+   "last_loss": 0.8090423047542572,
+   "valid_loss": 1.0775278806686401,
+   "valid_headline": 0.6389859914779663,
+   "seconds": 90.2
+  },
+  {
+   "epoch": 12,
+   "train_loss": 0.8326977544597217,
+   "first_loss": 0.837063193321228,
+   "last_loss": 0.7636527419090271,
+   "valid_loss": 1.0774202346801758,
+   "valid_headline": 0.6393402814865112,
+   "seconds": 90.8
+  },
+  {
+   "epoch": 13,
+   "train_loss": 0.8300203528432619,
+   "first_loss": 0.8494659960269928,
+   "last_loss": 0.8185778260231018,
+   "valid_loss": 1.0778120756149292,
+   "valid_headline": 0.6388258934020996,
+   "seconds": 91.7
+  },
+  {
+   "epoch": 14,
+   "train_loss": 0.8279101625084877,
+   "first_loss": 0.8370866775512695,
+   "last_loss": 0.8785300850868225,
+   "valid_loss": 1.078651785850525,
+   "valid_headline": 0.6374382376670837,
+   "seconds": 90.9
+  },
+  {
+   "epoch": 15,
+   "train_loss": 0.8255989480586279,
+   "first_loss": 0.8225037455558777,
+   "last_loss": 0.8508132696151733,
+   "valid_loss": 1.0795031785964966,
+   "valid_headline": 0.6374965906143188,
+   "seconds": 92.5
+  },
+  {
+   "epoch": 16,
+   "train_loss": 0.8248127922415733,
+   "first_loss": 0.8794329464435577,
+   "last_loss": 0.7865258455276489,
+   "valid_loss": 1.080605387687683,
+   "valid_headline": 0.6353212594985962,
+   "seconds": 96.3
+  }
+ ],
+ "train_fixtures": 5376,
+ "valid_fixtures": 300,
+ "minutes": 27.7,
+ "ysd": 32.925445556640625
+}

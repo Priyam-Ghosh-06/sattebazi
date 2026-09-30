@@ -261,6 +261,14 @@ class ADV(nn.Module):
         s, mu = self.dec_roll(zr, gapd, b)
         return self.dec_roll.expected(s, mu, b, how)[0]
 
+    def predict_parts(self, b, path="direct", how="a3"):
+        """(E[Y], π, μ) per candidate for the direct or rollout predictor: π = chance of playing, μ = points if he plays."""
+        z, cold, gapd = self.enc(b, b["cut"][b["fx"]])
+        dec = self.dec if path == "direct" else self.dec_roll
+        s, mu = dec(z if path == "direct" else self.roll(z, cold, b, torch.ceil(b["delta"][b["fx"]] / TAU).long()), gapd, b)
+        ey, pi = dec.expected(s, mu, b, how)
+        return ey, pi, mu
+
 
 def student_x(z, gapd, b):
     fx = b["fx"]

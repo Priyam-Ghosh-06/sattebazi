@@ -4,7 +4,7 @@ python src/shared/evaluation/figures.py [--refit-lgbm]
 
 - explainers: how the pipeline works, the staleness timeline, why we predict p and μ separately, one real match worked through;
 - results: the headline, validation curves, results by staleness and by competition, one training figure per approach.
-The neural nets' curves come from their checkpoints' done.json. The trees' (LightGBM) curves are refitted here with the same
+The neural nets' curves come from their training histories in results/training_history/. The trees' (LightGBM) curves are refitted here with the same
 data and settings and cached in results/experiments/lgbm_curves.json. Team-level results per test match are cached in
 results/experiments/team_table.parquet.
 """
@@ -25,7 +25,7 @@ from shared.evaluation.metrics import _xi  # noqa: E402
 from shared.optimization.selection import select_xi  # noqa: E402
 from shared.preprocessing.causal import DELTAS, SPLITS  # noqa: E402
 
-CK = "model_artifacts/checkpoints"
+HIST = "results/training_history"
 EXP = "results/experiments"
 ARMS = ("baseline", "refined", "graph", "graph+", "advm")
 C = {"baseline": "#d1495b", "refined": "#2e86ab", "graph": "#3b8b5a", "graph+": "#8fbf6f", "advm": "#7b5ea7", "random": "#b0b0b0"}
@@ -39,13 +39,14 @@ plt.rcParams.update({"figure.dpi": 130, "axes.spines.top": False, "axes.spines.r
 
 
 def done(run):
-    p = f"{CK}/{run}/done.json"
+    """A GPU run's training history (copied from its checkpoint folder's done.json into results/training_history/)."""
+    p = f"{HIST}/{run}.json"
     return json.load(open(p)) if os.path.exists(p) else None
 
 
 def cb_ysd(run):
-    import torch
-    return float(torch.load(f"{CK}/{run}/best.pt", map_location="cpu", weights_only=False)["ysd"])
+    """The baseline's target scale (its losses are on the standardised target); stored with its history."""
+    return float(done(run)["ysd"])
 
 
 def save(fig, path):

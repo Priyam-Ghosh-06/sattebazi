@@ -337,10 +337,11 @@ def package(runs, train_start, train_end):
 
 
 @torch.no_grad()
-def predict_rows(model, Q, info, P, M, bs=32):
-    """Seed-mean E[Y] for test candidates (same contract as base_predict_rows), each member's chosen predictor."""
+def predict_rows(model, Q, info, P, M, bs=32, parts=False):
+    """Seed-mean E[Y] for test candidates (same contract as base_predict_rows), each member's chosen predictor.
+    parts=True also returns the seed-mean chance of playing π and points if he plays μ (for the CSV; the XI uses E[Y])."""
     seed_all(0)
-    preds = []
+    preds, pis, mus = [], [], []
     for mb in model["members"]:
         HP.update({k: v for k, v in mb["hp"].items() if k in HP})
         net = ADV([len(mb["vocab"][c]) + 1 for c in CATS], mb["ybar"], mb["ysd"])
@@ -357,8 +358,16 @@ def predict_rows(model, Q, info, P, M, bs=32):
         ds = Fixtures(st, fx, mb["hp"]["L"], true_xi=False)
         ds.plan([info[f["id"]]["delta"] for f in fx], np.zeros(len(fx), np.int64))
         batches = [list(range(i, min(i + bs, len(ds)))) for i in range(0, len(ds), bs)]
-        preds.append(np.concatenate([net.predict(b, mb["final"], "a3").numpy() for b in loader(ds, batches, 0)]))
-    return np.mean(preds, 0)
+        if parts and mb["final"] in ("direct", "rollout"):
+            out = [[t.numpy() for t in net.predict_parts(b, mb["final"], "a3")] for b in loader(ds, batches, 0)]
+            preds.append(np.concatenate([o[0] for o in out])); pis.append(np.concatenate([o[1] for o in out]))
+            mus.append(np.concatenate([o[2] for o in out]))
+        else:
+            preds.append(np.concatenate([net.predict(b, mb["final"], "a3").numpy() for b in loader(ds, batches, 0)]))
+    if not parts:
+        return np.mean(preds, 0)
+    nan = np.full(len(preds[0]), np.nan)
+    return np.mean(preds, 0), (np.mean(pis, 0) if len(pis) == len(preds) else nan), (np.mean(mus, 0) if len(mus) == len(preds) else nan)
 
 
 def smoke(device="auto", log=print):
