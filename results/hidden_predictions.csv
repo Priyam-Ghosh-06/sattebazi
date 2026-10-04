@@ -1,0 +1,969 @@
+Match_id,Match Date,Team 1,Team 2,Rank,Player,Player ID,Team,Role,Predicted Points,P(plays),Points If Plays
+match_001,2026-04-25,Rajasthan Royals,Sunrisers Hyderabad,1,Abhishek Sharma,f29185a1,Sunrisers Hyderabad,BAT,50.99,0.984,51.81
+match_001,2026-04-25,Rajasthan Royals,Sunrisers Hyderabad,2,YBK Jaiswal,6c19c6e5,Rajasthan Royals,BAT,46.25,0.971,47.63
+match_001,2026-04-25,Rajasthan Royals,Sunrisers Hyderabad,3,R Parag,04a418e8,Rajasthan Royals,AR,45.13,0.954,47.32
+match_001,2026-04-25,Rajasthan Royals,Sunrisers Hyderabad,4,PJ Cummins,ded9240e,Sunrisers Hyderabad,BOWL,44.32,0.944,46.92
+match_001,2026-04-25,Rajasthan Royals,Sunrisers Hyderabad,5,Ishan Kishan,752f7486,Sunrisers Hyderabad,WK,40.84,0.972,41.99
+match_001,2026-04-25,Rajasthan Royals,Sunrisers Hyderabad,6,RA Jadeja,fe93fd9d,Rajasthan Royals,AR,40.52,0.857,47.27
+match_001,2026-04-25,Rajasthan Royals,Sunrisers Hyderabad,7,Ravi Bishnoi,df064e1a,Rajasthan Royals,BOWL,40.14,0.89,45.09
+match_001,2026-04-25,Rajasthan Royals,Sunrisers Hyderabad,8,TM Head,12b610c2,Sunrisers Hyderabad,BAT,39.73,0.911,43.62
+match_001,2026-04-25,Rajasthan Royals,Sunrisers Hyderabad,9,HV Patel,f986ca1a,Sunrisers Hyderabad,BOWL,36.24,0.885,40.98
+match_001,2026-04-25,Rajasthan Royals,Sunrisers Hyderabad,10,V Suryavanshi,470f446b,Rajasthan Royals,BAT,35.58,0.868,41.0
+match_001,2026-04-25,Rajasthan Royals,Sunrisers Hyderabad,11,Nithish Kumar Reddy,aad0c365,Sunrisers Hyderabad,BAT,35.2,0.92,38.25
+match_002,2026-05-17,Royal Challengers Bengaluru,Punjab Kings,1,Arshdeep Singh,244048f6,Punjab Kings,BOWL,43.75,0.903,48.46
+match_002,2026-05-17,Royal Challengers Bengaluru,Punjab Kings,2,V Kohli,ba607b88,Royal Challengers Bengaluru,BAT,42.85,0.963,44.5
+match_002,2026-05-17,Royal Challengers Bengaluru,Punjab Kings,3,PD Salt,3d284ca3,Royal Challengers Bengaluru,BAT,38.57,0.855,45.1
+match_002,2026-05-17,Royal Challengers Bengaluru,Punjab Kings,4,MP Stoinis,d9273ee7,Punjab Kings,AR,37.77,0.79,47.82
+match_002,2026-05-17,Royal Challengers Bengaluru,Punjab Kings,5,KH Pandya,5b8c830e,Royal Challengers Bengaluru,BOWL,37.57,0.85,44.19
+match_002,2026-05-17,Royal Challengers Bengaluru,Punjab Kings,6,JR Hazlewood,03806cf8,Royal Challengers Bengaluru,BOWL,37.1,0.767,48.39
+match_002,2026-05-17,Royal Challengers Bengaluru,Punjab Kings,7,R Shepherd,c5aef772,Royal Challengers Bengaluru,BOWL,36.85,0.784,46.99
+match_002,2026-05-17,Royal Challengers Bengaluru,Punjab Kings,8,SS Iyer,85ec8e33,Punjab Kings,BAT,35.26,0.962,36.66
+match_002,2026-05-17,Royal Challengers Bengaluru,Punjab Kings,9,B Kumar,2e81a32d,Royal Challengers Bengaluru,BOWL,34.61,0.801,43.21
+match_002,2026-05-17,Royal Challengers Bengaluru,Punjab Kings,10,M Jansen,81c36ee9,Punjab Kings,BOWL,34.23,0.703,48.68
+match_002,2026-05-17,Royal Challengers Bengaluru,Punjab Kings,11,P Simran Singh,9418198b,Punjab Kings,WK,34.14,0.961,35.53
+match_003,2026-04-23,Chennai Super Kings,Mumbai Indians,1,HH Pandya,dbe50b21,Mumbai Indians,AR,54.1,0.977,55.38
+match_003,2026-04-23,Chennai Super Kings,Mumbai Indians,2,JJ Bumrah,462411b3,Mumbai Indians,BOWL,50.66,0.972,52.12
+match_003,2026-04-23,Chennai Super Kings,Mumbai Indians,3,Tilak Varma,b0482a1d,Mumbai Indians,BAT,47.2,0.978,48.26
+match_003,2026-04-23,Chennai Super Kings,Mumbai Indians,4,SA Yadav,271f83cd,Mumbai Indians,BAT,46.41,0.98,47.37
+match_003,2026-04-23,Chennai Super Kings,Mumbai Indians,5,SV Samson,a4cc73aa,Chennai Super Kings,WK,44.97,0.978,45.99
+match_003,2026-04-23,Chennai Super Kings,Mumbai Indians,6,RD Rickelton,e66732f8,Mumbai Indians,WK,42.81,0.919,46.57
+match_003,2026-04-23,Chennai Super Kings,Mumbai Indians,7,S Dube,a4e37e47,Chennai Super Kings,BAT,40.83,0.956,42.72
+match_003,2026-04-23,Chennai Super Kings,Mumbai Indians,8,RD Gaikwad,45a43fe2,Chennai Super Kings,BAT,39.34,0.939,41.9
+match_003,2026-04-23,Chennai Super Kings,Mumbai Indians,9,Noor Ahmad,efc04be7,Chennai Super Kings,BOWL,37.57,0.846,44.39
+match_003,2026-04-23,Chennai Super Kings,Mumbai Indians,10,SN Thakur,1abb78f8,Mumbai Indians,BOWL,36.69,0.829,44.24
+match_003,2026-04-23,Chennai Super Kings,Mumbai Indians,11,Naman Dhir,fffa744b,Mumbai Indians,BAT,34.45,0.922,37.37
+match_004,2026-05-27,Rajasthan Royals,Sunrisers Hyderabad,1,Abhishek Sharma,f29185a1,Sunrisers Hyderabad,BAT,50.89,0.971,52.39
+match_004,2026-05-27,Rajasthan Royals,Sunrisers Hyderabad,2,PJ Cummins,ded9240e,Sunrisers Hyderabad,BOWL,45.74,0.918,49.81
+match_004,2026-05-27,Rajasthan Royals,Sunrisers Hyderabad,3,R Parag,04a418e8,Rajasthan Royals,AR,45.04,0.941,47.85
+match_004,2026-05-27,Rajasthan Royals,Sunrisers Hyderabad,4,YBK Jaiswal,6c19c6e5,Rajasthan Royals,BAT,44.58,0.944,47.24
+match_004,2026-05-27,Rajasthan Royals,Sunrisers Hyderabad,5,RA Jadeja,fe93fd9d,Rajasthan Royals,AR,42.11,0.871,48.35
+match_004,2026-05-27,Rajasthan Royals,Sunrisers Hyderabad,6,TM Head,12b610c2,Sunrisers Hyderabad,BAT,41.07,0.904,45.41
+match_004,2026-05-27,Rajasthan Royals,Sunrisers Hyderabad,7,Ishan Kishan,752f7486,Sunrisers Hyderabad,WK,40.92,0.967,42.3
+match_004,2026-05-27,Rajasthan Royals,Sunrisers Hyderabad,8,LS Livingstone,50c6bc2b,Sunrisers Hyderabad,AR,37.21,0.861,43.2
+match_004,2026-05-27,Rajasthan Royals,Sunrisers Hyderabad,9,H Klaasen,235c2bb6,Sunrisers Hyderabad,BAT,36.54,0.924,39.56
+match_004,2026-05-27,Rajasthan Royals,Sunrisers Hyderabad,10,DA Payne,6c79c098,Sunrisers Hyderabad,BOWL,33.85,0.772,43.83
+match_004,2026-05-27,Rajasthan Royals,Sunrisers Hyderabad,11,JC Archer,5574750c,Rajasthan Royals,BOWL,33.03,0.66,50.01
+match_005,2026-09-10,St Kitts and Nevis Patriots,Barbados Tridents,1,JO Holder,0f721006,St Kitts and Nevis Patriots,AR,47.32,0.862,54.92
+match_005,2026-09-10,St Kitts and Nevis Patriots,Barbados Tridents,2,KR Mayers,73c18486,St Kitts and Nevis Patriots,AR,40.87,0.848,48.22
+match_005,2026-09-10,St Kitts and Nevis Patriots,Barbados Tridents,3,CJ Green,19b9f399,Barbados Tridents,AR,40.61,0.836,48.59
+match_005,2026-09-10,St Kitts and Nevis Patriots,Barbados Tridents,4,DR Sams,caf69bf7,Barbados Tridents,AR,39.03,0.823,47.42
+match_005,2026-09-10,St Kitts and Nevis Patriots,Barbados Tridents,5,PWH de Silva,a97c8ec2,St Kitts and Nevis Patriots,BOWL,37.08,0.696,53.24
+match_005,2026-09-10,St Kitts and Nevis Patriots,Barbados Tridents,6,Q de Kock,372455c4,Barbados Tridents,WK,36.43,0.881,41.36
+match_005,2026-09-10,St Kitts and Nevis Patriots,Barbados Tridents,7,J Charles,09a9d073,St Kitts and Nevis Patriots,BAT,36.27,0.832,43.61
+match_005,2026-09-10,St Kitts and Nevis Patriots,Barbados Tridents,8,Naseem Shah,9c9af282,St Kitts and Nevis Patriots,BOWL,35.97,0.745,48.3
+match_005,2026-09-10,St Kitts and Nevis Patriots,Barbados Tridents,9,G Motie,97bdec3d,Barbados Tridents,BOWL,35.64,0.802,44.42
+match_005,2026-09-10,St Kitts and Nevis Patriots,Barbados Tridents,10,SE Rutherford,d014d5ac,Barbados Tridents,BAT,32.72,0.842,38.87
+match_005,2026-09-10,St Kitts and Nevis Patriots,Barbados Tridents,11,BA King,7fca84b7,Barbados Tridents,BAT,27.67,0.8,34.58
+match_006,2026-08-25,Antigua and Barbuda Falcons,Barbados Tridents,1,CJ Green,19b9f399,Barbados Tridents,AR,39.76,0.865,45.97
+match_006,2026-08-25,Antigua and Barbuda Falcons,Barbados Tridents,2,Shadab Khan,9de62878,Antigua and Barbuda Falcons,AR,38.66,0.742,52.07
+match_006,2026-08-25,Antigua and Barbuda Falcons,Barbados Tridents,3,DR Sams,caf69bf7,Barbados Tridents,AR,38.15,0.855,44.64
+match_006,2026-08-25,Antigua and Barbuda Falcons,Barbados Tridents,4,G Motie,97bdec3d,Barbados Tridents,BOWL,36.05,0.87,41.44
+match_006,2026-08-25,Antigua and Barbuda Falcons,Barbados Tridents,5,Q de Kock,372455c4,Barbados Tridents,WK,34.92,0.919,37.99
+match_006,2026-08-25,Antigua and Barbuda Falcons,Barbados Tridents,6,AS Joseph,b0946605,Antigua and Barbuda Falcons,BOWL,34.55,0.713,48.47
+match_006,2026-08-25,Antigua and Barbuda Falcons,Barbados Tridents,7,MM Ali,bb351c23,Antigua and Barbuda Falcons,AR,34.44,0.744,46.26
+match_006,2026-08-25,Antigua and Barbuda Falcons,Barbados Tridents,8,AM Ghazanfar,9ca68676,Barbados Tridents,BOWL,32.93,0.784,42.0
+match_006,2026-08-25,Antigua and Barbuda Falcons,Barbados Tridents,9,TB Robinson,5d664346,Antigua and Barbuda Falcons,BAT,31.46,0.826,38.09
+match_006,2026-08-25,Antigua and Barbuda Falcons,Barbados Tridents,10,SE Rutherford,d014d5ac,Barbados Tridents,BAT,31.42,0.881,35.65
+match_006,2026-08-25,Antigua and Barbuda Falcons,Barbados Tridents,11,BA King,7fca84b7,Barbados Tridents,BAT,28.4,0.869,32.67
+match_007,2026-04-18,Sunrisers Hyderabad,Chennai Super Kings,1,Abhishek Sharma,f29185a1,Sunrisers Hyderabad,BAT,52.06,0.976,53.32
+match_007,2026-04-18,Sunrisers Hyderabad,Chennai Super Kings,2,SV Samson,a4cc73aa,Chennai Super Kings,WK,47.55,0.98,48.53
+match_007,2026-04-18,Sunrisers Hyderabad,Chennai Super Kings,3,MW Short,a90e53ec,Chennai Super Kings,AR,44.49,0.874,50.88
+match_007,2026-04-18,Sunrisers Hyderabad,Chennai Super Kings,4,S Dube,a4e37e47,Chennai Super Kings,BAT,42.54,0.96,44.33
+match_007,2026-04-18,Sunrisers Hyderabad,Chennai Super Kings,5,RD Gaikwad,45a43fe2,Chennai Super Kings,BAT,41.36,0.925,44.74
+match_007,2026-04-18,Sunrisers Hyderabad,Chennai Super Kings,6,Ishan Kishan,752f7486,Sunrisers Hyderabad,WK,40.72,0.969,42.02
+match_007,2026-04-18,Sunrisers Hyderabad,Chennai Super Kings,7,TM Head,12b610c2,Sunrisers Hyderabad,BAT,40.22,0.903,44.52
+match_007,2026-04-18,Sunrisers Hyderabad,Chennai Super Kings,8,Noor Ahmad,efc04be7,Chennai Super Kings,BOWL,39.52,0.847,46.64
+match_007,2026-04-18,Sunrisers Hyderabad,Chennai Super Kings,9,LS Livingstone,50c6bc2b,Sunrisers Hyderabad,AR,37.11,0.862,43.06
+match_007,2026-04-18,Sunrisers Hyderabad,Chennai Super Kings,10,SH Johnson,83c3e8e3,Chennai Super Kings,BOWL,33.85,0.745,45.43
+match_007,2026-04-18,Sunrisers Hyderabad,Chennai Super Kings,11,DA Payne,6c79c098,Sunrisers Hyderabad,BOWL,31.89,0.773,41.28
+match_008,2026-05-24,Delhi Capitals,Kolkata Knight Riders,1,AR Patel,2e171977,Delhi Capitals,AR,49.26,0.95,51.86
+match_008,2026-05-24,Delhi Capitals,Kolkata Knight Riders,2,CV Varun,5b7ab5a9,Kolkata Knight Riders,BOWL,44.72,0.938,47.69
+match_008,2026-05-24,Delhi Capitals,Kolkata Knight Riders,3,Kuldeep Yadav,8d2c70ad,Delhi Capitals,BOWL,43.76,0.917,47.74
+match_008,2026-05-24,Delhi Capitals,Kolkata Knight Riders,4,SP Narine,9d430b40,Kolkata Knight Riders,BOWL,43.51,0.889,48.95
+match_008,2026-05-24,Delhi Capitals,Kolkata Knight Riders,5,C Green,eaa76d3c,Kolkata Knight Riders,AR,41.93,0.864,48.52
+match_008,2026-05-24,Delhi Capitals,Kolkata Knight Riders,6,KL Rahul,b17e2f24,Delhi Capitals,WK,40.47,0.937,43.19
+match_008,2026-05-24,Delhi Capitals,Kolkata Knight Riders,7,RK Singh,0a509d6b,Kolkata Knight Riders,BAT,37.64,0.949,39.66
+match_008,2026-05-24,Delhi Capitals,Kolkata Knight Riders,8,VG Arora,7c3b3b78,Kolkata Knight Riders,BOWL,36.26,0.841,43.1
+match_008,2026-05-24,Delhi Capitals,Kolkata Knight Riders,9,T Stubbs,85b3fab2,Delhi Capitals,WK,35.91,0.875,41.04
+match_008,2026-05-24,Delhi Capitals,Kolkata Knight Riders,10,AM Rahane,29e95537,Kolkata Knight Riders,BAT,34.7,0.877,39.56
+match_008,2026-05-24,Delhi Capitals,Kolkata Knight Riders,11,Abishek Porel,ad3b6e95,Delhi Capitals,BAT,34.56,0.865,39.98
+match_009,2026-05-10,Lucknow Super Giants,Chennai Super Kings,1,SV Samson,a4cc73aa,Chennai Super Kings,WK,43.8,0.967,45.29
+match_009,2026-05-10,Lucknow Super Giants,Chennai Super Kings,2,MR Marsh,3d8feaf8,Lucknow Super Giants,BAT,40.37,0.857,47.1
+match_009,2026-05-10,Lucknow Super Giants,Chennai Super Kings,3,AK Markram,6a26221c,Lucknow Super Giants,BAT,40.25,0.853,47.17
+match_009,2026-05-10,Lucknow Super Giants,Chennai Super Kings,4,S Dube,a4e37e47,Chennai Super Kings,BAT,39.02,0.942,41.45
+match_009,2026-05-10,Lucknow Super Giants,Chennai Super Kings,5,RD Gaikwad,45a43fe2,Chennai Super Kings,BAT,37.43,0.925,40.48
+match_009,2026-05-10,Lucknow Super Giants,Chennai Super Kings,6,Noor Ahmad,efc04be7,Chennai Super Kings,BOWL,37.13,0.823,45.09
+match_009,2026-05-10,Lucknow Super Giants,Chennai Super Kings,7,N Pooran,3241e3fd,Lucknow Super Giants,WK,36.87,0.895,41.2
+match_009,2026-05-10,Lucknow Super Giants,Chennai Super Kings,8,RR Pant,919a3be2,Lucknow Super Giants,WK,35.51,0.924,38.43
+match_009,2026-05-10,Lucknow Super Giants,Chennai Super Kings,9,Mohammed Shami,8cf9814c,Lucknow Super Giants,BOWL,34.71,0.76,45.68
+match_009,2026-05-10,Lucknow Super Giants,Chennai Super Kings,10,Avesh Khan,eef2536f,Lucknow Super Giants,BOWL,34.2,0.8,42.74
+match_009,2026-05-10,Lucknow Super Giants,Chennai Super Kings,11,J Overton,59559bc2,Chennai Super Kings,AR,32.25,0.748,43.14
+match_010,2026-05-17,Rajasthan Royals,Delhi Capitals,1,AR Patel,2e171977,Delhi Capitals,AR,52.55,0.964,54.52
+match_010,2026-05-17,Rajasthan Royals,Delhi Capitals,2,YBK Jaiswal,6c19c6e5,Rajasthan Royals,BAT,43.75,0.929,47.08
+match_010,2026-05-17,Rajasthan Royals,Delhi Capitals,3,R Parag,04a418e8,Rajasthan Royals,AR,43.55,0.928,46.94
+match_010,2026-05-17,Rajasthan Royals,Delhi Capitals,4,KL Rahul,b17e2f24,Delhi Capitals,WK,42.96,0.942,45.58
+match_010,2026-05-17,Rajasthan Royals,Delhi Capitals,5,Mukesh Kumar,2cffab74,Delhi Capitals,BOWL,39.48,0.849,46.48
+match_010,2026-05-17,Rajasthan Royals,Delhi Capitals,6,Ravi Bishnoi,df064e1a,Rajasthan Royals,BOWL,39.26,0.864,45.46
+match_010,2026-05-17,Rajasthan Royals,Delhi Capitals,7,T Stubbs,85b3fab2,Delhi Capitals,WK,36.47,0.863,42.25
+match_010,2026-05-17,Rajasthan Royals,Delhi Capitals,8,Abishek Porel,ad3b6e95,Delhi Capitals,BAT,35.88,0.87,41.24
+match_010,2026-05-17,Rajasthan Royals,Delhi Capitals,9,MA Starc,3fb19989,Delhi Capitals,BOWL,34.86,0.774,45.06
+match_010,2026-05-17,Rajasthan Royals,Delhi Capitals,10,V Suryavanshi,470f446b,Rajasthan Royals,BAT,33.71,0.81,41.62
+match_010,2026-05-17,Rajasthan Royals,Delhi Capitals,11,Dhruv Jurel,bcf325d2,Rajasthan Royals,WK,33.41,0.905,36.92
+match_011,2026-09-16,Glasgow Cosmic,Amsterdam Flames,1,DA Payne,6c79c098,Amsterdam Flames,BOWL,38.73,0.774,50.02
+match_011,2026-09-16,Glasgow Cosmic,Amsterdam Flames,2,LS Livingstone,50c6bc2b,Glasgow Cosmic,AR,38.31,0.801,47.81
+match_011,2026-09-16,Glasgow Cosmic,Amsterdam Flames,3,MG Bracewell,e38bce7a,Amsterdam Flames,AR,38.09,0.762,49.96
+match_011,2026-09-16,Glasgow Cosmic,Amsterdam Flames,4,TH David,f1f99156,Amsterdam Flames,BAT,37.32,0.861,43.33
+match_011,2026-09-16,Glasgow Cosmic,Amsterdam Flames,5,FH Allen,bf74b130,Glasgow Cosmic,WK,34.08,0.78,43.68
+match_011,2026-09-16,Glasgow Cosmic,Amsterdam Flames,6,SPD Smith,30a45b23,Amsterdam Flames,BAT,33.18,0.798,41.59
+match_011,2026-09-16,Glasgow Cosmic,Amsterdam Flames,7,KA Maharaj,0b60eb09,Glasgow Cosmic,BOWL,33.17,0.684,48.48
+match_011,2026-09-16,Glasgow Cosmic,Amsterdam Flames,8,TJG Pringle,8ce2080b,Amsterdam Flames,BOWL,32.51,0.721,45.07
+match_011,2026-09-16,Glasgow Cosmic,Amsterdam Flames,9,Ali Khan,b0eaaac6,Glasgow Cosmic,BOWL,31.9,0.699,45.62
+match_011,2026-09-16,Glasgow Cosmic,Amsterdam Flames,10,JJ Roy,d1c36f5c,Glasgow Cosmic,BAT,31.76,0.804,39.5
+match_011,2026-09-16,Glasgow Cosmic,Amsterdam Flames,11,RJ Gleeson,402f8494,Amsterdam Flames,BOWL,31.15,0.672,46.35
+match_012,2026-09-05,Amsterdam Flames,Dublin Guardians,1,DA Payne,6c79c098,Amsterdam Flames,BOWL,38.3,0.775,49.45
+match_012,2026-09-05,Amsterdam Flames,Dublin Guardians,2,MG Bracewell,e38bce7a,Amsterdam Flames,AR,37.65,0.762,49.43
+match_012,2026-09-05,Amsterdam Flames,Dublin Guardians,3,TH David,f1f99156,Amsterdam Flames,BAT,36.88,0.861,42.84
+match_012,2026-09-05,Amsterdam Flames,Dublin Guardians,4,Waseem Muhammad,6f02fe2a,Dublin Guardians,BAT,36.07,0.811,44.5
+match_012,2026-09-05,Amsterdam Flames,Dublin Guardians,5,JM Vince,a15618fe,Dublin Guardians,BAT,35.68,0.833,42.85
+match_012,2026-09-05,Amsterdam Flames,Dublin Guardians,6,DJ Mitchell,eade4650,Dublin Guardians,BAT,33.83,0.765,44.24
+match_012,2026-09-05,Amsterdam Flames,Dublin Guardians,7,Harmeet Singh,0bf15e52,Dublin Guardians,BOWL,33.72,0.711,47.46
+match_012,2026-09-05,Amsterdam Flames,Dublin Guardians,8,R Ashwin,495d42a5,Dublin Guardians,BOWL,33.38,0.678,49.25
+match_012,2026-09-05,Amsterdam Flames,Dublin Guardians,9,SPD Smith,30a45b23,Amsterdam Flames,BAT,32.73,0.797,41.06
+match_012,2026-09-05,Amsterdam Flames,Dublin Guardians,10,TJG Pringle,8ce2080b,Amsterdam Flames,BOWL,31.99,0.721,44.35
+match_012,2026-09-05,Amsterdam Flames,Dublin Guardians,11,SA Edwards,b59db04f,Amsterdam Flames,WK,26.29,0.841,31.27
+match_013,2026-09-03,Glasgow Cosmic,Amsterdam Flames,1,DA Payne,6c79c098,Amsterdam Flames,BOWL,38.41,0.775,49.54
+match_013,2026-09-03,Glasgow Cosmic,Amsterdam Flames,2,LS Livingstone,50c6bc2b,Glasgow Cosmic,AR,38.03,0.8,47.54
+match_013,2026-09-03,Glasgow Cosmic,Amsterdam Flames,3,MG Bracewell,e38bce7a,Amsterdam Flames,AR,37.72,0.763,49.46
+match_013,2026-09-03,Glasgow Cosmic,Amsterdam Flames,4,TH David,f1f99156,Amsterdam Flames,BAT,36.94,0.861,42.9
+match_013,2026-09-03,Glasgow Cosmic,Amsterdam Flames,5,JDS Neesham,9219eff0,Glasgow Cosmic,AR,36.34,0.739,49.2
+match_013,2026-09-03,Glasgow Cosmic,Amsterdam Flames,6,FH Allen,bf74b130,Glasgow Cosmic,WK,33.77,0.778,43.38
+match_013,2026-09-03,Glasgow Cosmic,Amsterdam Flames,7,KA Maharaj,0b60eb09,Glasgow Cosmic,BOWL,32.9,0.681,48.28
+match_013,2026-09-03,Glasgow Cosmic,Amsterdam Flames,8,SPD Smith,30a45b23,Amsterdam Flames,BAT,32.88,0.798,41.2
+match_013,2026-09-03,Glasgow Cosmic,Amsterdam Flames,9,TJG Pringle,8ce2080b,Amsterdam Flames,BOWL,32.18,0.721,44.63
+match_013,2026-09-03,Glasgow Cosmic,Amsterdam Flames,10,Ali Khan,b0eaaac6,Glasgow Cosmic,BOWL,31.69,0.697,45.49
+match_013,2026-09-03,Glasgow Cosmic,Amsterdam Flames,11,JJ Roy,d1c36f5c,Glasgow Cosmic,BAT,31.57,0.803,39.3
+match_014,2026-09-02,Dublin Guardians,Rotterdam Dockers,1,DJ Willey,7f048519,Dublin Guardians,AR,38.98,0.743,52.45
+match_014,2026-09-02,Dublin Guardians,Rotterdam Dockers,2,Waseem Muhammad,6f02fe2a,Dublin Guardians,BAT,34.78,0.802,43.37
+match_014,2026-09-02,Dublin Guardians,Rotterdam Dockers,3,JM Vince,a15618fe,Dublin Guardians,BAT,34.45,0.826,41.68
+match_014,2026-09-02,Dublin Guardians,Rotterdam Dockers,4,H Klaasen,235c2bb6,Rotterdam Dockers,BAT,33.84,0.821,41.23
+match_014,2026-09-02,Dublin Guardians,Rotterdam Dockers,5,D Wiese,aa8d28ae,Rotterdam Dockers,AR,33.62,0.687,48.9
+match_014,2026-09-02,Dublin Guardians,Rotterdam Dockers,6,LV van Beek,782fb776,Rotterdam Dockers,BOWL,33.29,0.682,48.8
+match_014,2026-09-02,Dublin Guardians,Rotterdam Dockers,7,A Nortje,acdc62f5,Rotterdam Dockers,BOWL,33.12,0.689,48.07
+match_014,2026-09-02,Dublin Guardians,Rotterdam Dockers,8,DJ Mitchell,eade4650,Dublin Guardians,BAT,32.59,0.756,43.1
+match_014,2026-09-02,Dublin Guardians,Rotterdam Dockers,9,Harmeet Singh,0bf15e52,Dublin Guardians,BOWL,32.38,0.699,46.33
+match_014,2026-09-02,Dublin Guardians,Rotterdam Dockers,10,F du Plessis,3355b542,Rotterdam Dockers,BAT,32.25,0.773,41.71
+match_014,2026-09-02,Dublin Guardians,Rotterdam Dockers,11,BR McDermott,c41043e6,Rotterdam Dockers,WK,31.78,0.841,37.79
+match_015,2026-09-06,Rotterdam Dockers,Amsterdam Flames,1,DA Payne,6c79c098,Amsterdam Flames,BOWL,38.17,0.775,49.23
+match_015,2026-09-06,Rotterdam Dockers,Amsterdam Flames,2,MG Bracewell,e38bce7a,Amsterdam Flames,AR,37.47,0.762,49.14
+match_015,2026-09-06,Rotterdam Dockers,Amsterdam Flames,3,TH David,f1f99156,Amsterdam Flames,BAT,36.7,0.861,42.61
+match_015,2026-09-06,Rotterdam Dockers,Amsterdam Flames,4,H Klaasen,235c2bb6,Rotterdam Dockers,BAT,34.75,0.82,42.38
+match_015,2026-09-06,Rotterdam Dockers,Amsterdam Flames,5,D Wiese,aa8d28ae,Rotterdam Dockers,AR,34.45,0.686,50.24
+match_015,2026-09-06,Rotterdam Dockers,Amsterdam Flames,6,LV van Beek,782fb776,Rotterdam Dockers,BOWL,34.2,0.682,50.18
+match_015,2026-09-06,Rotterdam Dockers,Amsterdam Flames,7,A Nortje,acdc62f5,Rotterdam Dockers,BOWL,33.92,0.687,49.35
+match_015,2026-09-06,Rotterdam Dockers,Amsterdam Flames,8,F du Plessis,3355b542,Rotterdam Dockers,BAT,33.15,0.772,42.95
+match_015,2026-09-06,Rotterdam Dockers,Amsterdam Flames,9,BR McDermott,c41043e6,Rotterdam Dockers,WK,32.67,0.841,38.84
+match_015,2026-09-06,Rotterdam Dockers,Amsterdam Flames,10,SPD Smith,30a45b23,Amsterdam Flames,BAT,32.58,0.798,40.83
+match_015,2026-09-06,Rotterdam Dockers,Amsterdam Flames,11,TJG Pringle,8ce2080b,Amsterdam Flames,BOWL,31.88,0.721,44.21
+match_016,2026-09-01,Glasgow Cosmic,Rotterdam Dockers,1,LS Livingstone,50c6bc2b,Glasgow Cosmic,AR,37.25,0.8,46.58
+match_016,2026-09-01,Glasgow Cosmic,Rotterdam Dockers,2,JDS Neesham,9219eff0,Glasgow Cosmic,AR,35.6,0.739,48.18
+match_016,2026-09-01,Glasgow Cosmic,Rotterdam Dockers,3,D Wiese,aa8d28ae,Rotterdam Dockers,AR,34.03,0.684,49.74
+match_016,2026-09-01,Glasgow Cosmic,Rotterdam Dockers,4,LV van Beek,782fb776,Rotterdam Dockers,BOWL,33.76,0.679,49.73
+match_016,2026-09-01,Glasgow Cosmic,Rotterdam Dockers,5,H Klaasen,235c2bb6,Rotterdam Dockers,BAT,33.67,0.802,41.98
+match_016,2026-09-01,Glasgow Cosmic,Rotterdam Dockers,6,A Nortje,acdc62f5,Rotterdam Dockers,BOWL,33.56,0.686,48.93
+match_016,2026-09-01,Glasgow Cosmic,Rotterdam Dockers,7,FH Allen,bf74b130,Glasgow Cosmic,WK,33.04,0.778,42.44
+match_016,2026-09-01,Glasgow Cosmic,Rotterdam Dockers,8,KA Maharaj,0b60eb09,Glasgow Cosmic,BOWL,32.26,0.682,47.33
+match_016,2026-09-01,Glasgow Cosmic,Rotterdam Dockers,9,F du Plessis,3355b542,Rotterdam Dockers,BAT,31.98,0.752,42.53
+match_016,2026-09-01,Glasgow Cosmic,Rotterdam Dockers,10,BR McDermott,c41043e6,Rotterdam Dockers,WK,31.72,0.824,38.48
+match_016,2026-09-01,Glasgow Cosmic,Rotterdam Dockers,11,JJ Roy,d1c36f5c,Glasgow Cosmic,BAT,30.9,0.803,38.47
+match_017,2026-09-17,Rotterdam Dockers,Dublin Guardians,1,DJ Willey,7f048519,Dublin Guardians,AR,39.89,0.75,53.17
+match_017,2026-09-17,Rotterdam Dockers,Dublin Guardians,2,H Klaasen,235c2bb6,Rotterdam Dockers,WK,36.63,0.876,41.82
+match_017,2026-09-17,Rotterdam Dockers,Dublin Guardians,3,Waseem Muhammad,6f02fe2a,Dublin Guardians,BAT,34.26,0.78,43.9
+match_017,2026-09-17,Rotterdam Dockers,Dublin Guardians,4,JM Vince,a15618fe,Dublin Guardians,BAT,33.96,0.805,42.18
+match_017,2026-09-17,Rotterdam Dockers,Dublin Guardians,5,D Wiese,aa8d28ae,Rotterdam Dockers,AR,33.89,0.687,49.34
+match_017,2026-09-17,Rotterdam Dockers,Dublin Guardians,6,LV van Beek,782fb776,Rotterdam Dockers,BOWL,33.64,0.682,49.29
+match_017,2026-09-17,Rotterdam Dockers,Dublin Guardians,7,A Nortje,acdc62f5,Rotterdam Dockers,BOWL,33.36,0.688,48.47
+match_017,2026-09-17,Rotterdam Dockers,Dublin Guardians,8,Harmeet Singh,0bf15e52,Dublin Guardians,BOWL,33.09,0.706,46.87
+match_017,2026-09-17,Rotterdam Dockers,Dublin Guardians,9,R Ashwin,495d42a5,Dublin Guardians,BOWL,32.76,0.673,48.64
+match_017,2026-09-17,Rotterdam Dockers,Dublin Guardians,10,F du Plessis,3355b542,Rotterdam Dockers,BAT,32.57,0.773,42.15
+match_017,2026-09-17,Rotterdam Dockers,Dublin Guardians,11,DJ Mitchell,eade4650,Dublin Guardians,BAT,31.89,0.73,43.67
+match_018,2026-09-15,Amsterdam Flames,Dublin Guardians,1,DJ Willey,7f048519,Dublin Guardians,AR,41.01,0.758,54.08
+match_018,2026-09-15,Amsterdam Flames,Dublin Guardians,2,DA Payne,6c79c098,Amsterdam Flames,BOWL,38.55,0.774,49.83
+match_018,2026-09-15,Amsterdam Flames,Dublin Guardians,3,MG Bracewell,e38bce7a,Amsterdam Flames,AR,37.94,0.762,49.81
+match_018,2026-09-15,Amsterdam Flames,Dublin Guardians,4,TH David,f1f99156,Amsterdam Flames,BAT,37.27,0.861,43.29
+match_018,2026-09-15,Amsterdam Flames,Dublin Guardians,5,Waseem Muhammad,6f02fe2a,Dublin Guardians,BAT,35.05,0.786,44.62
+match_018,2026-09-15,Amsterdam Flames,Dublin Guardians,6,JM Vince,a15618fe,Dublin Guardians,BAT,34.79,0.81,42.94
+match_018,2026-09-15,Amsterdam Flames,Dublin Guardians,7,R Ashwin,495d42a5,Dublin Guardians,BOWL,33.71,0.683,49.39
+match_018,2026-09-15,Amsterdam Flames,Dublin Guardians,8,SPD Smith,30a45b23,Amsterdam Flames,BAT,33.09,0.797,41.52
+match_018,2026-09-15,Amsterdam Flames,Dublin Guardians,9,DJ Mitchell,eade4650,Dublin Guardians,BAT,32.67,0.736,44.39
+match_018,2026-09-15,Amsterdam Flames,Dublin Guardians,10,TJG Pringle,8ce2080b,Amsterdam Flames,BOWL,32.34,0.721,44.83
+match_018,2026-09-15,Amsterdam Flames,Dublin Guardians,11,SA Edwards,b59db04f,Amsterdam Flames,WK,26.61,0.841,31.64
+match_019,2026-09-10,Rotterdam Dockers,Glasgow Cosmic,1,LS Livingstone,50c6bc2b,Glasgow Cosmic,AR,37.4,0.799,46.79
+match_019,2026-09-10,Rotterdam Dockers,Glasgow Cosmic,2,JDS Neesham,9219eff0,Glasgow Cosmic,AR,35.73,0.737,48.46
+match_019,2026-09-10,Rotterdam Dockers,Glasgow Cosmic,3,H Klaasen,235c2bb6,Rotterdam Dockers,BAT,34.61,0.82,42.21
+match_019,2026-09-10,Rotterdam Dockers,Glasgow Cosmic,4,D Wiese,aa8d28ae,Rotterdam Dockers,AR,34.29,0.685,50.03
+match_019,2026-09-10,Rotterdam Dockers,Glasgow Cosmic,5,LV van Beek,782fb776,Rotterdam Dockers,BOWL,34.08,0.681,50.01
+match_019,2026-09-10,Rotterdam Dockers,Glasgow Cosmic,6,A Nortje,acdc62f5,Rotterdam Dockers,BOWL,33.78,0.687,49.16
+match_019,2026-09-10,Rotterdam Dockers,Glasgow Cosmic,7,FH Allen,bf74b130,Glasgow Cosmic,WK,33.2,0.777,42.72
+match_019,2026-09-10,Rotterdam Dockers,Glasgow Cosmic,8,F du Plessis,3355b542,Rotterdam Dockers,BAT,33.0,0.771,42.78
+match_019,2026-09-10,Rotterdam Dockers,Glasgow Cosmic,9,BR McDermott,c41043e6,Rotterdam Dockers,WK,32.55,0.841,38.69
+match_019,2026-09-10,Rotterdam Dockers,Glasgow Cosmic,10,KA Maharaj,0b60eb09,Glasgow Cosmic,BOWL,32.34,0.68,47.58
+match_019,2026-09-10,Rotterdam Dockers,Glasgow Cosmic,11,JJ Roy,d1c36f5c,Glasgow Cosmic,BAT,30.99,0.802,38.66
+match_020,2026-08-29,Glasgow Cosmic,Dublin Guardians,1,LS Livingstone,50c6bc2b,Glasgow Cosmic,AR,36.45,0.794,45.93
+match_020,2026-08-29,Glasgow Cosmic,Dublin Guardians,2,Waseem Muhammad,6f02fe2a,Dublin Guardians,BAT,34.12,0.782,43.62
+match_020,2026-08-29,Glasgow Cosmic,Dublin Guardians,3,Harmeet Singh,0bf15e52,Dublin Guardians,BOWL,33.68,0.716,47.03
+match_020,2026-08-29,Glasgow Cosmic,Dublin Guardians,4,JM Vince,a15618fe,Dublin Guardians,BAT,33.39,0.804,41.5
+match_020,2026-08-29,Glasgow Cosmic,Dublin Guardians,5,KA Maharaj,0b60eb09,Glasgow Cosmic,BOWL,32.28,0.688,46.92
+match_020,2026-08-29,Glasgow Cosmic,Dublin Guardians,6,FH Allen,bf74b130,Glasgow Cosmic,WK,31.88,0.772,41.28
+match_020,2026-08-29,Glasgow Cosmic,Dublin Guardians,7,DJ Mitchell,eade4650,Dublin Guardians,BAT,31.45,0.717,43.84
+match_020,2026-08-29,Glasgow Cosmic,Dublin Guardians,8,R Ashwin,495d42a5,Dublin Guardians,BOWL,30.84,0.627,49.18
+match_020,2026-08-29,Glasgow Cosmic,Dublin Guardians,9,JJ Roy,d1c36f5c,Glasgow Cosmic,BAT,30.49,0.811,37.58
+match_020,2026-08-29,Glasgow Cosmic,Dublin Guardians,10,Ali Khan,b0eaaac6,Glasgow Cosmic,BOWL,30.38,0.696,43.63
+match_020,2026-08-29,Glasgow Cosmic,Dublin Guardians,11,L Ngidi,f834dcfc,Glasgow Cosmic,BOWL,29.62,0.662,44.76
+match_021,2026-09-15,South Africa,Zimbabwe,1,L Wolvaardt,e60f81c9,South Africa,BAT,56.59,0.946,59.83
+match_021,2026-09-15,South Africa,Zimbabwe,2,A Bosch,dcf0e8f4,South Africa,BAT,39.91,0.899,44.39
+match_021,2026-09-15,South Africa,Zimbabwe,3,K Ndlovu,8d25271a,Zimbabwe,AR,38.74,0.928,41.77
+match_021,2026-09-15,South Africa,Zimbabwe,4,N Shangase,b17a4a93,South Africa,AR,38.62,0.866,44.6
+match_021,2026-09-15,South Africa,Zimbabwe,5,J Nkomo,36dfa62e,Zimbabwe,AR,35.75,0.812,44.02
+match_021,2026-09-15,South Africa,Zimbabwe,6,A Dercksen,d2b1f515,South Africa,BAT,35.38,0.875,40.43
+match_021,2026-09-15,South Africa,Zimbabwe,7,K Reyneke,9e5f4ad7,South Africa,BOWL,34.19,0.869,39.36
+match_021,2026-09-15,South Africa,Zimbabwe,8,B Biza,8a522c6c,Zimbabwe,AR,34.07,0.845,40.3
+match_021,2026-09-15,South Africa,Zimbabwe,9,E Marx,be592751,South Africa,BOWL,31.49,0.787,40.03
+match_021,2026-09-15,South Africa,Zimbabwe,10,A Hlubi,ccaa3434,South Africa,BOWL,30.6,0.776,39.44
+match_021,2026-09-15,South Africa,Zimbabwe,11,M Mupachikwa,6657b319,Zimbabwe,WK,28.41,0.947,30.0
+match_022,2026-09-17,South Africa,Zimbabwe,1,L Wolvaardt,e60f81c9,South Africa,BAT,56.62,0.946,59.87
+match_022,2026-09-17,South Africa,Zimbabwe,2,A Bosch,dcf0e8f4,South Africa,BAT,39.93,0.899,44.4
+match_022,2026-09-17,South Africa,Zimbabwe,3,K Ndlovu,8d25271a,Zimbabwe,AR,38.73,0.928,41.75
+match_022,2026-09-17,South Africa,Zimbabwe,4,N Shangase,b17a4a93,South Africa,AR,38.65,0.866,44.64
+match_022,2026-09-17,South Africa,Zimbabwe,5,J Nkomo,36dfa62e,Zimbabwe,AR,35.74,0.812,44.0
+match_022,2026-09-17,South Africa,Zimbabwe,6,A Dercksen,d2b1f515,South Africa,BAT,35.41,0.875,40.45
+match_022,2026-09-17,South Africa,Zimbabwe,7,K Reyneke,9e5f4ad7,South Africa,BOWL,34.17,0.869,39.35
+match_022,2026-09-17,South Africa,Zimbabwe,8,B Biza,8a522c6c,Zimbabwe,AR,34.06,0.845,40.29
+match_022,2026-09-17,South Africa,Zimbabwe,9,E Marx,be592751,South Africa,BOWL,31.5,0.787,40.05
+match_022,2026-09-17,South Africa,Zimbabwe,10,A Hlubi,ccaa3434,South Africa,BOWL,30.61,0.776,39.46
+match_022,2026-09-17,South Africa,Zimbabwe,11,M Mupachikwa,6657b319,Zimbabwe,WK,28.41,0.947,30.0
+match_023,2026-09-13,South Africa,Zimbabwe,1,L Wolvaardt,e60f81c9,South Africa,BAT,56.56,0.946,59.8
+match_023,2026-09-13,South Africa,Zimbabwe,2,A Bosch,dcf0e8f4,South Africa,BAT,39.9,0.899,44.38
+match_023,2026-09-13,South Africa,Zimbabwe,3,K Ndlovu,8d25271a,Zimbabwe,AR,38.76,0.928,41.79
+match_023,2026-09-13,South Africa,Zimbabwe,4,N Shangase,b17a4a93,South Africa,AR,38.58,0.866,44.56
+match_023,2026-09-13,South Africa,Zimbabwe,5,J Nkomo,36dfa62e,Zimbabwe,AR,35.76,0.812,44.03
+match_023,2026-09-13,South Africa,Zimbabwe,6,A Dercksen,d2b1f515,South Africa,BAT,35.36,0.875,40.4
+match_023,2026-09-13,South Africa,Zimbabwe,7,K Reyneke,9e5f4ad7,South Africa,BOWL,34.2,0.869,39.37
+match_023,2026-09-13,South Africa,Zimbabwe,8,B Biza,8a522c6c,Zimbabwe,AR,34.08,0.845,40.31
+match_023,2026-09-13,South Africa,Zimbabwe,9,E Marx,be592751,South Africa,BOWL,31.47,0.787,40.01
+match_023,2026-09-13,South Africa,Zimbabwe,10,A Hlubi,ccaa3434,South Africa,BOWL,30.58,0.776,39.42
+match_023,2026-09-13,South Africa,Zimbabwe,11,M Mupachikwa,6657b319,Zimbabwe,WK,28.42,0.947,30.01
+match_024,2026-09-11,Zimbabwe,South Africa,1,L Wolvaardt,e60f81c9,South Africa,BAT,56.53,0.945,59.8
+match_024,2026-09-11,Zimbabwe,South Africa,2,A Bosch,dcf0e8f4,South Africa,BAT,39.95,0.899,44.46
+match_024,2026-09-11,Zimbabwe,South Africa,3,K Ndlovu,8d25271a,Zimbabwe,AR,38.85,0.928,41.86
+match_024,2026-09-11,Zimbabwe,South Africa,4,N Shangase,b17a4a93,South Africa,AR,38.6,0.865,44.6
+match_024,2026-09-11,Zimbabwe,South Africa,5,J Nkomo,36dfa62e,Zimbabwe,AR,35.85,0.812,44.15
+match_024,2026-09-11,Zimbabwe,South Africa,6,A Dercksen,d2b1f515,South Africa,BAT,35.39,0.875,40.46
+match_024,2026-09-11,Zimbabwe,South Africa,7,K Reyneke,9e5f4ad7,South Africa,BOWL,34.27,0.868,39.46
+match_024,2026-09-11,Zimbabwe,South Africa,8,B Biza,8a522c6c,Zimbabwe,AR,34.13,0.846,40.34
+match_024,2026-09-11,Zimbabwe,South Africa,9,E Marx,be592751,South Africa,BOWL,31.56,0.786,40.15
+match_024,2026-09-11,Zimbabwe,South Africa,10,A Hlubi,ccaa3434,South Africa,BOWL,30.68,0.775,39.57
+match_024,2026-09-11,Zimbabwe,South Africa,11,M Mupachikwa,6657b319,Zimbabwe,WK,28.37,0.947,29.95
+match_025,2026-06-01,Bahrain,Hong Kong,1,Yasim Murtaza,c9d05f1a,Hong Kong,AR,58.02,0.897,64.67
+match_025,2026-06-01,Bahrain,Hong Kong,2,Asif Ali,0a4736eb,Bahrain,AR,49.99,0.912,54.79
+match_025,2026-06-01,Bahrain,Hong Kong,3,Ehsan Khan,d3851cd8,Hong Kong,BOWL,48.01,0.812,59.15
+match_025,2026-06-01,Bahrain,Hong Kong,4,Abdul Majid Abbasi,0cfb42b5,Bahrain,BOWL,45.42,0.851,53.39
+match_025,2026-06-01,Bahrain,Hong Kong,5,Aizaz Khan,f6c2659d,Hong Kong,AR,44.05,0.81,54.4
+match_025,2026-06-01,Bahrain,Hong Kong,6,A Shukla,a1e80d06,Hong Kong,BOWL,37.77,0.705,53.55
+match_025,2026-06-01,Bahrain,Hong Kong,7,Anshuman Rath,552b228c,Hong Kong,BAT,36.11,0.847,42.64
+match_025,2026-06-01,Bahrain,Hong Kong,8,Nasrulla Rana,9ffb7550,Hong Kong,BOWL,35.15,0.698,50.33
+match_025,2026-06-01,Bahrain,Hong Kong,9,Nizakat Khan,e3eb9e46,Hong Kong,BAT,34.74,0.858,40.51
+match_025,2026-06-01,Bahrain,Hong Kong,10,Zeeshan Ali,987187b9,Hong Kong,WK,33.26,0.856,38.83
+match_025,2026-06-01,Bahrain,Hong Kong,11,Babar Hayat,fbb657bb,Hong Kong,BAT,32.29,0.853,37.87
+match_026,2026-08-14,Luxembourg,Isle of Man,1,V Vijh,b857468a,Luxembourg,AR,36.39,0.818,44.47
+match_026,2026-08-14,Luxembourg,Isle of Man,2,MJ Ansell,6e60a792,Isle of Man,BOWL,34.91,0.794,43.96
+match_026,2026-08-14,Luxembourg,Isle of Man,3,CJ Langford,3967b66f,Isle of Man,BOWL,34.85,0.798,43.65
+match_026,2026-08-14,Luxembourg,Isle of Man,4,JA Burrows,dba54d8e,Isle of Man,BOWL,34.19,0.798,42.84
+match_026,2026-08-14,Luxembourg,Isle of Man,5,J Butler,efcb778e,Isle of Man,BAT,32.85,0.847,38.78
+match_026,2026-08-14,Luxembourg,Isle of Man,6,Milad Momend,84880baf,Luxembourg,BOWL,32.85,0.737,44.55
+match_026,2026-08-14,Luxembourg,Isle of Man,7,Mayank Nagayach,e401f8a5,Luxembourg,AR,31.51,0.768,41.04
+match_026,2026-08-14,Luxembourg,Isle of Man,8,D Jansen,c90346a0,Isle of Man,AR,30.1,0.802,37.51
+match_026,2026-08-14,Luxembourg,Isle of Man,9,C Hartmann,467c28f9,Isle of Man,WK,26.98,0.836,32.26
+match_026,2026-08-14,Luxembourg,Isle of Man,10,A McAuley,39e599c8,Isle of Man,BAT,26.38,0.813,32.46
+match_026,2026-08-14,Luxembourg,Isle of Man,11,TC Barker,c31adb5c,Luxembourg,BAT,25.51,0.811,31.44
+match_027,2026-08-17,Isle of Man,Bulgaria,1,MJ Ansell,6e60a792,Isle of Man,BOWL,44.6,0.813,54.84
+match_027,2026-08-17,Isle of Man,Bulgaria,2,M Gogev,995fd3b2,Bulgaria,AR,43.9,0.863,50.84
+match_027,2026-08-17,Isle of Man,Bulgaria,3,CJ Langford,3967b66f,Isle of Man,BOWL,43.01,0.804,53.49
+match_027,2026-08-17,Isle of Man,Bulgaria,4,JA Burrows,dba54d8e,Isle of Man,BOWL,42.5,0.809,52.55
+match_027,2026-08-17,Isle of Man,Bulgaria,5,J Butler,efcb778e,Isle of Man,BAT,38.61,0.87,44.35
+match_027,2026-08-17,Isle of Man,Bulgaria,6,D Jansen,c90346a0,Isle of Man,AR,34.8,0.806,43.19
+match_027,2026-08-17,Isle of Man,Bulgaria,7,C Liebenberg,83f0b848,Isle of Man,BOWL,34.06,0.739,46.09
+match_027,2026-08-17,Isle of Man,Bulgaria,8,H Lakov,87a6f411,Bulgaria,AR,33.63,0.798,42.13
+match_027,2026-08-17,Isle of Man,Bulgaria,9,C Hartmann,467c28f9,Isle of Man,WK,29.39,0.839,35.04
+match_027,2026-08-17,Isle of Man,Bulgaria,10,A McAuley,39e599c8,Isle of Man,BAT,28.03,0.803,34.9
+match_027,2026-08-17,Isle of Man,Bulgaria,11,N Knights,b0aadf4f,Isle of Man,BAT,25.77,0.785,32.84
+match_028,2026-02-18,Pakistan,Namibia,1,MG Erasmus,95a5e066,Namibia,AR,48.17,0.928,51.93
+match_028,2026-02-18,Pakistan,Namibia,2,R Trumpelmann,ff6a7ab5,Namibia,BOWL,43.86,0.9,48.74
+match_028,2026-02-18,Pakistan,Namibia,3,Shaheen Shah Afridi,45a7e761,Pakistan,BOWL,40.41,0.721,56.07
+match_028,2026-02-18,Pakistan,Namibia,4,Saim Ayub,33609a8c,Pakistan,AR,40.24,0.779,51.69
+match_028,2026-02-18,Pakistan,Namibia,5,Shadab Khan,9de62878,Pakistan,AR,39.71,0.736,53.94
+match_028,2026-02-18,Pakistan,Namibia,6,Mohammad Nawaz,3086f7a4,Pakistan,AR,39.02,0.805,48.48
+match_028,2026-02-18,Pakistan,Namibia,7,Fakhar Zaman,1777c020,Pakistan,BAT,34.41,0.837,41.1
+match_028,2026-02-18,Pakistan,Namibia,8,Faheem Ashraf,bd4ea627,Pakistan,BOWL,32.33,0.697,46.39
+match_028,2026-02-18,Pakistan,Namibia,9,JN Frylinck,3c87f0c3,Namibia,BAT,31.69,0.869,36.48
+match_028,2026-02-18,Pakistan,Namibia,10,Babar Azam,8a75e999,Pakistan,BAT,30.14,0.785,38.41
+match_028,2026-02-18,Pakistan,Namibia,11,Sahibzada Farhan,1aba45cd,Pakistan,WK,26.82,0.765,35.05
+match_029,2026-03-07,Malaysia,Bahrain,1,Virandeep Singh,415d30b6,Malaysia,AR,63.55,0.932,68.17
+match_029,2026-03-07,Malaysia,Bahrain,2,Syed Aziz,6667067e,Malaysia,AR,55.89,0.918,60.9
+match_029,2026-03-07,Malaysia,Bahrain,3,Asif Ali,0a4736eb,Bahrain,AR,48.13,0.913,52.74
+match_029,2026-03-07,Malaysia,Bahrain,4,Ali Dawood,596982e6,Bahrain,BOWL,48.04,0.851,56.45
+match_029,2026-03-07,Malaysia,Bahrain,5,Rizwan Butt,e741ed8f,Bahrain,BOWL,45.81,0.843,54.34
+match_029,2026-03-07,Malaysia,Bahrain,6,Abdul Majid Abbasi,0cfb42b5,Bahrain,BOWL,40.87,0.825,49.54
+match_029,2026-03-07,Malaysia,Bahrain,7,S Vijay Unni,f737ab44,Malaysia,BOWL,35.59,0.782,45.5
+match_029,2026-03-07,Malaysia,Bahrain,8,Muhammad Haziq Aiman,1f13eba1,Malaysia,WK,29.9,0.917,32.59
+match_029,2026-03-07,Malaysia,Bahrain,9,Sohail Ahmed,4db71b2e,Bahrain,BAT,28.89,0.831,34.77
+match_029,2026-03-07,Malaysia,Bahrain,10,Fiaz Ahmed,df1f2f29,Bahrain,BAT,26.21,0.844,31.07
+match_029,2026-03-07,Malaysia,Bahrain,11,Ahmed Faiz,f6b4f746,Malaysia,BAT,23.17,0.82,28.26
+match_030,2026-03-12,Botswana,Lesotho,1,D Maisuria,a96b36af,Botswana,BOWL,42.83,0.815,52.52
+match_030,2026-03-12,Botswana,Lesotho,2,M Mooketsi,008a024c,Botswana,BOWL,42.64,0.835,51.04
+match_030,2026-03-12,Botswana,Lesotho,3,Waseem Yaqoob,06b387f1,Lesotho,AR,42.02,0.882,47.62
+match_030,2026-03-12,Botswana,Lesotho,4,T Tshose,18ae55e4,Botswana,AR,37.95,0.834,45.51
+match_030,2026-03-12,Botswana,Lesotho,5,TD Chaoana,16ddd36b,Lesotho,BOWL,30.26,0.805,37.6
+match_030,2026-03-12,Botswana,Lesotho,6,B Kgosiemang,059ec7a5,Botswana,BOWL,27.5,0.676,40.67
+match_030,2026-03-12,Botswana,Lesotho,7,B Khumalo,33ab1f1c,Botswana,BOWL,27.41,0.696,39.39
+match_030,2026-03-12,Botswana,Lesotho,8,V Balakrishnan,0c1da0c4,Botswana,BAT,26.47,0.87,30.44
+match_030,2026-03-12,Botswana,Lesotho,9,R Nehonde,4393e047,Botswana,BAT,25.92,0.818,31.7
+match_030,2026-03-12,Botswana,Lesotho,10,V Mbazo,a2317d14,Botswana,WK,22.45,0.88,25.51
+match_030,2026-03-12,Botswana,Lesotho,11,Maaz Khan,6f14ddcb,Lesotho,BAT,20.99,0.845,24.84
+match_031,2026-03-13,Botswana,Lesotho,1,Waseem Yaqoob,06b387f1,Lesotho,AR,41.54,0.876,47.44
+match_031,2026-03-13,Botswana,Lesotho,2,M Mooketsi,008a024c,Botswana,BOWL,41.07,0.831,49.41
+match_031,2026-03-13,Botswana,Lesotho,3,T Tshose,18ae55e4,Botswana,AR,36.48,0.83,43.93
+match_031,2026-03-13,Botswana,Lesotho,4,K Piet,39fd9295,Botswana,BOWL,34.95,0.796,43.94
+match_031,2026-03-13,Botswana,Lesotho,5,TD Chaoana,16ddd36b,Lesotho,BOWL,29.86,0.792,37.7
+match_031,2026-03-13,Botswana,Lesotho,6,Ameer Saiyed,2f22325f,Botswana,AR,26.6,0.726,36.65
+match_031,2026-03-13,Botswana,Lesotho,7,B Kgosiemang,059ec7a5,Botswana,BOWL,26.26,0.674,38.99
+match_031,2026-03-13,Botswana,Lesotho,8,V Balakrishnan,0c1da0c4,Botswana,BAT,25.05,0.845,29.65
+match_031,2026-03-13,Botswana,Lesotho,9,R Nehonde,4393e047,Botswana,BAT,24.17,0.786,30.73
+match_031,2026-03-13,Botswana,Lesotho,10,V Mbazo,a2317d14,Botswana,WK,21.23,0.858,24.74
+match_031,2026-03-13,Botswana,Lesotho,11,Maaz Khan,6f14ddcb,Lesotho,BAT,20.98,0.843,24.88
+match_032,2026-05-07,Malta,Gibraltar,1,Mehboob Ali,f1e0417f,Malta,AR,55.03,0.891,61.77
+match_032,2026-05-07,Malta,Gibraltar,2,L Bruce,2a03bd2f,Gibraltar,AR,52.21,0.869,60.1
+match_032,2026-05-07,Malta,Gibraltar,3,BA Pai,716bf559,Gibraltar,AR,51.68,0.871,59.31
+match_032,2026-05-07,Malta,Gibraltar,4,P Pushparajan,a143d606,Malta,WK,44.89,0.909,49.4
+match_032,2026-05-07,Malta,Gibraltar,5,K Mirpuri,441006af,Gibraltar,BOWL,41.06,0.814,50.43
+match_032,2026-05-07,Malta,Gibraltar,6,S Bodha,00467a76,Gibraltar,BOWL,36.98,0.776,47.64
+match_032,2026-05-07,Malta,Gibraltar,7,Mohammed Qasim,a120e81b,Malta,AR,35.5,0.739,48.02
+match_032,2026-05-07,Malta,Gibraltar,8,J Wilson,1a3295a1,Gibraltar,BOWL,34.09,0.746,45.71
+match_032,2026-05-07,Malta,Gibraltar,9,IDM Latin,78f719ea,Gibraltar,BAT,32.91,0.85,38.72
+match_032,2026-05-07,Malta,Gibraltar,10,Zeeshan Khan,3f9b1a96,Malta,BAT,28.04,0.789,35.54
+match_032,2026-05-07,Malta,Gibraltar,11,PA Raikes,dfe5db8a,Gibraltar,BAT,26.54,0.795,33.39
+match_033,2026-07-10,Turkey,Norway,1,Qamar Mushtaque,fc362c5d,Norway,BOWL,45.51,0.773,58.85
+match_033,2026-07-10,Turkey,Norway,2,A Turkmen,e56f4180,Turkey,AR,43.14,0.896,48.15
+match_033,2026-07-10,Turkey,Norway,3,Vinay Ravi,9c181b99,Norway,BOWL,41.64,0.749,55.59
+match_033,2026-07-10,Turkey,Norway,4,Ahmadullah Shinwari,e068d48e,Norway,BOWL,38.65,0.72,53.7
+match_033,2026-07-10,Turkey,Norway,5,Muhammad Fahad,3f778477,Turkey,AR,38.11,0.866,44.02
+match_033,2026-07-10,Turkey,Norway,6,D Abeyrathna,ee17d329,Norway,AR,38.05,0.769,49.45
+match_033,2026-07-10,Turkey,Norway,7,AJ Parmar,94113d54,Norway,BOWL,37.42,0.697,53.69
+match_033,2026-07-10,Turkey,Norway,8,Walid Ghauri,331e137f,Norway,BAT,32.41,0.834,38.88
+match_033,2026-07-10,Turkey,Norway,9,Khizer Ahmed,723ca856,Norway,WK,30.29,0.843,35.94
+match_033,2026-07-10,Turkey,Norway,10,G Tuskan,0b22ec0f,Turkey,BAT,15.44,0.627,24.63
+match_033,2026-07-10,Turkey,Norway,11,Omer Kutuk,c9a05046,Turkey,BAT,15.44,0.627,24.63
+match_034,2026-06-05,Bahrain,Singapore,1,Imran Anwar,a9a18e3e,Bahrain,BOWL,58.69,0.865,67.87
+match_034,2026-06-05,Bahrain,Singapore,2,Aslan Jafri,a14b5f3c,Singapore,AR,47.99,0.849,56.56
+match_034,2026-06-05,Bahrain,Singapore,3,H Bharadwaj,2e89652e,Singapore,BOWL,47.98,0.791,60.66
+match_034,2026-06-05,Bahrain,Singapore,4,DPS Tyagi,d5f96736,Singapore,WK,44.95,0.829,54.24
+match_034,2026-06-05,Bahrain,Singapore,5,NA Karnik,835a58da,Singapore,BOWL,41.66,0.758,54.96
+match_034,2026-06-05,Bahrain,Singapore,6,Asif Shaikh,231daa19,Bahrain,BOWL,37.49,0.707,53.02
+match_034,2026-06-05,Bahrain,Singapore,7,Fiaz Ahmed,df1f2f29,Bahrain,BAT,36.63,0.869,42.14
+match_034,2026-06-05,Bahrain,Singapore,8,Junaid Aziz,c39ee9e0,Bahrain,WK,28.1,0.817,34.39
+match_034,2026-06-05,Bahrain,Singapore,9,Yousif Wali,ed27d267,Bahrain,BAT,24.14,0.682,35.39
+match_034,2026-06-05,Bahrain,Singapore,10,Mohammed Sameer,e6409ae1,Bahrain,BAT,23.95,0.761,31.48
+match_034,2026-06-05,Bahrain,Singapore,11,G Gune,5491a9ff,Singapore,BAT,21.84,0.726,30.09
+match_035,2026-04-06,Brazil,Botswana,1,L Cardoso,5777d460,Brazil,AR,60.29,0.869,69.36
+match_035,2026-04-06,Brazil,Botswana,2,LV Boas,3a00d34f,Brazil,AR,49.29,0.841,58.61
+match_035,2026-04-06,Brazil,Botswana,3,NC Monteiro,752af5a4,Brazil,BOWL,48.42,0.778,62.26
+match_035,2026-04-06,Brazil,Botswana,4,CS Nascimento,df997334,Brazil,AR,46.48,0.806,57.69
+match_035,2026-04-06,Brazil,Botswana,5,M Ribeiro,38424a4d,Brazil,BOWL,45.48,0.761,59.73
+match_035,2026-04-06,Brazil,Botswana,6,RMAM Avery,4cf645c9,Brazil,BAT,45.06,0.855,52.69
+match_035,2026-04-06,Brazil,Botswana,7,L Moises,b27f9716,Brazil,BOWL,38.19,0.717,53.29
+match_035,2026-04-06,Brazil,Botswana,8,G Matome,a6898f7a,Botswana,AR,37.18,0.874,42.56
+match_035,2026-04-06,Brazil,Botswana,9,L Agatha,1aebb2fa,Brazil,BAT,24.19,0.808,29.95
+match_035,2026-04-06,Brazil,Botswana,10,MLG Silva,3b62a6b4,Brazil,BAT,21.31,0.743,28.67
+match_035,2026-04-06,Brazil,Botswana,11,MR Machado,4a4f94fa,Brazil,WK,20.7,0.668,30.97
+match_036,2026-05-29,Bahrain,Oman,1,J Gunasekar,e50c13a5,Oman,AR,71.34,0.923,77.3
+match_036,2026-05-29,Bahrain,Oman,2,PE Mendonca,70bab30b,Oman,AR,57.86,0.88,65.73
+match_036,2026-05-29,Bahrain,Oman,3,HMD Rasangika,d6f9dfd6,Bahrain,AR,45.39,0.909,49.9
+match_036,2026-05-29,Bahrain,Oman,4,A Dcosta,3a4d914f,Oman,BOWL,43.69,0.779,56.09
+match_036,2026-05-29,Bahrain,Oman,5,TI Gajanayake,d577d45a,Bahrain,AR,39.11,0.857,45.65
+match_036,2026-05-29,Bahrain,Oman,6,Sameera Khan,237baa2c,Oman,BOWL,31.8,0.724,43.9
+match_036,2026-05-29,Bahrain,Oman,7,Alifiya Sayed,81423620,Oman,BOWL,28.13,0.679,41.41
+match_036,2026-05-29,Bahrain,Oman,8,Fiza,c7c60bc5,Oman,BAT,25.51,0.818,31.19
+match_036,2026-05-29,Bahrain,Oman,9,TB Pawde,42d5be2e,Oman,BAT,19.2,0.667,28.77
+match_036,2026-05-29,Bahrain,Oman,10,N Joshi,cfece11f,Oman,BAT,19.16,0.757,25.33
+match_036,2026-05-29,Bahrain,Oman,11,CM Saldanha,aee1bc06,Oman,WK,16.71,0.788,21.19
+match_037,2026-06-26,Norway,Luxembourg,1,R Immadi,baeae6dd,Norway,AR,60.09,0.89,67.5
+match_037,2026-06-26,Norway,Luxembourg,2,Alina Aslam,fbffb752,Norway,AR,55.06,0.88,62.6
+match_037,2026-06-26,Norway,Luxembourg,3,Mirab Razwan,498031f9,Norway,BOWL,50.57,0.83,60.93
+match_037,2026-06-26,Norway,Luxembourg,4,Prachi Kumari,dc4f97bf,Norway,BOWL,38.08,0.768,49.57
+match_037,2026-06-26,Norway,Luxembourg,5,VB Viyala,228a747d,Norway,AR,36.46,0.773,47.16
+match_037,2026-06-26,Norway,Luxembourg,6,Lopamudra,ff4509d5,Norway,BOWL,33.73,0.72,46.87
+match_037,2026-06-26,Norway,Luxembourg,7,Jagrat Dubey,a4051019,Luxembourg,AR,33.62,0.857,39.25
+match_037,2026-06-26,Norway,Luxembourg,8,Ayesha Hasan,6a3de477,Norway,BAT,26.52,0.836,31.74
+match_037,2026-06-26,Norway,Luxembourg,9,AS Gorad,2c8d0953,Norway,BAT,26.38,0.835,31.59
+match_037,2026-06-26,Norway,Luxembourg,10,Nayab Razwan,f12e21a0,Norway,BAT,25.7,0.76,33.82
+match_037,2026-06-26,Norway,Luxembourg,11,Bijeyata Kumari,a5fc18a7,Norway,WK,21.22,0.873,24.31
+match_038,2026-04-06,Lesotho,Malawi,1,LL Dimba,53f88bf1,Malawi,AR,63.79,0.854,74.68
+match_038,2026-04-06,Lesotho,Malawi,2,S Kananji,23917bf0,Malawi,AR,61.85,0.851,72.71
+match_038,2026-04-06,Lesotho,Malawi,3,L Malino,7a81836e,Malawi,BOWL,48.53,0.745,65.17
+match_038,2026-04-06,Lesotho,Malawi,4,P Maziya,4f85f02c,Malawi,AR,46.5,0.793,58.65
+match_038,2026-04-06,Lesotho,Malawi,5,V Phiri,8ffa1b3c,Malawi,BOWL,42.88,0.796,53.86
+match_038,2026-04-06,Lesotho,Malawi,6,C Bwanali,b26a30f9,Malawi,BOWL,33.41,0.639,52.3
+match_038,2026-04-06,Lesotho,Malawi,7,S Chinawa,bdbde085,Malawi,BAT,30.73,0.78,39.42
+match_038,2026-04-06,Lesotho,Malawi,8,MA Nyabela,261fddca,Lesotho,AR,26.96,0.852,31.66
+match_038,2026-04-06,Lesotho,Malawi,9,E Chiralile,4e193c55,Malawi,WK,24.15,0.794,30.4
+match_038,2026-04-06,Lesotho,Malawi,10,E Mapisa,58ebd785,Malawi,BAT,22.26,0.571,38.95
+match_038,2026-04-06,Lesotho,Malawi,11,M Ndipo,e6a893a1,Malawi,BAT,22.26,0.571,38.95
+match_039,2026-09-03,India,Hong Kong,1,DB Sharma,201fef33,India,AR,57.89,0.856,67.64
+match_039,2026-09-03,India,Hong Kong,2,Shafali Verma,d8f59089,India,BAT,47.15,0.88,53.55
+match_039,2026-09-03,India,Hong Kong,3,S Mandhana,5d2eda89,India,BAT,46.2,0.877,52.67
+match_039,2026-09-03,India,Hong Kong,4,Renuka Singh,7298db76,India,BOWL,43.74,0.746,58.61
+match_039,2026-09-03,India,Hong Kong,5,N Shree Charani,583ce32c,India,BOWL,41.82,0.78,53.62
+match_039,2026-09-03,India,Hong Kong,6,JI Rodrigues,cb08b611,India,BAT,39.39,0.87,45.27
+match_039,2026-09-03,India,Hong Kong,7,RM Ghosh,721e0199,India,WK,35.83,0.898,39.9
+match_039,2026-09-03,India,Hong Kong,8,H Kaur,53cd8da6,India,BAT,34.72,0.832,41.75
+match_039,2026-09-03,India,Hong Kong,9,KY Chan,6348c6e9,Hong Kong,AR,34.0,0.884,38.46
+match_039,2026-09-03,India,Hong Kong,10,K Goud,4d622fee,India,BOWL,33.06,0.715,46.21
+match_039,2026-09-03,India,Hong Kong,11,SR Patil,33946d69,India,BOWL,33.0,0.649,50.84
+match_040,2026-06-12,Brazil,Malawi,1,L Cardoso,5777d460,Brazil,AR,56.26,0.887,63.43
+match_040,2026-06-12,Brazil,Malawi,2,LV Boas,3a00d34f,Brazil,AR,47.21,0.857,55.1
+match_040,2026-06-12,Brazil,Malawi,3,NC Monteiro,752af5a4,Brazil,BOWL,46.34,0.802,57.8
+match_040,2026-06-12,Brazil,Malawi,4,CS Nascimento,df997334,Brazil,AR,44.56,0.827,53.88
+match_040,2026-06-12,Brazil,Malawi,5,M Ribeiro,38424a4d,Brazil,BOWL,44.06,0.783,56.26
+match_040,2026-06-12,Brazil,Malawi,6,RMAM Avery,4cf645c9,Brazil,BAT,43.88,0.877,50.04
+match_040,2026-06-12,Brazil,Malawi,7,LL Dimba,53f88bf1,Malawi,AR,41.83,0.886,47.21
+match_040,2026-06-12,Brazil,Malawi,8,L Moises,b27f9716,Brazil,BOWL,36.97,0.727,50.87
+match_040,2026-06-12,Brazil,Malawi,9,L Agatha,1aebb2fa,Brazil,BAT,23.18,0.798,29.05
+match_040,2026-06-12,Brazil,Malawi,10,MLG Silva,3b62a6b4,Brazil,BAT,20.61,0.722,28.54
+match_040,2026-06-12,Brazil,Malawi,11,MR Machado,4a4f94fa,Brazil,WK,19.63,0.698,28.13
+match_041,2026-06-04,Nepal,Bhutan,1,K Kunwar,97e6e41a,Nepal,AR,48.82,0.823,59.29
+match_041,2026-06-04,Nepal,Bhutan,2,Puja Mahato,4b95058b,Nepal,AR,45.77,0.847,54.06
+match_041,2026-06-04,Nepal,Bhutan,3,A Gurung,10854c82,Bhutan,BOWL,40.99,0.816,50.21
+match_041,2026-06-04,Nepal,Bhutan,4,T Zangmo,b1f21c0f,Bhutan,AR,40.13,0.855,46.97
+match_041,2026-06-04,Nepal,Bhutan,5,I Barma,521abce2,Nepal,AR,39.67,0.869,45.63
+match_041,2026-06-04,Nepal,Bhutan,6,Riya Sharma,8b7cda26,Nepal,BOWL,30.81,0.723,42.62
+match_041,2026-06-04,Nepal,Bhutan,7,Sonam,09cbca15,Bhutan,BOWL,30.54,0.773,39.53
+match_041,2026-06-04,Nepal,Bhutan,8,N Choden,a904600a,Bhutan,WK,29.13,0.855,34.06
+match_041,2026-06-04,Nepal,Bhutan,9,Samjhana Khadka,765a2354,Nepal,BAT,22.74,0.796,28.55
+match_041,2026-06-04,Nepal,Bhutan,10,B Rawal,4d1cc284,Nepal,BAT,15.66,0.657,23.83
+match_041,2026-06-04,Nepal,Bhutan,11,K Dema,0b211a32,Bhutan,BAT,15.6,0.736,21.18
+match_042,2026-09-01,Pakistan,Thailand,1,Fatima Sana,ea9c54de,Pakistan,AR,48.95,0.888,55.14
+match_042,2026-09-01,Pakistan,Thailand,2,T Putthawong,23e3f2d6,Thailand,BOWL,48.64,0.864,56.31
+match_042,2026-09-01,Pakistan,Thailand,3,S Laomi,4b15618c,Thailand,BOWL,46.23,0.872,53.05
+match_042,2026-09-01,Pakistan,Thailand,4,C Sutthiruang,f6ddfe08,Thailand,AR,45.66,0.893,51.14
+match_042,2026-09-01,Pakistan,Thailand,5,O Kamchomphu,519b872a,Thailand,BOWL,44.62,0.859,51.95
+match_042,2026-09-01,Pakistan,Thailand,6,P Maya,72eada4c,Thailand,BOWL,41.7,0.865,48.22
+match_042,2026-09-01,Pakistan,Thailand,7,S Chaturongrattana,bd36bc39,Thailand,BOWL,41.42,0.845,49.01
+match_042,2026-09-01,Pakistan,Thailand,8,Muneeba Ali,86fdf668,Pakistan,WK,35.39,0.924,38.32
+match_042,2026-09-01,Pakistan,Thailand,9,N Chantam,b5626ff7,Thailand,BAT,27.64,0.883,31.29
+match_042,2026-09-01,Pakistan,Thailand,10,Gull Feroza,9ff1e91e,Pakistan,BAT,24.65,0.788,31.28
+match_042,2026-09-01,Pakistan,Thailand,11,N Chaiwai,0825e4b3,Thailand,BAT,21.89,0.853,25.66
+match_043,2026-02-13,Qatar,Oman,1,J Gunasekar,e50c13a5,Oman,AR,79.79,0.935,85.32
+match_043,2026-02-13,Qatar,Oman,2,PE Mendonca,70bab30b,Oman,AR,61.62,0.904,68.14
+match_043,2026-02-13,Qatar,Oman,3,Aysha,37ceee4e,Qatar,AR,56.74,0.932,60.86
+match_043,2026-02-13,Qatar,Oman,4,A Dcosta,3a4d914f,Oman,BOWL,45.84,0.846,54.21
+match_043,2026-02-13,Qatar,Oman,5,G Candiru,fc2150f4,Qatar,AR,42.46,0.871,48.75
+match_043,2026-02-13,Qatar,Oman,6,MT Jacob,f1750a74,Qatar,BOWL,36.85,0.869,42.41
+match_043,2026-02-13,Qatar,Oman,7,Sameera Khan,237baa2c,Oman,BOWL,31.84,0.782,40.7
+match_043,2026-02-13,Qatar,Oman,8,Fiza,c7c60bc5,Oman,BAT,23.92,0.806,29.69
+match_043,2026-02-13,Qatar,Oman,9,Rizpha Bano,c7832845,Qatar,WK,20.17,0.724,27.86
+match_043,2026-02-13,Qatar,Oman,10,N Joshi,cfece11f,Oman,BAT,19.39,0.748,25.92
+match_043,2026-02-13,Qatar,Oman,11,Khadija Imtiaz,1438d928,Qatar,BAT,19.14,0.767,24.97
+match_044,2026-05-31,Netherlands,Bangladesh,1,IJR Zwilling,47b32a5a,Netherlands,AR,49.61,0.878,56.49
+match_044,2026-05-31,Netherlands,Bangladesh,2,R Rijke,42e4b276,Netherlands,BAT,38.45,0.885,43.43
+match_044,2026-05-31,Netherlands,Bangladesh,3,C de Lange,c6a019f5,Netherlands,BOWL,37.06,0.794,46.66
+match_044,2026-05-31,Netherlands,Bangladesh,4,S Siegers,9a58f2c8,Netherlands,BOWL,33.84,0.778,43.5
+match_044,2026-05-31,Netherlands,Bangladesh,5,Nahida Akter,66078174,Bangladesh,BOWL,32.47,0.721,45.05
+match_044,2026-05-31,Netherlands,Bangladesh,6,Rabeya Khan,aaf037b1,Bangladesh,BOWL,31.04,0.721,43.04
+match_044,2026-05-31,Netherlands,Bangladesh,7,HDJ Siegers,6d48df01,Netherlands,WK,30.94,0.749,41.32
+match_044,2026-05-31,Netherlands,Bangladesh,8,Nigar Sultana,3827f6a2,Bangladesh,WK,30.45,0.877,34.72
+match_044,2026-05-31,Netherlands,Bangladesh,9,F Overdijk,022745d5,Netherlands,AR,30.14,0.836,36.08
+match_044,2026-05-31,Netherlands,Bangladesh,10,SL Kalis,2b150c6b,Netherlands,BAT,29.5,0.876,33.67
+match_044,2026-05-31,Netherlands,Bangladesh,11,Ritu Moni,ad3940a5,Bangladesh,BAT,26.43,0.738,35.82
+match_045,2026-06-12,England,Sri Lanka,1,AC Jayangani,ac56b5a7,Sri Lanka,AR,53.3,0.942,56.58
+match_045,2026-06-12,England,Sri Lanka,2,S Ecclestone,cdb82f1c,England,BOWL,48.73,0.806,60.42
+match_045,2026-06-12,England,Sri Lanka,3,NR Sciver-Brunt,f3a18a0c,England,AR,42.45,0.796,53.32
+match_045,2026-06-12,England,Sri Lanka,4,WK Dilhari,c34a15e6,Sri Lanka,AR,41.63,0.919,45.31
+match_045,2026-06-12,England,Sri Lanka,5,CE Dean,c6625a26,England,BOWL,41.57,0.764,54.41
+match_045,2026-06-12,England,Sri Lanka,6,A Capsey,910dd54e,England,AR,41.28,0.826,50.01
+match_045,2026-06-12,England,Sri Lanka,7,LK Bell,38b4583c,England,BOWL,31.25,0.64,48.83
+match_045,2026-06-12,England,Sri Lanka,8,SIR Dunkley,3a9e9cb2,England,BAT,30.17,0.821,36.77
+match_045,2026-06-12,England,Sri Lanka,9,DN Wyatt,a139c379,England,BAT,29.7,0.813,36.53
+match_045,2026-06-12,England,Sri Lanka,10,HC Knight,4ba0289e,England,BAT,26.49,0.804,32.96
+match_045,2026-06-12,England,Sri Lanka,11,AE Jones,b05e45e4,England,WK,23.34,0.827,28.22
+match_046,2026-05-23,New Zealand,England,1,AC Kerr,7673c908,New Zealand,AR,47.4,0.809,58.56
+match_046,2026-05-23,New Zealand,England,2,SFM Devine,de69af96,New Zealand,AR,45.24,0.825,54.82
+match_046,2026-05-23,New Zealand,England,3,S Ecclestone,cdb82f1c,England,BOWL,40.71,0.773,52.69
+match_046,2026-05-23,New Zealand,England,4,JM Kerr,9af58032,New Zealand,AR,35.71,0.781,45.71
+match_046,2026-05-23,New Zealand,England,5,NR Sciver-Brunt,f3a18a0c,England,AR,35.24,0.772,45.66
+match_046,2026-05-23,New Zealand,England,6,CE Dean,c6625a26,England,BOWL,33.94,0.728,46.64
+match_046,2026-05-23,New Zealand,England,7,SIR Dunkley,3a9e9cb2,England,BAT,28.72,0.828,34.7
+match_046,2026-05-23,New Zealand,England,8,DN Wyatt,a139c379,England,BAT,28.3,0.823,34.38
+match_046,2026-05-23,New Zealand,England,9,BM Halliday,efb6cb2a,New Zealand,BAT,26.28,0.838,31.37
+match_046,2026-05-23,New Zealand,England,10,LK Bell,38b4583c,England,BOWL,25.72,0.614,41.9
+match_046,2026-05-23,New Zealand,England,11,AE Jones,b05e45e4,England,WK,23.21,0.847,27.4
+match_047,2026-03-03,West Indies,Sri Lanka,1,HK Matthews,d32cf49a,West Indies,AR,56.79,0.824,68.91
+match_047,2026-03-03,West Indies,Sri Lanka,2,AC Jayangani,ac56b5a7,Sri Lanka,AR,51.52,0.866,59.47
+match_047,2026-03-03,West Indies,Sri Lanka,3,DJS Dottin,53bee17f,West Indies,AR,43.39,0.82,52.95
+match_047,2026-03-03,West Indies,Sri Lanka,4,WK Dilhari,c34a15e6,Sri Lanka,AR,41.78,0.849,49.23
+match_047,2026-03-03,West Indies,Sri Lanka,5,BMSM Kumari,b55fb828,Sri Lanka,BOWL,30.01,0.734,40.89
+match_047,2026-03-03,West Indies,Sri Lanka,6,ASS Fletcher,42d9dd09,West Indies,BOWL,26.49,0.667,39.69
+match_047,2026-03-03,West Indies,Sri Lanka,7,I Ranaweera,a61850e6,Sri Lanka,BOWL,24.66,0.652,37.81
+match_047,2026-03-03,West Indies,Sri Lanka,8,NM Meepage,420d4d31,Sri Lanka,WK,24.02,0.739,32.49
+match_047,2026-03-03,West Indies,Sri Lanka,9,H Madavi,85021bcd,Sri Lanka,BAT,24.0,0.832,28.86
+match_047,2026-03-03,West Indies,Sri Lanka,10,GWHM Perera,53068b45,Sri Lanka,BAT,23.62,0.809,29.19
+match_047,2026-03-03,West Indies,Sri Lanka,11,SR Taylor,92cf79a8,West Indies,BAT,22.35,0.749,29.84
+match_048,2026-06-17,Pakistan,South Africa,1,M Kapp,63e3b6b3,South Africa,AR,57.25,0.828,69.14
+match_048,2026-06-17,Pakistan,South Africa,2,N de Klerk,ea544967,South Africa,AR,51.19,0.854,59.92
+match_048,2026-06-17,Pakistan,South Africa,3,L Wolvaardt,e60f81c9,South Africa,BAT,43.77,0.902,48.55
+match_048,2026-06-17,Pakistan,South Africa,4,CL Tryon,4d4605e6,South Africa,AR,43.17,0.82,52.62
+match_048,2026-06-17,Pakistan,South Africa,5,S Ismail,108c4c09,South Africa,BOWL,40.49,0.666,60.78
+match_048,2026-06-17,Pakistan,South Africa,6,Fatima Sana,ea9c54de,Pakistan,AR,39.06,0.882,44.26
+match_048,2026-06-17,Pakistan,South Africa,7,N Mlaba,686362af,South Africa,BOWL,33.14,0.664,49.89
+match_048,2026-06-17,Pakistan,South Africa,8,Sadia Iqbal,53bb50f0,Pakistan,BOWL,29.87,0.807,37.03
+match_048,2026-06-17,Pakistan,South Africa,9,A Bosch,dcf0e8f4,South Africa,BAT,28.4,0.8,35.49
+match_048,2026-06-17,Pakistan,South Africa,10,Muneeba Ali,86fdf668,Pakistan,WK,27.22,0.912,29.85
+match_048,2026-06-17,Pakistan,South Africa,11,A Dercksen,d2b1f515,South Africa,BAT,24.16,0.747,32.33
+match_049,2026-05-12,Pakistan,Zimbabwe,1,Fatima Sana,ea9c54de,Pakistan,AR,47.65,0.822,57.95
+match_049,2026-05-12,Pakistan,Zimbabwe,2,K Ndlovu,8d25271a,Zimbabwe,AR,40.57,0.873,46.47
+match_049,2026-05-12,Pakistan,Zimbabwe,3,J Nkomo,36dfa62e,Zimbabwe,AR,38.11,0.78,48.85
+match_049,2026-05-12,Pakistan,Zimbabwe,4,Sadia Iqbal,53bb50f0,Pakistan,BOWL,36.7,0.741,49.51
+match_049,2026-05-12,Pakistan,Zimbabwe,5,Muneeba Ali,86fdf668,Pakistan,WK,36.35,0.863,42.14
+match_049,2026-05-12,Pakistan,Zimbabwe,6,B Biza,8a522c6c,Zimbabwe,AR,36.04,0.784,45.97
+match_049,2026-05-12,Pakistan,Zimbabwe,7,Tuba Hassan,0d56e9a5,Pakistan,BOWL,32.74,0.73,44.83
+match_049,2026-05-12,Pakistan,Zimbabwe,8,Rameen Shamim,0b78b7c1,Pakistan,BOWL,30.78,0.706,43.6
+match_049,2026-05-12,Pakistan,Zimbabwe,9,SM Mayers,91d9613e,Zimbabwe,BAT,26.7,0.791,33.75
+match_049,2026-05-12,Pakistan,Zimbabwe,10,Aliya Riaz,2904b4b6,Pakistan,BAT,26.52,0.8,33.17
+match_049,2026-05-12,Pakistan,Zimbabwe,11,Gull Feroza,9ff1e91e,Pakistan,BAT,24.79,0.747,33.18
+match_050,2026-02-19,Australia,India,1,G Wareham,f0b4e47d,Australia,AR,38.81,0.756,51.33
+match_050,2026-02-19,Australia,India,2,EA Perry,be150fc8,Australia,AR,37.24,0.817,45.57
+match_050,2026-02-19,Australia,India,3,A Sutherland,65d9b6b6,Australia,AR,35.84,0.748,47.89
+match_050,2026-02-19,Australia,India,4,A Gardner,bc969efb,Australia,AR,35.41,0.682,51.88
+match_050,2026-02-19,Australia,India,5,BL Mooney,52d1dbc8,Australia,WK,33.88,0.875,38.72
+match_050,2026-02-19,Australia,India,6,Shafali Verma,d8f59089,India,BAT,30.07,0.865,34.75
+match_050,2026-02-19,Australia,India,7,S Mandhana,5d2eda89,India,BAT,28.86,0.837,34.47
+match_050,2026-02-19,Australia,India,8,A Reddy,eadc8924,India,BOWL,25.46,0.731,34.81
+match_050,2026-02-19,Australia,India,9,ML Schutt,17608a6f,Australia,BOWL,25.12,0.65,38.62
+match_050,2026-02-19,Australia,India,10,N Shree Charani,583ce32c,India,BOWL,24.74,0.73,33.87
+match_050,2026-02-19,Australia,India,11,JI Rodrigues,cb08b611,India,BAT,24.04,0.805,29.86
+match_051,2026-07-05,England,Australia,1,EA Perry,be150fc8,Australia,AR,36.05,0.867,41.56
+match_051,2026-07-05,England,Australia,2,S Ecclestone,cdb82f1c,England,BOWL,34.07,0.784,43.48
+match_051,2026-07-05,England,Australia,3,BL Mooney,52d1dbc8,Australia,WK,33.23,0.922,36.04
+match_051,2026-07-05,England,Australia,4,A Gardner,bc969efb,Australia,AR,33.0,0.687,48.02
+match_051,2026-07-05,England,Australia,5,A Sutherland,65d9b6b6,Australia,AR,32.92,0.728,45.19
+match_051,2026-07-05,England,Australia,6,G Wareham,f0b4e47d,Australia,AR,32.31,0.681,47.45
+match_051,2026-07-05,England,Australia,7,CE Dean,c6625a26,England,BOWL,30.32,0.757,40.08
+match_051,2026-07-05,England,Australia,8,SIR Dunkley,3a9e9cb2,England,BAT,24.47,0.837,29.25
+match_051,2026-07-05,England,Australia,9,ML Schutt,17608a6f,Australia,BOWL,23.55,0.623,37.81
+match_051,2026-07-05,England,Australia,10,DN Wyatt,a139c379,England,BAT,23.43,0.815,28.75
+match_051,2026-07-05,England,Australia,11,P Litchfield,4e6ef14f,Australia,BAT,22.78,0.832,27.37
+match_052,2026-07-31,Pakistan,Sri Lanka,1,AC Jayangani,ac56b5a7,Sri Lanka,AR,66.78,0.926,72.12
+match_052,2026-07-31,Pakistan,Sri Lanka,2,WK Dilhari,c34a15e6,Sri Lanka,WK,59.57,0.94,63.36
+match_052,2026-07-31,Pakistan,Sri Lanka,3,Fatima Sana,ea9c54de,Pakistan,AR,43.55,0.916,47.54
+match_052,2026-07-31,Pakistan,Sri Lanka,4,BMSM Kumari,b55fb828,Sri Lanka,BOWL,38.32,0.761,50.32
+match_052,2026-07-31,Pakistan,Sri Lanka,5,Nashra Sandhu,c981d3c2,Pakistan,BOWL,33.76,0.854,39.54
+match_052,2026-07-31,Pakistan,Sri Lanka,6,I Ranaweera,a61850e6,Sri Lanka,BOWL,33.14,0.714,46.39
+match_052,2026-07-31,Pakistan,Sri Lanka,7,R Sewwandi,c88d3ef1,Sri Lanka,BOWL,32.37,0.754,42.93
+match_052,2026-07-31,Pakistan,Sri Lanka,8,Muneeba Ali,86fdf668,Pakistan,WK,31.86,0.937,34.01
+match_052,2026-07-31,Pakistan,Sri Lanka,9,H Madavi,85021bcd,Sri Lanka,BAT,28.58,0.848,33.71
+match_052,2026-07-31,Pakistan,Sri Lanka,10,GWHM Perera,53068b45,Sri Lanka,BAT,27.87,0.824,33.81
+match_052,2026-07-31,Pakistan,Sri Lanka,11,I Dulani,a2c23f31,Sri Lanka,BAT,26.28,0.774,33.97
+match_053,2026-02-10,Pakistan,South Africa,1,L Wolvaardt,e60f81c9,South Africa,BAT,47.94,0.881,54.4
+match_053,2026-02-10,Pakistan,South Africa,2,S Ismail,108c4c09,South Africa,BOWL,42.09,0.709,59.36
+match_053,2026-02-10,Pakistan,South Africa,3,Fatima Sana,ea9c54de,Pakistan,AR,41.89,0.848,49.39
+match_053,2026-02-10,Pakistan,South Africa,4,S Luus,6d76bc23,South Africa,AR,39.82,0.781,51.0
+match_053,2026-02-10,Pakistan,South Africa,5,N Mlaba,686362af,South Africa,BOWL,34.83,0.694,50.17
+match_053,2026-02-10,Pakistan,South Africa,6,T Brits,06659caa,South Africa,BAT,33.95,0.792,42.88
+match_053,2026-02-10,Pakistan,South Africa,7,Sadia Iqbal,53bb50f0,Pakistan,BOWL,31.93,0.78,40.93
+match_053,2026-02-10,Pakistan,South Africa,8,D van Niekerk,8c5775f3,South Africa,BAT,31.67,0.834,37.99
+match_053,2026-02-10,Pakistan,South Africa,9,Nashra Sandhu,c981d3c2,Pakistan,BOWL,31.41,0.779,40.33
+match_053,2026-02-10,Pakistan,South Africa,10,A Khaka,0d518f89,South Africa,BOWL,30.8,0.656,46.96
+match_053,2026-02-10,Pakistan,South Africa,11,Muneeba Ali,86fdf668,Pakistan,WK,29.98,0.873,34.33
+match_054,2026-03-17,South Africa,New Zealand,1,AC Kerr,7673c908,New Zealand,AR,49.17,0.79,62.21
+match_054,2026-03-17,South Africa,New Zealand,2,SFM Devine,de69af96,New Zealand,AR,44.76,0.778,57.52
+match_054,2026-03-17,South Africa,New Zealand,3,M Kapp,63e3b6b3,South Africa,AR,39.66,0.766,51.75
+match_054,2026-03-17,South Africa,New Zealand,4,N de Klerk,ea544967,South Africa,AR,36.27,0.807,44.95
+match_054,2026-03-17,South Africa,New Zealand,5,L Wolvaardt,e60f81c9,South Africa,BAT,35.64,0.879,40.52
+match_054,2026-03-17,South Africa,New Zealand,6,SW Bates,89bbc67a,New Zealand,BAT,29.18,0.807,36.17
+match_054,2026-03-17,South Africa,New Zealand,7,BM Halliday,efb6cb2a,New Zealand,BAT,25.24,0.798,31.63
+match_054,2026-03-17,South Africa,New Zealand,8,RA Mair,d5eb8b84,New Zealand,BOWL,22.8,0.614,37.14
+match_054,2026-03-17,South Africa,New Zealand,9,N Mlaba,686362af,South Africa,BOWL,21.76,0.607,35.87
+match_054,2026-03-17,South Africa,New Zealand,10,LMM Tahuhu,60471339,New Zealand,BOWL,21.17,0.583,36.28
+match_054,2026-03-17,South Africa,New Zealand,11,IC Gaze,60c250bf,New Zealand,WK,18.73,0.801,23.37
+match_055,2026-03-01,Zimbabwe,South Africa,1,Sikandar Raza,26d041c4,Zimbabwe,AR,46.68,0.912,51.18
+match_055,2026-03-01,Zimbabwe,South Africa,2,AK Markram,6a26221c,South Africa,BAT,39.79,0.821,48.47
+match_055,2026-03-01,Zimbabwe,South Africa,3,RD Rickelton,e66732f8,South Africa,WK,39.37,0.806,48.83
+match_055,2026-03-01,Zimbabwe,South Africa,4,GF Linde,e5437608,South Africa,AR,34.75,0.746,46.59
+match_055,2026-03-01,Zimbabwe,South Africa,5,K Rabada,e62dd25d,South Africa,BOWL,34.15,0.698,48.9
+match_055,2026-03-01,Zimbabwe,South Africa,6,Q de Kock,372455c4,South Africa,WK,34.13,0.805,42.43
+match_055,2026-03-01,Zimbabwe,South Africa,7,D Brevis,844e79d1,South Africa,BAT,31.68,0.813,38.95
+match_055,2026-03-01,Zimbabwe,South Africa,8,C Bosch,172dff15,South Africa,BOWL,31.67,0.679,46.62
+match_055,2026-03-01,Zimbabwe,South Africa,9,RP Burl,b08252b8,Zimbabwe,AR,31.28,0.86,36.37
+match_055,2026-03-01,Zimbabwe,South Africa,10,B Muzarabani,449f4e3c,Zimbabwe,BOWL,29.25,0.762,38.41
+match_055,2026-03-01,Zimbabwe,South Africa,11,BJ Bennett,eaa36b2a,Zimbabwe,BAT,27.9,0.817,34.14
+match_056,2026-02-22,South Africa,India,1,HH Pandya,dbe50b21,India,AR,40.47,0.823,49.19
+match_056,2026-02-22,South Africa,India,2,Abhishek Sharma,f29185a1,India,BAT,39.35,0.871,45.19
+match_056,2026-02-22,South Africa,India,3,AK Markram,6a26221c,South Africa,BAT,36.41,0.833,43.7
+match_056,2026-02-22,South Africa,India,4,AR Patel,2e171977,India,AR,35.67,0.752,47.42
+match_056,2026-02-22,South Africa,India,5,M Jansen,81c36ee9,South Africa,BOWL,35.47,0.753,47.09
+match_056,2026-02-22,South Africa,India,6,RD Rickelton,e66732f8,South Africa,WK,34.88,0.803,43.45
+match_056,2026-02-22,South Africa,India,7,Tilak Varma,b0482a1d,India,BAT,34.59,0.85,40.67
+match_056,2026-02-22,South Africa,India,8,SA Yadav,271f83cd,India,BAT,33.65,0.851,39.53
+match_056,2026-02-22,South Africa,India,9,Ishan Kishan,752f7486,India,WK,33.2,0.846,39.25
+match_056,2026-02-22,South Africa,India,10,K Rabada,e62dd25d,South Africa,BOWL,32.77,0.713,45.97
+match_056,2026-02-22,South Africa,India,11,JJ Bumrah,462411b3,India,BOWL,31.49,0.697,45.17
+match_057,2026-03-17,New Zealand,South Africa,1,MJ Santner,e4a0deae,New Zealand,BOWL,37.55,0.789,47.57
+match_057,2026-03-17,New Zealand,South Africa,2,RD Rickelton,e66732f8,South Africa,WK,36.97,0.901,41.04
+match_057,2026-03-17,New Zealand,South Africa,3,K Rabada,e62dd25d,South Africa,BOWL,33.17,0.761,43.59
+match_057,2026-03-17,New Zealand,South Africa,4,GF Linde,e5437608,South Africa,AR,32.09,0.788,40.7
+match_057,2026-03-17,New Zealand,South Africa,5,JDS Neesham,9219eff0,New Zealand,AR,31.93,0.761,41.98
+match_057,2026-03-17,New Zealand,South Africa,6,DP Conway,df5a6881,New Zealand,BAT,31.12,0.819,37.99
+match_057,2026-03-17,New Zealand,South Africa,7,DJ Mitchell,eade4650,New Zealand,BAT,30.71,0.824,37.29
+match_057,2026-03-17,New Zealand,South Africa,8,G Coetzee,3204c99f,South Africa,BOWL,30.38,0.732,41.52
+match_057,2026-03-17,New Zealand,South Africa,9,LH Ferguson,2f9d0389,New Zealand,BOWL,30.13,0.707,42.65
+match_057,2026-03-17,New Zealand,South Africa,10,TB Robinson,5d664346,New Zealand,BAT,29.92,0.832,35.98
+match_057,2026-03-17,New Zealand,South Africa,11,D Brevis,844e79d1,South Africa,BAT,29.68,0.877,33.85
+match_058,2026-01-27,West Indies,South Africa,1,JO Holder,0f721006,West Indies,AR,45.24,0.889,50.91
+match_058,2026-01-27,West Indies,South Africa,2,R Shepherd,c5aef772,West Indies,BOWL,41.24,0.841,49.06
+match_058,2026-01-27,West Indies,South Africa,3,RD Rickelton,e66732f8,South Africa,WK,40.94,0.906,45.17
+match_058,2026-01-27,West Indies,South Africa,4,AK Markram,6a26221c,South Africa,BAT,40.2,0.875,45.94
+match_058,2026-01-27,West Indies,South Africa,5,M Jansen,81c36ee9,South Africa,BOWL,38.64,0.791,48.83
+match_058,2026-01-27,West Indies,South Africa,6,RL Chase,3feda4fa,West Indies,AR,35.39,0.771,45.9
+match_058,2026-01-27,West Indies,South Africa,7,SD Hope,1fc6ef83,West Indies,WK,34.48,0.909,37.96
+match_058,2026-01-27,West Indies,South Africa,8,K Rabada,e62dd25d,South Africa,BOWL,33.37,0.704,47.37
+match_058,2026-01-27,West Indies,South Africa,9,AJ Hosein,4d7f517e,West Indies,BOWL,32.37,0.728,44.48
+match_058,2026-01-27,West Indies,South Africa,10,SE Rutherford,d014d5ac,West Indies,BAT,30.73,0.865,35.52
+match_058,2026-01-27,West Indies,South Africa,11,SO Hetmyer,48a1d7b7,West Indies,BAT,29.87,0.862,34.66
+match_059,2026-02-22,England,Sri Lanka,1,SM Curran,e94915e6,England,AR,45.69,0.855,53.43
+match_059,2026-02-22,England,Sri Lanka,2,JC Buttler,99b75528,England,WK,42.83,0.911,47.03
+match_059,2026-02-22,England,Sri Lanka,3,WG Jacks,9caf69a1,England,AR,38.08,0.811,46.95
+match_059,2026-02-22,England,Sri Lanka,4,PD Salt,3d284ca3,England,BAT,37.51,0.841,44.59
+match_059,2026-02-22,England,Sri Lanka,5,J Overton,59559bc2,England,AR,33.53,0.755,44.39
+match_059,2026-02-22,England,Sri Lanka,6,M Theekshana,f24c6701,Sri Lanka,BOWL,33.4,0.753,44.37
+match_059,2026-02-22,England,Sri Lanka,7,P Nissanka,8ee36b18,Sri Lanka,BAT,33.36,0.862,38.7
+match_059,2026-02-22,England,Sri Lanka,8,M Pathirana,64839cb3,Sri Lanka,BOWL,31.71,0.716,44.29
+match_059,2026-02-22,England,Sri Lanka,9,MD Shanaka,3ff033bb,Sri Lanka,AR,31.56,0.834,37.84
+match_059,2026-02-22,England,Sri Lanka,10,AU Rashid,249d60c9,England,BOWL,30.06,0.671,44.78
+match_059,2026-02-22,England,Sri Lanka,11,T Banton,25f7b7d6,England,BAT,27.72,0.76,36.5
+match_060,2026-02-14,New Zealand,South Africa,1,AK Markram,6a26221c,South Africa,BAT,38.26,0.857,44.62
+match_060,2026-02-14,New Zealand,South Africa,2,MJ Santner,e4a0deae,New Zealand,BOWL,37.67,0.788,47.79
+match_060,2026-02-14,New Zealand,South Africa,3,M Jansen,81c36ee9,South Africa,BOWL,37.33,0.772,48.35
+match_060,2026-02-14,New Zealand,South Africa,4,RD Rickelton,e66732f8,South Africa,WK,36.63,0.828,44.26
+match_060,2026-02-14,New Zealand,South Africa,5,K Rabada,e62dd25d,South Africa,BOWL,34.6,0.734,47.17
+match_060,2026-02-14,New Zealand,South Africa,6,TL Seifert,4663bd23,New Zealand,WK,32.76,0.785,41.73
+match_060,2026-02-14,New Zealand,South Africa,7,Q de Kock,372455c4,South Africa,WK,32.3,0.831,38.87
+match_060,2026-02-14,New Zealand,South Africa,8,LH Ferguson,2f9d0389,New Zealand,BOWL,31.61,0.703,44.94
+match_060,2026-02-14,New Zealand,South Africa,9,JDS Neesham,9219eff0,New Zealand,AR,31.49,0.726,43.36
+match_060,2026-02-14,New Zealand,South Africa,10,R Ravindra,ba5e1069,New Zealand,BAT,30.59,0.753,40.64
+match_060,2026-02-14,New Zealand,South Africa,11,D Brevis,844e79d1,South Africa,BAT,30.26,0.829,36.5
+match_061,2026-06-11,Sri Lanka,West Indies,1,JO Holder,0f721006,West Indies,AR,43.06,0.811,53.09
+match_061,2026-06-11,Sri Lanka,West Indies,2,R Shepherd,c5aef772,West Indies,BOWL,40.42,0.765,52.84
+match_061,2026-06-11,Sri Lanka,West Indies,3,PWH de Silva,a97c8ec2,Sri Lanka,BOWL,36.96,0.753,49.08
+match_061,2026-06-11,Sri Lanka,West Indies,4,RL Chase,3feda4fa,West Indies,AR,35.74,0.736,48.55
+match_061,2026-06-11,Sri Lanka,West Indies,5,SD Hope,1fc6ef83,West Indies,WK,32.76,0.865,37.87
+match_061,2026-06-11,Sri Lanka,West Indies,6,M Theekshana,f24c6701,Sri Lanka,BOWL,32.75,0.717,45.69
+match_061,2026-06-11,Sri Lanka,West Indies,7,AJ Hosein,4d7f517e,West Indies,BOWL,32.09,0.679,47.25
+match_061,2026-06-11,Sri Lanka,West Indies,8,G Motie,97bdec3d,West Indies,BOWL,30.79,0.663,46.45
+match_061,2026-06-11,Sri Lanka,West Indies,9,P Nissanka,8ee36b18,Sri Lanka,BAT,30.09,0.799,37.64
+match_061,2026-06-11,Sri Lanka,West Indies,10,SO Hetmyer,48a1d7b7,West Indies,BAT,29.83,0.818,36.48
+match_061,2026-06-11,Sri Lanka,West Indies,11,SE Rutherford,d014d5ac,West Indies,BAT,28.97,0.795,36.43
+match_062,2026-01-29,Pakistan,Australia,1,C Green,eaa76d3c,Australia,AR,39.0,0.793,49.2
+match_062,2026-01-29,Pakistan,Australia,2,MW Short,a90e53ec,Australia,AR,37.3,0.815,45.75
+match_062,2026-01-29,Pakistan,Australia,3,TM Head,12b610c2,Australia,BAT,36.65,0.846,43.32
+match_062,2026-01-29,Pakistan,Australia,4,Mohammad Nawaz,3086f7a4,Pakistan,AR,36.56,0.819,44.62
+match_062,2026-01-29,Pakistan,Australia,5,Saim Ayub,33609a8c,Pakistan,AR,35.18,0.772,45.56
+match_062,2026-01-29,Pakistan,Australia,6,A Zampa,14f96089,Australia,BOWL,33.15,0.727,45.58
+match_062,2026-01-29,Pakistan,Australia,7,Shaheen Shah Afridi,45a7e761,Pakistan,BOWL,32.3,0.698,46.27
+match_062,2026-01-29,Pakistan,Australia,8,Fakhar Zaman,1777c020,Pakistan,BAT,32.1,0.851,37.71
+match_062,2026-01-29,Pakistan,Australia,9,NT Ellis,9eb1455b,Australia,BOWL,29.7,0.655,45.31
+match_062,2026-01-29,Pakistan,Australia,10,JR Philippe,39086549,Australia,WK,28.46,0.778,36.59
+match_062,2026-01-29,Pakistan,Australia,11,MT Renshaw,218d4d78,Australia,BAT,28.36,0.744,38.14
+match_063,2026-03-22,South Africa,New Zealand,1,M Jansen,81c36ee9,South Africa,BOWL,35.8,0.762,46.97
+match_063,2026-03-22,South Africa,New Zealand,2,Q de Kock,372455c4,South Africa,WK,34.97,0.883,39.59
+match_063,2026-03-22,South Africa,New Zealand,3,JDS Neesham,9219eff0,New Zealand,AR,34.08,0.777,43.84
+match_063,2026-03-22,South Africa,New Zealand,4,GF Linde,e5437608,South Africa,AR,33.79,0.769,43.92
+match_063,2026-03-22,South Africa,New Zealand,5,LH Ferguson,2f9d0389,New Zealand,BOWL,32.48,0.732,44.39
+match_063,2026-03-22,South Africa,New Zealand,6,JA Duffy,dadbdb68,New Zealand,BOWL,32.1,0.719,44.66
+match_063,2026-03-22,South Africa,New Zealand,7,DP Conway,df5a6881,New Zealand,BAT,31.44,0.782,40.2
+match_063,2026-03-22,South Africa,New Zealand,8,G Coetzee,3204c99f,South Africa,BOWL,30.93,0.699,44.24
+match_063,2026-03-22,South Africa,New Zealand,9,TB Robinson,5d664346,New Zealand,BAT,30.36,0.795,38.2
+match_063,2026-03-22,South Africa,New Zealand,10,KA Jamieson,68c56d09,New Zealand,BOWL,27.66,0.647,42.75
+match_063,2026-03-22,South Africa,New Zealand,11,DA Miller,d67d5f00,South Africa,BAT,27.12,0.819,33.12
+match_064,2026-06-14,Sri Lanka,West Indies,1,JO Holder,0f721006,West Indies,AR,42.32,0.811,52.18
+match_064,2026-06-14,Sri Lanka,West Indies,2,R Shepherd,c5aef772,West Indies,BOWL,39.71,0.765,51.93
+match_064,2026-06-14,Sri Lanka,West Indies,3,PWH de Silva,a97c8ec2,Sri Lanka,BOWL,36.04,0.739,48.78
+match_064,2026-06-14,Sri Lanka,West Indies,4,RL Chase,3feda4fa,West Indies,AR,35.04,0.736,47.61
+match_064,2026-06-14,Sri Lanka,West Indies,5,SD Hope,1fc6ef83,West Indies,WK,32.31,0.865,37.35
+match_064,2026-06-14,Sri Lanka,West Indies,6,M Theekshana,f24c6701,Sri Lanka,BOWL,31.94,0.701,45.55
+match_064,2026-06-14,Sri Lanka,West Indies,7,AJ Hosein,4d7f517e,West Indies,BOWL,31.53,0.679,46.42
+match_064,2026-06-14,Sri Lanka,West Indies,8,G Motie,97bdec3d,West Indies,BOWL,30.24,0.663,45.62
+match_064,2026-06-14,Sri Lanka,West Indies,9,P Nissanka,8ee36b18,Sri Lanka,BAT,29.6,0.789,37.5
+match_064,2026-06-14,Sri Lanka,West Indies,10,SO Hetmyer,48a1d7b7,West Indies,BAT,29.47,0.818,36.03
+match_064,2026-06-14,Sri Lanka,West Indies,11,SE Rutherford,d014d5ac,West Indies,BAT,28.56,0.795,35.92
+match_065,2026-01-19,Royal Challengers Bengaluru,Gujarat Giants,1,A Gardner,bc969efb,Gujarat Giants,AR,53.83,0.886,60.73
+match_065,2026-01-19,Royal Challengers Bengaluru,Gujarat Giants,2,G Wareham,f0b4e47d,Gujarat Giants,AR,52.14,0.865,60.27
+match_065,2026-01-19,Royal Challengers Bengaluru,Gujarat Giants,3,SFM Devine,de69af96,Gujarat Giants,AR,48.18,0.871,55.29
+match_065,2026-01-19,Royal Challengers Bengaluru,Gujarat Giants,4,BL Mooney,52d1dbc8,Gujarat Giants,WK,45.59,0.956,47.69
+match_065,2026-01-19,Royal Challengers Bengaluru,Gujarat Giants,5,GM Harris,72166006,Royal Challengers Bengaluru,AR,44.15,0.916,48.21
+match_065,2026-01-19,Royal Challengers Bengaluru,Gujarat Giants,6,S Mandhana,5d2eda89,Royal Challengers Bengaluru,BAT,40.9,0.971,42.12
+match_065,2026-01-19,Royal Challengers Bengaluru,Gujarat Giants,7,A Reddy,eadc8924,Royal Challengers Bengaluru,BOWL,38.08,0.854,44.62
+match_065,2026-01-19,Royal Challengers Bengaluru,Gujarat Giants,8,RP Yadav,6c3aef71,Royal Challengers Bengaluru,BOWL,37.45,0.835,44.85
+match_065,2026-01-19,Royal Challengers Bengaluru,Gujarat Giants,9,LK Bell,38b4583c,Royal Challengers Bengaluru,BOWL,36.45,0.822,44.36
+match_065,2026-01-19,Royal Challengers Bengaluru,Gujarat Giants,10,DN Wyatt,a139c379,Gujarat Giants,BAT,31.76,0.899,35.34
+match_065,2026-01-19,Royal Challengers Bengaluru,Gujarat Giants,11,D Hemalatha,1d6ff329,Royal Challengers Bengaluru,BAT,23.47,0.855,27.44
+match_066,2026-01-17,UP Warriorz,Mumbai Indians,1,HK Matthews,d32cf49a,Mumbai Indians,AR,62.22,0.906,68.66
+match_066,2026-01-17,UP Warriorz,Mumbai Indians,2,AC Kerr,7673c908,Mumbai Indians,AR,59.93,0.926,64.74
+match_066,2026-01-17,UP Warriorz,Mumbai Indians,3,NR Sciver-Brunt,f3a18a0c,Mumbai Indians,AR,45.15,0.889,50.78
+match_066,2026-01-17,UP Warriorz,Mumbai Indians,4,DB Sharma,201fef33,UP Warriorz,AR,44.88,0.847,52.98
+match_066,2026-01-17,UP Warriorz,Mumbai Indians,5,S Ismail,108c4c09,Mumbai Indians,WK,43.36,0.897,48.33
+match_066,2026-01-17,UP Warriorz,Mumbai Indians,6,S Ecclestone,cdb82f1c,UP Warriorz,BOWL,41.86,0.76,55.05
+match_066,2026-01-17,UP Warriorz,Mumbai Indians,7,MM Lanning,27e003ce,UP Warriorz,BAT,35.29,0.852,41.42
+match_066,2026-01-17,UP Warriorz,Mumbai Indians,8,H Kaur,53cd8da6,Mumbai Indians,BAT,31.87,0.951,33.51
+match_066,2026-01-17,UP Warriorz,Mumbai Indians,9,S Pandey,5463cb7a,UP Warriorz,BOWL,31.06,0.672,46.26
+match_066,2026-01-17,UP Warriorz,Mumbai Indians,10,P Litchfield,4e6ef14f,UP Warriorz,BAT,29.82,0.796,37.47
+match_066,2026-01-17,UP Warriorz,Mumbai Indians,11,K Goud,4d622fee,UP Warriorz,BOWL,24.18,0.659,36.69
+match_067,2026-01-12,UP Warriorz,Royal Challengers Bengaluru,1,DB Sharma,201fef33,UP Warriorz,AR,45.3,0.849,53.33
+match_067,2026-01-12,UP Warriorz,Royal Challengers Bengaluru,2,GM Harris,72166006,Royal Challengers Bengaluru,AR,42.68,0.917,46.56
+match_067,2026-01-12,UP Warriorz,Royal Challengers Bengaluru,3,S Ecclestone,cdb82f1c,UP Warriorz,BOWL,42.51,0.761,55.85
+match_067,2026-01-12,UP Warriorz,Royal Challengers Bengaluru,4,G Voll,5c30d455,Royal Challengers Bengaluru,AR,41.37,0.864,47.87
+match_067,2026-01-12,UP Warriorz,Royal Challengers Bengaluru,5,N de Klerk,ea544967,Royal Challengers Bengaluru,AR,40.15,0.847,47.37
+match_067,2026-01-12,UP Warriorz,Royal Challengers Bengaluru,6,S Mandhana,5d2eda89,Royal Challengers Bengaluru,BAT,39.48,0.972,40.64
+match_067,2026-01-12,UP Warriorz,Royal Challengers Bengaluru,7,A Reddy,eadc8924,Royal Challengers Bengaluru,BOWL,36.56,0.856,42.71
+match_067,2026-01-12,UP Warriorz,Royal Challengers Bengaluru,8,RP Yadav,6c3aef71,Royal Challengers Bengaluru,BOWL,35.92,0.836,42.97
+match_067,2026-01-12,UP Warriorz,Royal Challengers Bengaluru,9,MM Lanning,27e003ce,UP Warriorz,BAT,34.98,0.854,40.97
+match_067,2026-01-12,UP Warriorz,Royal Challengers Bengaluru,10,RM Ghosh,721e0199,Royal Challengers Bengaluru,WK,31.13,0.982,31.7
+match_067,2026-01-12,UP Warriorz,Royal Challengers Bengaluru,11,P Litchfield,4e6ef14f,UP Warriorz,BAT,29.39,0.798,36.82
+match_068,2026-01-13,Gujarat Giants,Mumbai Indians,1,HK Matthews,d32cf49a,Mumbai Indians,AR,63.52,0.908,69.97
+match_068,2026-01-13,Gujarat Giants,Mumbai Indians,2,AC Kerr,7673c908,Mumbai Indians,AR,61.2,0.927,66.0
+match_068,2026-01-13,Gujarat Giants,Mumbai Indians,3,A Gardner,bc969efb,Gujarat Giants,AR,53.96,0.891,60.55
+match_068,2026-01-13,Gujarat Giants,Mumbai Indians,4,G Wareham,f0b4e47d,Gujarat Giants,AR,51.95,0.865,60.03
+match_068,2026-01-13,Gujarat Giants,Mumbai Indians,5,BL Mooney,52d1dbc8,Gujarat Giants,WK,46.19,0.957,48.25
+match_068,2026-01-13,Gujarat Giants,Mumbai Indians,6,Renuka Singh,7298db76,Gujarat Giants,BOWL,35.58,0.855,41.59
+match_068,2026-01-13,Gujarat Giants,Mumbai Indians,7,H Kaur,53cd8da6,Mumbai Indians,BAT,33.1,0.952,34.76
+match_068,2026-01-13,Gujarat Giants,Mumbai Indians,8,DN Wyatt,a139c379,Gujarat Giants,BAT,32.78,0.901,36.38
+match_068,2026-01-13,Gujarat Giants,Mumbai Indians,9,TP Kanwar,443c122f,Gujarat Giants,BOWL,29.57,0.767,38.56
+match_068,2026-01-13,Gujarat Giants,Mumbai Indians,10,S Ishaque,f2c1f0e5,Mumbai Indians,BOWL,24.59,0.693,35.46
+match_068,2026-01-13,Gujarat Giants,Mumbai Indians,11,S Sajana,a4dcac97,Mumbai Indians,BAT,21.88,0.919,23.81
+match_069,2026-01-16,Royal Challengers Bengaluru,Gujarat Giants,1,A Gardner,bc969efb,Gujarat Giants,AR,53.92,0.888,60.75
+match_069,2026-01-16,Royal Challengers Bengaluru,Gujarat Giants,2,G Wareham,f0b4e47d,Gujarat Giants,AR,52.23,0.866,60.29
+match_069,2026-01-16,Royal Challengers Bengaluru,Gujarat Giants,3,SFM Devine,de69af96,Gujarat Giants,AR,48.26,0.872,55.32
+match_069,2026-01-16,Royal Challengers Bengaluru,Gujarat Giants,4,BL Mooney,52d1dbc8,Gujarat Giants,WK,45.64,0.957,47.71
+match_069,2026-01-16,Royal Challengers Bengaluru,Gujarat Giants,5,GM Harris,72166006,Royal Challengers Bengaluru,AR,44.22,0.916,48.26
+match_069,2026-01-16,Royal Challengers Bengaluru,Gujarat Giants,6,S Mandhana,5d2eda89,Royal Challengers Bengaluru,BAT,40.95,0.971,42.16
+match_069,2026-01-16,Royal Challengers Bengaluru,Gujarat Giants,7,A Reddy,eadc8924,Royal Challengers Bengaluru,BOWL,38.16,0.855,44.65
+match_069,2026-01-16,Royal Challengers Bengaluru,Gujarat Giants,8,RP Yadav,6c3aef71,Royal Challengers Bengaluru,BOWL,37.51,0.836,44.88
+match_069,2026-01-16,Royal Challengers Bengaluru,Gujarat Giants,9,LK Bell,38b4583c,Royal Challengers Bengaluru,BOWL,36.52,0.823,44.39
+match_069,2026-01-16,Royal Challengers Bengaluru,Gujarat Giants,10,DN Wyatt,a139c379,Gujarat Giants,BAT,31.78,0.9,35.33
+match_069,2026-01-16,Royal Challengers Bengaluru,Gujarat Giants,11,D Hemalatha,1d6ff329,Royal Challengers Bengaluru,BAT,23.42,0.855,27.4
+match_070,2026-01-29,UP Warriorz,Royal Challengers Bengaluru,1,DB Sharma,201fef33,UP Warriorz,AR,44.9,0.843,53.23
+match_070,2026-01-29,UP Warriorz,Royal Challengers Bengaluru,2,GM Harris,72166006,Royal Challengers Bengaluru,AR,42.39,0.914,46.39
+match_070,2026-01-29,UP Warriorz,Royal Challengers Bengaluru,3,S Ecclestone,cdb82f1c,UP Warriorz,BOWL,42.21,0.758,55.68
+match_070,2026-01-29,UP Warriorz,Royal Challengers Bengaluru,4,G Voll,5c30d455,Royal Challengers Bengaluru,AR,40.9,0.857,47.72
+match_070,2026-01-29,UP Warriorz,Royal Challengers Bengaluru,5,N de Klerk,ea544967,Royal Challengers Bengaluru,AR,39.93,0.845,47.27
+match_070,2026-01-29,UP Warriorz,Royal Challengers Bengaluru,6,S Mandhana,5d2eda89,Royal Challengers Bengaluru,BAT,39.31,0.97,40.54
+match_070,2026-01-29,UP Warriorz,Royal Challengers Bengaluru,7,A Reddy,eadc8924,Royal Challengers Bengaluru,BOWL,36.24,0.849,42.66
+match_070,2026-01-29,UP Warriorz,Royal Challengers Bengaluru,8,RP Yadav,6c3aef71,Royal Challengers Bengaluru,BOWL,35.72,0.832,42.93
+match_070,2026-01-29,UP Warriorz,Royal Challengers Bengaluru,9,MM Lanning,27e003ce,UP Warriorz,BAT,34.77,0.849,40.95
+match_070,2026-01-29,UP Warriorz,Royal Challengers Bengaluru,10,RM Ghosh,721e0199,Royal Challengers Bengaluru,WK,31.16,0.981,31.78
+match_070,2026-01-29,UP Warriorz,Royal Challengers Bengaluru,11,P Litchfield,4e6ef14f,UP Warriorz,BAT,29.17,0.792,36.83
+match_071,2026-01-22,Gujarat Giants,UP Warriorz,1,A Gardner,bc969efb,Gujarat Giants,AR,54.04,0.887,60.91
+match_071,2026-01-22,Gujarat Giants,UP Warriorz,2,G Wareham,f0b4e47d,Gujarat Giants,AR,52.02,0.862,60.38
+match_071,2026-01-22,Gujarat Giants,UP Warriorz,3,SFM Devine,de69af96,Gujarat Giants,AR,48.34,0.872,55.45
+match_071,2026-01-22,Gujarat Giants,UP Warriorz,4,BL Mooney,52d1dbc8,Gujarat Giants,WK,45.87,0.956,47.97
+match_071,2026-01-22,Gujarat Giants,UP Warriorz,5,DB Sharma,201fef33,UP Warriorz,AR,45.63,0.845,54.02
+match_071,2026-01-22,Gujarat Giants,UP Warriorz,6,S Ecclestone,cdb82f1c,UP Warriorz,BOWL,42.59,0.758,56.18
+match_071,2026-01-22,Gujarat Giants,UP Warriorz,7,MM Lanning,27e003ce,UP Warriorz,BAT,35.77,0.85,42.06
+match_071,2026-01-22,Gujarat Giants,UP Warriorz,8,Renuka Singh,7298db76,Gujarat Giants,BOWL,34.84,0.852,40.89
+match_071,2026-01-22,Gujarat Giants,UP Warriorz,9,DN Wyatt,a139c379,Gujarat Giants,BAT,32.14,0.899,35.76
+match_071,2026-01-22,Gujarat Giants,UP Warriorz,10,S Pandey,5463cb7a,UP Warriorz,BOWL,31.6,0.67,47.16
+match_071,2026-01-22,Gujarat Giants,UP Warriorz,11,P Litchfield,4e6ef14f,UP Warriorz,BAT,30.15,0.794,37.98
+match_072,2026-01-15,Mumbai Indians,UP Warriorz,1,HK Matthews,d32cf49a,Mumbai Indians,AR,62.83,0.908,69.23
+match_072,2026-01-15,Mumbai Indians,UP Warriorz,2,AC Kerr,7673c908,Mumbai Indians,AR,60.48,0.927,65.24
+match_072,2026-01-15,Mumbai Indians,UP Warriorz,3,NR Sciver-Brunt,f3a18a0c,Mumbai Indians,AR,45.53,0.89,51.13
+match_072,2026-01-15,Mumbai Indians,UP Warriorz,4,DB Sharma,201fef33,UP Warriorz,AR,44.58,0.847,52.61
+match_072,2026-01-15,Mumbai Indians,UP Warriorz,5,S Ismail,108c4c09,Mumbai Indians,WK,43.7,0.899,48.63
+match_072,2026-01-15,Mumbai Indians,UP Warriorz,6,S Ecclestone,cdb82f1c,UP Warriorz,BOWL,41.55,0.76,54.7
+match_072,2026-01-15,Mumbai Indians,UP Warriorz,7,MM Lanning,27e003ce,UP Warriorz,BAT,35.07,0.852,41.15
+match_072,2026-01-15,Mumbai Indians,UP Warriorz,8,H Kaur,53cd8da6,Mumbai Indians,BAT,32.1,0.952,33.71
+match_072,2026-01-15,Mumbai Indians,UP Warriorz,9,S Pandey,5463cb7a,UP Warriorz,BOWL,30.87,0.671,46.0
+match_072,2026-01-15,Mumbai Indians,UP Warriorz,10,P Litchfield,4e6ef14f,UP Warriorz,BAT,29.67,0.796,37.26
+match_072,2026-01-15,Mumbai Indians,UP Warriorz,11,K Goud,4d622fee,UP Warriorz,BOWL,23.98,0.659,36.41
+match_073,2026-01-26,Mumbai Indians,Royal Challengers Bengaluru,1,HK Matthews,d32cf49a,Mumbai Indians,AR,62.67,0.904,69.29
+match_073,2026-01-26,Mumbai Indians,Royal Challengers Bengaluru,2,AC Kerr,7673c908,Mumbai Indians,AR,60.28,0.924,65.26
+match_073,2026-01-26,Mumbai Indians,Royal Challengers Bengaluru,3,NR Sciver-Brunt,f3a18a0c,Mumbai Indians,AR,45.34,0.887,51.13
+match_073,2026-01-26,Mumbai Indians,Royal Challengers Bengaluru,4,S Ismail,108c4c09,Mumbai Indians,WK,43.46,0.894,48.59
+match_073,2026-01-26,Mumbai Indians,Royal Challengers Bengaluru,5,GM Harris,72166006,Royal Challengers Bengaluru,AR,42.63,0.914,46.63
+match_073,2026-01-26,Mumbai Indians,Royal Challengers Bengaluru,6,S Mandhana,5d2eda89,Royal Challengers Bengaluru,BAT,39.64,0.97,40.87
+match_073,2026-01-26,Mumbai Indians,Royal Challengers Bengaluru,7,A Reddy,eadc8924,Royal Challengers Bengaluru,BOWL,36.72,0.85,43.19
+match_073,2026-01-26,Mumbai Indians,Royal Challengers Bengaluru,8,RP Yadav,6c3aef71,Royal Challengers Bengaluru,BOWL,36.16,0.832,43.44
+match_073,2026-01-26,Mumbai Indians,Royal Challengers Bengaluru,9,LK Bell,38b4583c,Royal Challengers Bengaluru,BOWL,35.24,0.818,43.05
+match_073,2026-01-26,Mumbai Indians,Royal Challengers Bengaluru,10,H Kaur,53cd8da6,Mumbai Indians,BAT,31.88,0.95,33.54
+match_073,2026-01-26,Mumbai Indians,Royal Challengers Bengaluru,11,D Hemalatha,1d6ff329,Royal Challengers Bengaluru,BAT,23.36,0.857,27.27
+match_074,2026-01-30,Gujarat Giants,Mumbai Indians,1,HK Matthews,d32cf49a,Mumbai Indians,AR,62.78,0.903,69.52
+match_074,2026-01-30,Gujarat Giants,Mumbai Indians,2,AC Kerr,7673c908,Mumbai Indians,AR,60.52,0.922,65.61
+match_074,2026-01-30,Gujarat Giants,Mumbai Indians,3,A Gardner,bc969efb,Gujarat Giants,AR,53.37,0.885,60.31
+match_074,2026-01-30,Gujarat Giants,Mumbai Indians,4,G Wareham,f0b4e47d,Gujarat Giants,AR,51.4,0.86,59.8
+match_074,2026-01-30,Gujarat Giants,Mumbai Indians,5,BL Mooney,52d1dbc8,Gujarat Giants,WK,45.88,0.955,48.02
+match_074,2026-01-30,Gujarat Giants,Mumbai Indians,6,Renuka Singh,7298db76,Gujarat Giants,BOWL,35.33,0.85,41.58
+match_074,2026-01-30,Gujarat Giants,Mumbai Indians,7,H Kaur,53cd8da6,Mumbai Indians,BAT,33.02,0.949,34.79
+match_074,2026-01-30,Gujarat Giants,Mumbai Indians,8,DN Wyatt,a139c379,Gujarat Giants,BAT,32.64,0.897,36.38
+match_074,2026-01-30,Gujarat Giants,Mumbai Indians,9,TP Kanwar,443c122f,Gujarat Giants,BOWL,29.53,0.765,38.58
+match_074,2026-01-30,Gujarat Giants,Mumbai Indians,10,S Ishaque,f2c1f0e5,Mumbai Indians,BOWL,25.05,0.702,35.68
+match_074,2026-01-30,Gujarat Giants,Mumbai Indians,11,S Sajana,a4dcac97,Mumbai Indians,BAT,22.16,0.919,24.11
+match_075,2026-04-12,Lucknow Super Giants,Gujarat Titans,1,Shubman Gill,b4b99816,Gujarat Titans,BAT,44.08,0.975,45.2
+match_075,2026-04-12,Lucknow Super Giants,Gujarat Titans,2,B Sai Sudharsan,d5130a30,Gujarat Titans,BAT,41.51,0.959,43.29
+match_075,2026-04-12,Lucknow Super Giants,Gujarat Titans,3,Mohammed Siraj,2f49c897,Gujarat Titans,BOWL,40.52,0.93,43.57
+match_075,2026-04-12,Lucknow Super Giants,Gujarat Titans,4,AK Markram,6a26221c,Lucknow Super Giants,BAT,40.4,0.88,45.92
+match_075,2026-04-12,Lucknow Super Giants,Gujarat Titans,5,MR Marsh,3d8feaf8,Lucknow Super Giants,BAT,40.11,0.873,45.93
+match_075,2026-04-12,Lucknow Super Giants,Gujarat Titans,6,JC Buttler,99b75528,Gujarat Titans,WK,39.98,0.888,45.04
+match_075,2026-04-12,Lucknow Super Giants,Gujarat Titans,7,Washington Sundar,f19ccfad,Gujarat Titans,BOWL,38.4,0.885,43.4
+match_075,2026-04-12,Lucknow Super Giants,Gujarat Titans,8,JO Holder,0f721006,Gujarat Titans,AR,37.11,0.836,44.4
+match_075,2026-04-12,Lucknow Super Giants,Gujarat Titans,9,Rashid Khan,5f547c8b,Gujarat Titans,BOWL,36.73,0.842,43.6
+match_075,2026-04-12,Lucknow Super Giants,Gujarat Titans,10,M Prasidh Krishna,85e0cf10,Gujarat Titans,BOWL,36.65,0.887,41.33
+match_075,2026-04-12,Lucknow Super Giants,Gujarat Titans,11,RR Pant,919a3be2,Lucknow Super Giants,WK,36.35,0.935,38.89
+match_076,2026-03-31,Gujarat Titans,Punjab Kings,1,Shubman Gill,b4b99816,Gujarat Titans,BAT,46.69,0.985,47.42
+match_076,2026-03-31,Gujarat Titans,Punjab Kings,2,Arshdeep Singh,244048f6,Punjab Kings,BOWL,46.44,0.958,48.49
+match_076,2026-03-31,Gujarat Titans,Punjab Kings,3,JC Buttler,99b75528,Gujarat Titans,WK,46.09,0.942,48.93
+match_076,2026-03-31,Gujarat Titans,Punjab Kings,4,B Sai Sudharsan,d5130a30,Gujarat Titans,BAT,44.02,0.971,45.35
+match_076,2026-03-31,Gujarat Titans,Punjab Kings,5,Mohammed Siraj,2f49c897,Gujarat Titans,BOWL,42.78,0.95,45.05
+match_076,2026-03-31,Gujarat Titans,Punjab Kings,6,Washington Sundar,f19ccfad,Gujarat Titans,BOWL,42.19,0.92,45.84
+match_076,2026-03-31,Gujarat Titans,Punjab Kings,7,MP Stoinis,d9273ee7,Punjab Kings,AR,40.91,0.846,48.34
+match_076,2026-03-31,Gujarat Titans,Punjab Kings,8,Rashid Khan,5f547c8b,Gujarat Titans,BOWL,39.89,0.87,45.86
+match_076,2026-03-31,Gujarat Titans,Punjab Kings,9,M Prasidh Krishna,85e0cf10,Gujarat Titans,BOWL,39.46,0.916,43.1
+match_076,2026-03-31,Gujarat Titans,Punjab Kings,10,M Jansen,81c36ee9,Punjab Kings,BOWL,38.13,0.79,48.27
+match_076,2026-03-31,Gujarat Titans,Punjab Kings,11,SS Iyer,85ec8e33,Punjab Kings,BAT,36.9,0.974,37.87
+match_077,2026-05-28,Netherlands,Scotland,1,KE Bryce,f13d3eba,Scotland,AR,54.18,0.886,61.17
+match_077,2026-05-28,Netherlands,Scotland,2,IJR Zwilling,47b32a5a,Netherlands,AR,47.6,0.878,54.2
+match_077,2026-05-28,Netherlands,Scotland,3,R Rijke,42e4b276,Netherlands,BAT,36.82,0.885,41.6
+match_077,2026-05-28,Netherlands,Scotland,4,DEM Carter,c3394c16,Scotland,AR,36.42,0.889,40.98
+match_077,2026-05-28,Netherlands,Scotland,5,C de Lange,c6a019f5,Netherlands,BOWL,35.53,0.794,44.72
+match_077,2026-05-28,Netherlands,Scotland,6,KL Gordon,00823a96,Scotland,BOWL,33.64,0.707,47.59
+match_077,2026-05-28,Netherlands,Scotland,7,S Siegers,9a58f2c8,Netherlands,BOWL,32.44,0.778,41.68
+match_077,2026-05-28,Netherlands,Scotland,8,R Slater,8a452195,Scotland,BOWL,30.45,0.745,40.88
+match_077,2026-05-28,Netherlands,Scotland,9,HDJ Siegers,6d48df01,Netherlands,WK,29.61,0.749,39.55
+match_077,2026-05-28,Netherlands,Scotland,10,SL Kalis,2b150c6b,Netherlands,BAT,28.27,0.876,32.26
+match_077,2026-05-28,Netherlands,Scotland,11,P Molkenboer,fa9db243,Netherlands,BAT,22.2,0.863,25.71
+match_078,2026-05-29,West Indies,Pakistan,1,HK Matthews,d32cf49a,West Indies,AR,59.33,0.819,72.43
+match_078,2026-05-29,West Indies,Pakistan,2,CA Henry,75820733,West Indies,AR,48.08,0.894,53.77
+match_078,2026-05-29,West Indies,Pakistan,3,DJS Dottin,53bee17f,West Indies,AR,47.33,0.846,55.94
+match_078,2026-05-29,West Indies,Pakistan,4,Fatima Sana,ea9c54de,Pakistan,AR,40.2,0.879,45.73
+match_078,2026-05-29,West Indies,Pakistan,5,Sadia Iqbal,53bb50f0,Pakistan,BOWL,32.31,0.808,39.99
+match_078,2026-05-29,West Indies,Pakistan,6,Nashra Sandhu,c981d3c2,Pakistan,BOWL,31.98,0.808,39.58
+match_078,2026-05-29,West Indies,Pakistan,7,Muneeba Ali,86fdf668,Pakistan,WK,29.87,0.905,33.01
+match_078,2026-05-29,West Indies,Pakistan,8,ASS Fletcher,42d9dd09,West Indies,BOWL,29.84,0.674,44.27
+match_078,2026-05-29,West Indies,Pakistan,9,SR Taylor,92cf79a8,West Indies,BAT,25.05,0.771,32.49
+match_078,2026-05-29,West Indies,Pakistan,10,Aliya Riaz,2904b4b6,Pakistan,BAT,23.01,0.847,27.18
+match_078,2026-05-29,West Indies,Pakistan,11,Gull Feroza,9ff1e91e,Pakistan,BAT,21.62,0.796,27.15
+match_079,2026-06-26,Luxembourg,Czech Republic,1,T Kolcunova,50102dea,Czech Republic,BOWL,50.26,0.841,59.75
+match_079,2026-06-26,Luxembourg,Czech Republic,2,E Kuncova,7f2f40fa,Czech Republic,AR,43.05,0.837,51.45
+match_079,2026-06-26,Luxembourg,Czech Republic,3,Jagrat Dubey,a4051019,Luxembourg,AR,42.66,0.857,49.8
+match_079,2026-06-26,Luxembourg,Czech Republic,4,Aarti Priya,ec11ad0b,Luxembourg,AR,41.17,0.848,48.55
+match_079,2026-06-26,Luxembourg,Czech Republic,5,J Kominkova,d5595998,Czech Republic,AR,36.01,0.825,43.63
+match_079,2026-06-26,Luxembourg,Czech Republic,6,SH Lawlor,29342bbe,Luxembourg,BAT,27.52,0.854,32.22
+match_079,2026-06-26,Luxembourg,Czech Republic,7,E Konasova,d5867f82,Czech Republic,BOWL,27.03,0.676,40.0
+match_079,2026-06-26,Luxembourg,Czech Republic,8,K Tesarikova,42a7d394,Czech Republic,BAT,24.01,0.796,30.16
+match_079,2026-06-26,Luxembourg,Czech Republic,9,P Neighbour,f30b0e54,Luxembourg,BOWL,23.36,0.649,36.0
+match_079,2026-06-26,Luxembourg,Czech Republic,10,J Souckova,9a9c0e81,Czech Republic,BAT,20.45,0.761,26.88
+match_079,2026-06-26,Luxembourg,Czech Republic,11,PN Agarwal,f34a3a74,Luxembourg,WK,16.81,0.851,19.74
+match_080,2026-04-29,Mumbai Indians,Sunrisers Hyderabad,1,HH Pandya,dbe50b21,Mumbai Indians,AR,51.72,0.966,53.56
+match_080,2026-04-29,Mumbai Indians,Sunrisers Hyderabad,2,Abhishek Sharma,f29185a1,Sunrisers Hyderabad,BAT,48.75,0.982,49.64
+match_080,2026-04-29,Mumbai Indians,Sunrisers Hyderabad,3,JJ Bumrah,462411b3,Mumbai Indians,BOWL,48.46,0.958,50.56
+match_080,2026-04-29,Mumbai Indians,Sunrisers Hyderabad,4,Tilak Varma,b0482a1d,Mumbai Indians,BAT,45.71,0.978,46.76
+match_080,2026-04-29,Mumbai Indians,Sunrisers Hyderabad,5,SA Yadav,271f83cd,Mumbai Indians,BAT,44.96,0.979,45.91
+match_080,2026-04-29,Mumbai Indians,Sunrisers Hyderabad,6,PJ Cummins,ded9240e,Sunrisers Hyderabad,BOWL,42.83,0.927,46.22
+match_080,2026-04-29,Mumbai Indians,Sunrisers Hyderabad,7,RD Rickelton,e66732f8,Mumbai Indians,WK,42.39,0.942,45.01
+match_080,2026-04-29,Mumbai Indians,Sunrisers Hyderabad,8,WG Jacks,9caf69a1,Mumbai Indians,AR,40.31,0.885,45.53
+match_080,2026-04-29,Mumbai Indians,Sunrisers Hyderabad,9,Ishan Kishan,752f7486,Sunrisers Hyderabad,WK,37.74,0.965,39.12
+match_080,2026-04-29,Mumbai Indians,Sunrisers Hyderabad,10,TM Head,12b610c2,Sunrisers Hyderabad,BAT,37.52,0.915,41.02
+match_080,2026-04-29,Mumbai Indians,Sunrisers Hyderabad,11,HV Patel,f986ca1a,Sunrisers Hyderabad,BOWL,34.74,0.86,40.39
+match_081,2026-05-14,Punjab Kings,Mumbai Indians,1,JJ Bumrah,462411b3,Mumbai Indians,BOWL,48.03,0.954,50.36
+match_081,2026-05-14,Punjab Kings,Mumbai Indians,2,Tilak Varma,b0482a1d,Mumbai Indians,BAT,45.18,0.963,46.9
+match_081,2026-05-14,Punjab Kings,Mumbai Indians,3,Arshdeep Singh,244048f6,Punjab Kings,BOWL,43.86,0.905,48.46
+match_081,2026-05-14,Punjab Kings,Mumbai Indians,4,RD Rickelton,e66732f8,Mumbai Indians,WK,43.22,0.905,47.73
+match_081,2026-05-14,Punjab Kings,Mumbai Indians,5,RG Sharma,740742ef,Mumbai Indians,BAT,41.78,0.957,43.63
+match_081,2026-05-14,Punjab Kings,Mumbai Indians,6,WG Jacks,9caf69a1,Mumbai Indians,AR,39.74,0.856,46.41
+match_081,2026-05-14,Punjab Kings,Mumbai Indians,7,MP Stoinis,d9273ee7,Punjab Kings,AR,37.97,0.793,47.91
+match_081,2026-05-14,Punjab Kings,Mumbai Indians,8,DL Chahar,23eeb873,Mumbai Indians,BOWL,35.29,0.812,43.43
+match_081,2026-05-14,Punjab Kings,Mumbai Indians,9,SS Iyer,85ec8e33,Punjab Kings,BAT,35.0,0.955,36.64
+match_081,2026-05-14,Punjab Kings,Mumbai Indians,10,SN Thakur,1abb78f8,Mumbai Indians,BOWL,34.63,0.803,43.12
+match_081,2026-05-14,Punjab Kings,Mumbai Indians,11,M Jansen,81c36ee9,Punjab Kings,BOWL,34.48,0.707,48.76
+match_082,2026-02-16,Australia,Sri Lanka,1,C Green,eaa76d3c,Australia,AR,38.9,0.809,48.07
+match_082,2026-02-16,Australia,Sri Lanka,2,MP Stoinis,d9273ee7,Australia,AR,38.64,0.818,47.22
+match_082,2026-02-16,Australia,Sri Lanka,3,MR Marsh,3d8feaf8,Australia,BAT,37.98,0.852,44.59
+match_082,2026-02-16,Australia,Sri Lanka,4,TM Head,12b610c2,Australia,BAT,35.33,0.855,41.32
+match_082,2026-02-16,Australia,Sri Lanka,5,GJ Maxwell,b681e71e,Australia,AR,35.18,0.782,44.99
+match_082,2026-02-16,Australia,Sri Lanka,6,JP Inglis,989889ff,Australia,WK,33.5,0.88,38.05
+match_082,2026-02-16,Australia,Sri Lanka,7,M Theekshana,f24c6701,Sri Lanka,BOWL,32.69,0.745,43.89
+match_082,2026-02-16,Australia,Sri Lanka,8,P Nissanka,8ee36b18,Sri Lanka,BAT,31.67,0.826,38.32
+match_082,2026-02-16,Australia,Sri Lanka,9,A Zampa,14f96089,Australia,BOWL,31.1,0.694,44.85
+match_082,2026-02-16,Australia,Sri Lanka,10,M Pathirana,64839cb3,Sri Lanka,BOWL,30.96,0.706,43.82
+match_082,2026-02-16,Australia,Sri Lanka,11,TH David,f1f99156,Australia,BAT,30.62,0.851,35.98
+match_083,2026-03-05,India,England,1,SM Curran,e94915e6,England,AR,41.88,0.853,49.11
+match_083,2026-03-05,India,England,2,JC Buttler,99b75528,England,WK,39.3,0.907,43.35
+match_083,2026-03-05,India,England,3,HH Pandya,dbe50b21,India,AR,38.57,0.831,46.41
+match_083,2026-03-05,India,England,4,Abhishek Sharma,f29185a1,India,BAT,36.26,0.846,42.87
+match_083,2026-03-05,India,England,5,AR Patel,2e171977,India,AR,34.48,0.775,44.46
+match_083,2026-03-05,India,England,6,PD Salt,3d284ca3,England,BAT,33.28,0.82,40.59
+match_083,2026-03-05,India,England,7,WG Jacks,9caf69a1,England,AR,33.24,0.784,42.42
+match_083,2026-03-05,India,England,8,Tilak Varma,b0482a1d,India,BAT,31.17,0.818,38.13
+match_083,2026-03-05,India,England,9,JJ Bumrah,462411b3,India,BOWL,28.94,0.679,42.61
+match_083,2026-03-05,India,England,10,L Wood,65b6943c,England,BOWL,28.92,0.684,42.27
+match_083,2026-03-05,India,England,11,Arshdeep Singh,244048f6,India,BOWL,27.78,0.669,41.52
+match_084,2026-06-10,Indonesia,Oman,1,J Gunasekar,e50c13a5,Oman,AR,61.09,0.924,66.14
+match_084,2026-06-10,Indonesia,Oman,2,NLKWR Dewi,d04fc4a4,Indonesia,AR,59.69,0.896,66.59
+match_084,2026-06-10,Indonesia,Oman,3,NK Ariani,382377a4,Indonesia,BOWL,48.6,0.825,58.87
+match_084,2026-06-10,Indonesia,Oman,4,PE Mendonca,70bab30b,Oman,AR,47.39,0.887,53.43
+match_084,2026-06-10,Indonesia,Oman,5,SAN Maypriani,ad135bde,Indonesia,BOWL,42.38,0.801,52.93
+match_084,2026-06-10,Indonesia,Oman,6,NMP Suwandewi,52b57a65,Indonesia,BOWL,41.68,0.782,53.28
+match_084,2026-06-10,Indonesia,Oman,7,DAL Paramitha,84f831c3,Indonesia,BOWL,40.58,0.801,50.65
+match_084,2026-06-10,Indonesia,Oman,8,M Corazon,0baa36e0,Indonesia,WK,32.48,0.874,37.15
+match_084,2026-06-10,Indonesia,Oman,9,D Wulandari,8c0d904e,Indonesia,BAT,24.53,0.829,29.59
+match_084,2026-06-10,Indonesia,Oman,10,RD Pangestuti,63fc4b92,Indonesia,BAT,19.96,0.716,27.89
+match_084,2026-06-10,Indonesia,Oman,11,Fiza,c7c60bc5,Oman,BAT,18.97,0.816,23.26
+match_085,2026-01-18,Netherlands,Zimbabwe,1,IJR Zwilling,47b32a5a,Netherlands,AR,50.76,0.935,54.29
+match_085,2026-01-18,Netherlands,Zimbabwe,2,C de Lange,c6a019f5,Netherlands,BOWL,38.54,0.867,44.46
+match_085,2026-01-18,Netherlands,Zimbabwe,3,R Rijke,42e4b276,Netherlands,BAT,38.53,0.933,41.32
+match_085,2026-01-18,Netherlands,Zimbabwe,4,K Ndlovu,8d25271a,Zimbabwe,AR,35.84,0.931,38.51
+match_085,2026-01-18,Netherlands,Zimbabwe,5,J Nkomo,36dfa62e,Zimbabwe,AR,35.1,0.829,42.34
+match_085,2026-01-18,Netherlands,Zimbabwe,6,S Siegers,9a58f2c8,Netherlands,BOWL,34.62,0.843,41.07
+match_085,2026-01-18,Netherlands,Zimbabwe,7,L Tshuma,f281dd00,Zimbabwe,AR,31.56,0.834,37.85
+match_085,2026-01-18,Netherlands,Zimbabwe,8,SL Kalis,2b150c6b,Netherlands,BAT,30.89,0.924,33.45
+match_085,2026-01-18,Netherlands,Zimbabwe,9,HDJ Siegers,6d48df01,Netherlands,WK,28.9,0.74,39.06
+match_085,2026-01-18,Netherlands,Zimbabwe,10,L Mabhero,37f9eb59,Zimbabwe,BOWL,26.08,0.709,36.77
+match_085,2026-01-18,Netherlands,Zimbabwe,11,P Molkenboer,fa9db243,Netherlands,BAT,24.15,0.893,27.04
+match_086,2026-10-01,Pakistan,Bangladesh,1,Saim Ayub,33609a8c,Pakistan,AR,42.43,0.872,48.67
+match_086,2026-10-01,Pakistan,Bangladesh,2,Mahedi Hasan,9dad0f2e,Bangladesh,AR,38.8,0.817,47.51
+match_086,2026-10-01,Pakistan,Bangladesh,3,Maaz Sadaqat,6d9560f3,Pakistan,AR,38.34,0.853,44.97
+match_086,2026-10-01,Pakistan,Bangladesh,4,Mustafizur Rahman,0a8fce53,Bangladesh,BOWL,38.3,0.76,50.37
+match_086,2026-10-01,Pakistan,Bangladesh,5,Sufiyan Muqeem,4277234d,Pakistan,BOWL,35.59,0.782,45.51
+match_086,2026-10-01,Pakistan,Bangladesh,6,Rishad Hossain,5935d694,Bangladesh,BOWL,34.69,0.734,47.28
+match_086,2026-10-01,Pakistan,Bangladesh,7,Haider Ali,dd572696,Pakistan,BOWL,33.47,0.762,43.93
+match_086,2026-10-01,Pakistan,Bangladesh,8,Hasan Nawaz,26a8b2fe,Pakistan,BAT,30.24,0.873,34.63
+match_086,2026-10-01,Pakistan,Bangladesh,9,Litton Das,0404d43c,Bangladesh,WK,29.68,0.844,35.18
+match_086,2026-10-01,Pakistan,Bangladesh,10,Saif Hassan,bb95564b,Bangladesh,BAT,29.33,0.813,36.09
+match_086,2026-10-01,Pakistan,Bangladesh,11,Tanzid Hasan,80fe764d,Bangladesh,BAT,28.23,0.828,34.08
+match_089,2026-10-03,India,Pakistan,1,Abhishek Sharma,f29185a1,India,BAT,40.7,0.857,47.51
+match_089,2026-10-03,India,Pakistan,2,Axar Patel,2e171977,India,AR,40.05,0.798,50.2
+match_089,2026-10-03,India,Pakistan,3,Saim Ayub,33609a8c,Pakistan,AR,36.19,0.871,41.53
+match_089,2026-10-03,India,Pakistan,4,Tilak Varma,b0482a1d,India,BAT,34.6,0.831,41.63
+match_089,2026-10-03,India,Pakistan,5,Sanju Samson,a4cc73aa,India,WK,34.48,0.842,40.93
+match_089,2026-10-03,India,Pakistan,6,Jasprit Bumrah,462411b3,India,BOWL,34.36,0.71,48.37
+match_089,2026-10-03,India,Pakistan,7,Arshdeep Singh,244048f6,India,BOWL,33.71,0.708,47.6
+match_089,2026-10-03,India,Pakistan,8,Maaz Sadaqat,6d9560f3,Pakistan,AR,32.64,0.852,38.3
+match_089,2026-10-03,India,Pakistan,9,Shivam Dube,a4e37e47,India,BAT,32.36,0.76,42.56
+match_089,2026-10-03,India,Pakistan,10,Washington Sundar,f19ccfad,India,BOWL,32.33,0.732,44.17
+match_089,2026-10-03,India,Pakistan,11,Ishan Kishan,752f7486,India,BAT,32.17,0.811,39.69
+match_096,2026-09-12,Warwickshire,Durham,1,L Filer,31adb911,Durham,BOWL,55.18,0.995,55.46
+match_096,2026-09-12,Warwickshire,Durham,2,MK Villiers,cd62f670,Durham,AR,52.83,0.996,53.04
+match_096,2026-09-12,Warwickshire,Durham,3,EL Arlott,78fd864b,Warwickshire,BOWL,51.63,0.986,52.38
+match_096,2026-09-12,Warwickshire,Durham,4,KA Levick,8f30d191,Durham,BOWL,47.6,0.995,47.84
+match_096,2026-09-12,Warwickshire,Durham,5,E Larosa,2433382a,Durham,BOWL,43.1,0.994,43.37
+match_096,2026-09-12,Warwickshire,Durham,6,A Stonehouse,c9366237,Warwickshire,BOWL,41.76,0.988,42.26
+match_096,2026-09-12,Warwickshire,Durham,7,MLL Taylor,014cfac4,Warwickshire,BOWL,40.59,0.99,41.0
+match_096,2026-09-12,Warwickshire,Durham,8,BM Halliday,efb6cb2a,Warwickshire,BAT,40.08,0.993,40.35
+match_096,2026-09-12,Warwickshire,Durham,9,HJ Armitage,f05167d2,Durham,BAT,37.74,0.996,37.9
+match_096,2026-09-12,Warwickshire,Durham,10,BAM Heath,3b5a9438,Durham,WK,36.44,0.996,36.59
+match_096,2026-09-12,Warwickshire,Durham,11,GJ Thompson,4bc7a86d,Durham,BAT,25.53,0.976,26.15
