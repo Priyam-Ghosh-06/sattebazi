@@ -248,9 +248,10 @@ bowling options is the normal shape.
   ($\Delta = 0$), where "played the team's last match" is an extremely strong signal. As history gets older, the refined
   network leads, because its memory fades with real time and its choice layer reasons about the squad rather than about the
   player's last appearance.
-- **Its MAE is higher than the baseline's while its teams are better.** The optimiser only needs the *order* of $p\cdot\mu$
-  inside a match; the refined network's point *levels* drift (2025 validation MSE about 2,100 vs 1,180 for the others) while
-  its ranking stays good. This is the clearest example of why MAE is not the selection metric (section 5).
+- **Its MAE is higher than the baseline's while its teams are better.** The optimiser is unaffected by shifting or rescaling
+  every prediction of a match, and when the role rules do not bind it depends only on their *order*; the refined network's
+  point *levels* drift (2025 validation MSE about 2,100 vs 1,180 for the others) while its ranking inside a match stays good
+  (rank correlation 0.341 / 0.359 against the baseline's 0.318 / 0.341). This is the clearest example of why MAE is not the selection metric (section 5).
 - **The choice layer ties the simple fix on picked points** (the learned team-shape terms are mild, and most of the work is
   done by the utilities), but it handles the missing-keeper case by construction.
 
@@ -393,8 +394,9 @@ Why this is the final model:
 - **both structural ideas in one model:** separating ability from competition for places, and the batter–bowler graph.
 
 What it does not do: it is not better than the trees on fresh history, and its point *levels* are less calibrated than the
-trees' (higher MAE and RMSE). Neither matters for the decision: the optimiser uses the order of $\mathbb{E}[Y_i]$ inside a match,
-and the hidden matches are stale.
+trees' (higher MAE and RMSE). Neither weighs much on the hidden set: the hidden matches are stale, and the optimiser is
+unaffected by shifting or rescaling every $\mathbb{E}[Y_i]$ of a match and, when the role rules do not bind, depends only on their
+order.
 
 ### 3.4 The optimiser
 
@@ -460,10 +462,17 @@ staleness levels. The hidden set is scored by the sum of our 11's points, so thi
 
 **MAE, RMSE and rank correlation are reported too, but MAE is not the selection metric.** Most squad rows are "sat out = 0",
 and the minimiser of absolute error is the conditional *median*, which is 0 for anyone less than 50% likely to play; a model
-trained to minimise MAE picked worse teams (−6.9 points a match). MAE also rewards accurate point levels, while the decision
-only uses the order of expected points inside a match (the refined network has a higher MAE than the baseline and better
-teams). Rank correlation inside a match is the closest standard metric to the decision; the share of the best possible XI is
-the decision itself.
+trained to minimise MAE picked worse teams (−6.9 points a match). MAE also rewards accurate point levels, while the decision is
+unaffected by shifting or rescaling every prediction of a match and, when the role rules do not bind, depends only on their
+order (the refined network has a higher MAE than the baseline and better teams).
+
+**Rank correlation inside a match** is Spearman's $\rho$ between predicted and actual points over all candidates of one match
+(both squads, benched players at 0), averaged over matches and staleness levels: with $d_i$ the difference between player
+$i$'s predicted rank and actual rank among $n$ candidates, $\rho = 1 - \frac{6\sum_i d_i^2}{n(n^2-1)}$ (Pearson correlation of
+the ranks when there are ties). $\rho = 1$ orders the players exactly as they scored; $\rho = 0$ is no better than random. It is
+the problem statement's suggested alternative to MAE that is closest to the decision, because it ignores point levels and scores
+only the ordering the optimiser acts on. The share of the best possible XI is the decision itself, so it is what models are
+selected on.
 
 **Is a difference real or luck?** Two models differ by a few points a match while single matches swing by hundreds. So I take
 the per-match differences (averaged over the staleness levels) and resample the ~1,800 test matches 2,000 times with replacement
