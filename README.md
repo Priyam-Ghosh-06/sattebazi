@@ -180,8 +180,8 @@ $Z$ sums the same exponential over **every** possible XI of the squad, computed 
 (players picked, keepers, bowling options) in $C \times 14 \times 4 \times 9$ steps:
 
 ```math
-\alpha_j(m,k,b) = \operatorname{logaddexp}\big(\alpha_{j-1}(m,k,b),\; \alpha_{j-1}(m-1,k-k_j,b-b_j) + u_j\big),\qquad
-\log Z = \operatorname{logsumexp}_{k,b}\big(\alpha_C(n,k,b) + \varphi_K(k) + \varphi_B(b)\big)
+\alpha_j(m,k,b) = \mathrm{logaddexp}\big(\alpha_{j-1}(m,k,b),\; \alpha_{j-1}(m-1,k-k_j,b-b_j) + u_j\big),\qquad
+\log Z = \mathrm{logsumexp}_{k,b}\big(\alpha_C(n,k,b) + \varphi_K(k) + \varphi_B(b)\big)
 ```
 
 A player's chance of playing is the total probability of the XIs that contain him, which falls out of $Z$ as a derivative:
@@ -206,10 +206,10 @@ brute force over all 364 XIs of a 14-player squad (difference $6\times10^{-15}$)
 ```
 
 - **P2, the monthly drift** (encoder frozen): in training the matches inside the gap are known, so the true state at each month
-  boundary $z_{k+1}$ is a target; $g$ learns one month of drift (with season phase, gender and team type as inputs):
+  boundary $z_{k+1}$ is a target; $g$ learns one month of drift (with season phase, gender and team type as inputs); $\mathrm{sg}$ = stop-gradient, the target is not differentiated:
 
 ```math
-\mathcal{L}_{\text{P2}} \;=\; \frac{1}{N}\sum_{k}\big\lVert\, g(z_k,\ \text{phase}_k,\ \text{gender},\ \text{type}) - \operatorname{sg}(z_{k+1}) \big\rVert^2
+\mathcal{L}_{\text{P2}} \;=\; \frac{1}{N}\sum_{k}\big\lVert\, g(z_k,\ \text{phase}_k,\ \text{gender},\ \text{type}) - \mathrm{sg}(z_{k+1}) \big\rVert^2
 ```
 
 - **P3, heads on rolled-forward states**: a copy of the decoder is trained with $\mathcal{L}_{\text{P1}}$ on
@@ -344,7 +344,7 @@ The same objectives as the refined network, with the extended decoder input:
 \mathcal{L}_{\text{P1}} = \frac{1}{n}\Big(\log Z - \sum_{i\in X^\ast}u_i - \varphi_K(K_{X^\ast}) - \varphi_B(B_{X^\ast})\Big)
 + \frac{1}{|\text{played}|}\sum_{i\in\text{played}}\Big(\frac{\mu_i - Y_i}{\sigma_\mu}\Big)^2,
 \qquad
-\mathcal{L}_{\text{P2}} = \tfrac{1}{N}\sum_k\lVert g(z_k,\cdot) - \operatorname{sg}(z_{k+1})\rVert^2,
+\mathcal{L}_{\text{P2}} = \tfrac{1}{N}\sum_k\lVert g(z_k,\cdot) - \mathrm{sg}(z_{k+1})\rVert^2,
 \qquad
 \mathcal{L}_{\text{P3}} = \mathcal{L}_{\text{P1}}\big(z^\ast = g^{\lceil\Delta/30\rceil}(z_c)\big)
 ```
